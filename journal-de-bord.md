@@ -13,8 +13,12 @@
     - pas juste prendre l'angle des sentiments autour de la lecture (impression de rêver, voyager) mais plutôt une impression globale qui traverse les cultures qu'on ne lit plus. 
     - hypothèse sur le nuage de mots, on pourrait retrouver, peu importe la langue, les mots : temps, jeune, ebook (ou variation selon la langue), téléphone, travail, problème
 
-- commencer à chercher des urls (au moins la moitié) pour chaque langue
+- commencer à chercher des urls pour chaque langue
+
+- réflexion sur le choix des urls : 
+    - la nocivité des ebooks, les ebooks et la santé,... : bien que les articles soient intéressants, nous avons décidé de ne pas choisir ces urls parce que le sujet deviendrait trop large
+    - la lecture et l'apprentissage chez les jeunes : nous avons décidé de garder ses urls parce qu'il est tout à fait normal de lire pour se renseigner, pour apprendre des choses; ce genre d'articles est d'ailleurs plus présent en coréen qu'en chinois car les étudiants (mineurs) chinois n'ont pas vraiment le temps de lire pendant leur temps "libre"
 
 ## pour S6, 26/10/2022
 - avoir TOUTES les urls (il faut se bouger le cul)
-     - CHINOIS : fini !
+     - CHINOIS : fini mais quelques changements et verifications à faire sur les articles choisis (taille et intérêt dans le projet)
