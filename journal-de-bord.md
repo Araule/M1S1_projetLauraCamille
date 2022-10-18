@@ -2,9 +2,9 @@
 
 ## pour S5, 19/10/2022
 - trouver mot :
-       - en français : lire
-       - en chinois, nombreuses variations : 看书，阅读，读书    principalement
-       - en coréen : 
+    - en français : lire
+    - en chinois, nombreuses variations : 看书，阅读，读书    principalement
+    - en coréen : 
 
 - pourquoi ? émettre une première reflexion :
     - En France, on lit de moins en moins, du moins on en a l'impression. Une certaine élite se plaint que les jeunes ne lisent plus. 
