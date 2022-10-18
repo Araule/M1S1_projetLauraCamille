@@ -3,7 +3,7 @@
 ## pour S5, 19/10/2022
 - trouver mot :
     - en français : lire
-    - en chinois, nombreuses variations : 看书，阅读，读书    principalement
+    - en chinois, nombreuses variations : 看书  (litt. lire un livre)，阅读 （lire plus généralement)  principalement
     - en coréen : il y a deux variations : 읽다 (signifie lire mais peu importe ce que c'est, càd un livre, des sous-titres...), 독서하다 (qui signifie littéralement lire un livre)  
 
 - pourquoi ? émettre une première reflexion :
