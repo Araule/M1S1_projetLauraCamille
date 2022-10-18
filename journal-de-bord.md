@@ -17,3 +17,4 @@
 
 ## pour S6, 26/10/2022
 - avoir TOUTES les urls (il faut se bouger le cul)
+     - CHINOIS : fini !
