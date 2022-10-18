@@ -4,7 +4,7 @@
 - trouver mot :
     - en français : lire
     - en chinois, nombreuses variations : 看书，阅读，读书    principalement
-    - en coréen : 
+    - en coréen : il y a deux variations : 읽다 (signifie lire mais peu importe ce que c'est, càd un livre, des sous-titres...), 독서하다 (qui signifie littéralement lire un livre)  
 
 - pourquoi ? émettre une première reflexion :
     - En France, on lit de moins en moins, du moins on en a l'impression. Une certaine élite se plaint que les jeunes ne lisent plus. 
