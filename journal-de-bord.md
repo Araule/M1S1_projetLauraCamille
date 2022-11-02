@@ -1,24 +1,37 @@
-# To-do List ; Laura = L, Camille = C
+# Journal de bord ; Laura = L, Camille = C
 
-## pour S5, 19/10/2022
-- trouver mot :
-    - en français : lire
-    - en chinois, nombreuses variations : 看书  (litt. lire un livre)，阅读 （lire plus généralement)  principalement
-    - en coréen : il y a deux variations : 읽다 (signifie lire mais peu importe ce que c'est, càd un livre, des sous-titres...), 독서하다 (qui signifie littéralement lire un livre)  
+## Pourquoi choisir le mot "lire"
+**Lire** est un concept universel présent (quasiment) partout dans le monde. Mais la lecture est entouré de problématiques, parfois spécifiques à un pays, parfois non. Nous avions déjà discuté à l'occasion des différences dans les habitudes de lecture en Chine et en Corée et nous souhaitons aller plus loin à travers ce projet.
 
-- pourquoi ? émettre une première reflexion :
-    - En France, on lit de moins en moins, du moins on en a l'impression. Une certaine élite se plaint que les jeunes ne lisent plus. 
-    - En Chine, peu importe la génération, ils sont beaucoup sur leur téléphone et donc lise beaucoup moins OU travaille trop au point de ne pas pouvoir avoir de hobbies à côté (librairie, bibliothèque fermés le soir, la nuit...). Gros boom des plateformes de livres numériques. 
-    - En Corée, le manque de temps à cause du travail se fait également ressentir. Les jeunes lisent beaucoup plus sur leur téléhpone, mais les personnes plus âgées ont tendance à rester sur le papier. Le milieu de l'édition papier est toujours très important en Corée. 
-    - pas juste prendre l'angle des sentiments autour de la lecture (impression de rêver, voyager) mais plutôt une impression globale qui traverse les cultures qu'on ne lit plus. 
-    - hypothèse sur le nuage de mots, on pourrait retrouver, peu importe la langue, les mots : temps, jeune, ebook (ou variation selon la langue), téléphone, travail, problème
+En France, on lit de moins en moins, du moins en avons-nous l'impression en lisant la presse ou discutant avec des personnes, généralement, plus âgés. Il y a cette idée que ce sont les jeunes qui ne lisent plus, ou du moins pas "les classiques" de la littérature. L'entrée dans la vie active semble être aussi un obstacle pour les adultes qui ne disent plus avoir le temps de lire.
 
-- commencer à chercher des urls pour chaque langue
+En Chine, peu importe la génération, les personnes âgés comme les plus jeunes sont beaucoup sur leur téléphone. Les chinois travaillent aussi très longtemps et disent ne pas avoir le temps d'aller prendre un livre en librairie ou à la bibliothèque, les deux fermant avant qu'ils sortent du travail. Les enfants lisent également très peu à cause des devoirs et des activités extra-scolaires qui prennent énormement de leur temps.
 
-- réflexion sur le choix des urls : 
-    - la nocivité des ebooks, les ebooks et la santé,... : bien que les articles soient intéressants, nous avons décidé de ne pas choisir ces urls parce que le sujet deviendrait trop large
-    - la lecture et l'apprentissage chez les jeunes : nous avons décidé de garder ses urls parce qu'il est tout à fait normal de lire pour se renseigner, pour apprendre des choses; ce genre d'articles est d'ailleurs plus présent en coréen qu'en chinois car les étudiants (mineurs) chinois n'ont pas vraiment le temps de lire pendant leur temps "libre"
+En Corée, le manque de temps à cause du travail se fait également ressentir. Les jeunes lisent beaucoup plus sur leur téléhpone, mais les personnes plus âgées ont tendance à rester sur le papier. Le milieu de l'édition papier est toujours très important en Corée. 
 
-## pour S6, 26/10/2022
-- avoir TOUTES les urls (il faut se bouger le cul)
-     - CHINOIS : fini mais quelques changements et verifications à faire sur les articles choisis (taille et intérêt dans le projet)
+**Hypothèse sur le nuage de mots**
+On pourrait retrouver, peu importe la langue, les mots (manque de) temps, jeune, ebook (ou variation selon la langue), téléphone, travail, problème...
+
+## Quel lemme ?
+
+#### En français
+
+lire
+
+#### En chinois
+Il y a de nombreuses variations, les plus utilisés et les moins spécifiques sont : 
+- 看书  (litt. lire un livre)
+- 阅读 （lire plus généralement)
+
+#### en coréen
+Il y a deux variations : 
+- 읽다 (signifie lire mais peu importe ce que c'est, càd un livre, des sous-titres...)
+- 독서하다 (qui signifie littéralement lire un livre)  
+
+
+## Réflexion sur le choix des urls
+- pas juste prendre l'angle des sentiments autour de la lecture (impression de rêver, voyager) mais plutôt une impression globale qui traverse les cultures qu'on ne lit plus. 
+- la nocivité des ebooks, les ebooks et la santé,... : bien que les articles soient intéressants, nous avons décidé de ne pas choisir ces urls parce que le sujet deviendrait trop large
+- la lecture et l'apprentissage chez les jeunes : nous avons décidé de garder ses urls parce qu'il est tout à fait normal de lire pour se renseigner, pour apprendre des choses; ce genre d'articles est d'ailleurs plus présent en coréen qu'en chinois car les étudiants (mineurs) chinois n'ont pas vraiment le temps de lire pendant leur temps "libre"
+
+
