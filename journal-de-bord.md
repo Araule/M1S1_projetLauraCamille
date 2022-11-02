@@ -1,4 +1,4 @@
-# Journal de bord ; Laura = L, Camille = C
+# Journal de bord
 
 ## Pourquoi choisir le mot "lire"
 **Lire** est un concept universel présent (quasiment) partout dans le monde. Mais la lecture est entouré de problématiques, parfois spécifiques à un pays, parfois non. Nous avions déjà discuté à l'occasion des différences dans les habitudes de lecture en Chine et en Corée et nous souhaitons aller plus loin à travers ce projet.
