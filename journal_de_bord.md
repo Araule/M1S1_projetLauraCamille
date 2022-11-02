@@ -11,6 +11,7 @@ En Corée, le manque de temps à cause du travail se fait également ressentir. 
 
 **Hypothèse sur le nuage de mots**
 On pourrait retrouver, peu importe la langue, les mots (manque de) temps, jeune, ebook (ou variation selon la langue), téléphone, travail, problème...
+La question est quels mots trouveront plutôt dans une langue que dans l'autre ?
 
 ## Quel lemme ?
 
