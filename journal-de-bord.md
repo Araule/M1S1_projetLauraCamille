@@ -16,7 +16,7 @@ On pourrait retrouver, peu importe la langue, les mots (manque de) temps, jeune,
 
 #### En français
 
-lire
+- lire
 
 #### En chinois
 Il y a de nombreuses variations, les plus utilisés et les moins spécifiques sont : 
