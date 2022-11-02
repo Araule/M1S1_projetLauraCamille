@@ -23,15 +23,13 @@ Il y a de nombreuses variations, les plus utilisés et les moins spécifiques so
 - 看书  (litt. lire un livre)
 - 阅读 （lire plus généralement)
 
-#### en coréen
+#### En coréen
 Il y a deux variations : 
 - 읽다 (signifie lire mais peu importe ce que c'est, càd un livre, des sous-titres...)
 - 독서하다 (qui signifie littéralement lire un livre)  
 
 
 ## Réflexion sur le choix des urls
-- pas juste prendre l'angle des sentiments autour de la lecture (impression de rêver, voyager) mais plutôt une impression globale qui traverse les cultures qu'on ne lit plus. 
+- ne pas juste prendre l'angle des sentiments autour de la lecture (impression de rêver, voyager)
 - la nocivité des ebooks, les ebooks et la santé,... : bien que les articles soient intéressants, nous avons décidé de ne pas choisir ces urls parce que le sujet deviendrait trop large
-- la lecture et l'apprentissage chez les jeunes : nous avons décidé de garder ses urls parce qu'il est tout à fait normal de lire pour se renseigner, pour apprendre des choses; ce genre d'articles est d'ailleurs plus présent en coréen qu'en chinois car les étudiants (mineurs) chinois n'ont pas vraiment le temps de lire pendant leur temps "libre"
-
-
+- la lecture et l'apprentissage chez les jeunes : nous avons décidé de garder ses urls parce qu'il est tout à fait normal de lire pour apprendre des choses; ce genre d'articles est d'ailleurs plus présent en coréen qu'en chinois car les étudiants (mineurs) chinois n'ont pas vraiment le temps de lire pendant leur temps "libre"
