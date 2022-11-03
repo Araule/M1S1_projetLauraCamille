@@ -19,9 +19,10 @@ La question est quels mots trouveront plutôt dans une langue que dans l'autre ?
 
 - lire
 
-#### En chinois
+#### En chinois (simplifié)
 Il y a de nombreuses variations, les plus utilisés et les moins spécifiques sont : 
-- 看书  (litt. lire un livre)
+- 看书 (litt. lire un livre)
+- 读书 （lire un livre) (ou étudier! il faut faire attention à bien vérifier que dans l'article, cela signifie lire un livre)
 - 阅读 （lire plus généralement)
 
 #### En coréen
