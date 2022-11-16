@@ -1,0 +1,667 @@
+ligne 1:
+HTTP/1.1 200 
+ Date: Wed, 16 Nov 2022 07:44:55 GMT
+ Content-Type: text/html;charset=UTF-8
+ Content-Length: 43225
+ Vary: Accept-Encoding
+ Set-Cookie: XSRF-TOKEN=uf5BW/8CJD1A+lz4RWrYgzKc45JWJ6n5csCoSAMSjA7McVi1iKhhg08a7T557E04; Path=/; Secure
+ Set-Cookie: REACTION_GUEST=5487c5b3b4b47dec11b39525208374a55f9571f9
+ T_USERID: 5487c5b3b4b47dec11b39525208374a55f9571f9
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+ Pragma: no-cache
+ Expires: 0
+ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+ 
+ligne 2:
+HTTP/1.1 200 
+ date: Wed, 16 Nov 2022 07:44:58 GMT
+ content-type: text/html;charset=UTF-8
+ content-length: 78124
+ vary: Accept-Encoding
+ set-cookie: XSRF-TOKEN=8kG9loDheFvSfpVvGxb2R2j55M5BhQ12YmrfJDymAbrp4U69LDvj9xSae/ZwGtwI; Path=/; Secure
+ set-cookie: REACTION_GUEST=f52fac70723abea93834c4df88a9f95ca742bbc5
+ t_userid: f52fac70723abea93834c4df88a9f95ca742bbc5
+ x-content-type-options: nosniff
+ x-xss-protection: 1; mode=block
+ cache-control: no-cache, no-store, max-age=0, must-revalidate
+ pragma: no-cache
+ expires: 0
+ strict-transport-security: max-age=31536000 ; includeSubDomains
+ 
+ligne 3:
+HTTP/1.1 200 
+ Date: Wed, 16 Nov 2022 07:45:00 GMT
+ Content-Type: text/html;charset=UTF-8
+ Content-Length: 48399
+ Vary: Accept-Encoding
+ Set-Cookie: XSRF-TOKEN=eTMoa3LnDLsfpA/jSsZDCJdWxyEjfA9AQJqBgxMYXtPtaO0k7JNHqNm25znN9xL0; Path=/; Secure
+ Set-Cookie: REACTION_GUEST=6a2c01b3f85fbe4e42c2c7b03792bd8c63029a65
+ T_USERID: 6a2c01b3f85fbe4e42c2c7b03792bd8c63029a65
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+ Pragma: no-cache
+ Expires: 0
+ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+ 
+ligne 4:
+HTTP/1.1 200 
+ Date: Wed, 16 Nov 2022 07:45:03 GMT
+ Content-Type: text/html;charset=UTF-8
+ Content-Length: 36256
+ Vary: Accept-Encoding
+ Set-Cookie: XSRF-TOKEN=Efki+IJQmqfcecr3NSUtRdny2rEkXoPf03I9RauEvukcr5SU5FmUMF8lgEfID3Jr; Path=/; Secure
+ Set-Cookie: REACTION_GUEST=e2c278a54b1f96cbf3fe371fcf80d38bdfdf1a40
+ T_USERID: e2c278a54b1f96cbf3fe371fcf80d38bdfdf1a40
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+ Pragma: no-cache
+ Expires: 0
+ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+ 
+ligne 5:
+HTTP/1.1 302 Found
+ Cache-Control: private
+ Transfer-Encoding: chunked
+ Content-Type: text/html; charset=utf-8
+ Location: http://ch.yes24.com/Article/View/38353
+ Set-Cookie: ASP.NET_SessionId=5uudkrmutlc2tothlh33mzsy; path=/; HttpOnly; SameSite=Lax
+ Set-Cookie: __CHYES_VISIT__=20221116; expires=Wed, 16-Nov-2022 08:15:05 GMT; path=/
+ Date: Wed, 16 Nov 2022 07:45:05 GMT
+ 
+ HTTP/1.1 200 OK
+ Cache-Control: private
+ Content-Length: 142214
+ Content-Type: text/html; charset=utf-8
+ Set-Cookie: __CHYES_VISIT__=20221116; expires=Wed, 16-Nov-2022 08:15:07 GMT; path=/
+ Set-Cookie: chcontread=gb1=38353; path=/
+ Date: Wed, 16 Nov 2022 07:45:07 GMT
+ Set-Cookie: TS01b2e688=0188f690ad41fdbb0678ba3fbad3f9f5139fe2af287b8490bd8a3d441b02ebc8ea466b357a4cca9b83da8f6d5da718362c9eb47a7e01fa900ad718012d43a9dc8893c75b1baeb528fe1e4223363b6c4052589e61bd; Path=/
+ 
+ligne 6:
+HTTP/2 200 
+ server: nginx
+ date: Wed, 16 Nov 2022 07:45:09 GMT
+ content-type: text/html; charset=UTF-8
+ vary: Accept-Encoding
+ x-ua-compatible: IE=edge
+ link: <https://happist.com/wp-json/>; rel="https://api.w.org/"
+ link: <https://happist.com/wp-json/wp/v2/posts/562489>; rel="alternate"; type="application/json"
+ x-content-type-options: nosniff
+ x-frame-options: SAMEORIGIN
+ x-xss-protection: 1; mode=block
+ referrer-policy: strict-origin-when-cross-origin
+ strict-transport-security: max-age=63072000; includeSubdomains;preload
+ access-control-allow-origin: *
+ x-debug-whats-going-on: on
+ 
+ligne 7:
+HTTP/1.1 302 Found
+ Cache-Control: private
+ Transfer-Encoding: chunked
+ Content-Type: text/html; charset=utf-8
+ Location: http://ch.yes24.com/Article/View/29500
+ Set-Cookie: ASP.NET_SessionId=olgf0e3qlt5hver2lrya0o3p; path=/; HttpOnly; SameSite=Lax
+ Set-Cookie: __CHYES_VISIT__=20221116; expires=Wed, 16-Nov-2022 08:15:10 GMT; path=/
+ Date: Wed, 16 Nov 2022 07:45:10 GMT
+ 
+ HTTP/1.1 200 OK
+ Cache-Control: private
+ Content-Length: 125975
+ Content-Type: text/html; charset=utf-8
+ Set-Cookie: __CHYES_VISIT__=20221116; expires=Wed, 16-Nov-2022 08:15:11 GMT; path=/
+ Set-Cookie: chcontread=gb1=29500; path=/
+ Date: Wed, 16 Nov 2022 07:45:11 GMT
+ Set-Cookie: TS01b2e688=0188f690ad92c8fff264a78982146cf9ec6f4922d7fa1656f8da2c914d9a4e76cb562dd89491fdb396f4e220ac89194e54b31b6e62e24a24d79f973b2e9be322e756f18767a72e6f6ed3547247937d4af9773ba9b4; Path=/
+ 
+ligne 8:
+HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:45:14 GMT
+ Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_myfixip/1.4
+ X-Powered-By: PHP/7.2.29
+ Connection: close
+ Content-Type: text/html; charset=UTF-8
+ 
+ligne 9:
+HTTP/1.1 200 
+ Date: Wed, 16 Nov 2022 07:45:16 GMT
+ Content-Type: text/html;charset=UTF-8
+ Content-Length: 52481
+ Vary: Accept-Encoding
+ Set-Cookie: XSRF-TOKEN=83Fms6qun99oi+rmNuht+zyisoEeQl4+RPujA2BJ7LTj7/H2qa9ffL7lpP24AQpm; Path=/; Secure
+ Set-Cookie: REACTION_GUEST=89c5d69daa5b8b9e80361ed85851d1e3e960b2da
+ T_USERID: 89c5d69daa5b8b9e80361ed85851d1e3e960b2da
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+ Pragma: no-cache
+ Expires: 0
+ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+ 
+ligne 10:
+HTTP/2 200 
+ content-type: text/html; charset=ISO-8859-1
+ content-security-policy: object-src 'none';base-uri 'self';script-src 'nonce-Pj7Zj_xtXTGcElZ6ibj40Q' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/xsrp
+ p3p: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+ date: Wed, 16 Nov 2022 07:45:17 GMT
+ server: gws
+ x-xss-protection: 0
+ x-frame-options: SAMEORIGIN
+ expires: Wed, 16 Nov 2022 07:45:17 GMT
+ cache-control: private
+ set-cookie: __Secure-ENID=8.SE=ygamCHwpWz5to0aHxobNFIBFCJnUlQNJfIvJYLxuy1ODIhmxhODaP0y9gtPzhLvhfEIWMuGW5TaH6ZPYC1MN0Fh4X7AJq_8D2xFFIsbXb8vacylhZEruZd2jDGnPYU9FOvbA4gbIkU87Luw0Og1YlQIGoyXpwSxSKvRsjtswoJI; expires=Sun, 17-Dec-2023 00:03:35 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+ set-cookie: CONSENT=PENDING+823; expires=Fri, 15-Nov-2024 07:45:17 GMT; path=/; domain=.google.com; Secure
+ alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+ 
+ligne 11:
+HTTP/1.1 200 
+ Date: Wed, 16 Nov 2022 07:45:19 GMT
+ Content-Type: text/html;charset=UTF-8
+ Content-Length: 139162
+ Vary: Accept-Encoding
+ Set-Cookie: XSRF-TOKEN=DJJbHE7GYD6uxdTS0+iiwjucosqGSAB5+S4gwji3dem0vIrUqZ2A2lnMU487h+F/; Path=/; Secure
+ Set-Cookie: REACTION_GUEST=f49004787a11c9a925bb1c5c56d7878f732d8548
+ T_USERID: f49004787a11c9a925bb1c5c56d7878f732d8548
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+ Pragma: no-cache
+ Expires: 0
+ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+ 
+ligne 12:
+HTTP/2 200 
+ content-type: text/html; charset=ISO-8859-1
+ content-security-policy: object-src 'none';base-uri 'self';script-src 'nonce-MmzhvAE_g3jlnWaDI4dSxQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/xsrp
+ p3p: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+ date: Wed, 16 Nov 2022 07:45:19 GMT
+ server: gws
+ x-xss-protection: 0
+ x-frame-options: SAMEORIGIN
+ expires: Wed, 16 Nov 2022 07:45:19 GMT
+ cache-control: private
+ set-cookie: __Secure-ENID=8.SE=TKcj3Q4CWro4Nz5YxLPcytXg3qPaGkST5wurFtKwJmRiXCY2lfHjjY92tZ6qemrHE0zjoG5pWDxr9CcZBNyD1ntNdeldlFIqOpEW4vuDWDy11z9FPAZIzUAJXgWB1FJSvaFRGeTDHOJPlVMlL2UX5NoQJUZGws4tTfq-RK5tXc0; expires=Sun, 17-Dec-2023 00:03:37 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+ set-cookie: CONSENT=PENDING+406; expires=Fri, 15-Nov-2024 07:45:19 GMT; path=/; domain=.google.com; Secure
+ alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+ 
+ligne 13:
+HTTP/1.1 200 OK
+ Content-Type: text/html;charset=UTF-8
+ Cache-Control: no-cache
+ Expires: Thu, 01 Jan 1970 00:00:00 GMT
+ Server: nxfps
+ Referrer-policy: unsafe-url
+ Date: Wed, 16 Nov 2022 07:45:21 GMT
+ Connection: keep-alive
+ Set-Cookie: JSESSIONID=7B8B8177328FDA0EFCAFCCC8BE6BAB2A.jvm1; Path=/; Secure; HttpOnly
+ 
+ligne 14:
+HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:45:23 GMT
+ Server: Apache
+ Cache-Control: no-cache, private
+ Set-Cookie: XSRF-TOKEN=eyJpdiI6IlVzTGtZc3VOT2VJN3ZQT3psYnNFbnc9PSIsInZhbHVlIjoiNTk3aEpcL0IxUUc0QVN0d3JHeXlaMWJ3QmpJQ0ZDSG9odGszQlFSaDJlaExxRGJpbGprNUltTjFLSUdWWkFZaFoiLCJtYWMiOiJjZmMzOWU1MzYwY2RmMjY0NzU0YTY2Nzc2MmVjNjc4MmFhYTUxMzUwY2YwNTgxMTEyNzhlMjcwOGZjYmQxZDc3In0%3D; expires=Wed, 16-Nov-2022 09:45:24 GMT; Max-Age=7200; path=/; domain=.pressian.com
+ Set-Cookie: pressian_session=eyJpdiI6IjJtaTRSRHZ4TFJFVEd6UmhrVkd6Qmc9PSIsInZhbHVlIjoiK05ySDdhSFRwM1lxdXZ6OW9kT01EZk9URmZwTWVBV0NuaWhySDFsaTJLMUpwMzRjaFBGdDJNZnlVSW02QWcwYiIsIm1hYyI6IjEzZjgxMGQxODU2YjVlYzQ5ZGQ0ZDE4YzhkZjE5MjZlOTk5ZmE1ZWQ1MDk1ODkxODQ1MmYzZTQzZmJlNTA5MWUifQ%3D%3D; path=/; domain=.pressian.com; httponly
+ Content-Type: text/html; charset=UTF-8
+ 
+ligne 15:
+HTTP/1.1 200 OK
+ Content-Type: text/html;charset=UTF-8
+ Cache-Control: no-cache
+ Expires: Thu, 01 Jan 1970 00:00:00 GMT
+ Server: nxfps
+ Referrer-policy: unsafe-url
+ Date: Wed, 16 Nov 2022 07:45:25 GMT
+ Connection: keep-alive
+ Set-Cookie: JSESSIONID=21F6C3A50FCEC5DE13389CE6C8BBA3F4.jvm1; Path=/; Secure; HttpOnly
+ 
+ligne 16:
+HTTP/1.1 200 OK
+ Content-Type: text/html;charset=UTF-8
+ Cache-Control: no-cache
+ Expires: Thu, 01 Jan 1970 00:00:00 GMT
+ Server: nxfps
+ Referrer-policy: unsafe-url
+ Date: Wed, 16 Nov 2022 07:45:27 GMT
+ Connection: keep-alive
+ Set-Cookie: JSESSIONID=293503013AF131E43EC65E4C28758A05.jvm1; Path=/; Secure; HttpOnly
+ 
+ligne 17:
+HTTP/1.1 200 OK
+ Server: nginx/1.14.0 (Ubuntu)
+ Date: Wed, 16 Nov 2022 07:45:29 GMT
+ Content-Type: text/html; charset=utf-8
+ Content-Length: 30310
+ Connection: keep-alive
+ Vary: Accept-Encoding
+ X-Frame-Options: DENY
+ X-Content-Type-Options: nosniff
+ Referrer-Policy: same-origin
+ Cross-Origin-Opener-Policy: same-origin
+ 
+ligne 18:
+HTTP/1.1 200 OK
+ Content-Type: text/html;charset=UTF-8
+ Cache-Control: no-cache
+ Expires: Thu, 01 Jan 1970 00:00:00 GMT
+ Server: nxfps
+ Referrer-policy: unsafe-url
+ Date: Wed, 16 Nov 2022 07:45:31 GMT
+ Connection: keep-alive
+ Set-Cookie: JSESSIONID=6C42E00657B76F4B491A16C1FC29FFE2.jvm1; Path=/; Secure; HttpOnly
+ 
+ligne 19:
+HTTP/1.1 200 OK
+ Content-Type: text/html;charset=UTF-8
+ Cache-Control: no-cache
+ Expires: Thu, 01 Jan 1970 00:00:00 GMT
+ Server: nxfps
+ Referrer-policy: unsafe-url
+ Date: Wed, 16 Nov 2022 07:45:33 GMT
+ Connection: keep-alive
+ Set-Cookie: JSESSIONID=E5C03E201DCF3B0201459581DCB4D912.jvm1; Path=/; Secure; HttpOnly
+ 
+ligne 20:
+HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:45:35 GMT
+ Pragma: No-cache
+ Cache-Control: no-cache,no-store,max-age=0
+ Content-Type: text/html;charset=MS949
+ Expires: Thu, 01 Jan 1970 00:00:00 GMT
+ Set-Cookie: WMONID=D-Nh3iqu6_H;Expires=Thu, 16-Nov-2023 07:45:35 GMT;Path=/
+ Set-Cookie: tempinterparkGUEST=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: interparkSNO=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: M_BirthYear=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: iaf=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: B2bEstimateCartPrd=;Domain=book.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: B2bMemberGrade=;Domain=book.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: btbMemno=;Domain=book.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: altwellMember=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: siteAgree=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: blogMemberNo=;Domain=book.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: bookparkSNO=;Domain=book.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: bookparkSNO=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: addr_info=;Domain=book.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: noMemIDN=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: EML_ID=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: GoodsCntInWishAndCart=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: memRealName=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: smsCertYN=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: IEGS_GUIF=;Domain=.interpark.com;Expires=Thu, 01-Jan-1970 00:00:10 GMT;Path=/
+ Set-Cookie: interparkstamp=3576354842991537485866104012819714;Domain=.interpark.com;Path=/
+ Set-Cookie: JSESSIONID=Vd5vtUwVcwNWA6lM6Il2cZyf9PW7OTNWdK6ts0bRSKqXm8PjbyyWIVZiia2tafFB;Path=/
+ P3P: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+ Content-Length: 0
+ 
+ligne 21:
+HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:45:38 GMT
+ Server: JBCS httpd
+ Set-Cookie: WMONID=N5AK9MOgiZr; Expires=Thu, 16-Nov-2023 16:45:38 GMT; Path=/
+ Set-Cookie: JSESSIONID=KURkjicsLnKX0UFqDV1bNyvd.korea0201; Path=/; Secure
+ Content-Language: ko-KR
+ Content-Type: text/html;charset=UTF-8
+ Set-Cookie: clientid=050048363642;Path=/
+ 
+ligne 22:
+HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:45:41 GMT
+ Content-Type: text/html; charset=UTF-8
+ Connection: keep-alive
+ Cache-Control: max-age=60
+ Expires: Wed, 16 Nov 2022 07:46:40 GMT
+ Via: 1.1 PShgseSEL3nd166:8 (W), 1.1 ml62:7 (W), 1.1 PSfgblPAR1kf231:12 (W)
+ X-Px: ms PSfgblPAR1kf231CDG,ms ml62MXP,ms PShgseSEL3nd166GMP(origin)
+ X-Ws-Request-Id: 63749524_PSfgblPAR1nw230_31371-13934
+ Server: PWS/8.3.1.0.8
+ 
+ligne 23:
+HTTP/1.1 200 OK
+ Server: nginx/1.16.1
+ Date: Wed, 16 Nov 2022 07:45:42 GMT
+ Content-Type: text/html; charset=utf-8
+ X-Powered-By: PHP/7.2.34
+ Vary: Accept-Encoding
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ X-Proxy-Cache: MISS
+ 
+ligne 24:
+HTTP/2 200 
+ content-type: text/html;charset=UTF-8
+ content-length: 126884
+ date: Wed, 16 Nov 2022 07:45:44 GMT
+ server: nginx
+ cache-control: max-age=0
+ vary: Accept-Encoding,Origin
+ x-cache: Miss from cloudfront
+ via: 1.1 7d935e83126b0b85ded112b940f9c85c.cloudfront.net (CloudFront)
+ x-amz-cf-pop: CDG52-P1
+ x-amz-cf-id: KBrRHw5akaHIRN95d3DwYqqGwHH061D47_fLde45-RfQtlRgUgIBEw==
+ 
+ligne 25:
+HTTP/1.1 200 
+ Date: Wed, 16 Nov 2022 07:45:46 GMT
+ Content-Type: text/html;charset=UTF-8
+ Content-Length: 59635
+ Vary: Accept-Encoding
+ T_USERID: 84739f23d5d9260d39f2f4d439561b9c695470d2
+ Set-Cookie: REACTION_GUEST=220a19939961546743b33b79c53d23099c7ce0e9
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+ Pragma: no-cache
+ Expires: 0
+ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+ 
+ligne 26:
+HTTP/2 200 
+ date: Wed, 16 Nov 2022 07:45:48 GMT
+ content-type: text/html;charset=utf-8
+ set-cookie: bid=""; Domain=.brunch.co.kr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure
+ content-language: en-US
+ strict-transport-security: max-age=15724800; includeSubDomains
+ 
+ligne 27:
+HTTP/1.1 200 
+ Date: Wed, 16 Nov 2022 07:45:51 GMT
+ Content-Type: text/html;charset=UTF-8
+ Content-Length: 48824
+ Vary: Accept-Encoding
+ T_USERID: 5f6a5a81284adcb6bed17bc0f85c0b4c58b42c7f
+ Set-Cookie: REACTION_GUEST=20839f076219b0e5cd495331d8d9c5c7d2e64d30
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+ Pragma: no-cache
+ Expires: 0
+ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+ 
+ligne 28:
+HTTP/2 200 
+ content-type: text/html;charset=UTF-8
+ cache-control: no-cache
+ expires: Thu, 01 Jan 1970 00:00:00 GMT
+ x-cache-status: BYPASS
+ server: nxfps
+ referrer-policy: unsafe-url
+ date: Wed, 16 Nov 2022 07:45:53 GMT
+ set-cookie: JSESSIONID=4E3C2DC94556E1477291DBF8A5FF25E8.jvm1; Path=/; Secure; HttpOnly
+ 
+ligne 29:
+HTTP/1.1 200 
+ date: Wed, 16 Nov 2022 07:45:55 GMT
+ content-type: text/html;charset=UTF-8
+ content-length: 81011
+ vary: Accept-Encoding
+ t_userid: bf3665f2efcfc167e4a3d0014c5e26c674fec884
+ set-cookie: REACTION_GUEST=c3cf489b67b2939103a9730a3065ba84f83867be
+ x-content-type-options: nosniff
+ x-xss-protection: 1; mode=block
+ cache-control: no-cache, no-store, max-age=0, must-revalidate
+ pragma: no-cache
+ expires: 0
+ strict-transport-security: max-age=31536000 ; includeSubDomains
+ 
+ligne 30:
+HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:45:56 GMT
+ Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips mod_myfixip/1.4
+ X-Powered-By: PHP/7.2.29
+ Set-Cookie: PHPSESSID=4bcbf46af868106a4b9001b7b5b37610; path=/; domain=.gamsanews.co.kr
+ Content-Type: text/html; charset=UTF-8
+ 
+ligne 31:
+HTTP/2 200 
+ date: Wed, 16 Nov 2022 07:45:57 GMT
+ content-type: text/html; charset=utf-8
+ set-cookie: t=fC9rby9wcmVnbmFuY3kvc2NoaXRhZXNoLWxpLXR5LXNvdnJlbWVubm9tdS1zaGtvbG5pa3UtZGV0aS1jaGl0YXl1dC1uby1kcnVndXl1LWxpdGVyYXR1cnUv; expires=Wed, 16-Nov-2022 07:46:57; Max-Age=60; path=/; domain=.cesaarean.ru; Secure; SameSite=None;
+ pmain: 
+ cache: 1
+ out: 1
+ cf-cache-status: DYNAMIC
+ report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7TC5gsu5Bw99JfI7SihETIoWkK7VYjvjeCalE%2B1Y2QtNtoL9EUxgkJILiKtH6rxB%2FFRzFhhC%2FayBUpN46lFIC9H13kmKWl4OJ8ERF9fqlw%2BQwpMs%2B5t%2FVgtw1FB7bYSTbruQa3oi%2FGjv%2FFg%3D"}],"group":"cf-nel","max_age":604800}
+ nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+ server: cloudflare
+ cf-ray: 76ae9c2db89dd5f1-CDG
+ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+ 
+ligne 32:
+HTTP/2 200 
+ date: Wed, 16 Nov 2022 07:45:59 GMT
+ content-type: text/html;charset=utf-8
+ set-cookie: bid=""; Domain=.brunch.co.kr; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure
+ content-language: en-US
+ strict-transport-security: max-age=15724800; includeSubDomains
+ 
+ligne 33:
+HTTP/1.1 200 
+ Date: Wed, 16 Nov 2022 07:46:02 GMT
+ Content-Type: text/html;charset=UTF-8
+ Content-Length: 97124
+ Vary: Accept-Encoding
+ T_USERID: c2d155cbb1946e011022082cd04c200c07a24ee0
+ Set-Cookie: REACTION_GUEST=f3b1da6f03ca9e9c6a0a771ea09838df1f07cc38
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+ Pragma: no-cache
+ Expires: 0
+ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+ 
+ligne 34:
+HTTP/1.1 200 OK
+ Content-Type: text/html;charset=UTF-8
+ Cache-Control: no-cache
+ Expires: Thu, 01 Jan 1970 00:00:00 GMT
+ Server: nxfps
+ Referrer-policy: unsafe-url
+ Date: Wed, 16 Nov 2022 07:46:03 GMT
+ Connection: keep-alive
+ Set-Cookie: JSESSIONID=12F8B1C82A7CABD4861F8D7CCBCC5298.jvm1; Path=/; Secure; HttpOnly
+ 
+ligne 35:
+HTTP/1.1 200 OK
+ Content-Type: text/html;charset=UTF-8
+ Cache-Control: no-cache
+ Expires: Thu, 01 Jan 1970 00:00:00 GMT
+ Server: nxfps
+ Referrer-policy: unsafe-url
+ Date: Wed, 16 Nov 2022 07:46:05 GMT
+ Connection: keep-alive
+ Set-Cookie: JSESSIONID=5922CE80896315F9D94F92585A1C27F3.jvm1; Path=/; Secure; HttpOnly
+ 
+ligne 36:
+HTTP/1.1 200 
+ Date: Wed, 16 Nov 2022 07:46:07 GMT
+ Content-Type: text/html;charset=UTF-8
+ Content-Length: 76868
+ Vary: Accept-Encoding
+ T_USERID: 6e0639aeea081f9cec2fb5fde852cb704e5ccf52
+ Set-Cookie: REACTION_GUEST=1240e9aece15c5873a1a66b055bd9985785960bb
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+ Pragma: no-cache
+ Expires: 0
+ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+ 
+ligne 37:
+HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:46:09 GMT
+ Content-Type: text/html; charset=UTF-8
+ Connection: keep-alive
+ Cache-Control: max-age=60
+ Expires: Wed, 16 Nov 2022 07:47:09 GMT
+ Via: 1.1 PShgseSEL3nd166:8 (W), 1.1 ml64:10 (W), 1.1 PSfgblPAR1ke67:4 (W)
+ X-Px: ms PSfgblPAR1ke67CDG,ms ml64MXP,ms PShgseSEL3nd166GMP(origin)
+ X-Ws-Request-Id: 63749540_PSfgblPAR1nw230_26754-17635
+ Server: PWS/8.3.1.0.8
+ 
+ligne 38:
+HTTP/1.1 200 200
+ Date: Wed, 16 Nov 2022 07:46:11 GMT
+ Content-Type: text/html;charset=UTF-8
+ Connection: keep-alive
+ Strict-Transport-Security: max-age=63072000; includeSubdomains;
+ Set-Cookie: WMONID=-YZyzkFcaEP; Expires=Thu, 16-Nov-2023 16:46:11 GMT; Path=/
+ Set-Cookie: JSESSIONID=EA01874A32F0562885E473263A3C5790.scienceon_left; Path=/; Secure; HttpOnly
+ Set-Cookie: RESEARCHID=ff2e5eea-15c8-4a34-a053-ef9476e81ab7; Max-Age=525600; Expires=Tue, 22-Nov-2022 09:46:11 GMT; Path=/; Secure
+ Set-Cookie: SameSite=None;secure;
+ Content-Language: ko-KR
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ 
+ligne 39:
+HTTP/1.1 200 
+ Date: Wed, 16 Nov 2022 07:46:13 GMT
+ Content-Type: text/html;charset=UTF-8
+ Content-Length: 60978
+ Vary: Accept-Encoding
+ T_USERID: 6291883baf98dfe409f90e5f8b393b1546282f4c
+ Set-Cookie: REACTION_GUEST=45054448c439d3cf9ed140b8a39ef8cc93a39826
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+ Pragma: no-cache
+ Expires: 0
+ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+ 
+ligne 40:
+HTTP/1.1 302 Found
+ Date: Wed, 16 Nov 2022 07:46:13 GMT
+ Server: Apache
+ Location: http://se-cu.com/ndsoft/error.html
+ Connection: close
+ Content-Type: text/html; charset=iso-8859-1
+ 
+ HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:46:19 GMT
+ Server: Apache
+ Last-Modified: Tue, 18 Jun 2019 01:37:39 GMT
+ ETag: "a1013-12e-58b8f287c1929"
+ Accept-Ranges: bytes
+ Content-Length: 302
+ Connection: close
+ Content-Type: text/html; charset=UTF-8
+ 
+ligne 41:
+HTTP/1.1 200 OK
+ Content-Type: text/html;charset=UTF-8
+ Cache-Control: no-cache
+ Expires: Thu, 01 Jan 1970 00:00:00 GMT
+ Server: nxfps
+ Referrer-policy: unsafe-url
+ Date: Wed, 16 Nov 2022 07:46:17 GMT
+ Connection: keep-alive
+ Set-Cookie: JSESSIONID=BC84F6EDF9A67594661117766C5ED991.jvm1; Path=/; Secure; HttpOnly
+ 
+ligne 42:
+HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:46:20 GMT
+ Server: Apache
+ Upgrade: h2
+ Connection: Upgrade, close
+ Vary: Accept-Encoding
+ Content-Type: text/html; charset=UTF-8
+ 
+ligne 43:
+HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:46:23 GMT
+ Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.6.40
+ X-Powered-By: PHP/5.6.40
+ Set-Cookie: PHPSESSID=rssphu0opkp55vencnkpt34hr3; path=/; domain=.sisain.co.kr
+ Connection: close
+ Content-Type: text/html; charset=UTF-8
+ 
+ligne 44:
+HTTP/2 200 
+ content-type: text/html;charset=UTF-8
+ request-id: FP_20221116_1668584785889466848
+ content-language: ko-KR
+ p3p: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+ referrer-policy: unsafe-url
+ server: nfront
+ date: Wed, 16 Nov 2022 07:46:26 GMT
+ set-cookie: detail_feedback=""; Domain=kin.naver.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/qna/
+ set-cookie: JSESSIONID=7457A2A4A7992AD9391BF3134AFE819B; Path=/; HttpOnly
+ 
+ligne 45:
+HTTP/2 200 
+ content-type: text/html;charset=UTF-8
+ cache-control: no-cache
+ expires: Thu, 01 Jan 1970 00:00:00 GMT
+ x-cache-status: BYPASS
+ server: nxfps
+ referrer-policy: unsafe-url
+ date: Wed, 16 Nov 2022 07:46:28 GMT
+ set-cookie: JSESSIONID=8A0BAAFF78FD1C8E94BE0D6C1DB9BA1C.jvm1; Path=/; Secure; HttpOnly
+ 
+ligne 46:
+HTTP/1.1 200 
+ Date: Wed, 16 Nov 2022 07:46:30 GMT
+ Content-Type: text/html;charset=UTF-8
+ Content-Length: 49369
+ Vary: Accept-Encoding
+ T_USERID: f05eb56d0516ef87d6d06215560ac154f7d6ae4d
+ Set-Cookie: REACTION_GUEST=1e6214187e7863045b551fba2332d35f6dd08f03
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+ Pragma: no-cache
+ Expires: 0
+ Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+ 
+ligne 47:
+HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:46:30 GMT
+ Server: Microsoft-IIS/5.0
+ X-Powered-By: PHP/5.2.17
+ Set-Cookie: PHPSESSID=58389b6f0d2138de818227276b98e63e; path=/
+ Expires: Thu, 19 Nov 1981 08:52:00 GMT
+ Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+ Pragma: no-cache
+ Connection: close
+ Content-Type: text/html
+ 
+ligne 48:
+HTTP/1.1 302 Found
+ Date: Wed, 16 Nov 2022 07:46:34 GMT
+ Server: Apache/2.4.37 (Unix) OpenSSL/1.0.1e-fips PHP/5.6.30
+ Location: http://se-cu.com/ndsoft/error.html
+ Connection: close
+ Content-Type: text/html; charset=iso-8859-1
+ 
+ HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:46:39 GMT
+ Server: Apache
+ Last-Modified: Tue, 18 Jun 2019 01:37:39 GMT
+ ETag: "a1013-12e-58b8f287c1929"
+ Accept-Ranges: bytes
+ Content-Length: 302
+ Connection: close
+ Content-Type: text/html; charset=UTF-8
+ 
+ligne 49:
+HTTP/1.1 200 OK
+ Server: nginx/1.16.1
+ Date: Wed, 16 Nov 2022 07:46:37 GMT
+ Content-Type: text/html; charset=utf-8
+ X-Powered-By: PHP/7.2.34
+ Vary: Accept-Encoding
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+ X-Proxy-Cache: MISS
+ 
+ligne 50:
+HTTP/1.1 200 OK
+ Date: Wed, 16 Nov 2022 07:46:41 GMT
+ Server: Apache
+ Set-Cookie: d=6374956108765cb86001; expires=Sat, 13-Nov-2032 07:46:41 GMT; Max-Age=315360000; path=/; domain=donga.com; HttpOnly
+ Set-Cookie: joinus=110883933; expires=Thu, 17-Nov-2022 07:46:41 GMT; Max-Age=86400; path=/; domain=donga.com
+ Vary: Accept-Encoding
+ Content-Type: text/html; charset=UTF-8
+ 
