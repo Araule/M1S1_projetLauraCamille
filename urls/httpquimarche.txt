@@ -6,4 +6,9 @@ HTTP/2 403 (mais marche) ligne 9 Nikkei
 HTTP/2 301  ligne 38
 HTTP/1.1 302 Found ligne 39
 
-pour url corréen :
+pour url coréen :
+HTTP/1.1 200
+HTTP/1.1 200 OK
+ HTTP/2 200 
+ HTTP/1.1 302 Found ligne 7
+ 
