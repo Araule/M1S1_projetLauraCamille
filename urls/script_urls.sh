@@ -43,7 +43,7 @@ do
 	#grep -Eo = grep étendu (-E) et on récupère uniquement la ligne voulue (-o)
 	#si tail -n 1 : on prend  que la dernière ligne de l'url quand elle est redirigée.
 	
-	charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2) # on récupère encodage
+	charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2 | tail -n 1) # on récupère encodage
 	#(\w|-)+ = on recherche des lettres ou des chiffres ou des tirets. On veut une séquence
 	# cut -d= -f2 : on veut la deuxième colonne
 	#-f = on veut récupérer un colonne (le chiffre qui suit = colonne qu'on souhaite)
