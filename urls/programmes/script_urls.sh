@@ -84,6 +84,7 @@ do
 
 		echo $dump > ./dumps-text/$basename-$lineno.txt
 		occurences=$( echo $dump | grep -Eo "看书|阅读|读书" | wc -l)
+		echo -e "\toccurences : $occurences";
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide"
 		dump=""

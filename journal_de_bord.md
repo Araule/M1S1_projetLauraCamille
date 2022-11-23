@@ -36,15 +36,11 @@ Il y a deux variations :
 - la nocivité des ebooks, les ebooks et la santé,... : bien que les articles soient intéressants, nous avons décidé de ne pas choisir ces urls parce que le sujet deviendrait trop large
 - la lecture et l'apprentissage chez les jeunes : nous avons décidé de garder ses urls parce qu'il est tout à fait normal de lire pour apprendre des choses; ce genre d'articles est d'ailleurs plus présent en coréen qu'en chinois car les étudiants (mineurs) chinois n'ont pas vraiment le temps de lire pendant leur temps "libre"
 
-## Avancement TD 3
+## Avancement TD script tableaux
 
-#### Exercice 1
-- fait
-#### Exercice 2
-- fait, j'ai trouvé comment obtenir le code de réponse HTTP XXXX
-#### Exercice 3
-- fait
-#### Exercice 4
-#### Exercice 5
-#### Exercice 6
-#### Exercice 7
+#### Partie 1
+- Exercices 1, 2, 3  - fait de notre côté
+- Exercice 4 - 5 - 6 - 7 - fini en classe avec le script du prof
+#### Partie 2
+- Exercice 1, 2 - fait
+- Exercice 3 - en train de 
