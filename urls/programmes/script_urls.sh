@@ -29,7 +29,7 @@ echo "<html><body>" > $fichier_tableau
 echo "<h2>Tableau $basename :</h2>" >> $fichier_tableau
 echo "<br/>" >> $fichier_tableau
 echo "<table>" >> $fichier_tableau
-echo "<tr><th>ligne</th><th>code</th><th>URL</th><th>encodage</th></tr>" >> $fichier_tableau
+echo "<tr><th>ligne</th><th>code</th><th>URL</th><th>encodage</th><th>occurences</th></tr>" >> $fichier_tableau
 
 #maintenant on s'occupe des urls
 lineno=1;
@@ -68,7 +68,7 @@ do
 	if [[ $code -eq 200 ]]	
 	then
 		html=$(curl -sL $URL)
-		echo html > ./aspirations/$basename-$lineno.html;
+		echo $html > ./aspirations/$basename-$lineno.html;
 		dump=$(lynx -dump -nolist -assume_charset=$charset -display_charset=$charset $URL)
 		# -dump  : récupère le texte privé de l'url (sans les balises html)
 		# -nolist : pour ne pas avoir une liste des urls
@@ -80,11 +80,10 @@ do
 		# -n "dump" = le dump n'est pas vide / pas forcément utile car existe forcément car on a utilisé lynx juste avant
 		then
 			dump=$(echo $dump | iconv -f $charset -t UTF-8//IGNORE) #texte dump converti d'encodage d'origine xx à UTF-8
-			echo $dump > ./dumps-text/$basename-$lineno.txt
-		else
-			echo $dump > ./dumps-text/$basename-$lineno.txt
-		fi	
+		fi
 
+		echo $dump > ./dumps-text/$basename-$lineno.txt
+		occurences=$( echo $dump | grep -Eo "看书|阅读|读书" | wc -l)
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide"
 		dump=""
@@ -92,7 +91,7 @@ do
 		#variables vides pour éviter des résultats inattendus
 	fi
 
-	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td></tr>" >> $fichier_tableau
+	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td>$occurences</td></tr>" >> $fichier_tableau
 	echo -e "\t--------------------------------"
 	lineno=$((lineno+1));
 done < $fichier_urls
