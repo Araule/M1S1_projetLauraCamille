@@ -65,21 +65,26 @@ do
 		# s'il n'existe pas, on lui donne la valeur UTF-8
 	fi
 
-	if [[ $code -eq 200 ]]
+	if [[ $code -eq 200 ]]	
 	then
+		html=$(curl -sL $URL)
+		echo html > ./aspirations/$basename-$lineno.html;
 		dump=$(lynx -dump -nolist -assume_charset=$charset -display_charset=$charset $URL)
-		# -dump  : récupère le texte privé de l'url (balise html)
+		# -dump  : récupère le texte privé de l'url (sans les balises html)
 		# -nolist : pour ne pas avoir une liste des urls
 		# -assume_charset = on veut récupérer que des pages en utf-8
 		# -display_charset=si pas utf-8 alors on remplace
+		
 		if [[ $charset -ne "UTF-8" && -n "$dump" ]]
 		# -ne = not equal si $charset est différent de UTF-8 et
 		# -n "dump" = le dump n'est pas vide / pas forcément utile car existe forcément car on a utilisé lynx juste avant
-		
 		then
 			dump=$(echo $dump | iconv -f $charset -t UTF-8//IGNORE) #texte dump converti d'encodage d'origine xx à UTF-8
-		
-		fi
+			echo $dump > ./dumps-text/$basename-$lineno.txt
+		else
+			echo $dump > ./dumps-text/$basename-$lineno.txt
+		fi	
+
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide"
 		dump=""
@@ -93,3 +98,7 @@ do
 done < $fichier_urls
 echo "</table>" >> $fichier_tableau
 echo "</body></html>" >> $fichier_tableau
+
+
+# stocker les pages aspirées par cURL dans le dossier aspirations ;
+# stocker les dumps textuels récupérés avec Lynx dans le dossier dumps-text.
