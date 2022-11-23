@@ -35,25 +35,25 @@ echo "<tr><th>ligne</th><th>code</th><th>URL</th><th>encodage</th></tr>" >> $fic
 
 #maintenant on s'occupe des urls
 lineno=1;
+while read -r URL; #-r : true if file exists and is readable.
 
-while read -r line;
 do
-	header=$(curl -sIL $line);
-	grp=$(echo "$header" | egrep "HTTP/(2|1.1) (200|301|302|403)");
-	
-	echo "url numéro $lineno"; #numéro de la ligne
-	echo $grp; #juste partie HTTP
-
-	lineno=$((lineno+1));
-done < $fichier_urls
-
-lineno=1;
-while read -r URL; 
-do
-	echo -e "\tURL : $URL";
+	echo -e "\tURL : $URL"; #on découpe chacun des appels / on récupère d'abord le code
 	# la façon attendue, sans l'option -w de cURL
 	code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1)
+	# egrep = grep -e ; recherche la ligne qui commence par "^HTTP/" et qui contient le code de retour
+	#grep -Eo = grep étendu (-E) et on récupère uniquement la ligne voulue (-o)
+	#si tail -n 1 : on prend  que la dernière ligne de l'url quand elle est redirigée.
+	
 	charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
+	# puis on récupère l'encodage
+	# grep -Eo "charset=(\w|-)+"
+	#(\w|-) = on recherche des lettres ou des chiffres ou des tirets. On en veut une séquence
+	# cut -d= -f2 : on veut la deuxième colonne
+	#-f = on veut récupérer un colonne (le chiffre qui suit = colonne qu'on souhaite)
+	#-d = délimiteur, le signe qui est après -d désigne le délimiteur
+	
+
 
 	# autre façon, avec l'option -w de cURL
 	# code=$(curl -Ls -o /dev/null -w "%{http_code}" $URL)
@@ -65,21 +65,33 @@ do
 	then
 		echo -e "\tencodage non détecté, on prendra UTF-8 par défaut.";
 		charset="UTF-8";
+		# = chaine vide
 	else
 		echo -e "\tencodage : $charset";
+		# s'il n'existe pas, on lui donne la valeur UTF-8
 	fi
 
 	if [[ $code -eq 200 ]]
 	then
 		dump=$(lynx -dump -nolist -assume_charset=$charset -display_charset=$charset $URL)
+		# -dump  : récupère le texte privé de l'url (balise html)
+		#-no list : pour ne pas avoir une liste des urls
+		# -assume_charset = on veut récupérer que des pages en utf-8
+		#-display_charset=si pas utf-8 alors on remplace
 		if [[ $charset -ne "UTF-8" && -n "$dump" ]]
+		# -ne = not equal
+		# -n "dump" = le dump n'est pas vide / pas forcément utile car existe forcément car on a utilisé lynx juste avant
+		
 		then
-			dump=$(echo $dump | iconv -f $charset -t UTF-8//IGNORE)
+			dump=$(echo $dump | iconv -f $charset -t UTF-8//IGNORE) #texte dump converti d'encodage d'origine xx à UTF-8
+		# iconv permet de remplacer l'encodage d'origine par UTF-8
+		
 		fi
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide"
 		dump=""
 		charset=""
+		#variables vides pour éviter des résultats inattendus
 	fi
 
 	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td></tr>" >> $fichier_tableau
