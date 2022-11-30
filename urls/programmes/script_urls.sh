@@ -59,7 +59,7 @@ do
 	then
 		echo -e "\tencodage non détecté, on prendra UTF-8 par défaut.";
 		charset="UTF-8";
-		# = chaine vide
+		# = cURL ne reconnait pas le charset chinois gbk
 	else
 		echo -e "\tencodage : $charset";
 		# s'il n'existe pas, on lui donne la valeur UTF-8
@@ -72,14 +72,28 @@ do
 		# -nolist : pour ne pas avoir une liste des urls
 		# -assume_charset = on veut récupérer que des pages en utf-8
 		# -display_charset=si pas utf-8 alors on remplace
+		
 		if [[ $charset -ne "UTF-8" && -n "$dump" ]]
 		# -ne = not equal si $charset est différent de UTF-8 et
 		# -n "dump" = le dump n'est pas vide / pas forcément utile car existe forcément car on a utilisé lynx juste avant
-		
 		then
-			dump=$(echo $dump | iconv -f $charset -t UTF-8//IGNORE) #texte dump converti d'encodage d'origine xx à UTF-8
-		
+			dump=$(echo $dump | iconv -f $charset -t UTF-8//IGNORE) #texte dump converti d'encodage d'origine à UTF-8
 		fi
+
+		occurences=$(echo $dump | grep -Eo "看书|读书|阅读" | wc -l)
+		echo -e "\toccurences : $occurences";
+		
+		if [[ ! occurences -ne 0 ]]
+		then
+			charset="gbk"
+			dump=$(lynx -dump -nolist -assume_charset=$charset -display_charset=$charset $URL)
+			charset="GBK"
+			dump=$(echo $dump | iconv -f $charset -t UTF-8//IGNORE) 
+			occurences=$(echo $dump | grep -Eo "看书|读书|阅读" | wc -l)
+			echo -e "\tnouveau charset $charset"
+			echo -e "\tnouvelles occurences $occurences"
+		fi
+
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide"
 		dump=""
@@ -87,13 +101,9 @@ do
 		#variables vides pour éviter des résultats inattendus
 	fi
 
-	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td></tr>" >> $fichier_tableau
+	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td>$occurences</td></tr>" >> $fichier_tableau
 	echo -e "\t--------------------------------"
 	lineno=$((lineno+1));
 done < $fichier_urls
 echo "</table>" >> $fichier_tableau
 echo "</body></html>" >> $fichier_tableau
-
-
-# stocker les pages aspirées par cURL dans le dossier aspirations ;
-# stocker les dumps textuels récupérés avec Lynx dans le dossier dumps-text.
