@@ -35,6 +35,7 @@ echo "<tr><th>ligne</th><th>code</th><th>URL</th><th>encodage</th><th>occurences
 lineno=1;
 while read -r URL;  #-r : true if file exists and is readable.
 do
+	echo -e "numéro de ligne : $lineno"
 	echo -e "\tURL : $URL"; #on découpe chacun des appels / on récupère d'abord le code
 
 	# la façon attendue, sans l'option -w de cURL
@@ -87,16 +88,13 @@ do
 		
 		if [[ ! occurences -ne 0 ]]
 		then
-			charset="GBK"
-			dump=$(lynx -dump -nolist -assume_charset=ASCII -display_charset=ASCII $URL)
-			dump=$(echo $dump | iconv -f $charset -t UTF-8//IGNORE)
-			occurences=$(echo $dump | grep -Eo "看书|读书|阅读" | wc -l)
-			echo -e "\tnouveau charset $charset"
-			echo -e "\tnouvelles occurences $occurences"
+			dump=$(w3m $URL)
+			echo $dump > ./dumps-text/$basename-$lineno.txt;
+			occurences=$(echo $dump | grep -Eo $regexp | wc -l)
+			echo -e "\tnouvelles occurences : $occurences";
 		fi
 
-		contexte=$(grep -E -A2 -B2 $regexp | wc -l ./dumps-text/$basename-$lineno.txt)
-		echo $contexte > ./contextes/$basename-$lineno.txt
+		contexte=$(egrep -E -B2 -A2 $regexp ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt)
 
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide"
