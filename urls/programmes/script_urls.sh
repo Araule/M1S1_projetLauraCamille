@@ -94,8 +94,7 @@ while read -r URL; do #-r : true if file exists and is readable.
 			echo -e "\tnouvelles occurences $occurences"
 		fi
 
-		contexte=$( echo $dump | grep -C 0 $regexp | wc -l)
-		echo "$contexte" > ./contextes/$basename-$lineno.txt
+		contexte=$(grep -E -A2 -B2 $regexp | wc -l ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt)
 
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide"
