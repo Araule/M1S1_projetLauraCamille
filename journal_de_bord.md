@@ -42,5 +42,4 @@ Il y a deux variations :
 - Exercices 1, 2, 3  - fait de notre côté
 - Exercice 4 - 5 - 6 - 7 - fini en classe avec le script du prof
 #### Partie 2
-- Exercice 1, 2 - fait
-- Exercice 3 - en train de 
+- Exercice 1, 2, 3, 4 - fait
