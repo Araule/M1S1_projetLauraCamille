@@ -18,7 +18,7 @@ then
 	exit # le programme se termine
 fi
 
-mot="Lire" # à modifier en fonction de la langue
+regexp="看书|读书|阅读|읽지(도|(않(는|았어도)?)?|못하는)|읽었(으니|(을(뿐이다)?)?)|다(고)?|던|는(지|데)?|느냐|어요)|읽는(다(면|고|는)?)?|데(서)?|지를|것보다)|읽어(야(만|합니다|할|겠다)?)?|주(기(도|가)?)|면|며|보(시)?는|(세)?요|니)|볼|봐야겠다는|나가야겠다고|봤자|달라고|내지|들립니다|준다|라|서|나갈|요)|읽을(수(있는|록)?)|거라는|지|까)|읽으(면(서(도)?)?|라고|려는|니까|시(나요|는)?|세요|십시요)|읽고(자하는|서는|나면|난)|읽(던|습니다|다(가|보면)?|나|더라도|죠|도록|기도|게|든|힐|힌다|힙니다|히지)|읽은(것)?|읽자(는)?|읽혀(서|진)?|독서(하(지|다|는)?)|할|한|했다"
 
 echo $fichier_urls;
 basename=$(basename -s .txt $fichier_urls) # - s : vrai si le fichier txt a bien un nom 
@@ -66,8 +66,9 @@ while read -r URL; do #-r : true if file exists and is readable.
 
 	if [[ $code -eq 200 ]]
 	then
-		curl -Ls $URL > ./aspirations/$basename-$lineno.html;
 		dump=$(lynx -dump -nolist -assume_charset=$charset -display_charset=$charset $URL)
+		echo $dump > ./dumps-text/$basename-$lineno.txt;
+		curl -Ls $URL > ./aspirations/$basename-$lineno.html;
 		# -dump  : récupère le texte privé de l'url (sans les balises html)
 		# -nolist : pour ne pas avoir une liste des urls
 		# -assume_charset = on veut récupérer que des pages en utf-8
@@ -80,7 +81,7 @@ while read -r URL; do #-r : true if file exists and is readable.
 			dump=$(echo $dump | iconv -f $charset -t UTF-8//IGNORE) #texte dump converti d'encodage d'origine à UTF-8
 		fi
 
-		occurences=$(echo $dump | grep -Eo "看书|读书|阅读|읽지(도|(않(는|았어도)?)?|못하는)|읽었(으니|(을(뿐이다)?)?)|다(고)?|던|는(지|데)?|느냐|어요)|읽는(다(면|고|는)?)?|데(서)?|지를|것보다)|읽어(야(만|합니다|할|겠다)?)?|주(기(도|가)?)|면|며|보(시)?는|(세)?요|니)|볼|봐야겠다는|나가야겠다고|봤자|달라고|내지|들립니다|준다|라|서|나갈|요)|읽을(수(있는|록)?)|거라는|지|까)|읽으(면(서(도)?)?|라고|려는|니까|시(나요|는)?|세요|십시요)|읽고(자하는|서는|나면|난)|읽(던|습니다|다(가|보면)?|나|더라도|죠|도록|기도|게|든|힐|힌다|힙니다|히지)|읽은(것)?|읽자(는)?|읽혀(서|진)?|독서(하(지|다|는)?)|할|한|했다" | wc -l)
+		occurences=$(echo $dump | grep -Eo $regexp | wc -l)
 		echo -e "\toccurences : $occurences";
 		
 		if [[ ! occurences -ne 0 ]]
@@ -93,19 +94,20 @@ while read -r URL; do #-r : true if file exists and is readable.
 			echo -e "\tnouvelles occurences $occurences"
 		fi
 
+		contexte=$( echo $dump | grep -C 0 $regexp | wc -l)
+		echo "$contexte" > ./contextes/$basename-$lineno.txt
+
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide"
 		dump=""
 		charset=""
+		occurences=""
+		contexte=""
 		#variables vides pour éviter des résultats inattendus
 	fi
-	contexte=$( echo $dump | grep -C 0 "看书|读书|阅读 | 읽지(도|(않(는|았어도)?)?|못하는) | 읽었(으니|(을(뿐이다)?)?)|다(고)?|던|는(지|데)?|느냐|어요) | 읽는(다(면|고|는)?)?|데(서)?|지를|것보다)| 읽어(야(만|합니다|할|겠다)?)?|주(기(도|가)?)|면|며|보(시)?는|(세)?요|니)|볼|봐야겠다는|나가야겠다고|봤자|달라고|내지|들립니다|준다|라|서|나갈|요)|읽을(수(있는|록)?)|거라는|지|까)|읽으(면(서(도)?)?|라고|려는|니까|시(나요|는)?|세요|십시요)|읽고(자하는|서는|나면|난)|읽(던|습니다|다(가|보면)?|나|더라도|죠|도록|기도|게|든|힐|힌다|힙니다|히지)|읽은(것)?|읽자(는)?|읽혀(서|진)?|독서(하(지|다|는)?)|할|한|했다) " | wc -l)
-	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td>$occurences</td></tr>" >> $fichier_tableau
-	echo $contexte > ./contextes/$basename-$lineno.txt
 
-	echo $dump > ./dumps-text/$basename-$lineno.txt;
-	curl -Ls $URL > ./aspirations/$basename-$lineno.html;
-	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td>$occurences</td></tr>" >> $fichier_tableau
+	
+	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td>$occurences</td><td>$contexte</td></tr>" >> $fichier_tableau
 	echo -e "\t--------------------------------"
 	lineno=$((lineno+1));
 done < $fichier_urls
