@@ -1,0 +1,17 @@
+1. vert bleu pastel
+
+html
+style="color:#daf7a6;
+"style="color:#b1f7a6;
+"style="color:#a6f7c3;
+"style="color:#a6f7eb;
+"style="color:#a6daf7;
+"style="color:#a6b1f7;"
+
+css
+.color-1 {color: #daf7a6;}
+.color-2 {color: #b1f7a6;}
+.color-3 {color: #a6f7c3;}
+.color-4 {color: #a6f7eb;}
+.color-5 {color: #a6daf7;}
+.color-6 {color: #a6b1f7;}
