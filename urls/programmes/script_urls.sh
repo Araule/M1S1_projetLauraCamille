@@ -33,7 +33,8 @@ echo "<tr><th>ligne</th><th>code</th><th>URL</th><th>encodage</th><th>occurences
 
 #maintenant on s'occupe des urls
 lineno=1;
-while read -r URL; do #-r : true if file exists and is readable.
+while read -r URL;  #-r : true if file exists and is readable.
+do
 	echo -e "\tURL : $URL"; #on découpe chacun des appels / on récupère d'abord le code
 
 	# la façon attendue, sans l'option -w de cURL
@@ -94,7 +95,8 @@ while read -r URL; do #-r : true if file exists and is readable.
 			echo -e "\tnouvelles occurences $occurences"
 		fi
 
-		contexte=$(grep -E -A2 -B2 $regexp | wc -l ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt)
+		contexte=$(grep -E -A2 -B2 $regexp | wc -l ./dumps-text/$basename-$lineno.txt)
+		echo $contexte > ./contextes/$basename-$lineno.txt
 
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide"
@@ -108,7 +110,9 @@ while read -r URL; do #-r : true if file exists and is readable.
 	
 	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td>$occurences</td><td>$contexte</td></tr>" >> $fichier_tableau
 	echo -e "\t--------------------------------"
+	
 	lineno=$((lineno+1));
+
 done < $fichier_urls
 echo "</table>" >> $fichier_tableau
 echo "</body></html>" >> $fichier_tableau
