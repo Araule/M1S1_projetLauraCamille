@@ -11,7 +11,7 @@ En Corée, le manque de temps à cause du travail se fait également ressentir. 
 
 **Hypothèse sur le nuage de mots**
 On pourrait retrouver, peu importe la langue, les mots (manque de) temps, jeune, ebook (ou variation selon la langue), téléphone, travail, problème...
-La question est quels mots trouveront plutôt dans une langue que dans l'autre ?
+La question est quels mots trouverons nous plutôt dans une langue que dans l'autre ?
 
 ## Quel lemme ?
 
@@ -19,8 +19,8 @@ La question est quels mots trouveront plutôt dans une langue que dans l'autre ?
 
 - lire
 
-#### En chinois (simplifié)
-Il y a de nombreuses variations, les plus utilisés et les moins spécifiques sont : 
+#### En chinois simplifié
+Il y a de nombreuses variations, les plus utilisées et les moins spécifiques sont : 
 - 看书 (litt. lire un livre)
 - 读书 （lire un livre) (ou étudier! il faut faire attention à bien vérifier que dans l'article, cela signifie lire un livre)
 - 阅读 （lire plus généralement)
