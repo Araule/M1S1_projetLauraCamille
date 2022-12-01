@@ -106,7 +106,7 @@ do
 	fi
 
 	
-	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td>$occurences</td><td><a href="./contextes/$basename-$lineno.txt">$basename-$lineno</a></td></tr>" >> $fichier_tableau
+	echo "<tr><td>$lineno</td><td>$code</td><td><a href="./aspirations/$basename-$lineno.txt">$URL</a></td><td>$charset</td><td>$occurences</td><td><a href="./contextes/$basename-$lineno.txt">$basename-$lineno</a></td></tr>" >> $fichier_tableau
 	echo -e "\t--------------------------------"
 	
 	lineno=$((lineno+1));
