@@ -56,15 +56,17 @@ do
 
 	echo -e "\tcode : $code";
 
-	if [[ ! $charset ]]
-	then
+	if [[ ! $charset && $sharset -eq "ISO-8859-1" ]]
+		then
 		echo -e "\tencodage non détecté, on prendra UTF-8 par défaut.";
 		charset="UTF-8";
-		# s'il n'existe pas, on lui donne la valeur UTF-8
+		#s'il n'existe pas, on lui donne la valeur UTF-8
+
 	else
 		echo -e "\tencodage : $charset";
 
 	fi
+	
 
 	if [[ $code -eq 200 ]]
 	then
