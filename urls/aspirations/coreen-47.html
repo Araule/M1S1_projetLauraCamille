@@ -1,0 +1,854 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>독서동아리지원센터</title>
+<link href="/dongari.css" rel="stylesheet" type="text/css" />
+<link href="/onepage.css" rel="stylesheet" type="text/css" />
+<link href="/regi.css" rel="stylesheet" type="text/css" />
+<link href="/calendar/calendar.css" rel="stylesheet" type="text/css" />
+<link href="/find.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+<!-- 페이스북 -->
+<script type="text/javascript">
+
+//페이스북 SDK 초기화 
+window.fbAsyncInit = function() {
+	//FB.init({appId: '219915358216422', status: true, cookie: true,xfbml: true});	
+	FB.init({appId: '667360263337023', status: true, cookie: true,xfbml: true});	
+/*
+	FB.login(function(response) {
+		var fbname;
+		var accessToken = response.authResponse.accessToken;
+		FB.api('/me', function(user) {
+					fbname = user.name;
+			userid = user.id;
+		});	
+	}, {scope: 'publish_stream,user_likes'});
+*/
+};
+	
+(function(d){
+   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+   if (d.getElementById(id)) {return;}
+   js = d.createElement('script'); js.id = id; js.async = true;
+   js.src = "//connect.facebook.net/ko_KR/all.js";
+   ref.parentNode.insertBefore(js, ref);
+ }(document));	 
+
+
+/*
+function facebooklogin() {
+	//페이스북 로그인 버튼을 눌렀을 때의 루틴.
+		FB.login(function(response) {
+			var fbname;
+			var accessToken = response.authResponse.accessToken;
+		}, {scope: 'publish_stream,user_likes'});
+}
+*/
+
+
+
+
+function facebooklogin() {
+	//페이스북 로그인 버튼을 눌렀을 때의 루틴.
+		FB.login(function(response) {
+			var fbname;
+			var accessToken = response.authResponse.accessToken;
+			FB.api('/me', function(user) {
+		        fbname = user.name;
+				//response.authResponse.userID
+				$.post("/sns/fbloginprocess.php", { "userid": user.id, "username": fbname, "useremail": user.email, "fbaccesstoken":accessToken},
+				function (responsephp) {
+					//댓글을 처리한 다음 해당 웹페이지를 갱신 시키기 위해 호출.
+					location.replace('');
+				});    
+		    });	
+		}, {scope: 'publish_stream,user_likes'});
+}
+
+
+</script>
+
+
+
+
+
+
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+<!-- 입력값 체크 -->
+<script type="text/javascript" src="/js/jquery.validate.js"></script>
+
+<script type="text/javascript" src="/js/navi.js"></script>
+
+<script type="text/javascript" src="/EXT/popup/fancybox/jquery.fancybox-1.3.2.js"></script>
+<link rel="stylesheet" type="text/css" href="/EXT/popup/fancybox/jquery.fancybox-1.3.2.css" media="screen" />
+<link rel="stylesheet" href="/EXT/popup/style.css" />
+
+
+
+
+
+<!------------------------------- 이미지 캡션2 ----------------------------->
+<script type="text/javascript" src="/EXT/caption2/js/pirobox.js"></script>
+<!-- <link href="/EXT/caption2/css.css" media="screen" rel="stylesheet" type="text/css" /> -->
+<link href="/EXT/caption2/style5.css" class="piro_style" media="screen" title="white" rel="stylesheet" type="text/css" />
+<!--------------------------------------------------------------------------->
+
+<!-- 라이트박스 -->
+<script type="text/javascript" src="/EXT/lightbox/js/jquery.lightbox-0.5.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/EXT/lightbox/css/jquery.lightbox-0.5.css" />
+
+
+<!-- 라이트박스(팝업) -->
+<script type="text/javascript" src="/EXT/popup/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="/EXT/popup/fancybox/jquery.fancybox-1.3.2.js"></script>
+<link rel="stylesheet" type="text/css" href="/EXT/popup/fancybox/jquery.fancybox-1.3.2.css" media="screen" />
+<link rel="stylesheet" href="/EXT/popup/style.css" />
+
+
+
+
+<style type="text/css">
+/*************************** VALIDATION *********************/
+#regster caption{text-align:left;font-weight:bold;margin-bottom:5px;}
+
+#regster label.error {
+  position: relative;
+  margin-left:3px;
+  border:0px;
+  background:url("/ajax/images/unchecked.gif") no-repeat 0px 0px;
+  padding-left: 20px;
+  padding-bottom: 2px;
+  font-weight: bold;
+  color: #EA5200;
+}
+
+#regster label.checked {
+  background:url("/ajax/images/checked.gif") no-repeat 0px 0px;
+}
+/*************************** VALIDATION *********************/
+
+</style>
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$(".gnb").mouseover( function () { 
+		$(".drop_menu_sub").css("visibility", "visible");
+		//$(".drop_menu_sub").css("position", "relative");
+	});
+
+	/******************************************************
+	$("#content").mouseover( function () { 
+		$(".drop_menu_sub").css("visibility", "hidden");
+		//$(".drop_menu_sub").css("position", "absolute");
+	});
+
+	$("#banner_wrap").mouseover( function () { 
+		//$(".drop_menu").css("visibility", "hidden");
+		$(".drop_menu_sub").css("visibility", "hidden");
+		//$(".drop_menu_sub").css("position", "absolute");
+		//alert('image over');
+	});
+	******************************************************/
+
+	$(document).mousemove(function(event){
+		if(event.pageY>390){
+			//alert("x좌표 :"+event.pageX+" ; y좌표 :"+event.pageY);	
+			$(".drop_menu_sub").css("visibility", "hidden");
+		}
+		if(event.pageY<60){
+			//alert("x좌표 :"+event.pageX+" ; y좌표 :"+event.pageY);	
+			$(".drop_menu_sub").css("visibility", "hidden");
+		}
+	});
+/*
+	$(".drop_menu").mouseout( function () { 
+		$(".drop_menu").css("visibility", "hidden");
+	});
+*/
+
+
+
+	//------------------------------------ 이미지 캡션 ----------------------------->
+	$().piroBox({
+			my_speed: 400, //animation speed
+			bg_alpha: 0.3, //background opacity
+			slideShow : true, // true == slideshow on, false == slideshow off
+			slideSpeed : 4, //slideshow duration in seconds(3 to 6 Recommended)
+			close_all : '.piro_close,.piro_overlay'// add class .piro_overlay(with comma)if you want overlay click close piroBox
+
+	});
+
+
+});
+
+</script>
+
+
+
+<script type="text/javascript">
+/*
+	$(document).ready(function(){
+		$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+	});
+*/
+
+
+	$(document).ready( function(){  
+
+	
+		//------------------------------------ 팝업 라이트박스 처리를 위한 jquery -------
+		$(".popupsize").each(function() { 
+				w = parseInt($(this).attr('pw')); 
+				h = parseInt($(this).attr('ph'));; 
+				$(this).fancybox({ 
+						'width':w, 
+						'height':h,
+						'transitionIn'		: 'elastic',
+						'transitionOut'		: 'elastic',
+						'type'				: 'iframe'
+				}); 
+		}); 
+
+		$(".popup").fancybox({
+			'width'				: 700,
+			'height'			: 850,
+			'autoScale'			: false,
+			'transitionIn'		: 'elastic',
+			'transitionOut'		: 'elastic',
+			'type'				: 'iframe'
+		});
+
+		$(".popupdiv").fancybox({
+			'width'				: 700,
+			'height'			: 850,
+			'autoScale'			: false,
+			'transitionIn'		: 'elastic',
+			'transitionOut'		: 'elastic',
+			'type'				: 'inline'
+		});
+
+
+	});  
+</script>
+
+
+</head>
+
+<body>
+
+<div id="sub_wrap">
+
+
+
+	<div id="header">
+	   <div class="logo"><a href="http://readinggroup.or.kr/"><img src="/image/top_logo.gif" alt="독서동아리로고" width="102" height="80" /></a></div>
+	   
+		<div class="logn_menu">
+			<h1 class="blind">로그인메뉴</h1>        
+			<ul>
+<!-- 
+				<li><a class="popupsize" href="/light_login.html" pw="450" ph="300">로그인</a></li>
+			   <li><a href="https://www.facebook.com/login.php?skip_api_login=1&amp;api_key=667360263337023&amp;signed_next=1&amp;next=https%3A//www.facebook.com/v1.0/dialog/oauth?redirect_uri=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FdgdTycPTSRj.js%3Fversion%3D41%23cb%3Df7f21c4620d9ea%26domain%3Dreadinggroup.or.kr%26origin%3Dhttp%253A%252F%252Freadinggroup.or.kr%252Ff39bdc3ab0c9c0c%26relation%3Dopener%26frame%3Df349c7e42c7c048&amp;display=popup&amp;scope=publish_stream%2Cuser_likes&amp;response_type=token%2Csigned_request&amp;domain=readinggroup.or.kr&amp;client_id=667360263337023&amp;ret=login&amp;sdk=joey&amp;cancel_uri=http%3A//static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=41#cb=f7f21c4620d9ea&amp;domain=readinggroup.or.kr&amp;origin=http%3A%2F%2Freadinggroup.or.kr%2Ff39bdc3ab0c9c0c&amp;relation=opener&amp;frame=f349c7e42c7c048&amp;error=access_denied&amp;error_code=200&amp;error_description=Permissions+error&amp;error_reason=user_denied&amp;e2e=%7B%7D&amp;display=popup" target="_blank">페이스북으로 로그인</a></li>
+			   <li><a href="/join.html">회원가입</a></li>
+			   <li><a href="http://www.bookreader.or.kr/" target="_blank">책읽는사회문화재단</a></li>
+ -->
+		   
+			<li><a class="popupsize" href="https://readinggroup.or.kr:8001/light_login.html" pw="450" ph="300">로그인</a></li>
+           <li><a href="#" onclick="facebooklogin()">페이스북으로 로그인</a></li>
+           <li><a href="https://readinggroup.or.kr:8001/join.html">회원가입</a></li>
+           <li><a href="http://www.bookreader.or.kr/" target="_blank">책읽는사회문화재단</a></li>
+
+
+			</ul>
+		</div>
+		
+		<div>
+		<h1 class="blind">주요메뉴</h1> 
+		
+		  <ul class="gnb">
+			   <li><a href="http://readinggroup.or.kr/contents_list.html?cat1=63&cat2=128">공지사항</a></li>
+			   <li><a href="http://readinggroup.or.kr/book_list.html?cat1=52&cat2=67">책이야기</a></li>
+			   <li><a href="http://readinggroup.or.kr/contents_list.html?cat1=67&cat2=138">동아리마당</a></li>
+			   <li><a href="http://readinggroup.or.kr/presentation.html">독서동아리지원센터소개</a></li>
+			
+		  </ul>
+		</div>
+		
+	</div>
+
+    <div class="drop_menu_sub">
+    <h1 class="blind">드롭메뉴</h1> 
+
+	
+<!-- 
+      <div class="book_menu">
+         <div class="sub_book">
+            <ul>
+            <li class="book_bg"><a href="#"><img src="image/thumbnail2.jpg" width="151" height="222" /></a></li>
+            <li class="book_text"><font class="t_bold"><a href="#">나의 인생</a></font><br />
+마르셀 라이히라 │이기숙<br /><br />
+<a href="#">시에 작은 길을 내주자
+『프랑크푸르터 알게마이네』 편집
+부에 처음 출근한 날은 결코 유쾌
+하거나 재미있지 않았다. 문예면
+을 담당하는 거의 모든 편집자들
+과 여비서들은 나를 달가워하지 
+않는 표정을 조금도 숨기지 않았
+다. 내게 배정된 방은 너저분했...</a></li>
+            </ul>
+         </div>
+         <div class="sub01_1"><a href="/contents_list.html?cat1=63&cat2=128">알림</a></div>
+        <div class="sub02"><a href="/book_list.html?cat1=52&cat2=67">신간1장공개</a><br />
+          <a href="/contents_list.html?cat1=63&cat2=139">동아리서평</a><br />
+		  <a href="/contents_list2.html?cat1=52&cat2=71">전문가서평</a><br />
+		  <a href="/contents_list.html?cat1=63&cat2=140">문학기행</a><br />
+		  <a href="/contents_list2.html?cat1=52&cat2=72">책과사람</a><br />
+		  <a href="/contents_list2.html?cat1=52&cat2=129">오늘의공부</a><br />
+		  <a href="/contents_list2.html?cat1=52&cat2=80">책과영상</a></div>
+         <div class="sub03"><a href="/contents_list.html?cat1=67&cat2=138">자료실</a><br />
+		 <a href="/contents_list.html?cat1=63&cat2=141">공간정보</a><br />
+		 <a href="#">캘린더</a><br />
+		 <a href="#">동아리찾기</a><br />
+		 <a href="#">동아리등록</a></div>
+         <div class="sub04_1">소개<br />후원</div>
+         <div class="sub_book2">
+            <ul>
+               <li class="img_strok"><a href="#"><img src="image/3.jpg" width="288" height="142" /></a></li>
+               <li class="book_text2"><font class="t_bold"><a href="#">나의 인생</a></font><br />
+마르셀 라이히라니츠키 │이기숙<br /><a href="#">시에 작은 길을 내주자
+『프랑크푸르터 알게마이네』 편집</a></li>
+            </ul>
+         </div>
+      </div>
+ -->
+	  
+	  <div class="book_menu">
+
+
+
+			 <div class="sub_book">
+				<ul>
+				<li class="book_bg"><a href="http://readinggroup.or.kr/contents_view2.html?cat1=52&cat2=67&cat3=35&cidx=94354"><img src="http://www.nabeeya.net//images/book/4158_1669794865.jpg" width="151" height="222"><!-- <img src="image/thumbnail2.jpg" width="151" height="222" /> --></a></li>
+				<li class="book_text"><font class="t_bold"><a href="http://readinggroup.or.kr/contents_view2.html?cat1=52&cat2=67&cat3=35&cidx=94354">이중 작가 초롱 </a></font><br />
+					이상미 지음<br /><br />
+					<a href="http://readinggroup.or.kr/contents_view2.html?cat1=52&cat2=67&cat3=35&cidx=94354">나는 분명히 반대했다. 왕손의 이름을 개똥이라고 짓는 데는 이유가 있었다. 이름이 거하면 인생이 이름에 잡아먹힌다. 그런데도 아내는 순우리말 이름을 고집했다. 1988년 자주민보 대신 ‘한겨레신문’이라는 제호를 지지했던 것처럼....</a></li>
+				</ul>
+			 </div>
+
+				<!-- 
+		 <div class="sub_book">
+            <ul>
+            <li class="book_bg"><a href="#"><img src="image/thumbnail2.jpg" width="151" height="222" /></a></li>
+            <li class="book_text"><font class="t_bold"><a href="#">나의 인생</a></font><br />
+마르셀 라이히라 │이기숙<br /><br />
+<a href="#">시에 작은 길을 내주자
+『프랑크푸르터 알게마이네』 편집
+부에 처음 출근한 날은 결코 유쾌
+하거나 재미있지 않았다. 문예면
+을 담당하는 거의 모든 편집자들
+과 여비서들은 나를 달가워하지 
+않는 표정을 조금도 숨기지 않았
+다. 내게 배정된 방은 너저분했...</a></li>
+            </ul>
+         </div>
+ -->
+
+
+         <div class="sub01_1"><a href="http://readinggroup.or.kr/contents_list.html?cat1=63&cat2=128">알림</a>
+              <!-- <br /><a href="http://readinggroup.or.kr/contents_list.html?cat1=67&cat2=144">도서관소식</a> -->
+
+		 
+
+		 
+		 </div>
+        <div class="sub02"><a href="http://readinggroup.or.kr/book_list.html?cat1=52&cat2=67">신간1장공개</a><br />
+		  <a href="http://readinggroup.or.kr/contents_list2.html?cat1=52&cat2=71">전문가서평</a><br />
+          <a href="http://readinggroup.or.kr/contents_list.html?cat1=63&cat2=139">동아리서평</a><br />
+		  <a href="http://readinggroup.or.kr/contents_list.html?cat1=63&cat2=140">문학기행</a><br />
+		  <a href="http://readinggroup.or.kr/contents_list2.html?cat1=52&cat2=72">책과사람</a><br />
+		  <a href="http://readinggroup.or.kr/contents_list2.html?cat1=52&cat2=129">오늘의공부</a><br />
+		  <a href="http://readinggroup.or.kr/contents_list2.html?cat1=52&cat2=80">책과영상</a>
+		  <img src="/image/menu_line_dot.png" style="margin-left:-93px;margin-top:30px;">
+
+
+		  </div>
+         <div class="sub03"><a href="http://readinggroup.or.kr/contents_list.html?cat1=67&cat2=145">동아리인터뷰</a><br />
+		 <a href="http://readinggroup.or.kr/contents_list.html?cat1=67&cat2=138">자료실</a><br />
+		<a href="http://readinggroup.or.kr/contents_list.html?cat1=67&cat2=144">도서관소식</a><br />
+		 <a href="http://readinggroup.or.kr/contents_list.html?cat1=67&cat2=141">공간정보</a><br />
+		 <!-- <a href="http://readinggroup.or.kr/calendar/" target="_blank">캘린더</a><br /> -->
+		 <!-- <a href="http://calendar.nabeeya.net/" target="_blank"><span style="color:#ffa200;">북</span>캘린더</a><br /> -->
+		 <a href="http://readinggroup.or.kr/groups_find.html">동아리찾기</a><br />
+		 <a href="#" onclick="javascript:alert('로그인후 등록해주세요.');">동아리등록</a><br />
+		 <a href="http://readinggroup.or.kr/humanities.html">인문광장</a>
+
+
+
+		 
+		 <img src="/image/menu_line_dot.png" style="margin-left:-93px;margin-top:30px;">
+
+
+
+		 </div>
+         <div class="sub04_1"><a href="http://readinggroup.or.kr/presentation.html">소개</a><br />
+		 <a href="http://readinggroup.or.kr/donate.html">후원</a>
+ 		 <img src="/image/menu_line_dot.png" style="margin-left:-65px;margin-top:30px;">
+		 </div>
+
+
+		 
+		 <div class="sub_book2">
+            <ul>
+               <li class="img_strok"><a href="http://nabeeya.net/nabee/view.html?type=review&cat1=52&cat2=77&cidx=94360" target="_blank"><img src="http://www.nabeeya.net//updata/contents/202212/list/628_1669976115.jpg" width="290" height="144"><!-- <img src="image/3.jpg" width="288" height="142" /> --></a></li>
+               <li class="book_text2"><font class="t_bold"><a href="http://nabeeya.net/nabee/view.html?type=review&cat1=52&cat2=77&cidx=94360" target="_blank">트라우마</a></font><br />
+										<a href="http://nabeeya.net/nabee/view.html?type=review&cat1=52&cat2=77&cidx=94360" target="_blank">그 기억들은 지금의 나에게 좀 더 큰 의미가 있는 것처럼 느껴진다. 마치 길에 있는 표지판처럼. 이제는 그 길을 볼 수 있다.<br>
+										메모리얼 드라이브ㅣ나타샤 트레스웨이 지음 | 박산호 옮김ㅣ은행나무 , 2022-10-22<!-- ,  -->
+										</a></li>
+            </ul>
+         </div>
+
+						 
+<!-- 
+		 <div class="sub_book2">
+            <ul>
+               <li class="img_strok"><a href="#"><img src="image/3.jpg" width="288" height="142" /></a></li>
+               <li class="book_text2"><font class="t_bold"><a href="#">나의 인생</a></font><br />
+마르셀 라이히라니츠키 │이기숙<br /><a href="#">시에 작은 길을 내주자
+『프랑크푸르터 알게마이네』 편집</a></li>
+            </ul>
+         </div>
+ -->
+
+
+      </div>
+	
+
+
+
+    </div>
+
+</div>
+
+
+<div id="content">
+<!-- 
+   <h1 class="blind">컨텐츠 시작</h1>
+   <div class="leftmenu">
+     <h1><img src="image/sub_02.gif" alt="" width="150" height="42" /></h1>
+     <ul>
+       <li><a href="book.html">신간1장공개</a></li>
+       <li class="left_on">동아리서평</li>
+       <li><a href="#">전문가서평</a></li>
+       <li><a href="#">문학기행</a></li>
+       <li><a href="#">책과사람</a></li>
+       <li><a href="#">오늘의공부</a></li>
+       <li><a href="#">책과영상</a></li>
+     </ul>
+   </div>
+ -->  
+
+   <h1 class="blind">컨텐츠 시작</h1>
+   <div class="leftmenu">
+      <h1><img src="/image/sub_02.gif" width="150" height="42" /></h1>
+      <ul>
+        <li   ><a href="/book_list.html?cat1=52&cat2=67">신간1장공개</a></li>
+         <li   ><a href="/contents_list2.html?cat1=52&cat2=71">전문가서평</a></li>
+         <li><a href="/contents_list.html?cat1=63&cat2=139">동아리서평</a></li>
+         <li><a href="/contents_list.html?cat1=63&cat2=140">문학기행</a></li>
+         <li  class='left_on'  ><a href="/contents_list2.html?cat1=52&cat2=72">책과사람</a></li>
+         <li   ><a href="/contents_list2.html?cat1=52&cat2=129">오늘의공부</a></li>
+         <li   ><a href="/contents_list2.html?cat1=52&cat2=80">책과영상</a></li>
+<!-- 길담서원 
+<li style="padding:40px 0 0 0; margin:0; text-align:center;"><a href="http://cafe.naver.com/gildam/" target="_blank"><img src="/img/gildam.gif" style="border:1px solid #cccccc;"></a></li>      
+<!-- 시민행성 
+<li style="padding:12px 0 0 0; margin:0; text-align:center;"></li>      
+<li style="padding:40px 0 0 0; margin:0; text-align:center;"><a href="http://citizenplanet.tistory.com" target="_blank"><img src="/img/readinggroup_simin.gif" style="border:1px solid #cccccc;"></a></li>      
+<!-- 풀꽃평화연구소
+<li style="padding:12px 0 0 0; margin:0; text-align:center;"></li>      
+<li style="padding:40px 0 0 0; margin:0; text-align:center;"><a href="http://www.naturepeace.net/" target="_blank"><img src="/img/group_flower_peace.gif" style="border:1px solid #cccccc;"></a></li>      
+-->
+
+
+<li style="padding:40px 0 0 0; margin:0; text-align:center;"><a href="/humanities.html" target="_blank"><img src="/img/readinggroup_banner.gif" style="border:1px solid #cccccc;"></a></li>
+
+<!--  독서동아리실태조사 베너
+<li style="padding:40px 0 0 0; margin:22px 0 0 0; text-align:center;"><a href="http://svey.kr/survey/2018book/" target="_blank"><img src="/img/banner_1.jpg" style="border:1px solid #cccccc;"></a></li>
+ -->
+
+<!-- 세월호아카이브 -->
+<!-- 
+<li style="padding:12px 0 0 0; margin:0; text-align:center;"></li>      
+<li style="padding:40px 0 0 0; margin:0; text-align:center;"><a href="http://sewolho-archives.org" target="_blank"><img src="/img/readinggroup_sewol_banner.gif" style="border:1px solid #cccccc;"></a></li>      
+ -->
+
+      </ul>
+   </div>
+
+
+  
+  
+   <div class="right">
+   
+     <h1 class="blind">오른쪽 시작</h1>
+     <div class="boardview">
+         
+
+
+		<!-- 페이스북 포스팅 -->
+		<span style="float:right; padding:0; margin-top:5px;"><img src="/img/view_fb_icon.gif" width="70" height="26"  onclick="dial()"  style="float:right;margin-top:2px;cursor: pointer;text-decoration:none;" ></span>
+		<div style="text-align:left; font-weight:bold; font-size:12px;margin-right:10px;margin-top:10px;">참고분류 : 사회</div>
+
+
+
+		 <h2 class="blind">글보기</h2>
+         <ul>
+            <li class="title">학교 혁신과 도서관의 역할 <span class="date">작성일 2014-09-12</span></li>
+			<li class="book_desc">  </li>
+            <li class="board_c"><p ><span style="font-size: 10pt; line-height: 1.5; background-color: transparent;"><b >우리 교육의 중심 가치, 흔들리다</b></span></p><p >신영복 선생님의 『변방을 찾아서』에서는 역사를 중심부와 주변부의 교체 과정으로 설명하고 있다. 중심 세력이 어느 순간 쇠퇴의 과정을 맞이하고, 변방의 세력이 힘을 키워 중심을 장악한다. 중심부는 어느 순간 쇠퇴하고, 또 다른 변방이 중심을 차지한다. 변방은 단순한 공간 이 아니다. 변방은 변화의 시작 공간이다. 가치관과 철학을 내포한 인식의 공간이다. 우리 교육에 그의 문제의식을 적용해 보자. 우리 교육 의 중심부와 주변부는 무엇인가? &lt;표1&gt;로 대비시켜 보았다.</p><p style="text-align: center;"><img src="http://nabeeya.net/updata/contents/201409/thumb/423_1410499403.jpg" class="tx-daum-image" style="clear:none;float:none;margin-left:;margin-right:;" width="472" height="278"></p><p ><br ></p><p >우리나라의 교육목표는 명문대 합격이었다. 따라서 이른바 진학 중심의 교육이 횡행했다. 그러나 이러한 관점에 변화가 생기기 시작했다. 대학을 나왔다고 해서 취업이 보장되는 시대가 아니기 때문이다. 동시에 노동시장에서도 학벌중심의 채용 관행에 변화가 나타나기 시작했다. 또한, 입학사정관제 도입 등 대입제도의 다변화가 이루어지기 시작했다.</p><p ><br ></p><p >이러한 변화에 맞추어 진로 중심의 교육이 강조되기 시작했고, 학벌보다는 개인의 역량과 성장을 강조하는 흐름이 나타났다. 국가 중심의 교육 개혁에서 학교 중심의 변화가 만들어지고 있다. 그동안 교육 개혁방식이 ‘위로부터 아래로’ 이루어졌다면 이제는 ‘아래로부터 위로’ 이루어지고 있다. 단위학교 교사들이 자발성과 자율성에 기초하여 학교를 바꾸어가고 있다. 혁신학교는 아래로부터 이루어지는 교육운동의 모델이다.&nbsp;</p><p ><br ></p><p >우리 교육의 가치가 오래도록 경쟁에 방점을 찍어왔다면 이제는 협력을 강조하기 시작했다. 학생들이 모둠을 이루어 함께 토론하고 탐구하는 과정은 협력의 가치가 내재된 수업이 무엇인가를 보여 주고 있다. 그동안 우리는 특목고나 일류학교를 선호했으나 이제는 혁신학교에 주목하고 있다. 성적에 따른 일류학교는 자연스럽게 성적이 나쁜 이류학교와 삼류학교를 만들어 냈다. 그러나 혁신학교는 선발권을 주장하지 않는다. 들어온 학생의 수준에 상관없이 그들을 어떻게 성장시킬 것인가에 관심을 기울인다.&nbsp;</p><p ><br ></p><p >교사들의 교직문화를 보면 대부분 개별화의 성격을 지녔다. 이제는 학습공동체를 통한 교사의 성장을 꿈꾸어야 한다. 역량이 탁월한 교사를 많이 스카우트하는 학교가 좋은 학교는 아니다. 교사는 학교에서 근무하는 몇 년 동안 스스로 성장한 다음에 전출을 해야 한다. 이는 학습공동체를 통해 가능하다. 기존의 수업 방식은 주입식, 강의식 수업이 주류를 이루고, 교과서와 문제집 위주로 이루어진다. 교육과정은 곧 교과서이고, 교사들은 국가 수준의 교육과정을 학생들에게 전달하는 역할을 담당한다는 생각이 일반적이다. 그러나 이러한 생각에 변화가 일어나고 있다. 교과서는 교육과정을 잘 반영한 텍스트이기는 하지만, 교육과정의 전부는 아니고 교사는 지역과 학교, 학급 수준을 고려하여 교육과정을 재구성할 수 있다는 것이다. 예컨대, 양주 효촌초등학교의 정인영 교사는 『나니아 연대기』를 가지고 국어수업을 한다. 그는 교육과정의 목표를 도달하기 위해 교과서뿐만 아니라 다른 도서를 활용할 뿐이다. 이러한 인식 전환은 수업을 풍성하게 만든다. 다양한 도서를 활용한 수업은 학생들 의 토론과 탐구, 참여를 자연스럽게 자극시킨다. &lt;표1&gt;은 중심부의 가치가 서서히 무너지고 새로운 가치가 등장하고 있음을 보여 준다. 우리는 무엇을 선택할 것인가?&nbsp;</p><p ><br ></p><p ><b >학교 혁신과 도서관의 역할&nbsp;</b></p><p >학교라는 공간에서 도서관은 그동안 변방이었는지도 모른다. 쉬는 시간과 점심시간에 아이들이 우르르 몰려와서는 책을 빌려간다. 그리고 수업 시간에 도서관은 정적이 흐르는 공간으로 전락한다. 학교도서관에서 책을 많이 빌려간 학생들에게 상을 주기도 하고, 지자체와 연계하여 주민들이 야간에도 이용할 수 있도록 하기도 한다. 도서관에 아이들이 들락거리게 하기 위한 다양한 프로그램이 있는 것은 바람직하지만 그것이 전부는 아니다. 단위학교 혁신의 중심에 도서관이 있어야 하고, 그것은 도서관과 교육과정의 연계를 통해 나타난다.&nbsp;</p><p ><br ></p><p >혁신학교 운동이 시작되면서 초기에는 많은 프로그램을 적용했다. 지원 받은 예산을 가지고 각종 체험활동에 투입했다. 그런데 두 가지 문제가 발생했다. 언젠가는 예산이 떨어질 텐데 그 다음에는 어떻게 감당할 것인가? 예산 금단 현상에 대한 두려움이 생겼다. 두 번째는 선생님들의 소진 현상이 발생했다. 혁신학교는 일이 많은 학 교라는 인식도 이런 맥락에서 나타났다.&nbsp;</p><p ><br ></p><p >이러한 문제를 극복하기 위해서는 결국 교육과정과 수업, 평가에 집중해야 한다. 기존에는 교사가 국가 수준에서 제시된 교육과정을 학생들에게 단순 전달했다. 이는 주입·전달식 수업은 국가 수준의 교육과정을 죽처럼 갈아서 아이들에게 잘 떠먹이면 된다는 인식에서 비롯된다. 교과서는 곧 교육과정이 된다. 이러한 모습은 마치 프랜차이즈 빵집 사장님의 고민과 다르지 않은데, 제빵 과정에서 본인의 손맛이나 기술을 발휘할 여지가 많지 않다는 것이다. 반제품 상태로 온 것을 굽기만 하면 되기 때문이다. 수능이 곧 교육과정으로 인식된 현실에서는 기출문제 내지는 EBS 교재가 곧 교육과정이 된다. 교사 정체성의 근간이 흔들리는 상황이라고 볼 수 있다.&nbsp;</p><p ><br ></p><p >교과서는 교육과정을 잘 반영한 텍스트고, 교사는 교육과정을 가르치는 사람이다. 그 교육과정은 학교, 학급, 학생의 실정에 맞추어 재구성해야 한다. 그렇다면 무엇으로 교육과정을 재구성할 것인가? 경기도교육청에서는 독서, 체험, 실천, 문예 4요소를 통해 교육과정을 재구성하도록 권장한 바 있다. 이때 중핵 요소는 독서로 보았다.</p><p ><br ></p><p >교과서를 넘어서는 수업은 무엇인가? ‘얕게’, ‘많이’ 배우는 방식이 아닌 ‘조금’이라도 ‘깊게’ 배우는 방식이 필요하다. 이를 위해서는 교육과정과 연계된 독서 활동이 필요하고, 주제와 관련한 다양한 텍스트를 끌어들여 토론과 글쓰기 활동으로 이어져야 한다. 이러한 과정을 바탕으로 체험활동이 의미 있게 기획된다면 수업은 풍성해진다. 결국 도서관은 책을 제공하는 물리적 공간을 넘어 단위학교의 수업을 풍성 하게 만들어 내는 교육과정 발전소로서 기능해야 한다. 이를 위해서 교사들은 학교 도서관에서 교육과정을 연구하고 논의하고 재구성해야 한다.&nbsp;</p><p ><br ></p><p ><b >학습공동체의 힘은 독서이다&nbsp;</b></p><p >지금은 연수 열풍 시대이다. 교육청도 학교도 정책을 추진할 때 연수를 기본적으로 기획의 요소로 설정한다. 그런데 일회성 연수는 한계가 분명하다. 약간의 강사비로 강사를 불러서 1~2시간 강의를 듣고 터는 방식은 한계가 분명하다. 특히, 자발성이 떨어지는 경우, 강사도 듣는 교사도 서로 힘든 시간을 보내게 된다. 교사는 자극과 반응의 존재가 아니다. 한두 시간 외부 강사의 특강으로 학교는 바뀌지 않는다.</p><p ><br ></p><p >그렇다면 무엇이 필요한가? 교사 스스로 필요한 학습 주제를 찾아야 한다. 대체적으로 많은 교사들은 수업에서 결핍과 성장 욕구를 느낀다. 이 욕구를 채우기 위해 교사들은 외부 강사에 의존하기 전에 관련 주제에 대해서 동료 교사들과 함께 자신의 민낯을 드러내며 나누어야 한다. 그러한 나눔 속에서 교사들은 자신들의 결핍을 채울 수 있는 해법을 찾게 된다. 그 해법은 상당수가 도서관에서 나온다. 이는 단순한 독서 토론 모임과는 다른 성격을 지닌다. 교사의 학습은 단순 정보와 지식, 이론의 습득에 그치지 않는다. 교사들은 이론과 경험을 반드시 연결 짓고, 책에 있는 지식을 교실 현장의 지식으로 변환시킨다. 그러한 지식이 그동안 교사 개인에게만 머물러 있었다면 학습공동체를 통해서 집단의 지식으로 전환해야 한다.</p><p ><br ></p><p >단적인 예로 좋은 학교인지 아닌지는 선생님들의 책상을 보면 안다. 선생님의 책상에 교과서와 문제집만 있는가 아니면 전공 서적과 교육 관련 도서가 있는가? 교육과 정을 재구성하려면 다양한 텍스트는 기본이다. 결국, 연수는 교사의 학습을 자극하는 촉매제에 불과하다. 오히려 우리는 연수 만능주의에 빠지지 않아야 한다. 연수를 넘어 독서와 상호 토론, 나눔에 기반을 둔 학습공동체로 가야한다. 이 과정에서 지속 적인 학습이 가능해지고, 자연스럽게 구성원 간의 동반 성장이 이루어진다.</p><p ><br ></p><p >좋은 학교 만들기는 학부모의 지지와 참여 없이는 불가능하다. 특히, 입시 위주의 교육 풍토가 강한 상황에서는 교육과정과 수업, 평가 혁신이 부담스러울 수밖에 없다. 결국 무엇이 좋은 교육이고, 무엇이 아이들을 위한 길인가에 대한 판단이 필요하다. 이때 학부모 교육이 중요하다. 다만, 학부모 교육이 일회성 교육에 그쳐서는 안 되고 학부모의 고민에 답할 수 있는 지속 가능한 교육 프로그램이 필요하다. 이러한 학부모 교육에 관한 인식 전환은 도서관에서 감당해야 할 중요한 기능이 아닐 수 없다.</p><p ><br ></p><p ><b >변방에서 중심으로, 프로그램에서 교육과정으로&nbsp;</b></p><p >위에 제시한 내용을 학교도서관이 감당하려면 사서선생님과 학교도서관 담당자의 자기 효능감이 높아져야 한다. 운동가로서의 정체성이 필요한 이유가 여기에 있다. 운동은 곧 가치와 실천의 확산을 위한 교사 스스로의 다짐으로부터 시작되기 때문이다. 최근 나타나고 있는 학교 혁신의 흐름을 놓고 보면 사서선생님과 학교도서관의 역할은 매우 중요하다. 그러나 혼자서는 불가능하다. 적지 않은 장벽들이 있기 때문이다. 문화와 제도, 관계의 장벽은 우리들에게 많은 것을 포기한 채 가만히 있게 만든다.</p><p ><br ></p><p >뜻 맞는 교사들을 도서관에 모아야 한다. 도서관에서 학교 혁신에 관한 담론을 시작해야 한다. 절간과 같이 조용한 도서관은 이제 필요 없다. 낮에는 수업 때문에, 오후에는 교사들의 모임 때문에 시끄러워져야 한다. 와글와글 토론해야 한다.&nbsp;</p><p ><br ></p><p >교육과정 재구성은 매우 막막한 작업이다. 개별 교과를 넘어 주제통합학습으로 넘어가기란 더욱 어렵다. 학교를 어떻게 바꿀 것인가는 더욱 어려운 주제이다. 다만 시행착오를 줄여야 하는데 이미 학교 혁신의 실천 경험을 정리한 책들이 제법 축적되고 있다. 학부모의 인식 전환을 누가 어떻게 할 것인가? 하나하나가 쉬운 일은 아니다. 이러한 변화의 흐름을 누가 주도할 것인가?&nbsp;</p><p ><br ></p><p >학교도서관이 변방이 아닌 중심에 있어야 하고, 프로그램이 아닌 교육과정에 기반을 둘 때 학교도, 도서관도 산다.</p><p ><br ></p><div class="txc-textbox" style="padding: 10px; border: 3px double rgb(193, 193, 193); background-color: rgb(238, 238, 238);"><p >출처 : 『학교도서관저널』2014년 9월호</p></div><div ><br ></div>
+			<p>
+			<p class="plus"></p>			</p>
+
+
+			<!-- <p style="text-align:left;font-size:12px;">※ 위 콘텐츠는 책 읽는 사회를 위한 북매거진 '<a href="http://www.nabeeya.net" target="_blank">나비</a>'와 공유되는 콘텐츠입니다.</p> -->
+
+			
+			<!-- 글쓴이 정보  -->
+			<p>
+			<p style='margin-top:20px;'>
+					<!-- 저자정보  -->
+					<div id="introduce_top">
+					   <div id="introduce_author">
+						  <p><img src="http://nabeeya.net/nabee/img/introduce.gif" width="51" height="13" alt="저자소개" /></p>
+						  <div id="author_info">
+							
+							 <div class="author_name_noimage">
+								<div class="author">김성천</div>
+								<div class="author2">경기도교육연구원 연구위원
+저서 : 『혁신학교란 무엇인가』
+공저 : 『학교를 바꾸다』, 『희한한 수업』, 『생각나무 논술열매』, 『좌우파 사전』등</div>
+							 </div>
+						  </div>          
+					   </div>
+					</div>
+							</p>			</p>
+			
+			<br>
+
+			<!-- 책 저자 소개 ------------------------------->
+			<p>
+						</p>
+			<!-- 책 저자 소개 ------------------------------->
+			
+			</li>
+         </ul>
+
+		
+
+
+		</div>
+
+
+        <span style="float:right;margin:0 0 10px 0;"><a href="#" style=" text-decoration: none; color: #777;" onclick="javascript:alert('로그인후 이용해 주세요.');"><img src="/img/ic_heart-on.gif" alt="heart" /> 관심 글 등록</a></span>
+
+	 
+     
+
+
+
+
+	<form name="comment_form" id="comment_form">
+
+     <div class="comment">
+     
+
+        <div class="comment_enter">
+                <h2 class="blind">의견달기</h2>
+                <ul>
+                <li class="write"><textarea name="comment" id='comment_text' class="input2" readonly>로그인한 후 이용해 주세요.</textarea></li><li class="enter_bt"><img src="image/bt_02.gif" alt="댓글달기" width="71" height="49"  style="cursor:pointer;" alt="입력" onclick="comment_write()" /></li>
+                </ul>
+        </div>
+
+
+		<input type=hidden name=cidx id=cidx value='7653'>
+	</form>
+
+
+
+<!-- 
+        <div class="comment_list">
+           <div class="comment_id">
+                   <ul>
+                   <li class="com_id">페퍼민트 <font class="com_date">2014/04/30 04:44</font></li>
+                   <li class="com_bt"><a href="#">답글</a> | <a href="#">삭제</a> | <a href="#">수정</a></li>
+                   </ul>
+           </div>
+           <div class="comment_c">
+                   <ul>
+                   <li>ㅜㅜ 기사만봐도 뉴스만봐도 눈물이 뚝뚝생각만해도 가슴이 너무아파요 ㅠㅠ</li>
+                   </ul>
+           </div>
+        </div>
+        
+        <div class="comment_list">
+           <div class="comment_id">
+                   <ul>
+                   <li class="com_id">페퍼민트 <font class="com_date">2014/04/30 04:44</font></li>
+                   <li class="com_bt"><a href="#">답글</a> | <a href="#">삭제</a> | <a href="#">수정</a></li>
+                   </ul>
+           </div>
+           <div class="comment_c">
+                   <ul>
+                   <li>ㅜㅜ 기사만봐도 뉴스만봐도 눈물이 뚝뚝생각만해도 가슴이 너무아파요 ㅠㅠ</li>
+                   </ul>
+           </div>
+        </div>
+        
+        <div class="comment_list">
+           <div class="comment_id">
+                   <ul>
+                   <li class="com_id">페퍼민트 <font class="com_date">2014/04/30 04:44</font></li>
+                   <li class="com_bt"><a href="#">답글</a> | <a href="#">삭제</a> | <a href="#">수정</a></li>
+                   </ul>
+           </div>
+           <div class="comment_c">
+                   <ul>
+                   <li>ㅜㅜ 기사만봐도 뉴스만봐도 눈물이 뚝뚝생각만해도 가슴이 너무아파요 ㅠㅠ</li>
+                   </ul>
+           </div>
+        </div>
+ -->
+	<div id="comment_tbl">
+		<span id="comment_result"></span>
+<!----
+		<div id="comment_list">
+			<div id="comment_id_bt">
+				<div>
+					<ul>
+						<li id="comment_id" class="date">gipozoa <font class="commmet_line">ㅣ</font> 2012.04.13</li>
+					</ul>
+				</div>
+				<div id="bt">
+					<span><img src="img/bt_01.gif" width="30" height="18" alt="수정하기" /> <img src="img/bt_02.gif" width="18" height="18" alt="삭제" /></span>
+				</div>
+			</div>
+			<ul>
+				<li class="commnet_text">서울과 노동시 리영희 평전 3차원의........</li>
+			</ul>
+		</div>
+---->
+	</div>
+		
+
+     
+     </div>
+
+	 
+	<div id="wait_1" style="margin:0 auto; margin-top: 50px; width:100px; padding:10px; border:0px solid red; display: none; clear:both;"><img alt="Please Wait" src="/image/ajax-loader4.gif"/></div>
+
+
+<script type="text/javascript">
+
+// --------------- 댓글 처리 jquery -----
+function finishAjax(id, response) {
+	$('#comment_text').val("");
+	//$('#'+id).html(unescape(response));
+	//$('#'+id).append(unescape(response));
+	$('#comment_tbl').append(unescape(response));
+
+	$('#wait_1').hide();
+	
+	$('#'+id).fadeIn();
+}
+
+
+function comment_del(cmidx){
+	if(confirm('댓글을 삭제 합니다.')==true){
+
+		$.post("/ajax/org_nabee_comment_proc.php", {
+			func: "comment_del",
+			comment_var: cmidx,
+			contents_var: $('#cidx').val()
+
+		}, function(response){
+			$('#'+cmidx).remove();
+		});
+		return false;
+
+	}else{
+
+		return false;
+	}
+}
+
+
+
+function comment_write(){
+
+	//$comment_out = "<span id='login_check'>로그인후 작성해 주세요.</span>";	
+	//$('#login_check').empty();
+
+	if(''==''){
+		alert('로그인후 작성해 주세요.');
+		return false;
+	}
+
+
+	$('#comment_refresh').remove();
+	
+	$('#wait_1').show();
+	
+	//$('#comment_tbl').empty();
+	//$('#comment_tbl').hide();
+	
+	//get 으로 전송시 get 사용
+	//$.get("func.php", {
+	$.post("/ajax/org_nabee_comment_proc.php", {
+		func: "comment_reg",
+		comment_var: $('#comment_text').val(),
+		contents_var: $('#cidx').val()
+
+
+	}, function(response){
+		$('#comment_result').fadeOut();
+		setTimeout("finishAjax('comment_result', '"+escape(response)+"')", 400);
+	});
+	return false;
+}
+
+function comment_list(){
+	$('#wait_1').show();
+	
+	$('#comment_tbl').empty();
+	//$('#comment_tbl').hide();
+	
+	//get 으로 전송시 get 사용
+	//$.get("func.php", {
+	$.post("/ajax/org_nabee_comment_proc.php", {
+		func: "comment_reg",
+		comment_var: '',
+		contents_var: $('#cidx').val()
+
+
+	}, function(response){
+		$('#comment_result').fadeOut();
+		setTimeout("finishAjax('comment_result', '"+escape(response)+"')", 400);
+	});
+	return false;
+}
+
+
+// --------------- 댓글 처리 jquery -----
+
+
+
+
+// ---------------- 페이스북 포스팅 ----------
+//포스팅 다이얼로그
+function dial() {
+	FB.ui({
+		method: 'feed',
+		//method: 'stream.publish',
+		
+		//name: document.title,
+		name : '독서동아리지원센터',
+
+		link: document.URL,
+		//link: '667360263337023',
+
+		picture: 'http://nabeeya.net',
+
+		//caption: 'title',
+		caption: '학교 혁신과 도서관의 역할',
+		//description: 'content',
+		description: '교육과정 재구성은 매우 막막한 작업이다. 개별 교과를 넘어 주제통합학습으로 넘어가기란 더욱 어렵다. 학교를 어떻게 바꿀 것인가는 더욱 어려운 주제이다. 다만 시행착오를 줄여야 하는데 이미 학교 혁신의 실천 경험을 정리한 책들이 제법 축적되고 있다. 학부모의 인식 전환을 누가 어떻게 할 것인가? 하나하나가 쉬운 일은 아니다. 이러한 변화의 흐름을 누가 주도할 것인가? 학교도서관이 변방이 아닌 중심에 있어야 하고, 프로그램이 아닌 교육과정에 기반을 둘 때 학교도, 도서관도 산다.'
+		//message: '123456789...'
+	},function(response) {
+		if (response && response.post_id) {
+			//alert('Post was published.');
+		} else {
+			//alert('Post was not published.');
+		}
+	});
+}
+
+
+
+
+
+</script>
+
+
+
+
+<!-- 댓글 -->
+<div style="width:736px;margin-left:0px;float:right;margin-top:10px;">
+<div style="width:736px;float:right;">
+<img src="/img/fb_comment.jpg" width="720" height="40">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  //js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=219915358216422";
+  js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=667360263337023";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<fb:comments href="http://readinggroup.or.kr/contents_view2.html?cat1=52&cat2=72&cat3=&cidx=7653" numposts="5" width="736" colorscheme="light" style="margin-top:0px;position:relative;"></fb:comments>
+
+<!--좋아요 -->
+<!-- <p><fb:like></fb:like></p> -->
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="go_list"><a href="/contents_list2.html?cat1=52&cat2=72&cat3=&search=&page=&search_cat1=&search_cat2=&search_cat3="><img src="image/bt_01.gif" alt="목록으로" width="71" height="29" /></a></div>
+
+     
+     
+  </div>
+
+</div>
+
+
+
+<div id="footer">
+  <div class="footer_wrap">
+         <div class="logo"><img src="/image/foot.gif" width="541" height="62" border="0" usemap="#Map" />
+           <map name="Map" id="Map">
+             <area shape="rect" coords="0,2,102,59" href="#하단로고" />
+             <area shape="rect" coords="405,34,540,46" href="#이메일" />
+           </map>
+         </div>
+         <div class="familysite">
+            <ul>
+            <li><a href="#" class="familysite_tx" onclick="javascript:window.open('http://www.readinggroup.or.kr/privacy.html', 'privacy_info', 'width=810, height=710, status=0, scrollbars=0');">개인정보처리방침</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="http://www.nabeeya.net/" target="_blank" class="familysite_tx">나비</a>  ㅣ  <a href="http://www.bookreader.or.kr/" target="_blank">책읽는사회문화재단</a>  ㅣ  <a href="http://www.bookstart.org/">북스타트</a></li>
+            </ul>
+         </div>
+   </div>
+ </div>
+
+</body>
+</html>
+
