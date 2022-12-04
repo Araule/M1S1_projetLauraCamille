@@ -56,7 +56,7 @@ do
 
 	echo -e "\tcode : $code";
 
-	if [[ ! $charset && $sharset -eq "ISO-8859-1" ]]
+	if [[ ! $charset ]]
 		then
 		echo -e "\tencodage non détecté, on prendra UTF-8 par défaut.";
 		charset="UTF-8";
@@ -96,7 +96,12 @@ do
 			echo -e "\tnouvelles occurences : $occurences";
 		fi
 
-		contexte=$(egrep -E -B2 -A2 $regexp ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt)
+		
+		
+		contexte=$(egrep -E -B1 -A1 $regexp ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt)
+		
+		bash programmes/concordance.sh ./dumps-text/$basename-$lineno.txt $regexp > ./concordances/$basename-$lineno.html
+		# construction des concordances avec une commande externe
 
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide";
@@ -108,7 +113,7 @@ do
 	fi
 
 	
-	echo "<tr><td>$lineno</td><td>$code</td><td><a href="./aspirations/$basename-$lineno.txt">$URL</a></td><td>$charset</td><td>$occurences</td><td><a href="./contextes/$basename-$lineno.txt">$basename-$lineno</a></td></tr>" >> $fichier_tableau
+	echo "<tr><td>$lineno</td><td>$code</td><td><a href="./aspirations/$basename-$lineno.txt">$URL</a></td><td>$charset</td><td>$occurences</td><td><a href="./contextes/$basename-$lineno.txt">$basename-$lineno</a></td><td><a href="./concordances/$basename-$lineno.html">$basename-$lineno</a></tr>" >> $fichier_tableau
 	echo -e "\t--------------------------------"
 	
 	lineno=$((lineno+1));
