@@ -6,8 +6,8 @@ motif=$2
 
 if [[ $# -ne 2 ]]
 then
-	echo "Ce programme demande exactement deux arguments."
-	exit
+  echo "Ce programme demande exactement deux arguments."
+  exit
 fi
 
 if [[ ! -f $fichier_texte ]]

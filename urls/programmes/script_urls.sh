@@ -29,7 +29,7 @@ echo "<html><body>" > $fichier_tableau
 echo "<h2>Tableau $basename :</h2>" >> $fichier_tableau
 echo "<br/>" >> $fichier_tableau
 echo "<table>" >> $fichier_tableau
-echo "<tr><th>ligne</th><th>code</th><th>URL</th><th>encodage</th><th>occurences</th><th>contexte</th></tr>" >> $fichier_tableau
+echo "<tr><th>ligne</th><th>code</th><th>URL</th><th>encodage</th><th>aspirations</th><th>occurences</th><th>contextes</th><th>concordances</th></tr>" >> $fichier_tableau
 
 #maintenant on s'occupe des urls
 lineno=1;
@@ -96,24 +96,21 @@ do
 			echo -e "\tnouvelles occurences : $occurences";
 		fi
 
-		
-		
-		contexte=$(egrep -E -B1 -A1 $regexp ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt)
-		
-		bash programmes/concordance.sh ./dumps-text/$basename-$lineno.txt $regexp > ./concordances/$basename-$lineno.html
-		# construction des concordances avec une commande externe
-
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide";
 		dump=""
 		charset=""
-		occurences=""
-		contexte=""
 		#variables vides pour éviter des résultats inattendus
 	fi
 
+
+	egrep -E -B1 -A1 $regexp ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt
+		
+	bash programmes/concordance.sh ./dumps-text/$basename-$lineno.txt $regexp > ./concordances/$basename-$lineno.html
+	# construction des concordances avec une commande externe
+
 	
-	echo "<tr><td>$lineno</td><td>$code</td><td><a href="./aspirations/$basename-$lineno.txt">$URL</a></td><td>$charset</td><td>$occurences</td><td><a href="./contextes/$basename-$lineno.txt">$basename-$lineno</a></td><td><a href="./concordances/$basename-$lineno.html">$basename-$lineno</a></tr>" >> $fichier_tableau
+	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td>$occurences</td><td><td><a href="./aspirations/$basename-$lineno.txt">$basename-$lineno</a></td><a href="./contextes/$basename-$lineno.txt">$basename-$lineno</a></td><td><a href="./concordances/$basename-$lineno.html">$basename-$lineno</a></tr>" >> $fichier_tableau
 	echo -e "\t--------------------------------"
 	
 	lineno=$((lineno+1));
