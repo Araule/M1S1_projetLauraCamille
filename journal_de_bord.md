@@ -38,8 +38,5 @@ Il y a deux variations :
 
 ## Avancement TD script tableaux
 
-#### Partie 1
-- Exercices 1, 2, 3  - fait de notre côté
-- Exercice 4 - 5 - 6 - 7 - fini en classe avec le script du prof
-#### Partie 2
-- Exercice 1, 2, 3, 4 - fait
+- enlever la partie " aspirations concordances contextes dumps-text programmes tableaux URLs " dans le dumps text
+- problème d'occurences pour le corréen, voir la regesxp
