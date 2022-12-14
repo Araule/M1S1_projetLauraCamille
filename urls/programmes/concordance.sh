@@ -6,7 +6,7 @@ motif=$2
 
 if [[ $# -ne 2 ]]
 then
-  echo "Ce programme demande exactement deux arguments."
+  echo "Ce programme demande exactement deux arguments : "
   exit
 fi
 
@@ -41,7 +41,8 @@ echo "
 <tbody>
 "
 
-grep -E -o "(\w+\W+){0,5}\b$motif\b(\W+\w+){0,5}" $fichier_texte | sed -E "s/(.*)($motif)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/"
+grep -E -o "(\w+\W+\w*){0,5}$motif(\w*\W+\w+){0,5}" $fichier_texte | sed -E "s/(.*)($motif)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/"
+#compter les parenthèses et mettre ce chiffre à la place du \3
 
 echo "
 </tbody>
