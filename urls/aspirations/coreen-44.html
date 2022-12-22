@@ -108,8 +108,8 @@
 
 
 
-<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/css/min/common.css" />
-<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/css/min/components.css" />
+<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/css/min/common.css" />
+<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/css/min/components.css" />
 
 
 	
@@ -118,13 +118,13 @@
 
 
 	
-		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/css/min/end.css"/>
+		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/css/min/end.css"/>
 	
-		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/css/min/broadcast.css"/>
+		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/css/min/broadcast.css"/>
 	
-		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/css/min/answer_write.css"/>
+		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/css/min/answer_write.css"/>
 	
-		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/css/min/powerlink.css"/>
+		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/css/min/powerlink.css"/>
 	
 
 
@@ -147,7 +147,7 @@
 
 
 	
-		<script type="text/javascript" src="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/js/min/naver.kin.pc.base.js"></script>
+		<script type="text/javascript" src="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/js/min/naver.kin.pc.base.js"></script>
 	
 	
 
@@ -161,7 +161,7 @@
 		naver.isJunior = ("N"=="Y");
 		naver.isKinUser = false;
 		naver.isPortableDevice = false;
-		naver.jsDir = "https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/js/min";
+		naver.jsDir = "https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/js/min";
 		if(!window.console) { window.console = {}; console.log = function() {}; console.warn = function() {}; console.error = function() {}; }
 
 		var g_ssc = ("kin.endpage" == "") ? "kin.temp" : "kin.endpage";
@@ -474,7 +474,7 @@
 								
 								
 							</script>
-							<script type="text/javascript" charset="utf-8" src="https://ssl.pstatic.net/static.gn/templates/gnb_utf8.nhn?2022121419"></script>
+							<script type="text/javascript" charset="utf-8" src="https://ssl.pstatic.net/static.gn/templates/gnb_utf8.nhn?2022122223"></script>
 						</div>
 					</div>
 					
@@ -721,7 +721,7 @@
 	}
 
 	$(window).on("load", function () {
-		$.cachedScript("https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/js/min/naver.kin.pc.ChatMenu.js").done(function () {
+		$.cachedScript("https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/js/min/naver.kin.pc.ChatMenu.js").done(function () {
 			if (typeof naver.kin.pc.ChatMenu !== "undefined") {
 				window.oChatMenu = new naver.kin.pc.ChatMenu();
 			}
@@ -770,7 +770,7 @@
 
 
 	
-		<script type="text/javascript" src="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/js/min/naver.kin.pc.detail.js"></script>
+		<script type="text/javascript" src="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/js/min/naver.kin.pc.detail.js"></script>
 	
 	
 
@@ -919,7 +919,7 @@
 			<span class="c-userinfo__info"><span class="blind">작성일</span>2011.04.11</span>
 		
 		
-			<span class="c-userinfo__info">조회수 5,944</span>
+			<span class="c-userinfo__info">조회수 5,950</span>
 		
 	</div>
 
@@ -1217,6 +1217,8 @@
 	
 
 
+	
+	
 	
 	
 	
@@ -2146,22 +2148,40 @@
 </div>
 
 {{?? it.pastExpertAnswer}}
-	<div class="profile_card">
-		<div class="card_inner">
-			<div class="card_info">
-				<div class="profile_info">
-					<div class="name_area">
-						<strong class="etc_text">활동하지 않는 전문가의 답변입니다.</strong>
-					</div>
+<div class="profile_card">
+	<div class="card_inner">
+		<div class="card_info">
+			<div class="profile_info">
+				<div class="name_area">
+					<strong class="etc_text">활동하지 않는 전문가의 답변입니다.</strong>
 				</div>
-				<div class="thumbnail_area">
-					<div class="thumbnail">
-						<img src="https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200_m_gray/answer.png" alt="프로필 사진">
-					</div>
+			</div>
+			<div class="thumbnail_area">
+				<div class="thumbnail">
+					<img src="https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200_m_gray/answer.png" alt="프로필 사진">
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+
+{{?? it.namecard == null}}
+<div class="profile_card">
+	<div class="card_inner">
+		<div class="card_info">
+			<div class="profile_info">
+				<div class="name_area">
+					<strong class="etc_text">탈퇴한 사용자의 답변입니다.</strong>
+				</div>
+			</div>
+			<div class="thumbnail_area">
+				<div class="thumbnail">
+					<img src="https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200_m_gray/answer.png" alt="탈퇴한 사용자의 답변 프로필 이미지">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 {{??}}
 <div class="profile_card">
 	<div class="card_inner {{? it.profileCardBackgroundColorNumber != null}}card_theme{{=it.profileCardBackgroundColorNumber}}{{?}}
@@ -3471,7 +3491,7 @@
 			
 			
 				
-					<script type="text/javascript" src="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/js/min/naver.kin.pc.answerList.js"></script>
+					<script type="text/javascript" src="https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/js/min/naver.kin.pc.answerList.js"></script>
 				
 				
 			
@@ -3539,7 +3559,7 @@
 		var $template = doT.template($("#pcDetailBannerTpl").html());
 
 		if ($elBannerArea.existElements() && $template) {
-			$elBannerArea.html($template({"bannerUrl":"https://ssl.pstatic.net/static/kin/09renewal/promotion/mobile/detail_banner_bottom_320221118103156.png?ver=20221118103157","linkUrl":"https://m.expert.naver.com/","description":"전문가 상담이 필요할 땐 네이버 엑스퍼트"}))
+			$elBannerArea.html($template({"bannerUrl":"https://ssl.pstatic.net/static/kin/09renewal/promotion/mobile/detail_banner_bottom_320221209155017.png?ver=20221209035017","linkUrl":"https://blog.naver.com/kin_friend/222950810736","description":"굿바이 2022 올해 마지막 열심답변자 이벤트 지식인 크리스마스 배지를 모아보세요"}))
 		}
 	</script>
 
@@ -4009,7 +4029,7 @@
 		
 			
 			
-				$.cachedScript('https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/js/min/detail/naver.kin.pc.detail.BottomQnaListTab.js').done(function () {
+				$.cachedScript('https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/js/min/detail/naver.kin.pc.detail.BottomQnaListTab.js').done(function () {
 					if (naver.kin && naver.kin.pc && naver.kin.pc.detail && typeof naver.kin.pc.detail.BottomQnaListTab !== "undefined" && typeof naver.kin.pc.detail.BottomQnaList !== "undefined") {
 						window.oDetailQnaListTab = new naver.kin.pc.detail.BottomQnaListTab({
 							oRelatedQnaLstParam: {
@@ -5040,7 +5060,7 @@
 
 <script type="text/javascript">
 	$(document).ready(function () {
-		$.cachedScript('https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/js/min/detail/naver.kin.pc.detail.VideoPlayer.js').done(function () {
+		$.cachedScript('https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/js/min/detail/naver.kin.pc.detail.VideoPlayer.js').done(function () {
 			if (naver.kin && naver.kin.pc && naver.kin.pc.detail && typeof naver.kin.pc.detail.VideoPlayer !== 'undefined') {
 				window.oVideoPlayer = new naver.kin.pc.detail.VideoPlayer({
 					domain : "serviceapi.nmv.naver.com",
@@ -5081,10 +5101,10 @@
 </script>
 
 <link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/static/maps/openapi_map/maps_openapi.css"/>
-<script type="text/javascript" src="https://openapi.map.naver.com/openapi/maps3.js?ver=20221214"></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/maps3.js?ver=20221222"></script>
 <script type="text/javascript">
 	$(document).ready(function () {
-		$.cachedScript('https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/js/min/detail/naver.kin.pc.detail.Map.js').done(function () {
+		$.cachedScript('https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/js/min/detail/naver.kin.pc.detail.Map.js').done(function () {
 			if (naver.kin && naver.kin.pc && naver.kin.pc.detail && typeof naver.kin.pc.detail.Map !== 'undefined') {
 				window.oMap = new naver.kin.pc.detail.Map();
 			}
@@ -5222,7 +5242,7 @@
 
 <script type="text/javascript">
 	$(document).ready(function () {
-		$.cachedScript("https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/js/min/naver.kin.pc.BusinessCard.js").done(function () {
+		$.cachedScript("https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/js/min/naver.kin.pc.BusinessCard.js").done(function () {
 			if (naver.kin && naver.kin.pc && typeof naver.kin.pc.BusinessCard !== "undefined") {
 				window.oBusinessCard = new naver.kin.pc.BusinessCard({
 					nDirId : 130101,
@@ -5247,7 +5267,7 @@
 
 <script type="text/javascript">
 	$(document).ready(function () {
-		$.cachedScript("https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/js/min/naver.kin.pc.OgTagView.js").done(function () {
+		$.cachedScript("https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/js/min/naver.kin.pc.OgTagView.js").done(function () {
 			if (naver.kin && naver.kin.pc && typeof naver.kin.pc.OgTagView !== "undefined") {
 				window.oOgTagView = new naver.kin.pc.OgTagView({
 					ogTagViewDomain : "https://kin.naver.com"
@@ -5263,7 +5283,7 @@
 
 <script type="text/javascript">
 	$(document).ready(function () {
-		$.cachedScript("https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212071634/js/min/naver.kin.pc.HashtagHighlighter.js").done(function () {
+		$.cachedScript("https://ssl.pstatic.net/static.kin/static/kin-web-pc/2212211418/js/min/naver.kin.pc.HashtagHighlighter.js").done(function () {
 			if (naver.kin && naver.kin.pc && typeof naver.kin.pc.HashtagHighlighter !== "undefined") {
 				window.oHashtagHighlighter = new naver.kin.pc.HashtagHighlighter();
 			}

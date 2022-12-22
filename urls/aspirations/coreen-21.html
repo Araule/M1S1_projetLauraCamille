@@ -139,13 +139,13 @@
 
 <!-- css load -->
 
-<link rel="stylesheet" href="/css/v3.common.css?time=202212141933">
-<link rel="stylesheet" href="/css/v3.layout.css?time=202212141933">
-<link rel="stylesheet" href="/css/v3.sub.css?time=202212141933">
-<link rel="stylesheet" href="/css/v3.webfonts.css?time=202212141933">
-<link rel="stylesheet" href="/css/livere.css?time=202212141933">
+<link rel="stylesheet" href="/css/v3.common.css?time=202212222327">
+<link rel="stylesheet" href="/css/v3.layout.css?time=202212222327">
+<link rel="stylesheet" href="/css/v3.sub.css?time=202212222327">
+<link rel="stylesheet" href="/css/v3.webfonts.css?time=202212222327">
+<link rel="stylesheet" href="/css/livere.css?time=202212222327">
 
-<link rel="stylesheet" type="text/css" href="/css/operations.team.css?time=202212141933" />
+<link rel="stylesheet" type="text/css" href="/css/operations.team.css?time=202212222327" />
  
 <!-- js load -->
 <script src="/js/jquery-2.2.4.min.js"></script>
@@ -160,21 +160,21 @@
 <script src="/js/web.flexslider.js"></script>
 <script src="/js/web.scrollbar.js"></script>
 <script src="/js/web.selectbox.js"></script>
-<script src="/js/web.common.ui_new.js?time=202212141933"></script>
-<script src="/js/common/jquery.cookie.js?time=202212141933"></script>
-<script src="/js/common/cal.js?time=202212141933"></script>
+<script src="/js/web.common.ui_new.js?time=202212222327"></script>
+<script src="/js/common/jquery.cookie.js?time=202212222327"></script>
+<script src="/js/common/cal.js?time=202212222327"></script>
 
-<script src="/js/common/commonV3.js?time=202212141933"></script>
-<script src="/js/calendar.js?time=202212141933"></script>
-<script src="/js/common/changeUrl.js?time=202212141933"></script>
+<script src="/js/common/commonV3.js?time=202212222327"></script>
+<script src="/js/calendar.js?time=202212222327"></script>
+<script src="/js/common/changeUrl.js?time=202212222327"></script>
  
-<script src="/js/web.ui.v3_new.js?time=202212141933"></script> 
+<script src="/js/web.ui.v3_new.js?time=202212222327"></script> 
 
 <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-messaging.js"></script>
 
 
-<script src="/js/fcm_common.js?time=202212141933"></script> 
+<script src="/js/fcm_common.js?time=202212222327"></script> 
 <script>
 $(document).ready(function() {
 	var target = document.querySelector('.select-opt ul');
@@ -209,14 +209,14 @@ $(document).ready(function() {
 <script src="/js/mCustomScrollbar.concat.min.js"></script>
 <script src="/js/cal.js"></script>-->
 
-<script src="/js/v3.common.js?time=202212141933"></script>
-<script src="/js/v3.sub.js?time=202212141933"></script>
+<script src="/js/v3.common.js?time=202212222327"></script>
+<script src="/js/v3.sub.js?time=202212222327"></script>
 <script src="/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="/js/ark.js?time=202212141933"></script>
+<script src="/js/ark.js?time=202212222327"></script>
 <script src="/js/beta.fix.js"></script>
 
-<script src="/js/jquery.rwdImageMaps.min.js?time=202212141933"></script>
-<script src="/js/operations.content.js?time=202212141933"></script>
+<script src="/js/jquery.rwdImageMaps.min.js?time=202212222327"></script>
+<script src="/js/operations.content.js?time=202212222327"></script>
 
 <!-- <script src="/js/kakao.min.js"></script>-->
 
@@ -822,7 +822,7 @@ $(document).ready(function() {
 					paramVal +=	"<input type='hidden' id='currRealtionNews' value='r0' />";
 					<!-- paramVal += "<li><a href='#' title='관련기사' onclick=\"fn_relationOrg(); return false;\">관련기사(6)</a></li>"; -->
 					paramVal += "";
-					paramVal += "<li><a href='#' title='관련기사' onclick=\"fn_addRelationListNew('1'); return false;\">관련기사(100)</a></li>";
+					paramVal += "<li><a href='#' title='관련기사' onclick=\"fn_addRelationListNew('1'); return false;\">관련기사(97)</a></li>";
 					paramVal += "";
 					paramVal +=	"<input type='hidden' id='r0' value='6' />";
 					paramVal +=	"";
@@ -840,9 +840,9 @@ $(document).ready(function() {
 					paramVal +=	"";
 					paramVal += "";
 					paramVal +=	"";
-					paramVal +=	"<input type='hidden' id='r3' value='95' />";
-					<!-- paramVal += "<li><a href='#' title='관련기사조회' onclick=\"fn_relationList('70013834','r3','95'); return false;\">#문화체육관광부(95)</a></li>"; -->
-					paramVal += "<li><a href='#' title='관련기사조회' onclick=\"fn_relationListNew('70013834','r3','95'); return false;\">#문화체육관광부(95)</a></li>";
+					paramVal +=	"<input type='hidden' id='r3' value='92' />";
+					<!-- paramVal += "<li><a href='#' title='관련기사조회' onclick=\"fn_relationList('70013834','r3','92'); return false;\">#문화체육관광부(92)</a></li>"; -->
+					paramVal += "<li><a href='#' title='관련기사조회' onclick=\"fn_relationListNew('70013834','r3','92'); return false;\">#문화체육관광부(92)</a></li>";
 					paramVal +=	"";
 					paramVal += "";
 					paramVal +=	"";
@@ -853,6 +853,37 @@ $(document).ready(function() {
 					paramVal += "<ul id='relationNewsList' class='list'>";
 					
 					paramVal += "";
+					paramVal += "";
+					paramVal += "";
+					paramVal += "";
+					
+					var newsUrl = "/news/policyPhotoView.do?bbsKey=52260";
+					if(newsUrl != null && newsUrl.indexOf("contributePolicyView.do") > -1){
+						paramVal += "";
+						paramVal += "<li class='gigo-column'>";
+						paramVal += "";
+						paramVal += "";
+					}else{
+						paramVal += "";
+						paramVal += "<li>";
+						paramVal += "";
+						paramVal += "";
+					}
+					
+					paramVal += "";
+					
+					if(newsUrl.indexOf("policyAudio") > -1){
+						paramVal += "<a href='javascript:;' title='새창열림'  onclick='fn_poliAudioPopup(\"/news/policyPhotoView.do?bbsKey=52260\");return false;'>";	
+					}else{
+						paramVal += "<a href='/news/policyPhotoView.do?bbsKey=52260&pWise=sub&pWiseSub=B12' >";	
+					}					
+					paramVal += "<span class='thumb'><img src='/admin2011/upload/photo/2022/12/21/05f3997890a4ffe3d666f18a8a06fcfe_THUMB_2.jpg' alt='' /></span>";
+					paramVal += "<span class='text'>";
+					paramVal += "<strong>춘추관 문학 특별전시 개막식</strong>";
+					paramVal += "<span>21일 서울 종로구 청와대 춘추관에서 열린 국립한국문학관 특별전시 &#039;이상, 염상섭, 현진건, 윤동주, 청와대를 거닐다&#039;에서 관계자들이 개막 퍼포먼스를 하고 있다. 귄영민 서울대학교 명예교수, 이용 국회의원, 홍익 염상섭 손자, 문정희 국립한국문학관 관장, 박동란 현진건 외손녀, 박보균 문화체육관광부 장관, 이용호 ...</span>"; 
+					paramVal += "</span>";
+					paramVal += "</a>";
+					paramVal += "</li>";
 					paramVal += "";
 					paramVal += "";
 					paramVal += "";
@@ -902,6 +933,8 @@ $(document).ready(function() {
 					}
 					
 					paramVal += "";
+					paramVal += "";
+					paramVal += "";
 					
 					if(newsUrl.indexOf("policyAudio") > -1){
 						paramVal += "<a href='javascript:;' title='새창열림'  onclick='fn_poliAudioPopup(\"/news/policyPhotoView.do?bbsKey=52007\");return false;'>";	
@@ -916,39 +949,6 @@ $(document).ready(function() {
 					paramVal += "</a>";
 					paramVal += "</li>";
 					paramVal += "";
-					paramVal += "";
-					paramVal += "";
-					
-					var newsUrl = "/news/policyPhotoView.do?bbsKey=51503";
-					if(newsUrl != null && newsUrl.indexOf("contributePolicyView.do") > -1){
-						paramVal += "";
-						paramVal += "<li class='gigo-column'>";
-						paramVal += "";
-						paramVal += "";
-					}else{
-						paramVal += "";
-						paramVal += "<li>";
-						paramVal += "";
-						paramVal += "";
-					}
-					
-					paramVal += "";
-					paramVal += "";
-					paramVal += "";
-					
-					if(newsUrl.indexOf("policyAudio") > -1){
-						paramVal += "<a href='javascript:;' title='새창열림'  onclick='fn_poliAudioPopup(\"/news/policyPhotoView.do?bbsKey=51503\");return false;'>";	
-					}else{
-						paramVal += "<a href='/news/policyPhotoView.do?bbsKey=51503&pWise=sub&pWiseSub=B12' >";	
-					}					
-					paramVal += "<span class='thumb'><img src='/admin2011/upload/photo/2022/11/09/8ee6e72d2969353672cc516803f73f36_THUMB_2.jpg' alt='' /></span>";
-					paramVal += "<span class='text'>";
-					paramVal += "<strong>대학로 공연장 현장 안전 점검 실시</strong>";
-					paramVal += "<span>윤성천 문화체육관광부 문화예술정책실장이 8일 서울 종로구 대학로 아르코예술극장을 찾아 안전점검을 하고 현장 의견을 청취하고 있다.,윤성천 문화체육관광부 문화예술정책실장이 8일 서울 종로구 대학로의 공연장을 찾아 안전점검을 하고 아르코예술극장 사무실에서 소극장협회, 지자체 등 관계자를 만나 현장 의견을 ...</span>"; 
-					paramVal += "</span>";
-					paramVal += "</a>";
-					paramVal += "</li>";
-					paramVal += "";
 					paramVal += "</ul>";
 					
 					<!-- paramVal += "<div id='addRelationNewsDiv' class='more-btn' ><a href='#related-more' onclick=\"fn_addRelationList(); return false;\"><span>관련기사 더보기</span><i class='xi-angle-down'></i></a></div>"; -->
@@ -957,6 +957,33 @@ $(document).ready(function() {
 					
 					paramVal += "<ul id='relateOrg' class='list' style='display:none;'>";
 					paramVal += "";
+					paramVal += "";
+					paramVal += "";
+					paramVal += "";
+
+					var newsUrl = "/news/policyPhotoView.do?bbsKey=52260";
+					if(newsUrl != null && newsUrl.indexOf("contributePolicyView.do") > -1){
+						paramVal += "";
+						paramVal += "<li class='gigo-column hg'>";
+						paramVal += "";
+						paramVal += "";
+					}else{
+						paramVal += "";
+						paramVal += "<li class='hg'>";
+						paramVal += "";
+						paramVal += "";
+					}
+					
+					paramVal += "";
+					
+					paramVal += "<a href='/news/policyPhotoView.do?bbsKey=52260&pWise=sub&pWiseSub=B12' >";
+					paramVal += "<span class='thumb'><img src='/admin2011/upload/photo/2022/12/21/05f3997890a4ffe3d666f18a8a06fcfe_THUMB_2.jpg' alt='' /></span>";
+					paramVal += "<span class='text'>";
+					paramVal += "<strong>춘추관 문학 특별전시 개막식</strong>";
+					paramVal += "<span>21일 서울 종로구 청와대 춘추관에서 열린 국립한국문학관 특별전시 &#039;이상, 염상섭, 현진건, 윤동주, 청와대를 거닐다&#039;에서 관계자들이 개막 퍼포먼스를 하고 있다. 귄영민 서울대학교 명예교수, 이용 국회의원, 홍익 염상섭 손자, 문정희 국립한국문학관 관장, 박동란 현진건 외손녀, 박보균 문화체육관광부 장관, 이용호 ...</span>"; 
+					paramVal += "</span>";
+					paramVal += "</a>";
+					paramVal += "</li>";
 					paramVal += "";
 					paramVal += "";
 					paramVal += "";
@@ -1002,6 +1029,8 @@ $(document).ready(function() {
 					}
 					
 					paramVal += "";
+					paramVal += "";
+					paramVal += "";
 					
 					paramVal += "<a href='/news/policyPhotoView.do?bbsKey=52007&pWise=sub&pWiseSub=B12' >";
 					paramVal += "<span class='thumb'><img src='/admin2011/upload/photo/2022/12/06/3fc5014012e9e91eba7b62e98a8fa7c1_THUMB_2.jpg' alt='' /></span>";
@@ -1018,18 +1047,16 @@ $(document).ready(function() {
 					var newsUrl = "/news/policyPhotoView.do?bbsKey=51503";
 					if(newsUrl != null && newsUrl.indexOf("contributePolicyView.do") > -1){
 						paramVal += "";
-						paramVal += "<li class='gigo-column hg'>";
 						paramVal += "";
+						paramVal += "<li class='gigo-column hg' style='display:none;' name='1'>";
 						paramVal += "";
 					}else{
 						paramVal += "";
-						paramVal += "<li class='hg'>";
 						paramVal += "";
+						paramVal += "<li class='hg' style='display:none;' name='1'>";
 						paramVal += "";
 					}
 					
-					paramVal += "";
-					paramVal += "";
 					paramVal += "";
 					
 					paramVal += "<a href='/news/policyPhotoView.do?bbsKey=51503&pWise=sub&pWiseSub=B12' >";
@@ -1085,41 +1112,14 @@ $(document).ready(function() {
 					}
 					
 					paramVal += "";
+					paramVal += "";
+					paramVal += "";
 					
 					paramVal += "<a href='/news/weekendView.do?newsId=148907175&pWise=sub&pWiseSub=B12' >";
 					paramVal += "<span class='thumb'><img src='https://www.korea.kr/newsWeb/resources/attaches/2022.10/19/272121d713cbc2048940909a9cbc0b9c.jpg' alt='' /></span>";
 					paramVal += "<span class='text'>";
 					paramVal += "<strong>독서의 계절 가을, 책·문화 가득한 서울 명소 5곳</strong>";
 					paramVal += "<span> 이런 분들에게 추천해 드립니다!▷ 서울 실내 놀 거리를 찾는 분▷ 지하철 타고 갈만한 곳을 찾는 분 ▷ 독특한 개성이 담긴 공간을 좋아하는 분 ★추천 BEST 5 : 콤포트 서울, 성수연방, 뮤직컴플렉스 서울, 서울 책보고, 슬로우파마씨콤포트 서울 콤포트 서울은 올해 6월에 오픈한 서울의 신상 복합문화공간이자 문화 플랫폼...</span>"; 
-					paramVal += "</span>";
-					paramVal += "</a>";
-					paramVal += "</li>";
-					paramVal += "";
-					paramVal += "";
-					paramVal += "";
-
-					var newsUrl = "/news/policyPhotoView.do?bbsKey=50805";
-					if(newsUrl != null && newsUrl.indexOf("contributePolicyView.do") > -1){
-						paramVal += "";
-						paramVal += "";
-						paramVal += "<li class='gigo-column hg' style='display:none;' name='1'>";
-						paramVal += "";
-					}else{
-						paramVal += "";
-						paramVal += "";
-						paramVal += "<li class='hg' style='display:none;' name='1'>";
-						paramVal += "";
-					}
-					
-					paramVal += "";
-					paramVal += "";
-					paramVal += "";
-					
-					paramVal += "<a href='/news/policyPhotoView.do?bbsKey=50805&pWise=sub&pWiseSub=B12' >";
-					paramVal += "<span class='thumb'><img src='/admin2011/upload/photo/2022/09/29/6d9a9ef594d830e4b0fa2167fc66a317_THUMB_2.jpg' alt='' /></span>";
-					paramVal += "<span class='text'>";
-					paramVal += "<strong>‘문화상회’ 1호 반짝매장</strong>";
-					paramVal += "<span> 29일 오전 서울 용산공원 개방부지에 마련된 반짝매장에 청년예술인 기업의 제품이 진열돼 있다. 문화상회반짝매장은 오는 10월 1일까지 열린다.,문화체육관광부가 국토교통부 용산공원조성추진기획단과 함께 문을 연 문화상회반짝매장(팝업스토어)은 전통문화 청년 초기창업기업 제품과 장애예술인 작가의 미술 작품 등을...</span>"; 
 					paramVal += "</span>";
 					paramVal += "</a>";
 					paramVal += "</li>";
@@ -1739,7 +1739,23 @@ $(document).ready(function() {
 </script>	
 			
 		
+			<div class="full-banner st1" style="background:#e7d1da; height: 122px; margin-top:-122px;">
+				<div class="inner container ">
 
+					<a href="https://www.korea.kr/briefing/2023?v=1&pWise=main&pWiseMain=TOP1"  target="_blank" title="새창열림"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/20/f1caebf498f537845be0f4580d141c45.jpg" alt="2023 정부 업무보고" /></a>
+
+					<div class="today">
+						<input type="checkbox" name="fct" id="fct" title="오늘 하루 열지 않기" />
+						<label for="fct"><i>오늘 하루 열지않기</i></label>
+					</div>
+					<button class="close" type="button"><i class="xi-close-min" aria-hidden="true"></i><span class="sr-only">닫기</span></button>
+					<button class="open" type="button" style="display:none;"><span>배너 열기</span></button>		 
+					
+				</div>
+				
+			</div>
+		
+	<!--
 	<div class="full-banner st1" style="margin-top:-122px;">
 		<div class="inner container">
 			<img src="https://www.korea.kr/images/banner/top_banner_1208.jpg" alt="정책브리핑 구독 챌린지 2022.12.08~12.18 2023년 토끼의 해! 정책 정보력 UP 뉴스레터 구독·친구추천 이벤트, 네이버,다음, 카카오 뉴스 채널 구독 이벤트" usemap="#Map"/>
@@ -1755,6 +1771,7 @@ $(document).ready(function() {
 			<button class="open" type="button" style="display:none;"><span>배너 열기</span></button>
 		</div>
 	</div>
+	-->
 		
 		<!-- 탑배너 하드코딩 -->
 		
@@ -2843,13 +2860,15 @@ $(document).ready(function() {
 									<div class="best-keyword">
 										
 											
-												<a href="javascript:topKeywordSubmitSr('고병원성 AI');">고병원성 AI</a>
+												<a href="javascript:topKeywordSubmitSr('한파');">한파</a>
+											
+												<a href="javascript:topKeywordSubmitSr('윈·윈터 페스티벌');">윈·윈터 페스티벌</a>
+											
+												<a href="javascript:topKeywordSubmitSr('전세사기');">전세사기</a>
 											
 												<a href="javascript:topKeywordSubmitSr('실내 마스크');">실내 마스크</a>
 											
 												<a href="javascript:topKeywordSubmitSr('만 나이');">만 나이</a>
-											
-												<a href="javascript:topKeywordSubmitSr('동절기 추가접종');">동절기 추가접종</a>
 											
 										
 									</div>
@@ -5538,26 +5557,26 @@ $(document).ready(function() {
 					
 						
 						<li>
-							<a href="/news/actuallyView.do?newsId=148909436&pWise=sub&pWiseSub=B3">
+							<a href="/news/actuallyView.do?newsId=148909727&pWise=sub&pWiseSub=B3">
 								
 									
-										<span data-title="고">고용노동부</span>
+										<span data-title="교">교육부</span>
 									
 									
 																		
-								<strong>육아휴직 기간 확대 위해 면밀히 개편방안 마련해 추진</strong>							
+								<strong>교육부, 시도지사-시도교육감 러닝메이트제 입장 바꿨다? 사실과 달라</strong>							
 							</a>
 						</li>
 						
 						<li>
-							<a href="/news/actuallyView.do?newsId=148909422&pWise=sub&pWiseSub=B3">
+							<a href="/news/actuallyView.do?newsId=148909712&pWise=sub&pWiseSub=B3">
 								
 									
-										<span data-title="고">고용노동부</span>
+										<span data-title="행">행정안전부</span>
 									
 									
 																		
-								<strong>정기감독을 위험성평가 점검으로 개편·산업안전보건감독관 역량 강화 추진</strong>							
+								<strong>모바일 신분증 앱, 현재 정상 다운로드 가능</strong>							
 							</a>
 						</li>
 						
@@ -5583,11 +5602,11 @@ $(document).ready(function() {
 							
 							
 							<li>					
-								<a href="/news/policyNewsView.do?newsId=148909249&pWise=mostViewNewsSub&pWiseSub=B5"
+								<a href="/news/policyNewsView.do?newsId=148909514&pWise=mostViewNewsSub&pWiseSub=B5"
 										
 					        	>				
 									<span class="rank">1</span>
-									<span class="title">실내 마스크, 향후 권고·자율로 전환…고위험 시설은 의무 유지</span>
+									<span class="title">코로나 환자 별도 절차 없이 신속 입원…일반병상 지속 증가</span>
 								</a>
 							</li>
 							
@@ -5595,11 +5614,11 @@ $(document).ready(function() {
 							
 							
 							<li>					
-								<a href="/news/policyNewsView.do?newsId=148909216&pWise=mostViewNewsSub&pWiseSub=B5"
+								<a href="/news/policyNewsView.do?newsId=148909552&pWise=mostViewNewsSub&pWiseSub=B5"
 										
 					        	>				
 									<span class="rank">2</span>
-									<span class="title">내년 6월부터 ‘만 나이’로 통일…국회 본회의 통과</span>
+									<span class="title">내년부터 휘발유 유류세 인하폭 25%로 축소…경유는 37% 유지</span>
 								</a>
 							</li>
 							
@@ -5607,11 +5626,11 @@ $(document).ready(function() {
 							
 							
 							<li>					
-								<a href="/news/policyNewsView.do?newsId=148909352&pWise=mostViewNewsSub&pWiseSub=B5"
+								<a href="/news/policyNewsView.do?newsId=148909507&pWise=mostViewNewsSub&pWiseSub=B5"
 										
 					        	>				
 									<span class="rank">3</span>
-									<span class="title">내년 1월부터 ‘부모급여’ 지급…0세 월 70만원·1세 35만원</span>
+									<span class="title">‘탈원전’ 외치던 세계 각국, 다시 ‘원전 회귀’</span>
 								</a>
 							</li>
 							
@@ -5619,11 +5638,11 @@ $(document).ready(function() {
 							
 							
 							<li>					
-								<a href="/news/policyNewsView.do?newsId=148909222&pWise=mostViewNewsSub&pWiseSub=B5"
+								<a href="/news/policyNewsView.do?newsId=148909506&pWise=mostViewNewsSub&pWiseSub=B5"
 										
 					        	>				
 									<span class="rank">4</span>
-									<span class="title">윤 대통령, 축구대표단 환영 만찬…“‘꺾이지 않는 마음’ 큰 울림”</span>
+									<span class="title">2030년까지 항만배후단지에 2조 투입…부가가치 5.5조 창출</span>
 								</a>
 							</li>
 							
@@ -5631,11 +5650,11 @@ $(document).ready(function() {
 							
 							
 							<li>					
-								<a href="/news/policyNewsView.do?newsId=148909258&pWise=mostViewNewsSub&pWiseSub=B5"
+								<a href="/news/policyNewsView.do?newsId=148909510&pWise=mostViewNewsSub&pWiseSub=B5"
 										
 					        	>				
 									<span class="rank">5</span>
-									<span class="title">청년이 일하기 좋은 우수 중소·중견기업 1000 곳 선정</span>
+									<span class="title">‘윈·윈터 페스티벌’ 기간 7억원 상당 소비 촉진 이벤트 열린다</span>
 								</a>
 							</li>
 							
@@ -5643,11 +5662,11 @@ $(document).ready(function() {
 							
 							
 							<li>					
-								<a href="/news/mediaNewsView.do?newsId=148909243&pWise=mostViewNewsSub&pWiseSub=B5"
+								<a href="/news/policyNewsView.do?newsId=148909560&pWise=mostViewNewsSub&pWiseSub=B5"
 										
 					        	>				
 									<span class="rank">6</span>
-									<span class="title">가장 문의가 많은 휴직 1위 질병 휴직…국가공무원 질병휴직제도 꿀팁 大공개!</span>
+									<span class="title">내년 공공기관 총인건비 1.7% 인상…업무추진비 10% 삭감</span>
 								</a>
 							</li>
 							
@@ -5655,11 +5674,11 @@ $(document).ready(function() {
 							
 							
 							<li>					
-								<a href="/news/weekendView.do?newsId=148909107&pWise=mostViewNewsSub&pWiseSub=B5"
+								<a href="/news/policyNewsView.do?newsId=148909555&pWise=mostViewNewsSub&pWiseSub=B5"
 										
 					        	>				
 									<span class="rank">7</span>
-									<span class="title">12월 가볼 만한 곳…반짝반짝 빛나는 여행지 6곳</span>
+									<span class="title">한국인 66% “대한민국은 이미 문화선진국”</span>
 								</a>
 							</li>
 							
@@ -5667,11 +5686,11 @@ $(document).ready(function() {
 							
 							
 							<li>					
-								<a href="/news/policyNewsView.do?newsId=148909255&pWise=mostViewNewsSub&pWiseSub=B5"
+								<a href="/news/policyNewsView.do?newsId=148909567&pWise=mostViewNewsSub&pWiseSub=B5"
 										
 					        	>				
 									<span class="rank">8</span>
-									<span class="title">동네수퍼 장보기, 온라인으로도 가능…‘풀필먼트’ 제1호 개소</span>
+									<span class="title">겨울철 독감 유행 본격화…“어린이·어르신 접종 서둘러야”</span>
 								</a>
 							</li>
 							
@@ -5679,11 +5698,11 @@ $(document).ready(function() {
 							
 							
 							<li>					
-								<a href="/news/policyNewsView.do?newsId=148909259&pWise=mostViewNewsSub&pWiseSub=B5"
+								<a href="/news/policyNewsView.do?newsId=148909600&pWise=mostViewNewsSub&pWiseSub=B5"
 										
 					        	>				
 									<span class="rank">9</span>
-									<span class="title">스트리트댄스·웹툰·뮤직비디오 등 예술인 복지지원 혜택받는다</span>
+									<span class="title">학생연구자 인건비 기준 15년 만에 오른다…내년 3월부터</span>
 								</a>
 							</li>
 							
@@ -5691,11 +5710,11 @@ $(document).ready(function() {
 							
 							
 							<li>					
-								<a href="/news/policyNewsView.do?newsId=148909356&pWise=mostViewNewsSub&pWiseSub=B5"
+								<a href="/news/policyNewsView.do?newsId=148909593&pWise=mostViewNewsSub&pWiseSub=B5"
 										
 					        	>				
 									<span class="rank">10</span>
-									<span class="title">16~25일 연말 소비촉진 ‘한겨울의 동행축제’ 열린다</span>
+									<span class="title">추 부총리 “추가연장근로 일몰연장 법안, 연내 국회 통과 간곡히 호소”</span>
 								</a>
 							</li>
 							
@@ -5715,8 +5734,8 @@ $(document).ready(function() {
 					
 						
 							
-								<a href="/news/reporterView.do?newsId=148908912&pWise=sub&amp;pWiseSub=B15">
-									<span>이 시대 날개 없는 천사 호스피스 자원봉사자</span>
+								<a href="/news/reporterView.do?newsId=148909444&pWise=sub&amp;pWiseSub=B15">
+									<span>감염병은 예방이 최선!</span>
 									<i>내용 더보기</i>
 								</a>
 								
@@ -5741,38 +5760,38 @@ $(document).ready(function() {
 					<ul>
 						
 							<li>
-								<a href='/news/visualNewsView.do?newsId=148909359&pWise=sub&pWiseSub=B2' >
+								<a href='/news/visualNewsView.do?newsId=148909702&pWise=sub&pWiseSub=B2' >
 									
-										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/13/5004fe611f20ed9a5e7c9b6c86b63e4f.jpg" alt="" /></span>
+										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/22/8ba9bd295cd3505ad48b5ed7605babe5.jpg" alt="" /></span>
 									
-									<span class="title">우리 동네 깨끗한 맛집 찾는법</span>
+									<span class="title">문화체육관광부 2022년 하반기 규제혁신 대표사례</span>
 								</a>
 							</li>
 						
 							<li>
-								<a href='/news/visualNewsView.do?newsId=148909374&pWise=sub&pWiseSub=B2' >
+								<a href='/news/visualNewsView.do?newsId=148909719&pWise=sub&pWiseSub=B2' >
 									
-										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/13/f7dadefb1a06bba57050587f06f6ee22.jpg" alt="" /></span>
+										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/22/6577521c6bc19db2a32112c7cdba7cf6.jpg" alt="" /></span>
 									
-									<span class="title">고향과 국민을 잇습니다…‘고향사랑기부제’</span>
+									<span class="title">문화재청 2022년 하반기 규제혁신 대표사례</span>
 								</a>
 							</li>
 						
 							<li>
-								<a href='/news/visualNewsView.do?newsId=148909429&pWise=sub&pWiseSub=B2' >
+								<a href='/news/visualNewsView.do?newsId=148909735&pWise=sub&pWiseSub=B2' >
 									
-										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/14/8c55a4fd50b2fb7ff076d9ec227def4f.jpg" alt="" /></span>
+										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/22/b477d20f7e977edae4fbe40d90deb1b8.jpg" alt="" /></span>
 									
-									<span class="title">자영업자 고용보험 - 생활 안정 편</span>
+									<span class="title">크리스마스 수산물 요리 추천 5</span>
 								</a>
 							</li>
 						
 							<li>
-								<a href='/news/visualNewsView.do?newsId=148909432&pWise=sub&pWiseSub=B2' >
+								<a href='/news/visualNewsView.do?newsId=148909734&pWise=sub&pWiseSub=B2' >
 									
-										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/14/36a8b3333b2ed1cf0ead2837e737024f.jpg" alt="" /></span>
+										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/22/3eb8b9a6bd1a428e41cf85e1ad65d62d.jpg" alt="" /></span>
 									
-									<span class="title">중기부, 효율적 기구로 전면 개편</span>
+									<span class="title">교통복지카드 전국호환 시행</span>
 								</a>
 							</li>
 						
@@ -5787,8 +5806,8 @@ $(document).ready(function() {
 				<h2>‘코로나19 대응’ 정책포커스</h2>
 				<div>
 										
-						<a href="/special/policyFocusView.do?newsId=148909434&pkgId=49500742&pWise=sub&amp;pWiseSub=B13">
-							<span>코로나 확진자 1주일새 11.2% ↑…주간 위험도 7주 연속 ‘중간’</span>
+						<a href="/special/policyFocusView.do?newsId=148909625&pkgId=49500742&pWise=sub&amp;pWiseSub=B13">
+							<span>재감염 늘고 BN.1변이 20% 넘어…중대본 “방역상황 예의주시”</span>
 						</a>
 					
 				</div>
@@ -5814,12 +5833,12 @@ $(document).ready(function() {
 								
 											
 							<li>
-								<a href="/news/contributePolicyView.do?newsId=148909204&pWise=sub&pWiseSub=B7">
+								<a href="/news/contributePolicyView.do?newsId=148909550&pWise=sub&pWiseSub=B7">
 									
-										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/08/5215267e3f36d959e02f6f34b3f71faa.jpg" alt="정제영 이화여대 교육학과 교수·기획처장·미래교육연구소장"  style="max-height:110%;"/></span>
+										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/20/7029d2465ab18d4c640f704c2b5f5c40.jpg" alt="정은우 대학내일 기획혁신센터장"  style="max-height:110%;"/></span>
 									
 									<span class="text">
-										<strong>디지털 대전환과 미래교육의 방향</strong>
+										<strong>아이디어로 해결되는 문제는 없다</strong>
 										<span>정책기고</span>
 									</span>
 								</a>
@@ -5833,13 +5852,13 @@ $(document).ready(function() {
 								
 											
 							<li>
-								<a href="/news/contributePolicyView.do?newsId=148909168&pWise=sub&pWiseSub=B7">
+								<a href="/news/cultureColumnView.do?newsId=148909685&pWise=sub&pWiseSub=B7">
 									
-										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/07/3d4a5abdc87efc28a40a72c8de0787d3.jpg" alt="정재욱 도시혁신그룹 무브먼트 대표"  style="max-height:110%;"/></span>
+										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2021.06/17/a045d6218da89c2af9427e7fd6a2a708.jpg" alt="김상균 바이올리니스트"  style="max-height:110%;"/></span>
 									
 									<span class="text">
-										<strong>1인가구 시대의 새로운 정책과 시도들, 그리고 앞으로의 과제</strong>
-										<span>정책기고</span>
+										<strong>“메리 크리스마스”…고전이 된 크리스마스 캐롤의 탄생 비화</strong>
+										<span>문화칼럼</span>
 									</span>
 								</a>
 							</li>
@@ -5904,9 +5923,9 @@ $(document).ready(function() {
 							
 							
 								<li>
-									<a href="/news/policyPhotoView.do?bbsKey=52129&pWise=sub&pWiseSub=G2" class="box">
-										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/14/777d7b3ece599a2db9dd311e22840989.jpg" alt=""></span>
-										<span class="text">‘탄소중립실천포인트제’ 함께합니다!</span>
+									<a href="/news/policyPhotoView.do?bbsKey=52267&pWise=sub&pWiseSub=G2" class="box">
+										<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/21/f2597eeea367dc26d56b076c363fe9c0.jpg" alt=""></span>
+										<span class="text">에너지절약 간담회에선 무슨 얘기가?</span>
 									</a>
 								</li>
 							
@@ -5957,15 +5976,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/policyNewsView.do?newsId=148909330&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z1"
+					<a href="/news/visualNewsView.do?newsId=148909664&cateId=cardnews&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z1"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/14/75e5d68d2af63e4c3d52aeaa6e5f1702.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/22/b6a282442578d1bc849245e6132ddbc3.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                서울숲·창원 여좌천·통영 디피랑<br/>‘한국관광 100선’
+	                                올해 가장 잘 다듬은<br/> 쉬운 우리말은?
 	                            
 	                        
 						</strong>
@@ -5981,15 +6000,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/healthView.do?newsId=148909367&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z2"
+					<a href="/news/policyNewsView.do?newsId=148909716&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z2"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/14/3a18c68cb8f79d57a129b17ee12cbf14.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/22/c65a3bbb4779116539e72f0849cdd90b.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                2022년 개정 심뇌혈관질환<br/> 예방관리 수칙
+	                                ‘더 간결하고 강하게’<br/>담뱃갑 경고그림·문구 교체
 	                            
 	                        
 						</strong>
@@ -6005,15 +6024,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/visualNewsView.do?newsId=148909115&cateId=graphic_news&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z3"
+					<a href="/news/visualNewsView.do?newsId=148909614&cateId=cardnews&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z3"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/14/cb103bf4788bc749ad466788e82e0f8a.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/21/141cfb85f8f6ec706a72bae68e8451ff.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                내년 1학기 국가장학금<br/>지금 신청하세요!
+	                                ‘이번 주말, 여기 어때?’<br/>12월 여행지 추천 
 	                            
 	                        
 						</strong>
@@ -6029,15 +6048,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/visualNewsView.do?newsId=148909229&cateId=cardnews&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z4"
+					<a href="/news/healthView.do?newsId=148909626&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z4"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/13/57c4a1207cce921ae45dc15320599638.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/21/8962afbaefe35c66db5a088eb959dc27.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                ‘에너지바우처’ <br/>궁금증 7가지
+	                                겨울철 활력 충전에<br/> 도움 되는 식재료 5가지
 	                            
 	                        
 						</strong>
@@ -6053,15 +6072,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/visualNewsView.do?newsId=148909163&cateId=cardnews&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z5"
+					<a href="/news/mediaNewsView.do?newsId=148909637&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z5"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/13/1d32b838fdd5e3a3f1a26ac8b4364a3c.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/21/f0c67c8351b0ad45c4ace53357961e5c.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                안전한 <br/>겨울산행 꿀팁
+	                                [한알정책]<br/> 유류비 절약편
 	                            
 	                        
 						</strong>
@@ -6077,15 +6096,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/healthView.do?newsId=148909285&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z6"
+					<a href="/news/cartoonView.do?newsId=148909448&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z6"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/13/aa3b0f532b7a9c76182471f4576f58c7.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/20/90d979e793db03a41f5bd2b3dd4d64b8.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                생활 속 주요 질병 살펴보기<br/> ⑤ ‘대상포진’
+	                                법나들이 <br/>대한민국 쇼핑 명인
 	                            
 	                        
 						</strong>
@@ -6101,15 +6120,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/cartoonView.do?newsId=148908975&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z7"
+					<a href="/news/mediaNewsView.do?newsId=148909556&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z7"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/13/2f85801a22b55acf1327b29b4e4f3bee.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/20/8f8f2559e25743e9cc92bb1b541b2210.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                폭설·한파 <br/>이렇게 대비하세요!
+	                                오늘부터 쉼니다<br/> -플라스틱 올림-
 	                            
 	                        
 						</strong>
@@ -6125,15 +6144,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/visualNewsView.do?newsId=148909247&cateId=cardnews&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z8"
+					<a href="/news/visualNewsView.do?newsId=148909566&cateId=cardnews&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z8"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/12/38f86bcdf1f08de64e7eb430a152fc7c.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/20/302ca074d211a05c1077276d17e45c3c.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                대장 내시경 받을 때<br/> 음식 제한하는 이유
+	                                겨울철 노인 ‘낙상사고’ 주의<br/>예방법은?
 	                            
 	                        
 						</strong>
@@ -6149,15 +6168,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/policyNewsView.do?newsId=148909245&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z9"
+					<a href="/news/visualNewsView.do?newsId=148909427&cateId=graphic_news&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z9"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/12/2cea088469ac1e4a85b6767f5bcdd116.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/20/35852430286b6fdd1834adc7450c4081.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                전세계 100마리도 안남은<br/> ‘뿔제비갈매기’ 
+	                                나트륨·당류 줄이기<br/> 식생활 정보 한곳에!
 	                            
 	                        
 						</strong>
@@ -6173,15 +6192,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/healthView.do?newsId=148909251&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z10"
+					<a href="/news/policyNewsView.do?newsId=148909564&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z10"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/12/6c4b05592a9a99c30abf784b8a091dcf.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/20/43d55ae3285dacf6fcef5e458e7c77f0.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                관엽식물, <br/>안전한 겨울나기 비법
+	                                생활 속 주요 질병 살펴보기<br/> ⑥ ‘각막염’
 	                            
 	                        
 						</strong>
@@ -6197,15 +6216,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/mediaNewsView.do?newsId=148909225&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z11"
+					<a href="/news/policyNewsView.do?newsId=148909312&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z11"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/12/9e02aa6eaecb2686b567358c5c0897b4.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/15/406a16ce7debaf0c308e11050f19eff4.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                생명을 구하고 홀연히 떠난<br/> ‘시민 의인’…그 이유는?
+	                                한겨울의 동행축제<br/> ‘윈·윈터 페스티벌’ 즐기는 법
 	                            
 	                        
 						</strong>
@@ -6221,15 +6240,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/visualNewsView.do?newsId=148909079&cateId=cardnews&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z12"
+					<a href="/news/visualNewsView.do?newsId=148909479&cateId=cardnews&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z12"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/12/0316a0c594767fafbb8caf0956e2cf9a.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/15/621c2c0683365a73e391022480ff9da9.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                12월에 가기 좋은<br/> 어촌 안심여행지
+	                                [슬기로운 해외 직구생활] <br/>바른 직구 7가지 방법
 	                            
 	                        
 						</strong>
@@ -6245,15 +6264,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/mediaNewsView.do?newsId=148909160&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z13"
+					<a href="/news/visualNewsView.do?newsId=148909477&cateId=cardnews&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z13"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/07/25219ecad2d6dfa129c5342fbc8a860d.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/15/7cc60ac2e603487f294b312d9e592d33.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                [한알정책] <br/>인천공항이용꿀팁 편
+	                                취향 따라 떠나는 <br/>겨울바다 여행지 4곳
 	                            
 	                        
 						</strong>
@@ -6269,15 +6288,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/visualNewsView.do?newsId=148909164&cateId=cardnews&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z14"
+					<a href="/news/mediaNewsView.do?newsId=148909467&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z14"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/07/ef333ac63842debfc920d24d23fe763a.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/15/d3dc267e990e2cba8a85064b9a9343d4.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                타임지가 선정한 <br/>올해 최고의 발명품은?
+	                                내 사진을 무단으로 사용했다면? <br/>꼭 연락하세요!
 	                            
 	                        
 						</strong>
@@ -6293,15 +6312,15 @@ $(document).ready(function() {
 						
 						
 				<div class="box">
-					<a href="/news/visualNewsView.do?newsId=148909154&cateId=cardnews&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z15"
+					<a href="/news/policyNewsView.do?newsId=148909366&amp;pWise=sub&pWiseSub=B10&pWiseLevel=Z15"
 						
 	                    >
-						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/07/ec8b77e0c361326fc67522b7868a5a78.jpg" alt="" /></span>
+						<span class="thumb"><img src="https://www.korea.kr/newsWeb/resources/attaches/2022.12/15/bd113dd3f298a11f91690986cc9d6336.jpg" alt="" /></span>
 						<strong class="title">
 							
 	                            
 	                            
-	                                첫눈과 함께<br/> ‘12월의 독서산책’
+	                                추위도 잊게 만드는<br/> 부산 이색 체험여행
 	                            
 	                        
 						</strong>
