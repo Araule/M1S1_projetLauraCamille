@@ -1,26 +1,25 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 
 fichier_texte=$1
 motif=$2
+langue=$3
 
-if [[ $# -ne 2 ]]
-then
-  echo "Ce programme demande exactement deux arguments : "
-  exit
-fi
+
 
 if [[ ! -f $fichier_texte ]]
 then
-  echo "le fichier $fichier_texte n'existe pas"
+  echo "le fichier $fichier_texte n'existe pas";
   exit
 fi
 
 if [[ -z $motif ]]
 then
-  echo "le motif est vide"
+  echo "le motif est vide";
   exit
 fi
+
+
 
 echo "
 <!DOCTYPE html>
@@ -41,10 +40,20 @@ echo "
 <tbody>
 "
 
-grep -Eo "(\w+\W+){0,5}\b$motif\b(\W+\w+){0,5}" $fichier_texte | sed -E "s/(.*)($motif)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/g"
+
+if [[ $langue == "chinois" ]]
+then
+  fichier_token=$(python3 ./programmes/tokenize_chinois.py $fichier_texte)
+else
+  fichier_token=$(echo "$fichier_texte")
+fi
+
+
+
+echo "$fichier_token" | grep -Eo "(\w+\W+){0,5}\b$motif\b(\W+\w+){0,5}" | sed -E "s/(.*)($motif)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/g"
 #compter les parenthèses et mettre ce chiffre à la place du \3
 # n'a pas fonctionné car prend un nombre comme un un chiffre
-#exemple \29 va me donner comme résultat "resultat du 2(donc le motif) + le chiffre 9 
+#exemple \29 va me donner comme résultat resultat du 2(donc le motif) + le chiffre 9 
 
 
 echo "
