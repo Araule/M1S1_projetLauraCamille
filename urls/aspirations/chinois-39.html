@@ -60,16 +60,14 @@
 </body><script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/js/mod_1fc3215.js"></script>
 <script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/vender-polyfill_dfac3eb.js"></script>
 <script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/wiki-common-jquery_2fd4e6c.js"></script>
-<script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/utils-clickstream_a15ec5c.js"></script>
+<script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/utils-clickstream_ddf953b.js"></script>
 <script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/vender-larkplayer_7eb2e49.js"></script>
 <script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/wiki-common-lib-jsmart_3ff2da8.js"></script>
 <script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/vender-util_776a2a9.js"></script>
 <script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/utils-datetime_1bc7409.js"></script>
 <script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/utils-storage_f9507ec.js"></script>
 <script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/wiki-common-ps-link_81d67c5.js"></script>
-<script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/vender-react_f2ba2fc.js"></script>
-<script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/vender_9c26f6d.js"></script>
-<script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/wiki-common-component_37b016c.js"></script>
+<script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/wiki-common-component_5f0fcf1.js"></script>
 <script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/wiki-common-lib_5ba5f53.js"></script>
 <script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/utils-logger_3b8256e.js"></script>
 <script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/wiki-common-util_1022550.js"></script>
@@ -122,7 +120,8 @@
                         success: function(res) {
                             if (res && res.errno === 0 && !res.isSpam) {
                                 clickstream.logActEvent($.extend({}, logParam, {'act_type': 'verify-pass'}));
-                                window.location.href = sourceUrl;
+                                var reg = new RegExp(/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\*\+,;=.]+$/);
+                                sourceUrl.match(reg) ? window.location.href = sourceUrl : window.history.back();
                             } else {
                                 var submitInform = Dialog.inform({
                                 icon: 'WARNING',
