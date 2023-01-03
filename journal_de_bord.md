@@ -35,8 +35,3 @@ Il y a deux variations :
 - ne pas juste prendre l'angle des sentiments autour de la lecture (impression de rêver, voyager)
 - la nocivité des ebooks, les ebooks et la santé,... : bien que les articles soient intéressants, nous avons décidé de ne pas choisir ces urls parce que le sujet deviendrait trop large
 - la lecture et l'apprentissage chez les jeunes : nous avons décidé de garder ses urls parce qu'il est tout à fait normal de lire pour apprendre des choses; ce genre d'articles est d'ailleurs plus présent en coréen qu'en chinois car les étudiants (mineurs) chinois n'ont pas vraiment le temps de lire pendant leur temps "libre"
-
-## Avancement TD script tableaux
-
-- enlever la partie " aspirations concordances contextes dumps-text programmes tableaux URLs " dans le dumps text
-- problème d'occurences pour le corréen, voir la regesxp
