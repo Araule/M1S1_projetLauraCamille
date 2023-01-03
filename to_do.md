@@ -1,9 +1,9 @@
 ## dernière ligne droite !!!
 
 ### partie 1 occurences
+finiiiii
 
 ### partie 2 contexte et concordance
-
-problème d'occurences pour le corréen, voir la regesxp
+ça marche po
 
 ### partie 3 itrameur
