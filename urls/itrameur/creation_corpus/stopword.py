@@ -8,8 +8,8 @@ from nltk.corpus import stopwords
 
 
 # on récupère d'abord le corpus
-fichier = input("\nQuel est le nom du fichier tokenisé ? (ex. corpus_français.txt) : ")
-with open(f"./{fichier}", 'r') as f :
+fichier = input("\nQuel est le nom du fichier tokenisé ? (ex. ./contextes-chinois-tokenized.txt) : ")
+with open(fichier, 'r') as f :
     texte = f.read()
     liste_mots = texte.split()
 
@@ -17,8 +17,17 @@ with open(f"./{fichier}", 'r') as f :
 # on demande la langue du texte pour avoir la liste des mots vides
 langue = input("\nQuel est la langue du texte que vous voulez nettoyer ? (en anglais : french, chinese or korean) : ")
 # il est important que la langue rentrée soit en anglais pour la suite
-mots_vides = stopwords.words(langue)
 
+# fichier texte stopwords_chinois.txt trouvé sur : https://github.com/goto456/stopwords + quelques ajouts personnels
+# la liste de mots vides avec nltk n'était pas suffisante
+if langue == "chinese" :
+    with open("./stopwords_chinois.txt", 'r') as f :
+        texte_motsvides = f.read()
+    mots_vides = []
+    for mot in texte_motsvides :
+        mots_vides.append(mot)
+else :
+    mots_vides = stopwords.words(langue)
 
 # on récupère une liste sans les mots vides du corpus, puis on concatène les mots dans la variable texte_propre
 liste_mots_pleins = []
@@ -31,6 +40,6 @@ texte_propre = " ".join(liste_mots_pleins)
 
 
 # enfin, on écrit le texte dans un fichier
-fichier_propre = input("\nQuel est le nom du fichier propre (ex. corpus_français_propre.txt) : ")
-with open(f"./{fichier_propre}", 'w') as f :
+fichier_propre = input("\nQuel est le nom du fichier propre (ex. ./contextes-chinois-final.txt) : ")
+with open(fichier_propre, 'w') as f :
     f.write(texte_propre)
