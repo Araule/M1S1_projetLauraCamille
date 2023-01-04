@@ -43,8 +43,9 @@ echo "
 
 if [[ $langue == "chinois" ]] 
 then
-  python3 ./programmes/tokenize_chinese.py $fichier_texte > ./tokenized.txt
-  fichier_texte=$(sed "s/[a-zA-Z0-9()-，；：！？。、&#]*//g" ./tokenized.txt)
+  python3 ./programmes/tokenize_chinese.py $fichier_texte > ./tokenized_1.txt
+  sed "s/看\s书/看书/g" ./tokenized_1.txt > ./tokenized_2.txt
+  fichier_texte=$(sed "s/[a-zA-Z0-9()-，；：！？。、&#]*//g" ./tokenized_2.txt)
 fi
 
 echo "$fichier_texte" | grep -Eo "(\w+\W+){0,5}\b($regexp)\b(\W+\w+){0,5}" | sed -E "s/(.*)($regexp)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/g"
@@ -57,4 +58,4 @@ echo "
 </html>
 "
 
-rm ./tokenized.txt
+rm ./tokenized_*.txt
