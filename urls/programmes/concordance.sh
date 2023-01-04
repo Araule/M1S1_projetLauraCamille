@@ -2,7 +2,7 @@
 
 
 fichier_texte=$1
-motif=$2
+regexp=$2
 langue=$3
 
 
@@ -13,7 +13,7 @@ then
   exit
 fi
 
-if [[ -z $motif ]]
+if [[ -z $regexp ]]
 then
   echo "le motif est vide";
   exit
@@ -41,16 +41,14 @@ echo "
 "
 
 
-if [[ $langue == "chinois" ]]
+if [[ $langue == "chinois" ]] 
 then
   fichier_token=$(python3 ./programmes/tokenize_chinois.py $fichier_texte)
 else
-  fichier_token=$(echo "$fichier_texte")
+ fichier_token=$(echo "$fichier_texte")
 fi
 
-
-
-echo "$fichier_token" | grep -Eo "(\w+\W+){0,5}\b$motif\b(\W+\w+){0,5}" | sed -E "s/(.*)($motif)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/g"
+echo "$fichier_token" | grep -Eo "(\w+\W+){0,5}($regexp)(\W+\w+){0,5}"  $fichier_texte | sed -E "s/(.*)($regexp)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/g"
 #compter les parenthèses et mettre ce chiffre à la place du \3
 # n'a pas fonctionné car prend un nombre comme un un chiffre
 #exemple \29 va me donner comme résultat resultat du 2(donc le motif) + le chiffre 9 
