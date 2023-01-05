@@ -4,7 +4,7 @@
 # Cela lui permet de récupérer les fichiers dans les bons dossiers.
 # 
 # Se lancera donc comme ça :
-# $ ./programmes/correction_itrameur.sh
+# $ ./programmes/itrameur.sh
 
 if [[ $# -ne 2 ]]
 then

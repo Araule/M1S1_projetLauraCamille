@@ -50,9 +50,10 @@ then
   rm ./fichier_*.txt # on supprime les fichiers inutiles
 
 else
-  grep -Eo "(\w+\W+){0,5}\b($regexp)\b(\W+\w+){0,5}" $fichier_texte | sed -E "s/(.*)($regexp)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/g"
+  grep -Eo "(\w+\W+){0,5}\b($regexp)\b(\W+\w+){0,5}" $fichier_texte | sed -E "s/(.*)($regexp)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\4<\/td><\/tr>/g"
 
 fi
+# \4 car il y a des parenthèses dans l'expression régulière qui concerne le coréen.
 
 
 
