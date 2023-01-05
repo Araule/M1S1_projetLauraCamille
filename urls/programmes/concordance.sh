@@ -48,7 +48,7 @@ then
   fichier_texte=$(sed "s/[a-zA-Z0-9()&#*<>=§/_%.\"-+]*//g" ./fichier_2.txt) # on en profite pour enlever quelques caractères inutiles pour la concordance
 fi
 
-echo "$fichier_texte" | grep -Eo "(\w+\W+){0,5}($regexp)(\W+\w+){0,5}" | sed -E "s/(.*)($regexp)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/g"
+echo $fichier_texte | grep -Eo "(\w+\W+){0,5}($regexp)(\W+\w+){0,5}" | sed -E "s/(.*)($regexp)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/g"
 
 
 echo "
