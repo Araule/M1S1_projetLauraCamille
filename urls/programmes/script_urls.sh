@@ -96,6 +96,7 @@ while read -r URL; do # -r : true if file exists and is readable
 			echo "$dump" > ./fichier.txt
 			iconv -f utf-8 -t utf-8 -c ./fichier.txt > ./dumps-text/$basename-$lineno.txt
 			dump=$(cat ./dumps-text/$basename-$lineno.txt)
+			rm fichier.txt
 		# il arrive que lynx récupère quelques caractères non utf-8 (rare mais cela arrive)
 		# on enlève ces quelques caractères non utf-8 avec la commande iconv et l'option -c
 		else
@@ -140,7 +141,7 @@ while read -r URL; do # -r : true if file exists and is readable
 	# construction des concordances avec une commande externe
 
 	
-	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td><a href="./aspirations/$basename-$lineno.txt">$basename-$lineno</a></td><td>$occurences</td><td><a href="./contextes/$basename-$lineno.txt">$basename-$lineno</a></td><td><a href="./concordances/$basename-$lineno.html">$basename-$lineno</a></tr>" >> $fichier_tableau
+	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td><a href="./urls/aspirations/$basename-$lineno.html">$basename-$lineno</a></td><td>$occurences</td><td><a href="./urls/contextes/$basename-$lineno.txt">$basename-$lineno</a></td><td><a href="./urls/concordances/$basename-$lineno.html">$basename-$lineno</a></tr>" >> $fichier_tableau
 	echo -e "\t--------------------------------"
 	
 	lineno=$((lineno+1));

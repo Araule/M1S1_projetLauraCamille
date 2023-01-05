@@ -307,14 +307,13 @@ Notification:
 
    Lire le quotidien
      * Édition Brazzaville
-       Les Dépêches de Brazzaville : Édition brazzaville du 05 janvier
+       Les Dépêches de Brazzaville : Édition brazzaville du 06 janvier
        2023
      * Édition Kinshasa
-       Les Dépêches de Brazzaville : Édition le courrier de kinshasa du 04
+       Les Dépêches de Brazzaville : Édition le courrier de kinshasa du 06
        janvier 2023
      * Éd. Bassin du Congo
-       Les Dépêches de Brazzaville : Édition du 6e jour du 31 décembre
-       2022
+       Les Dépêches de Brazzaville : Édition du 6e jour du 07 janvier 2023
 
      *
 
