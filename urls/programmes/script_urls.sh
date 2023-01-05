@@ -19,8 +19,8 @@ then
 	exit # le programme se termine
 fi
 
-regexp="看书|读书|阅读|읽\w+|독서\w+"
-# notre expression régulière du verbe  "lire" en chinois, corréen et français
+regexp="看书|读书|阅读|읽^(지)\w+|읽지\s않는(다)?|독서\w+"
+# notre expression régulière du verbe  "lire" en chinois, coréen et français
 #j'ai décidé de retirer cette expression : 
 #읽지(도|않(는|았어도)?|못하는)|읽었(으니|을(뿐이다)?|다(고)?|던|는(지|데)?|느냐|어요)|읽는(다(면|고|는)?|데(서)?|지를|것보다)|읽어(야(만|합니다|할|겠다)?|주(기(도|가)?)|면|며|보(시)?는|(세)?요|니|볼|봐야겠다는|나가야겠다고|봤자|달라고|내지|들립니다|준다|라|서|나갈|요)|읽을(수(있는|록)?|거라는|지|까)|읽으(면(서(도)?)?|라고|려는|니까|시(나요|는)?|세요|십시요)|읽고(자하는|서는|나면|난)?|읽(던|습니다|다(가|보면)?|나|더라도|죠|도록|기도|게|든|힐|힌다|힙니다|히지)|읽은(것)?|읽자(는)?|읽혀(서|진)?|독서(하(지|다|는)?|할|한|했다)?
 #car malgré mes tentatives elle était trop compliquée pour les concordances.
