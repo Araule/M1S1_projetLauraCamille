@@ -27,6 +27,12 @@ if langue == "chinese" :
     mots_vides = []
     for mot in texte_motsvides :
         mots_vides.append(mot)
+elif langue == "korean" :
+    with open("./stopwords_coreen.txt", 'r') as f :
+        texte_motsvides = f.read()
+    mots_vides = []
+    for mot in texte_motsvides :
+        mots_vides.append(mot)
 else :
     mots_vides = stopwords.words(langue)
 

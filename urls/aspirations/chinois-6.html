@@ -666,22 +666,12 @@
             <li class="rec_topics">
                     <a href="https://www.douban.com/gallery/topic/3375703/?from=hot_topic_note" class="rec_topics_name">把生活拍成电影海报</a>
                     
-                    <span class="rec_topics_subtitle">574.3万次浏览</span>
+                    <span class="rec_topics_subtitle">575.7万次浏览</span>
             </li>
             <li class="rec_topics">
                     <a href="https://www.douban.com/gallery/topic/3376565/?from=hot_topic_note" class="rec_topics_name">寻找家乡最好的年货</a>
                     
-                    <span class="rec_topics_subtitle">55.5万次浏览</span>
-            </li>
-            <li class="rec_topics">
-                    <a href="https://www.douban.com/gallery/topic/3377620/?from=hot_topic_note" class="rec_topics_name">晒晒家里的独特味道</a>
-                    
-                    <span class="rec_topics_subtitle">新话题</span>
-            </li>
-            <li class="rec_topics">
-                    <a href="https://www.douban.com/gallery/topic/3377277/?from=hot_topic_note" class="rec_topics_name">你最想安利的家乡美食</a>
-                    
-                    <span class="rec_topics_subtitle">1.1万次浏览</span>
+                    <span class="rec_topics_subtitle">55.8万次浏览</span>
             </li>
             <li class="rec_topics">
                     <a href="https://www.douban.com/gallery/topic/3377677/?from=hot_topic_note" class="rec_topics_name">镜头中的烟火气</a>
@@ -691,7 +681,17 @@
             <li class="rec_topics">
                     <a href="https://www.douban.com/gallery/topic/3377622/?from=hot_topic_note" class="rec_topics_name">只有这个专业才懂的梗</a>
                     
-                    <span class="rec_topics_subtitle">新话题 · 353次浏览</span>
+                    <span class="rec_topics_subtitle">448次浏览</span>
+            </li>
+            <li class="rec_topics">
+                    <a href="https://www.douban.com/gallery/topic/3377277/?from=hot_topic_note" class="rec_topics_name">你最想安利的家乡美食</a>
+                    
+                    <span class="rec_topics_subtitle">1.1万次浏览</span>
+            </li>
+            <li class="rec_topics">
+                    <a href="https://www.douban.com/gallery/topic/3377618/?from=hot_topic_note" class="rec_topics_name">万物皆可贴贴纸</a>
+                    
+                    <span class="rec_topics_subtitle">新话题 · 4791次浏览</span>
             </li>
     </ul>
 </div>
@@ -759,7 +759,28 @@
     </div>
     
 
-    <script type="text/javascript" src="https://img1.doubanio.com/misc/mixed_static/6020cea2733d65a4.js"></script>
+    <script type="text/javascript" src="https://img1.doubanio.com/misc/mixed_static/7dba59df82c69a5f.js"></script><script type="text/javascript">
+    (function(){
+        window.collect_target = {
+            tkind: "1015",
+            tid: "712002390"
+        }
+        window.update_collect_state = function(collected){
+            var ele = document.querySelector('.lnk-doulist-add');
+            var old_num = parseInt(ele.querySelector('.react-num').textContent);
+            ele.className = 'lnk-doulist-add';
+            if(collected){
+                ele.className += ' collect-cancel';
+                ele.querySelector('.react-text').textContent = '已收藏';
+                ele.querySelector('.react-num').textContent = isNaN(old_num) ? 1 : old_num + 1;
+            }else{
+                ele.className += ' collect-add';
+                ele.querySelector('.react-text').textContent = '收藏';
+                ele.querySelector('.react-num').textContent = isNaN(old_num) ? "" : old_num - 1 === 0 ? "" : old_num - 1;
+            }
+        }
+    })();
+</script><script type="text/javascript" src="https://img1.doubanio.com/misc/mixed_static/3ae93dcdc10b3063.js"></script>
     
     <script src="https://img1.doubanio.com/f/sns/b76b5fce747a6cd9f6d6f27ed6ce230b09ef797c/js/sns/note/copy.js" type="text/javascript"></script>
     
@@ -774,7 +795,7 @@
             existingNode = global.document.getElementsByTagName('script')[0],
             adSource = '//erebor.douban.com/',
             userId = '',
-            browserId = '_UyCgAehrMU',
+            browserId = '_GLUN1n9Wag',
             criteria = '3:/note/712002390/?_i=60952385belrmp',
             preview = '',
             debug = false,
@@ -846,8 +867,8 @@
 
       function changeUrl() {
         var prev = '60952385belrmp'.split(',').pop();
-        var tt = '1672944838'.slice(3, 10);
-        var bid = '_UyCgAehrMU'.slice(0, 7);
+        var tt = '1672949605'.slice(3, 10);
+        var bid = '_GLUN1n9Wag'.slice(0, 7);
         var message = tt + bid;
         var chain = prev ? [prev, message].join(',') : message;
 
@@ -945,7 +966,7 @@ if (window.addEventListener) {
 
 
 
-    <!-- dae-web-sns--note-8445cd494f-qqvfx-->
+    <!-- dae-web-sns--note-8445cd494f-s9hcp-->
 
   
 
