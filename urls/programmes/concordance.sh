@@ -48,15 +48,9 @@ then
   fichier_texte=$(sed "s/[a-zA-Z0-9()&#*<>=§/_.\"-+]*//g" ./fichier_2.txt) # on en profite pour enlever quelques caractères inutiles pour la concordance
   echo "$fichier_texte" | grep -Eo "(\w+\W+){0,5}\b($regexp)\b(\W+\w+){0,5}" | sed -E "s/(.*)($regexp)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/g"
   rm ./fichier_*.txt # on supprime les fichiers inutiles
-
 else
-  grep -Eo "(\w+\W+){0,5}\b($regexp)\b(\W+\w+){0,5}" $fichier_texte | sed -E "s/(.*)($regexp)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\4<\/td><\/tr>/g"
-
+  grep -Eo "(\w+\W+){0,5}\b($regexp)\b(\W+\w+){0,5}" $fichier_texte | sed -E "s/(.*)($regexp)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/g"
 fi
-# \4 car il y a des parenthèses dans l'expression régulière qui concerne le coréen.
-
-
-
 
 echo "
 </tbody>
@@ -64,4 +58,3 @@ echo "
 </body>
 </html>
 "
-

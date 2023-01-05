@@ -666,32 +666,32 @@
             <li class="rec_topics">
                     <a href="https://www.douban.com/gallery/topic/3375703/?from=hot_topic_note" class="rec_topics_name">把生活拍成电影海报</a>
                     
-                    <span class="rec_topics_subtitle">553.9万次浏览</span>
+                    <span class="rec_topics_subtitle">574.3万次浏览</span>
             </li>
             <li class="rec_topics">
                     <a href="https://www.douban.com/gallery/topic/3376565/?from=hot_topic_note" class="rec_topics_name">寻找家乡最好的年货</a>
                     
-                    <span class="rec_topics_subtitle">51.1万次浏览</span>
+                    <span class="rec_topics_subtitle">55.5万次浏览</span>
             </li>
             <li class="rec_topics">
-                    <a href="https://www.douban.com/gallery/topic/3376582/?from=hot_topic_note" class="rec_topics_name">我的人生休息区</a>
+                    <a href="https://www.douban.com/gallery/topic/3377620/?from=hot_topic_note" class="rec_topics_name">晒晒家里的独特味道</a>
                     
-                    <span class="rec_topics_subtitle">17.9万次浏览</span>
+                    <span class="rec_topics_subtitle">新话题</span>
             </li>
             <li class="rec_topics">
-                    <a href="https://www.douban.com/gallery/topic/3376577/?from=hot_topic_note" class="rec_topics_name">期末复习状态一览</a>
+                    <a href="https://www.douban.com/gallery/topic/3377277/?from=hot_topic_note" class="rec_topics_name">你最想安利的家乡美食</a>
                     
                     <span class="rec_topics_subtitle">1.1万次浏览</span>
             </li>
             <li class="rec_topics">
-                    <a href="https://www.douban.com/gallery/topic/3376583/?from=hot_topic_note" class="rec_topics_name">给自己的年度颁奖典礼</a>
+                    <a href="https://www.douban.com/gallery/topic/3377677/?from=hot_topic_note" class="rec_topics_name">镜头中的烟火气</a>
                     
-                    <span class="rec_topics_subtitle">4.5万次浏览</span>
+                    <span class="rec_topics_subtitle">新话题</span>
             </li>
             <li class="rec_topics">
-                    <a href="https://www.douban.com/gallery/topic/3376573/?from=hot_topic_note" class="rec_topics_name">一杯热饮好过冬！</a>
+                    <a href="https://www.douban.com/gallery/topic/3377622/?from=hot_topic_note" class="rec_topics_name">只有这个专业才懂的梗</a>
                     
-                    <span class="rec_topics_subtitle">7.6万次浏览</span>
+                    <span class="rec_topics_subtitle">新话题 · 353次浏览</span>
             </li>
     </ul>
 </div>
@@ -774,7 +774,7 @@
             existingNode = global.document.getElementsByTagName('script')[0],
             adSource = '//erebor.douban.com/',
             userId = '',
-            browserId = 'PmBIUD9pqoA',
+            browserId = '_UyCgAehrMU',
             criteria = '3:/note/712002390/?_i=60952385belrmp',
             preview = '',
             debug = false,
@@ -846,8 +846,8 @@
 
       function changeUrl() {
         var prev = '60952385belrmp'.split(',').pop();
-        var tt = '1672927066'.slice(3, 10);
-        var bid = 'PmBIUD9pqoA'.slice(0, 7);
+        var tt = '1672944838'.slice(3, 10);
+        var bid = '_UyCgAehrMU'.slice(0, 7);
         var message = tt + bid;
         var chain = prev ? [prev, message].join(',') : message;
 
@@ -944,42 +944,8 @@ if (window.addEventListener) {
 
 
 
-  <img src="https://www.douban.com/pics/10k.jpg" style="display:none;" />
-  <img src="https://img1.doubanio.com/pics/10k.jpg" style="display:none;" />
-  <img src="https://img1.doubanio.com/pics/10k.jpg" style="display:none;" />
-  <img src="https://img1.doubanio.com/pics/10k.jpg" style="display:none;" />
 
-<script type="text/javascript">
-$(window).load(function(){
-    if (get_cookie('ct')) return;
-    var submit_result = function(domain, key, cost) {
-        $.get("https://www.douban.com/misc/ct", {domain:domain, key:key, cost:cost});
-    };
-    var test = function(domain, url, key, timeout) {
-        var img = $('<img src="http://'+domain+'.douban.com'+url+'" style="display:none;" />');
-        var begin = new Date();
-        var t;
-        img.load(function() {
-            var cost = new Date() - begin;
-            clearTimeout(t);
-            submit_result(domain, key, cost);
-            set_cookie({ct:'y'});
-        });
-        $().append(img);
-        t = setTimeout(function(){
-            submit_result(domain, key, "timedout");
-            }, timeout);
-    };
-    test('www', '/pics/ct-10k.jpg', 'ct-10k', 10000);
-    test('img3', '/pics/ct-10k.jpg', 'ct-10k', 10000);
-    test('img1', '/pics/ct-10k.jpg', 'ct-10k', 10000);
-    test('img5', '/pics/ct-10k.jpg', 'ct-10k', 10000);
-});
-</script>
-
-
-
-    <!-- dae-web-sns--note-8445cd494f-qv5p5-->
+    <!-- dae-web-sns--note-8445cd494f-qqvfx-->
 
   
 

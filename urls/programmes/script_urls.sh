@@ -19,7 +19,16 @@ then
 	exit # le programme se termine
 fi
 
-regexp="看书|读书|阅读|읽[^지|기(를)?]\w+|읽지\s않는(다)?|독서\w+"
+if [[ $langue == "chinois" ]]
+then
+    regexp="看书|读书|阅读"
+elif [[ $langue == "coreen" ]]
+then
+   regexp="읽[^지|기]\w+|읽지\s않는\w+|독서\w+"
+else
+   regexp="lir\w+|lis\w+?|lis"
+fi
+
 # notre expression régulière du verbe  "lire" en chinois, coréen et français
 # explication du motif en coréen :
 # permet de prendre en compte toutes les terminaisons du verbes
@@ -125,7 +134,7 @@ while read -r URL; do # -r : true if file exists and is readable
 	fi
 
 
-	egrep -E -B2 -A2 $regexp ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt
+	egrep -E -B3 -A3 $regexp ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt
 	
 	bash programmes/concordance.sh ./dumps-text/$basename-$lineno.txt $regexp $langue> ./concordances/$basename-$lineno.html
 	# construction des concordances avec une commande externe
@@ -138,6 +147,5 @@ while read -r URL; do # -r : true if file exists and is readable
 
 done < $fichier_urls
 
-rm ./fichier.txt
 echo "</table>" >> $fichier_tableau
 echo "</body></html>" >> $fichier_tableau
