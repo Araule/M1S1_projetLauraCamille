@@ -20,6 +20,7 @@ langue = input("\nQuel est la langue du texte que vous voulez nettoyer ? (en ang
 
 # fichier texte stopwords_chinois.txt trouvé sur : https://github.com/goto456/stopwords + quelques ajouts personnels
 # la liste de mots vides avec nltk n'était pas suffisante
+# fichier texte stopwords_coreen.txt trouvé sous le nom de 'stopwords-ko.txt' sur : https://gist.github.com/spikeekips/40eea22ef4a89f629abd87eed535ac6a + ajouts personnels
 if langue == "chinese" :
     with open("./stopwords_chinois.txt", 'r') as f :
         texte_motsvides = f.read()
