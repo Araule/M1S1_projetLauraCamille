@@ -2,11 +2,6 @@
 # coding: utf-8
 
 
-import fileinput
-import nltk
-from nltk.corpus import stopwords
-
-
 # on récupère d'abord le corpus
 fichier = input("\nQuel est le nom du fichier tokenisé ? (ex. ./contextes-chinois-tokenized.txt) : ")
 with open(fichier, 'r') as f :
@@ -15,34 +10,32 @@ with open(fichier, 'r') as f :
 
 
 # on demande la langue du texte pour avoir la liste des mots vides
-langue = input("\nQuel est la langue du texte que vous voulez nettoyer ? (en anglais : french, chinese or korean) : ")
-# il est important que la langue rentrée soit en anglais pour la suite
+langue = input("\nQuel est la langue du texte que vous voulez nettoyer ? ")
 
 # fichier texte stopwords_chinois.txt trouvé sur : https://github.com/goto456/stopwords + quelques ajouts personnels
 # la liste de mots vides avec nltk n'était pas suffisante
 # fichier texte stopwords_coreen.txt trouvé sur : https://gist.github.com/spikeekips/40eea22ef4a89f629abd87eed535ac6a + ajouts personnels
 # fichier texte stopword_francais.txt trouvé sur : https://github.com/stopwords-iso/stopwords-fr/blob/master/stopwords-fr.txt
 #ajouter car résultat itrameur pas satisfaisant
-if langue == "chinese" :
+if langue == "chinois" :
     with open("./stopwords_chinois.txt", 'r') as f :
         texte_motsvides = f.read()
     mots_vides = []
     for mot in texte_motsvides :
         mots_vides.append(mot)
-elif langue == "korean" :
+elif langue == "coréen" :
     with open("./stopwords_coreen.txt", 'r') as f :
         texte_motsvides = f.read()
     mots_vides = []
     for mot in texte_motsvides :
         mots_vides.append(mot)
-elif langue == "french" :
+else :
     with open("./stopwords_francais.txt", 'r') as f :
         texte_motsvides = f.read()
     mots_vides = []
     for mot in texte_motsvides :
         mots_vides.append(mot)
-else :
-    mots_vides = stopwords.words(langue)
+
 
 # on récupère une liste sans les mots vides du corpus, puis on concatène les mots dans la variable texte_propre
 liste_mots_pleins = []

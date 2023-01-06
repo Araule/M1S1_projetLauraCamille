@@ -8,7 +8,7 @@
 	- problème non prioritaire
 
 ### partie 3 itrameur
-- enlever les mots vides dans chaque langue pour les corpus itrameur
+- faire les analyses itrameur
 
 ### partie 4 nuages de mot
 - liste de site :
