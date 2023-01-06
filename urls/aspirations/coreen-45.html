@@ -51,20 +51,20 @@
 <link rel="shortcut icon" href="//www.hankyung.com/favicon.ico">
 
 <link rel="stylesheet" href="//static.hankyung.com/plugin/slick/slick.css">
-<link rel="stylesheet" href="//static.hankyung.com/css/www/w/common.ui.all.css?v=202301051827">
-<link rel="stylesheet" href="//static.hankyung.com/css/www/w/news/view.css?v=202301051827">
+<link rel="stylesheet" href="//static.hankyung.com/css/www/w/common.ui.all.css?v=202301061724">
+<link rel="stylesheet" href="//static.hankyung.com/css/www/w/news/view.css?v=202301061724">
 
 <script type="text/javascript" src="//static.hankyung.com/plugin/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="//static.hankyung.com/plugin/jquery-ui/jquery-ui.min.js"></script>
-<script type="text/javascript" src="//static.hankyung.com/plugin/function.hk.js?v=202301051827"></script>
+<script type="text/javascript" src="//static.hankyung.com/plugin/function.hk.js?v=202301061724"></script>
 <script type="text/javascript" src="//static.hankyung.com/plugin/jquery.lazyload.min.js"></script>
 <script type="text/javascript" src="//static.hankyung.com/plugin/jquery.cookie.js"></script>
 <script type="text/javascript" src="//static.hankyung.com/plugin/clipboard.min.js"></script>
 <script type="text/javascript" src="//static.hankyung.com/plugin/slick/slick.min.js"></script>
 <script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
-<script type="text/javascript" src="/resource/js/w/common.js?v=202301051827" async="true"></script>
-<script src="//static.hankyung.com/js/www/w/mark-pm.js?v=202301051827"></script>
+<script type="text/javascript" src="/resource/js/w/common.js?v=202301061724" async="true"></script>
+<script src="//static.hankyung.com/js/www/w/mark-pm.js?v=202301061724"></script>
 
 <script type="text/javascript">
     var isMobile = "";
@@ -113,7 +113,7 @@ var dataLayer = [{
     'dimension20' : '닷컴뉴스'
 }];
 </script>
-<script type="text/javascript" src="//static.hankyung.com/js/ga/googleTagManager.js?v=202301051827"></script>
+<script type="text/javascript" src="//static.hankyung.com/js/ga/googleTagManager.js?v=202301061724"></script>
 
 <!-- html5 태그 브라우저 호환성 -->
 <!--[if lt IE 9]>
@@ -695,6 +695,30 @@ if($('.header-main').length > 0){
 		}
 	});
 }
+
+// 2023-01-06 서비스 점검 공지
+if(getTodayDate() >= '2023-01-16 09' && getTodayDate() < '2023-01-29 00'){
+	$("#allmenu .service-media").after('\
+		<div class="service-notice">\
+			<p><a href="https://event.hankyung.com/notice/298/?page=1&amp;category=all" class="noti-msg">1월 29일(日) 시스템 점검에 따른 서비스 일시 중단 안내</a></p>\
+		</div>\
+	');
+}
+
+function getTodayDate(){
+	const today = new Date();
+
+	let Year = today.getFullYear()
+	, month = today.getMonth() + 1
+	, day = today.getDate()
+	, hour = today.getHours()
+
+	if(month < 10) month = '0'+month;
+	if(day < 10) day = '0'+day;
+	if(hour < 10) hour = '0'+hour;
+
+	return Year+'-'+month+'-'+day+' '+hour;
+}
 </script>
 
 
@@ -1179,14 +1203,14 @@ $(document).ready(function(){
                                                 <div class="news-item type-thumb-lt">
                                                     <div class="txt-cont">
                                                         <h3 class="news-tit">
-                                                            <a href="https://www.hankyung.com/economy/article/2023010548671" data-pm="N">
-                                                                삼성 반도체 '반토막' 예고…용인·화성 지자체도 '초비상'
+                                                            <a href="https://www.hankyung.com/realestate/article/2023010672621" data-pm="N">
+                                                                "노도강 집값 더 떨어진다…'1·3 대책'으론 막기 역부족"
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="thumb">
-                                                        <a href="https://www.hankyung.com/economy/article/2023010548671">
-                                                            <img src="https://img.hankyung.com/photo/pubdata/cd7d1d533190d732f9eb08cf618f57fa.jpg" alt="삼성 반도체 '반토막' 예고…용인·화성 지자체도 '초비상'">
+                                                        <a href="https://www.hankyung.com/realestate/article/2023010672621">
+                                                            <img src="https://img.hankyung.com/photo/pubdata/7978769f999ed7ad0f8693bbc755fac5.jpg" alt="&quot;노도강 집값 더 떨어진다…'1·3 대책'으론 막기 역부족&quot;">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1195,14 +1219,14 @@ $(document).ready(function(){
                                                 <div class="news-item type-thumb-lt">
                                                     <div class="txt-cont">
                                                         <h3 class="news-tit">
-                                                            <a href="https://www.hankyung.com/economy/article/2023010548681" data-pm="N">
-                                                                공장 증설하려다…"귀찮게 하지말라" 공무원 핀잔에 분통
+                                                            <a href="https://www.hankyung.com/economy/article/202301067115i" data-pm="N">
+                                                                <font color="#ee4c4c">단독</font> 장바구니 물가 또 들썩대자…정부, 설 앞두고 식품회사 대거 소집
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="thumb">
-                                                        <a href="https://www.hankyung.com/economy/article/2023010548681">
-                                                            <img src="https://img.hankyung.com/photo/202301/AA.32295257.3.jpg" alt="공장 증설하려다…&quot;귀찮게 하지말라&quot; 공무원 핀잔에 분통">
+                                                        <a href="https://www.hankyung.com/economy/article/202301067115i">
+                                                            <img src="https://img.hankyung.com/photo/202301/ZN.32089510.3.jpg" alt="&lt;font color=&quot;#ee4c4c&quot;&gt;단독&lt;/font&gt; 장바구니 물가 또 들썩대자…정부, 설 앞두고 식품회사 대거 소집">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1211,14 +1235,14 @@ $(document).ready(function(){
                                                 <div class="news-item type-thumb-lt">
                                                     <div class="txt-cont">
                                                         <h3 class="news-tit">
-                                                            <a href="https://www.hankyung.com/economy/article/2023010547281" data-pm="N">
-                                                                회계법인 '대혈투' 올해 승자는 삼정, 1위 삼일 맹추격
+                                                            <a href="https://www.hankyung.com/international/article/2023010672121" data-pm="N">
+                                                                "美연착륙은 Fed 바람일 뿐…장기 스태그플레이션 닥칠 것"
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="thumb">
-                                                        <a href="https://www.hankyung.com/economy/article/2023010547281">
-                                                            <img src="https://img.hankyung.com/photo/202301/AA.32295063.3.jpg" alt="회계법인 '대혈투' 올해 승자는 삼정, 1위 삼일 맹추격">
+                                                        <a href="https://www.hankyung.com/international/article/2023010672121">
+                                                            <img src="https://img.hankyung.com/photo/202301/01.32304985.3.jpg" alt="&quot;美연착륙은 Fed 바람일 뿐…장기 스태그플레이션 닥칠 것&quot;">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1227,14 +1251,14 @@ $(document).ready(function(){
                                                 <div class="news-item type-thumb-lt">
                                                     <div class="txt-cont">
                                                         <h3 class="news-tit">
-                                                            <a href="https://www.hankyung.com/economy/article/2023010548201" data-pm="N">
-                                                                韓 올해 성장률 '0%대 추락' 전망까지…"하반기도 회복 장담 못해"
+                                                            <a href="https://www.hankyung.com/economy/article/2023010673121" data-pm="N">
+                                                                10조씩 이익 안기던 삼성 반도체, 1조 밑으로…"1분기 적자 낼 수도"
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="thumb">
-                                                        <a href="https://www.hankyung.com/economy/article/2023010548201">
-                                                            <img src="https://img.hankyung.com/photo/202301/AA.32294621.3.jpg" alt="韓 올해 성장률 '0%대 추락' 전망까지…&quot;하반기도 회복 장담 못해&quot;">
+                                                        <a href="https://www.hankyung.com/economy/article/2023010673121">
+                                                            <img src="https://img.hankyung.com/photo/202301/AA.32305030.3.jpg" alt="10조씩 이익 안기던 삼성 반도체, 1조 밑으로…&quot;1분기 적자 낼 수도&quot;">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1243,14 +1267,14 @@ $(document).ready(function(){
                                                 <div class="news-item type-thumb-lt">
                                                     <div class="txt-cont">
                                                         <h3 class="news-tit">
-                                                            <a href="https://www.hankyung.com/politics/article/2023010548651" data-pm="N">
-                                                                北무인기 종로까지 왔었다…아니라던 軍, 열흘 만에 인정
+                                                            <a href="https://www.hankyung.com/economy/article/2023010672351" data-pm="N">
+                                                                <font color="#ee4c4c">단독</font> '올드보이' 60년대생 줄줄이 떠난다…롯데百의 변신
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="thumb">
-                                                        <a href="https://www.hankyung.com/politics/article/2023010548651">
-                                                            <img src="https://img.hankyung.com/photo/202301/AA.32295287.3.jpg" alt="北무인기 종로까지 왔었다…아니라던 軍, 열흘 만에 인정">
+                                                        <a href="https://www.hankyung.com/economy/article/2023010672351">
+                                                            <img src="https://img.hankyung.com/photo/202301/AA.32303274.3.jpg" alt="&lt;font color=&quot;#ee4c4c&quot;&gt;단독&lt;/font&gt; '올드보이' 60년대생 줄줄이 떠난다…롯데百의 변신">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1312,49 +1336,49 @@ $(document).ready(function(){
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <a href="https://www.hankyung.com/finance/article/2023010546621">
-                                    <img src="https://timg.hankyung.com/t/560x0/photo/pubdata/06c502fdb0275e97a8a7c53a9efa40de.jpg" alt="대출규제 확 풀리자…다시 힘받는 은행주">
+                                <a href="https://www.hankyung.com/finance/article/202301066862i">
+                                    <img src="https://timg.hankyung.com/t/560x0/photo/202301/02.25662042.1.jpg" alt="최악의 어닝쇼크에도 1% 넘게 반등…삼성전자 주가 향방은">
                                 </a>
                             </div>
                             <h3 class="news-tit">
-                                <a href="https://www.hankyung.com/finance/article/2023010546621" data-pm="N">
-                                    대출규제 확 풀리자…다시 힘받는 은행주
+                                <a href="https://www.hankyung.com/finance/article/202301066862i" data-pm="N">
+                                    최악의 어닝쇼크에도 1% 넘게 반등…삼성전자 주가 향방은
                                 </a>
                             </h3>
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <a href="https://www.hankyung.com/international/article/2023010547181">
-                                    <img src="https://timg.hankyung.com/t/560x0/photo/202301/AA.32295048.1.jpg" alt="GM, 美 자동차 1위 탈환…월가 &quot;작년 영업익, 코로나 前보다 50%↑&quot;">
+                                <a href="https://www.hankyung.com/international/article/2023010672121">
+                                    <img src="https://timg.hankyung.com/t/560x0/photo/202301/01.32304985.1.jpg" alt="&quot;美연착륙은 Fed 바람일 뿐…장기 스태그플레이션 닥칠 것&quot;">
                                 </a>
                             </div>
                             <h3 class="news-tit">
-                                <a href="https://www.hankyung.com/international/article/2023010547181" data-pm="N">
-                                    GM, 美 자동차 1위 탈환…월가 "작년 영업익, 코로나 前보다 50%↑"
+                                <a href="https://www.hankyung.com/international/article/2023010672121" data-pm="N">
+                                    "美연착륙은 Fed 바람일 뿐…장기 스태그플레이션 닥칠 것"
                                 </a>
                             </h3>
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <a href="https://www.hankyung.com/realestate/article/2023010547481">
-                                    <img src="https://timg.hankyung.com/t/560x0/photo/202301/AA.32293724.3.jpg" alt="&quot;이제 때가 왔다&quot;… 분양 미뤄온 강남 단지들 '꿈틀'">
+                                <a href="https://www.hankyung.com/realestate/article/2023010672621">
+                                    <img src="https://timg.hankyung.com/t/560x0/photo/202301/02.32305034.3.jpg" alt="&quot;노도강 집값 더 떨어진다…'1·3 대책'으론 역부족&quot;">
                                 </a>
                             </div>
                             <h3 class="news-tit">
-                                <a href="https://www.hankyung.com/realestate/article/2023010547481" data-pm="N">
-                                    "이제 때가 왔다"… 분양 미뤄온 강남 단지들 '꿈틀'
+                                <a href="https://www.hankyung.com/realestate/article/2023010672621" data-pm="N">
+                                    "노도강 집값 더 떨어진다…'1·3 대책'으론 역부족"
                                 </a>
                             </h3>
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <a href="https://www.hankyung.com/economy/article/2023010419761">
-                                    <img src="https://timg.hankyung.com/t/560x0/photo/202301/AA.32285149.3.jpg" alt="핀테크 &quot;경기침체 두렵지만 채용 늘릴 것&quot;">
+                                <a href="https://www.hankyung.com/economy/article/2023010664726">
+                                    <img src="https://timg.hankyung.com/t/560x0/photo/202301/01.32228183.3.jpg" alt="&quot;직장인은 은행 가려면 반차 쓰라는 건가&quot;…고객들 뿔났다">
                                 </a>
                             </div>
                             <h3 class="news-tit">
-                                <a href="https://www.hankyung.com/economy/article/2023010419761" data-pm="N">
-                                    핀테크 "경기침체 두렵지만 채용 늘릴 것"
+                                <a href="https://www.hankyung.com/economy/article/2023010664726" data-pm="N">
+                                    "직장인은 은행 가려면 반차 쓰라는 건가"…고객들 뿔났다
                                 </a>
                             </h3>
                         </div>
@@ -1384,49 +1408,49 @@ $(document).ready(function(){
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <a href="https://www.hankyung.com/politics/article/2023010548651">
-                                    <img src="https://timg.hankyung.com/t/560x0/photo/pubdata/14a91529201d453e8828b1c1644d15b0.jpg" alt="北무인기 종로까지 왔었다…軍, '비행금지구역 침범' 인정">
+                                <a href="https://www.hankyung.com/politics/article/2023010673431">
+                                    <img src="https://timg.hankyung.com/t/560x0/photo/pubdata/82d5a93a898580d504af0d4567c8aa6c.jpg" alt="드러나지 않는 尹心…초조해진 與 당권주자들">
                                 </a>
                             </div>
                             <h3 class="news-tit">
-                                <a href="https://www.hankyung.com/politics/article/2023010548651" data-pm="N">
-                                    北무인기 종로까지 왔었다…軍, '비행금지구역 침범' 인정
+                                <a href="https://www.hankyung.com/politics/article/2023010673431" data-pm="N">
+                                    드러나지 않는 尹心…초조해진 與 당권주자들
                                 </a>
                             </h3>
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <a href="https://www.hankyung.com/society/article/2023010421411">
-                                    <img src="https://timg.hankyung.com/t/560x0/photo/202301/02.25002593.3.jpg" alt="'DLF 사태'  배상소송서  투자자  첫  승소">
+                                <a href="https://www.hankyung.com/society/article/2023010665817">
+                                    <img src="https://timg.hankyung.com/t/560x0/photo/202301/ZN.32239231.3.jpg" alt="'청담동 술자리 가짜뉴스' 더탐사, 슈퍼챗으로 7000만원 벌었다">
                                 </a>
                             </div>
                             <h3 class="news-tit">
-                                <a href="https://www.hankyung.com/society/article/2023010421411" data-pm="N">
-                                    'DLF 사태'  배상소송서  투자자  첫  승소
+                                <a href="https://www.hankyung.com/society/article/2023010665817" data-pm="N">
+                                    '청담동 술자리 가짜뉴스' 더탐사, 슈퍼챗으로 7000만원 벌었다
                                 </a>
                             </h3>
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <a href="https://www.hankyung.com/international/article/2023010547031">
-                                    <img src="https://timg.hankyung.com/t/560x0/photo/pubdata/1bee8cb213289df1750e7475114139af.jpg" alt="&quot;中, 사망자수 축소 말라&quot;…WHO까지 나서 쓴소리">
+                                <a href="https://www.hankyung.com/international/article/2023010672151">
+                                    <img src="https://timg.hankyung.com/t/560x0/photo/pubdata/b67ae5c34c3311cd6b3b0445060441ca.jpg" alt="푸틴, 36시간 휴전 선언…바이든 &quot;숨쉴 틈 필요했나&quot;">
                                 </a>
                             </div>
                             <h3 class="news-tit">
-                                <a href="https://www.hankyung.com/international/article/2023010547031" data-pm="N">
-                                    "中, 사망자수 축소 말라"…WHO까지 나서 쓴소리
+                                <a href="https://www.hankyung.com/international/article/2023010672151" data-pm="N">
+                                    푸틴, 36시간 휴전 선언…바이든 "숨쉴 틈 필요했나"
                                 </a>
                             </h3>
                         </div>
                         <div class="item">
                             <div class="thumb">
-                                <a href="https://www.hankyung.com/economy/article/2023010546421">
-                                    <img src="https://timg.hankyung.com/t/560x0/photo/pubdata/2a3d0943e448d8bc20cf6824500779e4.jpg" alt="40대 오너의 '젊은 마케팅' 통했다 … 2030에 핫한 술">
+                                <a href="https://www.hankyung.com/economy/article/202301066009i">
+                                    <img src="https://timg.hankyung.com/t/560x0/photo/202301/01.32300913.3.jpg" alt="&quot;중국인들이 잔뜩 샀다&quot; … 코로나 후 불티난 한국 제품 ">
                                 </a>
                             </div>
                             <h3 class="news-tit">
-                                <a href="https://www.hankyung.com/economy/article/2023010546421" data-pm="N">
-                                    40대 오너의 '젊은 마케팅' 통했다 … 2030에 핫한 술
+                                <a href="https://www.hankyung.com/economy/article/202301066009i" data-pm="N">
+                                    "중국인들이 잔뜩 샀다" … 코로나 후 불티난 한국 제품 
                                 </a>
                             </h3>
                         </div>
@@ -1874,13 +1898,13 @@ $(document).ready(function(){
 		</script>
 	</div>
 
-<script type="text/javascript" src="/resource/js/w/view.gtmet.js?v=202301051827"></script>
-<script type="text/javascript" src="/resource/js/w/view.latest.js?v=202301051827"></script>
+<script type="text/javascript" src="/resource/js/w/view.gtmet.js?v=202301061724"></script>
+<script type="text/javascript" src="/resource/js/w/view.latest.js?v=202301061724"></script>
 
 <!-- 개인화 서비스 -->
-<script type="text/javascript" src="/resource/js/w/my.scrap.js?v=202301051827"></script>
-<script type="text/javascript" src="/resource/js/w/my.reporter.js?v=202301051827"></script>
-<script type="text/javascript" src="/resource/js/w/my.reaction.js?v=202301051827"></script>
+<script type="text/javascript" src="/resource/js/w/my.scrap.js?v=202301061724"></script>
+<script type="text/javascript" src="/resource/js/w/my.reporter.js?v=202301061724"></script>
+<script type="text/javascript" src="/resource/js/w/my.reaction.js?v=202301061724"></script>
 <!-- // 개인화 서비스-->
 
 
@@ -1925,10 +1949,10 @@ $(function(){
 
 </script>
 
-<script type="text/javascript" async="false" src='/resource/js/w/view.ads.js?v=202301051827'></script>
+<script type="text/javascript" async="false" src='/resource/js/w/view.ads.js?v=202301061724'></script>
 <script>document.write("<iframe name='ifrad' id='mobonIframe_8595' src='//www.mediacategory.com/servlet/iadbn?from="+escape(document.referrer)+"&s=8595&psb=99' height='0' width='0' style='border: none; display: none;' scrolling='no'></iframe>");</script>
 
-<script type="text/javascript" src='/resource/js/hk.promotion.js?v=202301051827'></script>
+<script type="text/javascript" src='/resource/js/hk.promotion.js?v=202301061724'></script>
 
 
 </body>

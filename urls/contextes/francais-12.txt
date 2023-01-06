@@ -1,152 +1,53 @@
+   significativement meilleure lorsque la lecture s’effectue sur papier
+   que sur écran.
 
-   Crédit :Marina Shemesh/domaine public
+   • A lire aussi : Quand nous lisons sur un écran, nous pensons autrement
+   !
 
-   A l'échelle mondiale, nous lisons comme jamais auparavant et passons de
-   plus en plus de temps scotchés à un écran. En réalité, nous lisons des
-   médias numériques tous les jours, que ce soit sur Facebook ou dans les
-   forums de discussion. Au total, plus de 180 chercheurs de 33 pays
-   différents participent au réseau de recherche E-READ initié par COST,
+Habitudes de lecture
 --
-   lecture. Nous avons discuté avec Anne Mangen, Président de l'Action,
-   travaillant au Reading Center de l'Université de Stavanger.
+   narratifs. Les auteurs apportent deux éléments d’interprétation à ce
+   résultat :
+     * les textes documentaires font appel à des traitements cognitifs
+       plus complexes impliquant par exemple l’utilisation d’un
+       vocabulaire académique très spécifique
+     * ils sont moins connectés aux connaissances que possèdent les
+       lecteurs sur le monde réel, tout cela rendant la compréhension à la
+--
+   participants affichent donc une familiarité plus grande avec les
+   écrans, les écarts de compréhension s’atténuent entre les supports.
 
-   Combien de temps passons-nous à lire à l'écran et que lisons-nous ?
+   • A lire aussi : E-book, internet, smartphone… La lecture change, nos
+   cerveaux aussi
 
-   La réponse à cette question dépend de la définition de la « lecture ».
-   Les recherches et les statistiques dans ce domaine varient selon la
-   définition du terme. Faisons-nous référence uniquement à la lecture de
-   matériel textuel, ou incluons-nous également des images, médias sociaux
-   et hypertexte contenant des liens ? Si cette dernière définition est
-   utilisée, nous pouvons dire que nous lisons comme jamais auparavant et
-   qu'Internet a provoqué une explosion de la lecture. De cette
-   perspective, nous pouvons remarquer que nous lisons sur les écrans tous
-   les jours, que ce soit par e-mail, " claquements, " nouvelles, des
-   documents officiels ou des messages sur des forums de discussion. Il
-   est intéressant de noter que si la musique et les films sont devenus
-   une affaire presque entièrement numérique, la vente de livres
-   numériques dans de nombreux pays est inférieure à dix pour cent.
-   Cependant, après plusieurs années de croissance rapide, il s'est
-   maintenant stabilisé. Même s'il est possible de lire à l'aide de
-   solutions techniques comme un Kindle, même lorsqu'il n'est pas connecté
-   à Internet, souvent les lecteurs ne le trouvent pas aussi inspirant que
-   la lecture d'un livre papier.
+   Or, comme Delgado et ses collègues l’ont constaté, c’est exactement
 --
-   en jeu ici, comme le lecteur, le matériel, le but et la technologie.
-   Non seulement la compétence du lecteur, le contexte et les attentes
-   doivent être gardés à l'esprit, mais aussi le type de matériau auquel
-   il est fait référence et le type d'écran utilisé. Il ne s'agit pas
-   d'une "taille unique, " mais des modèles commencent à émerger des
-   recherches empiriques sur le sujet. La longueur du texte semble être le
-   facteur le plus critique. Si le texte est long, doit être lu
---
-   les étudiants, préfèrent encore souvent un livre imprimé, même s'il est
-   disponible à la fois sous forme de livre électronique et sous forme
-   électronique avec des options pour prendre des notes, permettant à
-   l'utilisateur de rechercher et de surligner numériquement le texte. Ce
-   n'est pas le cas lorsqu'il s'agit de textes plus courts.
+   cerveau à intégrer les informations qui lui parviennent et à mieux les
+   retenir dans la durée.
 
-   Comment pouvez-vous expliquer cela?
---
-   pages qui demandent une certaine concentration, appelé « lecture
-   approfondie », " le lecteur éprouve souvent une meilleure concentration
-   et une meilleure vue d'ensemble lorsqu'il lit sur un support imprimé
-   par rapport à un écran. Lorsque nous lisons sur un écran, une seule
-   section est visible à la fois et la surface de lecture disponible est
-   limitée. Si vous lisez un support imprimé tel qu'un livre, plusieurs
-   zones de texte sont disponibles simultanément et il est plus facile de
-   former une vue d'ensemble et de prendre des notes dans les marges.
+   En stockant des milliers d’ouvrages, tablettes et liseuses permettent
+   certes d’alléger les cartables, mais, lus sur un même support, manuels
+   scolaires et romans seront associés à une expérience sensorielle moins
+   spécifique et seront par conséquent moins bien traités et mémorisés.
+   Les résultats d’une étude qui vient d’être publiée par Mangen, Olivier
+   et Velay (2019) vont dans ce sens.
 
---
-   et du type de texte auquel on se réfère. Cependant, une découverte
-   intéressante dans certaines des études empiriques est que nous avons
-   tendance à surestimer notre propre compréhension en lecture lorsque
-   nous lisons à l'écran par rapport à sur papier. Certaines études ont
-   montré que nous pensons avoir mieux compris le texte, quand on lit sur
-   un écran. Cependant, il a été constaté que nous avons tendance à lire
-   plus rapidement à l'écran et par conséquent à moins comprendre par
-   rapport à la lecture sur papier. Il s'agit d'un sujet de recherche très
-   nouveau et certaines études n'ont trouvé aucune différence dans ce
---
-   pouvoir tirer des conclusions avec n'importe quel niveau de certitude.
-   Cependant, ces résultats mettent en évidence quelque chose de très
-   important, à savoir que nous pouvons avoir une attitude mentale
-   différente de ce que nous lisons sur un écran. Cela a des implications
-   très importantes, y compris dans le cadre de l'éducation.
+   Les auteurs ont demandé aux participants de l’étude de lire un long
+   texte narratif en utilisant soit un livre soit une liseuse. Si les
+   performances générales de compréhension mesurées étaient globalement
+   les mêmes, quel que soit le support, la lecture sur papier permettait
+   de mieux se rappeler où les phrases sont apparues précisément et dans
+   quel ordre les événements se sont déroulés.
 
-   Qu'est-ce que les livres attirent notre attention ?
---
-   texte, par rapport à un écran. Alors qu'un iPad aura toujours la même
-   apparence, un livre a des caractéristiques physiques et typographiques
-   différentes qui peuvent favoriser un certain mode de lecture et peuvent
-   affecter la façon dont vous lisez, par exemple, un roman épais et
-   compact ou un mince livre de poèmes. Un manuel de physique émet
-   évidemment des signaux différents d'un livre de poche de Dan Brown.
-   Cela a quelque chose à voir avec le fait de le voir et de ressentir
---
-   aspects neuropsychologiques et physiologiques de la lecture. Par
-   exemple, nous étudions les mouvements oculaires du lecteur et pouvons
-   voir si les mouvements oculaires diffèrent selon qu'un texte est riche
-   en métaphores ou autres dispositifs stylistiques, par rapport aux
-   descriptions plus axées sur l'action. Les lecteurs qui participent à
-   l'étude répondent également à des questions lors d'entretiens et de
-   questionnaires sur ce qu'ils ressentent et comprennent lorsqu'ils
-   lisent et comment ils vivent ce qu'ils lisent. En outre, de nouvelles
-   méthodes de mesure des processus émotionnels ont été adoptées par le
-   réseau. Cela inclut tout, de la technologie de pointe qui enregistre
-   l'activité musculaire sur le visage du lecteur aux électrodes fixées à
-   la tête, qui peut montrer comment les lecteurs réagissent
-   émotionnellement à ce qu'ils lisent.
+   • A lire aussi : On retient moins bien ce qu’on lit sur tablette
 
-   Selon vous, qu'est-ce qui devrait faire l'objet d'une recherche plus
-   approfondie dans le domaine de la recherche en lecture ?
-
-   J'aimerais voir plus empirique, recherche interdisciplinaire sur la
-   façon dont les gens lisent différents types de idéalement des textes
-   plus longs et dans quelle mesure ils sont conscients de leur propre
-   lecture, en termes de lecture efficace du plus grand volume possible, à
-   des fins différentes. Il y a un besoin de plus de recherche empirique
---
-   plus sur les composants, facteurs et conditions qui entrent en jeu lors
-   de la lecture de différents types de textes sur différentes plateformes
-   et cartographier les différences. Nous devons également en savoir
-   beaucoup plus sur la façon dont les enfants lisent sur différents types
-   d'écrans.
-
-   Que se passe-t-il actuellement au sein du réseau de recherche E-READ ?
---
-   Cet article a également été présélectionné pour le prix UKLA
-   Wiley-Blackwell en 2017. J'ai récemment assisté à la conférence ECEM
-   (European Conference on Eye Movements), la plus grande conférence
-   internationale pour les chercheurs utilisant la technologie du
-   mouvement oculaire dans leurs recherches. Lors de la conférence
-   annuelle, un colloque avec des textes littéraires a été organisé pour
-   la première fois dans l'histoire de l'ECEM, démontrant comment les
-   sonnets de Shakespeare ont été utilisés comme stimuli dans notre réseau
-   de recherche. Souvent, les stimuli, c'est-à-dire le texte, consiste en
-   des études des mouvements oculaires utilisant des textes courts souvent
-   écrits par les chercheurs eux-mêmes afin de maximiser le contrôle de la
-   facette mesurée. Ce sont souvent des phrases simples ou des
-   combinaisons de lettres qui sont manipulées de différentes manières,
-   par exemple en remplaçant un mot ou une lettre par un autre et en
-   comparant la réponse. En utilisant des textes littéraires tels que des
-   chapitres de romans d'auteurs professionnels, on peut obtenir un rendu
-   plus nuancé, impression réaliste de la façon dont nous lisons. De tels
-   textes sont écrits afin de faciliter des expériences de lecture souvent
-   complexes, indépendamment de ce sur quoi une expérience individuelle
-   peut se concentrer. La lecture de textes littéraires plus longs qui
+   Les auteurs considèrent ainsi que la manipulation d’un vrai livre
+   pendant la lecture apporte des informations sensorielles et motrices
 --
 
-     * [2021102300413357_S.jpg]
-       Les armes à feu imprimées en 3D peuvent être plus dangereuses pour
-       leurs utilisateurs que les cibles
+Temps et cerveau : comment notre perception nous fait voyager dans le temps
 
-     * [2021102014044200_S.jpg]
-       Les récifs qui subissent des changements de température fréquents
---
-       prochain repas
-
-     * [2021102310083663_S.jpg]
-       Utilisation d'un catalyseur au nickel avec des hydrocarbures pour
-       fabriquer des acides gras
-
-     * [2021102111572622_S.jpg]
+Les abonnés lisent aussi
+     *
+   le-jeu-dechecs-a-inspire-le-developpement-de-lintelligence-artificielle
+       le-jeu-dechecs-a-inspire-le-developpement-de-lintelligence-artifici

@@ -1,269 +1,1272 @@
-﻿<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="fr-FR">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="fr-FR">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="fr-FR" class='no-js'>
+<!--<![endif]-->
 <head>
-<title>Lisons-nous différemment sur papier que sur écran ?</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="http://www.scienceaq.com/css/css_kx.css" rel="stylesheet" type="text/css" />
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta charset="utf-8" />
+<meta name="apple-itunes-app" content="app-id=/id1166889519" />
+<link rel="preconnect" href="//sdk.privacy-center.org" />
+<script type="text/javascript" data-rocketid="partner:didomi">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+			else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+			var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+			if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e){
+				var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.charset="utf-8";
+		        
+		        t.onload = function (){ console.log("debug load didomi") } ;
+
+				var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("745a135f-908d-4bfb-beca-56b93e25dc45")})();
+				
+			</script>
+<script type="text/javascript" data-rocketid="partner:didomi">
+			function consent_didomi(partner, fct) {
+			    if(typeof getCookie === "undefined"){
+			        function getCookie(cname) {
+                        var name = cname + "=";
+                        try{
+                            var decodedCookie = decodeURIComponent(document.cookie);
+                        }catch( e){
+                            var decodedCookie = document.cookie;
+                        }
+                        var ca = decodedCookie.split(';');
+                        for(var i = 0; i <ca.length; i++) {
+                            var c = ca[i];
+                            while (c.charAt(0) == ' ') {
+                                c = c.substring(1);
+                            }
+                            if (c.indexOf(name) == 0) {
+                                return c.substring(name.length, c.length);
+                            }
+                        }
+                        return "";
+                    }
+			    } 
+			
+                if(getCookie("euconsent-v2")) { // si didomi accepté
+                    console.log("didomi script "+partner+" cookie");
+                    fct();
+                } 
+
+                window.didomiEventListeners = window.didomiEventListeners || [];
+                window.didomiEventListeners.push({
+                  	event: "integrations.consentpassedtodfp",
+                  	listener: function (data) {
+                        if(data.consentStatus !== 'undefined' && data.consentStatus && data.index) {
+                           		console.log("didomi script "+partner+" accepte");
+                            	fct();
+                        }
+                    }
+                });
+            }
+			</script> <link rel="preconnect" href="//www.google-analytics.com/analytics.js/" />
+<link rel="preconnect" href="//factory.reworldmedia.com/" />
+<link rel="preconnect" href="//ced-ns.sascdn.com/" />
+<link rel="preconnect" href="//ads.rubiconproject.com/" />
+<link rel="preconnect" href="//sf1.viepratique.fr/" />
+<link rel="preconnect" href="//sf2.viepratique.fr/" /> 
+<script type="didomi/javascript" data-vendor-raw="didomi:google" data-rocketid="partner:gtm">
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-KWNRGR8');</script>
+<link rel="shortcut icon" type="image/png" href="https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/favicons/favicon.ico">
+<link rel="icon" href="https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/favicons/favicon32.png" sizes="32x32">
+<link rel="icon" href="https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/favicons/favicon48.png" sizes="48x48">
+<link rel="icon" href="https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/favicons/favicon64.png" sizes="64x64">
+<link rel="icon" href="https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/favicons/favicon128.png" sizes="128x128">
+<script type="text/javascript">
+			<!--
+				var html = document.getElementsByTagName("html")[0];
+				html.className = html.className.replace('no-js' ,'');
+			//-->
+			</script><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-7736850-1', 'auto');ga('send', 'pageview', {"dimension1":"11500","dimension2":"2019-03-29","dimension14":"premium"});ga('create', 'UA-192639368-1', {'name':'reworld_network'});
+ga('reworld_network.send', 'pageview', {"dimension1":"11500","dimension2":"2019-03-29","dimension14":"premium"});</script>
+
+<title>Ecrans versus papier : pourquoi la lecture sur livre renforce</title>
+<link rel="canonical" href="https://scienceetvie.reworldmediafactory.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Ecrans versus papier : voici pourquoi la lecture sur livre renforce l&#039;apprentissage — avec @FR_Conve..." />
+<meta property="og:description" content="Après de nombreuses études, on connaît maintenant le comportement du cerveau dans les deux modes de lecture, sur papier et sur écran. Frédéric Bernard, neuropsychologue à l&#039;université de Strasbourg, explique en quoi les sensations dues au papier renforcent l&#039;apprentissage du texte." />
+<meta property="og:url" content="https://scienceetvie.reworldmediafactory.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html" />
+<meta property="og:site_name" content="Science et vie" />
+<meta property="article:publisher" content="https://web.facebook.com/ScienceetVieMag?_rdc=1&amp;amp%3b_rdr" />
+<meta property="article:published_time" content="2019-03-29T13:47:31+00:00" />
+<meta property="article:modified_time" content="2022-05-13T17:03:48+00:00" />
+<meta property="og:image" content="https://scienceetvie.reworldmediafactory.com/wp-content/uploads/scienceetvie/2019/03/ecrans-versus-papier-voici-pourquoi-lecture-sur-livre-renforce-apprentissage.jpg" />
+<meta property="og:image:width" content="1920" />
+<meta property="og:image:height" content="1280" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="author" content="Fiorenza Gracci" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ecrans versus papier : voici pourquoi la lecture sur livre renforce l&#039;apprentissage — avec @FR_Conversation" />
+<meta name="twitter:creator" content="@science_et_vie" />
+<meta name="twitter:site" content="@science_et_vie" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Fiorenza Gracci" />
+<meta name="twitter:label2" content="Est. reading time" />
+<meta name="twitter:data2" content="4 minutes" />
+
+<script type="text/javascript" data-rocketid="partner:permutive">
+	          let search_params = new URLSearchParams(window.location.search);
+	           if (search_params.has("rwid")) {
+	               localStorage.setItem("rwid", search_params.get("rwid"));
+	           } /* partner:permutive */
+	        </script> <script type="text/javascript">
+				// Duration in milliseconds to wait while the Kameleoon application file is loaded
+				var kameleoonLoadingTimeout = 1000;
+				window.kameleoonQueue = window.kameleoonQueue || [];
+				window.kameleoonStartLoadTime = new Date().getTime();
+				if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
+				{
+					var kameleoonS = document.getElementsByTagName("script")[0];
+					var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+					var kameleoonStn = document.createElement("style");
+					kameleoonStn.type = "text/css";
+					kameleoonStn.id = "kameleoonLoadingStyleSheet";
+					if (kameleoonStn.styleSheet)
+					{
+						kameleoonStn.styleSheet.cssText = kameleoonCc;
+					}
+					else
+					{
+						kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+					}
+					kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+					window.kameleoonDisplayPage = function(fromEngine)
+					{
+						if (!fromEngine)
+						{
+							window.kameleoonTimeout = true;
+						}
+						if (kameleoonStn.parentNode)
+						{
+							kameleoonStn.parentNode.removeChild(kameleoonStn);
+						}
+					};
+					window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+				}
+			</script> <script type="text/javascript">
+					// Change the value of this URL to point to your own URL, where the iFrame is hosted
+					window.kameleoonIframeURL = "https://www.science-et-vie.com/wp-content/themes/scienceetvie/include/templates/kameleoon-iframe.html";
+					window.kameleoonLightIframe = false;
+					var kameleoonIframeOriginElement = document.createElement("a");
+					kameleoonIframeOriginElement.href = kameleoonIframeURL;
+					window.kameleoonIframeOrigin = kameleoonIframeOriginElement.origin || (kameleoonIframeOriginElement.protocol + "//" + kameleoonIframeOriginElement.hostname);
+					if (location.href.indexOf(window.kameleoonIframeOrigin) != 0)
+					{
+						window.kameleoonLightIframe = true;
+						var kameleoonProcessMessageEvent = function(event)
+						{
+							if (window.kameleoonIframeOrigin == event.origin && event.data.slice && event.data.slice(0,9) == "Kameleoon")
+							{
+								window.removeEventListener("message", kameleoonProcessMessageEvent);
+								window.kameleoonExternalIFrameLoaded = true;
+								if (window.Kameleoon)
+								{
+									eval(event.data);
+									Kameleoon.Analyst.load();
+								}
+								else
+								{
+									window.kameleoonExternalIFrameLoadedData = event.data;
+								}
+							}
+						};
+						if (window.addEventListener)
+						{
+							window.addEventListener("message", kameleoonProcessMessageEvent, false);
+						}
+						var iframeNode = document.createElement("iframe");
+						iframeNode.src = kameleoonIframeURL;
+						iframeNode.id = "kameleoonExternalIframe";
+						iframeNode.style = "float: left !important; opacity: 0.0 !important; width: 0px !important; height: 0px !important;";
+						document.head.appendChild(iframeNode);
+					}
+				  </script> <script type="text/javascript" src="//sekgo3cuvu.kameleoon.eu/kameleoon.js" async="true"></script><link rel='dns-prefetch' href='//api.dmcdn.net' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Science et vie &raquo; Flux" href="https://www.science-et-vie.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="Science et vie &raquo; Flux des commentaires" href="https://www.science-et-vie.com/comments/feed" />
+<script type="text/javascript" data-rocketid="core:site_config_js"> site_config_js={"SITE_SCHEME":"https","version":2,"connect_header":"v2","header_sticky_on_mobile":1,"add_qiota_onboarding":true,"disable_show_dai_video_on_scroll":"0","prerollTimeout":5000,"player_podcast_annuler_autoplay_ios":"1","hashtag_linear_gallery":false,"jwplayer_key":"vbUK3gfdKMai96zkE8lPTnO99dVXm6FLeuCa1EG+yFg=","jwplayer7_key":"Clz60zvch5p+0wkRYHn4I+SKMhj1ed29Xto3xg==","diapo_monetisation_mobile":false,"disable_push_menu_content_down_desktop":"","disable_push_menu_content_down_mobile":"","move_gallery_thumbs_nav":"","move_html_elements_on_mobile":"","move_header_social_media_in_mobile":"","activate_dropdown_filter":"","seo_bubble_links":true,"new_share_bottons_mobile":"","thumbnail_gallery":125,"nginx_desktop":1,"dm_ads_params":"article_id=11500&article_type=simple&rubrique_id=688&etiquettes=&marque=&pos=0&visit=0&env=0","sharedcount":{"Twitter":0,"Facebook":{"share_count":0,"like_count":0,"comment_count":0,"total_count":0,"click_count":0,"comments_fbid":0,"commentsbox_count":0},"Pinterest":0,"GooglePlusOne":0,"last_update":0,"hash":"bdcb5c74"},"sharedcount_ready":true,"post_id":11500,"partners":{"qiota_amp":true,"pubstack":true,"cmp_didomi":true,"cmp_didomi_amp":true,"dfp_amp":true,"viously_amp":true,"analytics":true,"dmp_permutive":true,"batch":true,"art19":true,"acpm":true,"amazon":true,"gravitytag":true,"wysistat":true,"notify":true,"gtm":true,"poool":true,"FacebookPixel":true,"kameleoon":true},"enable_refresh_meta":true,"google_analytics_id":"UA-7736850-1","other_google_analytics_ids":[],"reworld_async_ads":"1","url_template":"https:\/\/www.science-et-vie.com\/wp-content\/themes\/reworldmedia","devs":{"mute_player_autoplay_integration_player_dailymotion_0430":false,"validation_4d_concept":false,"seo_propriete_itemprop_manquant_101198852":true,"Passage_du_player_sur_videojs":true,"mobile-personnalisation-de-la-colonne-de-droite-98646976":true,"sync_ads_refresh_mobile":true,"seo_projet_integration_videos":true,"new_locking_refactoring":true,"creation_page_home_test_109619530":true,"refresh_teads":true,"teads_desktop_infooter":false,"teads_desktop_in_inpicture":false,"correction_conflit_player_videosjs_meme_page_110878748":true,"network_seo_maillage_inter_site_101380136":true,"seo_correction_micro_donnees_articles_111394476":true,"passage_du_player_sur_jw6_111776366":false,"microdonnees_fil_d_ariane":true,"set_posts_per_page_archive":true,"instagram_post_in_gallery_112502917":true,"video_a_ne_pas_manquer_112137459":true,"nouveau_comportement_dossiers_110082232":false,"nouveau_comportement_dossiers_158696106":false,"creation_call_to_action_dans_diapos_113904831":true,"opt_sas_target_115018561":true,"evenement_article_diapo":true,"auto_play_dailymotion_113908239":true,"nouveau_template_article_oriente_ctr_113552127":true,"generer_une_miniature_du_post_instagram_113730507":true,"retrait_du_fond_gris_114205875":true,"taille_sticker_video_114466013":true,"menu_class_css_112130325":true,"seo_metadonnees_opengraph_103090224":true,"seo_all_sitemapxml_video_103090224":true,"chnagement_texte_optin_partenaire_115765861":true,"decompte_question_jeu_concours_115765861":true,"vpf_in_image_kiosked":true,"opt_btns_partage_reseaux_sociaux_109607742":false,"adaptation_cache_plugin_avec_cache_serveur_116048647":true,"tags_options_partner":true,"ajout_attribut_shortcode_fpvideo_ignorer_remontee_bloc_tv_116201485":true,"form_ninja_quizz_115785889":true,"autoplay_article_diaporama_116516201":true,"disable_carousel_116598303":true,"mfa_flux_rss_slideshow_pour_msn_114295885":true,"adaption_shortcode_galerie_116895557":true,"multiple_gallery_backend_116710063":true,"flux_rss_articles_pour_msn_114296247":true,"disable_full_diapo_117217767":false,"crm_cms_newsletters_templates_mf_109034048":true,"deploiement_cms_newsletter_network_116026439":true,"network_changement_bandeau_cookies_117553065":true,"refonte_quizz_117367015_117366993":false,"exclude_interstitiel_from_poste_cats_117896931":true,"remove_deeper_sections_117892587":false,"cat_desc_in_breadcrumb_117993647":false,"mobile_tablette_square_sous_1e_image_117793115":true,"checked_google_news_117994347":true,"changement_diapo_avec_fleches_clavier_118101879":false,"recommendation_popin_118189493":false,"pub_par_categorie_page":true,"network_mobile_theme_color_119533077":true,"ajout_sous_question_119310527":false,"ajouter_une_case_tous_les_tags_119708761":true,"network_cms_newsletter_admincrm_119709055":true,"network_gestion_tags_adminops_119708921":true,"interface_verrouillage_121198909":true,"integration_lien_ninja_form_120842311":true,"ajout_sous_question_form_120778037":false,"fix_gif_121289577":false,"fix_folder_sidebars_122101685":true,"acces_jeu_concours_crm_admin_122476131":true,"network_bug_compteur_partage_128927283":true,"article_video_playlist_video_128046677":true,"fix_sidebar_dedoublee_131082313":true,"fix_bug_jeu_concours_bouton_jejoue_130919773":true,"network_mobile_sticker_video_131559695":true,"integration_ga_reworld_132229903":true,"click_to_play_videojs_153745207":true,"video_afficher_la_croix_133926691":true,"mobile_nouveau_fonctionnel_diapo_133823477":false,"cache_nav_header_134018049":false,"cache_nav_footer_134446899":true,"newsletter_crop_auto_134798525":true,"activer_synch_generate_new_size":true,"pouvoir_diffuser_vast_vpaid_135592715":true,"thumb_is_required_134352231":true,"network_video_js_conseil_duree_timeout_137245165":true,"nwk_hp_slideshow_remonter_unes_dossier_137153669":false,"integration_tetiere_137246063":true,"tetiere_bas_article_137686799":true,"ntwk_dupliquer_posts_action_groupees_137525489":false,"nwk_template_multi_images_137513253":false,"creation_module_quiz_sur_am_123470571":true,"custom_cache_durations":true,"enable_cache_diapo_rubrique_138257115":true,"cache_block_author_138257115":true,"cache_most_popular_138519847":true,"partners_comportement_inverse_138594757":true,"cache_popupar_folders_136906919":true,"suppression_du_mpu_interieur_article_multi_images_139924659":false,"hide_black_postervideojs_138694819":true,"activate_inread_diapos_140910419":true,"opti_sql_video_post_140335669":true,"cache_child_cats_139206283":true,"mfa_template_one_page_ne_pas_afficher_la_sidebar_142299479":true,"network_crm_integration_kit_adblock_fonctionnel_142212149":true,"network_module_nl_cms_enregistrement_nl_143045745":true,"probleme_cache_col_droite_gourmand_143647309":true,"sas_target_rubrique_green_143305061":true,"duplication_formats_pubs_mobile_143585947":true,"ntwk_crm_regles_fonctionnel_kit_adblock_143857371":true,"articles_simples_position_adyoulike_142521967":true,"network_article_taboola_tetiere_non_conformes_144509629":true,"quiz_et_test_en_hp_opti_du_cache_144924831":true,"limiter_imonomy_desktop_144923757":true,"deplacer_pave_mobile_mbrand_sous_le_chapo_145428109":true,"rectifier_lazy_load_1092212":true,"vpf_drp_article_champ_personnalise_afficher_signature_138035647":false,"mfa_mobile_images_non_responsives_142031093":true,"keywee_rafraichissement_146611139":true,"admin_crm_can_manage_options__140215471":true,"configuration_intersticiel_options":true,"wideonet_double_appel_146686499":true,"rw_export_recette_gourmand_138134895":true,"ajouter-sastarget-cats-119709391":true,"network_fix_lostpassword_url_148150843":true,"bug_widget_wpautop_148429589":true,"seo_prechargement_elements_148586339":true,"masquer_le_footer_crm_sur_mobile_148665881":true,"seo_preload_149161223":false,"seo_prefetch_149800041":false,"retirer_subscription_box_149807147":false,"seo_prechargement_element_dns_prefetch_optim_149916484":false,"lenteur_chargement_pub_player_150412161":true,"optimisation_jquery_ui_150785718":true,"use_enqueue_scripts_150785718":true,"network_pinterest_epingler_chaque_image_diapo_148329911":true,"article_mobile_diaporama_lineaire_151554665":true,"optimisation_gestion_pages_150788196":true,"optimisation_verrouillages_playlists_videos_150412050":true,"minify_js_151083013":false,"seo_network_regles_pagination_151679683":true,"fix_onscroll_article_video_151889968":true,"evolution_param_exclude_152101483":true,"mise_en_place_jw7_151445890":true,"adyoulike_148481575":true,"sublimskinz_148481575":true,"stickyad_148481575":true,"rothelec_148481575":true,"paruvendu_148481575":true,"pixel_148481575":true,"mediatrie_148481575":true,"culture_g_148481575":true,"mbrand_148481575":true,"notify_148481575":true,"nouveau_ligatus_https_152643093":true,"ie_css_152927014":true,"ciblage_sas_target_network_153167779":true,"astuce_playerbas_153138407":false,"desactiver_autoplay_inchrome_153133569":true,"correction_des_micro_donnees_fil_dariane_153168485":true,"lancement_player_sticke_153138287":false,"ga_opt_event_top_popular_152881992":false,"ga_sites_elastiques_event_153513593":false,"ga_event_dm_149424965":false,"dmf_creation_rubrique_affichage_publicites_153560176":true,"rw_taboola_distinction_art_simple_art_video_153906916":true,"hide_meta_refresh_153555787":true,"taboola_distinction_mobile_154172690":true,"lancement_player_sticke_chrome_153138287":false,"lancement_player_sticke_ie_153138287":false,"lancement_player_sticke_firefox_153138287":false,"lancement_player_sticke_safari_153138287":false,"dissociation_tags_freewheel_155007542":false,"chrome_exlude_popin_155431481":false,"corriger_autoplay_des_videos_dm_sur_ie_0815":true,"autoplay_firefox_155394464":false,"incontent_banner_folder_154477278":false,"clean_interface_gestion_affichage_pages_155853909":true,"zoom_images_diapo_linear_156084199":true,"optimize_query_video_tr_1088":true,"optimisation_interface_gestion_pages_155856009":true,"gestion_autoplay_2videos_155518075":false,"msn_feed_rss":true,"integration_player_sticky_tag_options_156719302":true,"autoplay_sites_mobiles_156367647":true,"ajout_tracking_specifique_156084076":true,"bliin_protocol_157242026":false,"changement_wording_cookies_157030185":true,"purge_cache_url_gestion_tags_157115577":true,"autoplay_ko_sur_le_player_dm_158247682":true,"diapo_lineaire_retour_arriere_155851194":true,"integration_script_criteo_header_157916532":true,"ajustements_css_rgpd_158942863":true,"crm_cheetah_reformat_new_specs_159243544":true,"refresh_manager_153552908":false,"fix_cheetah_optin_edito_159243544":true,"pinterest_auto_publish_158687654":false,"integration_mot_cle_bliink_sur_une_categorie_159405244":false,"enable_crm_inread_capping_159230025":false,"audience_format_optimise_pinterest_jcrop_158687688":true,"player_sticke_ko_160582058":false,"integration_bliink_tous_les_sites":false,"remove_dfp_formats_tracker":true,"ciblage_bliink_target_network_tr_2608":true,"liens_non_cliquables_161442981":true,"reprise_chantier_https_2826":true,"amazon_mobile_tr_3140":true,"duplicate_folder_children_152073378":true,"activer_le_lazyload_sur_le_home_diapos_3459":true,"optimiser_les_images_mobile_3459":true,"disable_sabai_forms":true,"changer_emplacement_widget_mpr_tr_3433":true,"optimization_lazy_loading_3649":true,"conditions_affichage_widget_mpr_tr_3439":true,"lazy_loading_3610":true,"discuss_Lazyloading_3722":true,"changer_structure_url_dossier_3268":true,"bug_lazy_loading_3762":true,"add_GA_tracking_on_product_click_163294031":true,"amazon_ajustement_tr_3818":true,"google_api_v5_3589":true,"google_search_console_5xx_4260_redirect_url_attachment":true,"ajouter_attribut_preload_4328":true,"separation_articles_diapo_et_video_shoppable_0383":true,"creation_rubrique_video_shoppable_0386":true,"fix_outlook_v_images_4501":true,"tr_4314_monetisation_dfp_dm_declarer_les_key_values":true,"tr_3840_dfp_key_value_article_simple":true,"optimiser_lenteurs_5085":true,"fermeture_sticky_video_5107":true,"new_plan_de_taggage_DFP_5352":true,"diapo_monetisation_mobile_5334":true,"omep_optimisation_formats_pub_5945":true,"DFP_affichage_pave_pub_3secs_diapo_rub_Green_am_5942":true,"VENTE_INTEGRATION_ANALYTICS_6486":true,"monetisation_widget_ops_v2_7065":true,"deplacer_dfp_pos_23_Automoto_7124":true,"nouveau_template_modification_feed_taboola_7063":false,"bug_player_podcast_annuler_autoplay_ios_7114":true,"monetisation_pub_sur_tablette_sites_elastiques":false,"disable_fixed_megabanner_tablette_7454":false,"shortcode_html_categorie_permalinke_7621":false,"nouvelle_methode_comptabilisation_AMP_7682":false,"amp_integration_micro_format_news_article_7847":false,"web_perf_seo_urgent_7881_mobile_disable_player_bas_article":true,"display_only_published_product_7697":false,"web_perf_seo_urgent_7881_css_footer":false,"optimisation_integration_dfp_sur_amp":true,"d\u00e9sactiver_le_bloc_a_ne_pas_manquer_7563":false,"monetisation_feed_taboola_mobile_7918":false,"template_mobile_conseilles_taboola_8125":false,"Bug_playlist_vid\u00e9o_corps_article_8016":false,"hide_sub_menu_from_template_header":false,"template_questtion_reponse_8583":false,"case_a_cocher_desactiver_le_diaporama_suivant_8733":false,"ajustement_comptabilisation_pv_diapo_1071":true,"sites_lenteur_9069":true,"optimisation_loading_ads_for_lazyload_9440":false,"didomi_modification_du_code_tsf2_9574":true,"chagement_didomi_2_1_9788":true,"chagement_didomi_2_1_9788_v2":true,"didomi_tsf_v2_enleve_etiquettes_10072":false,"chagement_didomi_2_1_9788_v2_separaion_requet":true,"ciblage_position_amp_8702":true,"diapo_mobile_history_gestion_btn_precedent_10362":false,"tous_sites_creation_dimension_auteur_10382":false,"chagement_didomi_2_1_9788_v2_separaion_requet_mobile":false,"update_edvanced_tab_role_10264":false,"show_full_width_home_diaporama_slide_10388":false,"changement_methode_dappel_bliink_10396":false,"fix_warnings_migration_0068":false,"disable_show_dai_video_on_scroll_10569":false,"ops_labote_shoppingbox_10897":false,"player_sticke_AM_mobile_9805":false,"changement_api_cheetah_11868":true,"12187_unfilled_position_23_native":false,"nouveau_ga_reworld_13217":true,"colonne_droite_sur_desktop_pas_de_pub_13941":true,"optimisations_pub_mobile_sur_le_template_acquisition_premium_lc_14545":false,"optimisation_css_nl_9691":false,"edisound_acquisition_tr_15085":true,"remove_ie_css_hack_15192":false,"webperf_lazy_loading_automoto_Tr_0743":true,"click_to_play_dm_15339":true,"fix_lazyload_16062":false,"diapo_related_posts_10184":true,"afficher_toutes_images_diapo_16561":false,"use_optimised_preload_fonts_16568":false,"preload_css_non_critique_16598":false,"inline_css_critique_16657":false,"inline_js_critique_16079":false,"rw_alert_cookies_optimise_17024":false,"vitals_change_placeholder_lazyload_17393":false,"integration_cmp_sur_amp_10396":false,"change_edisound_shortcode_17530":true,"hide_news_letter_for_reste_de_monde_0473":false,"hide_nl_form_uk_17477":false,"enlever_offre_abonnement_18307":false,"placeholder_pub_dfp_18304":true,"nouvelle_implimentation_adrenalead_17600":false,"maj_adrenalead_vpf_gourmand_mf_18774":false,"nouveau_dailymotion_player_15340":false,"integrer_flux_damideco_hp_18805":true,"seedtag_implementation_v2_0082":true,"tr_19710_amp_enable_refresh":true,"new_script_pixel_outbrain":false,"insert_taboola_middle_shortcode_18819":true,"insert_taboola_middle_shortcode_amp_18819":false,"mise_en_place_du_sso_19627":true,"add_more_positions_amp_0290":false,"enlever_encart_essai_gratuit_20091":false,"cdg_tags_gam_last_pub_mobile_0330":false,"habillage_mobile_17294":true,"paywall_modification_appel_qiota_20835":true,"optimisation_template_diapo_19555":false,"diapo_monetisation_mobile_checked_0861":false,"fix_bug_redirect_articles_amp_20968":false,"passer_liens_affiliation_ctc_js_21078":false,"disable_amp_on_posts_ctc_amazon_21217":false,"enable_propositions_meta_box_20021":false,"add_link_without_showing_block_in_hp_20956":true,"ops_amazon_flux_rss_osp_15577":false,"diapo_monetisation_mobile_2022_n1_20660":false,"ctc_integration_nouvelle_box_21530":false,"delete_uid_from_url_21949":true,"ajout_meta_noarchive_aux_articles_premiums_21970":false,"dmp_permutive_20422":false,"embeds_script_links_twitter_instagram_22283":false,"send_email_hash_to_permutive_21272":true,"partner_avantis_desktop_0019":false,"afficher_image_a_la_une_has_video_0092":false,"enable_display_articles_HP_134794609":false,"meet_deal_Etendre_script_tout_le_site_rmf_audience_0075":false,"disable_feed_audience_monet_0075":false,"seo_correction_hide_interactionCount_field_0115":false,"suppression_dimension_superieur_300_hauteur_GAM_0135":false,"player_dailymotion_sur_amp_17085":false,"activate_api_permutive_rmf_monet_0084":true,"update_meta_data_image_legend_diapos_audience_0446":true,"ctc_somaire_0126_par_js":true,"dissociation_tags_desktop_mobile_Seedtag":true,"recommandation_taboola_2022_rmf_monet_0357":true,"disable_occasion_inside_article_0352":false,"MAJ_Page_Auteur_0619":true,"WPRocket_fix_scroll_sidebar_rmf_monet_0437":false,"show_dmp_products_info_0381":true,"show_adwords_after_permutive_0488":false,"delete_all_not_html_balises_from_feed_1342":false,"ctc_edito_adapter_box_ctc_audience_0402":false,"affichage_podcast_hp_0779":false,"links_manager_1031":false,"change_templates_quizz_0569":false,"affichage_bloc_auteur_1172":true,"show_sticky_player_0652":false,"modification_de_la_galerie_cote_b_o_1219":true,"TR_1271_d\u00e9sactiver_AMP_sans_redirection_301":true,"ajout_espace_mon_compte_21961":true,"modification_nombre_articles_feed_0761":false,"quiz_template_js_ajustement_pub_size_0959":false,"auteurs_v2_distinction_auteurs_actifs_generiques_1670":false,"auteurs_v2_liste_uniquement_auteurs_actifs_1671":false,"auteurs_v2_regle_remontee_auteurs_page_redaction_1674":false,"auteurs_v2_gestion_signature_auteur_bo_1680":false,"enable_canonical_category_redirection_1243":false,"pepsia_show_all_except_article_Diapo_monetisation":false,"page_BO_pour_recuperation_des_templates_0983":true,"optimisation_recherche_article_bo_1855":false,"show_position_mobile_104_diapo_monetisation_1057":false,"remove_shortlink_balise_1997":false,"auteurs_v2_regle_affichage_auteurs_front_1675":false,"nouvelle_regle_de_remontee_1240":false,"arret_creation_pages_tag_1236":true,"show_position_mobile_105_diapo_monetisation_1082":false,"add_sponsored_links_article_2114":false,"add_pos_104_to_quizzes":false,"add_balise_author_article_2130":false,"activer_gestion_des_cookies_19142":true,"desactiver_les_pubs_article_premium_21818":true,"tr_22035_mise_a_jour_hp_avec_article":true,"adaptation_habillage_1000px_155809078":true,"sidebar_fodder_131570897":false,"bas_artcle_dossier_131570897":false,"enable_preload_concatjs":false,"optimise_criteo_tag":false,"optimise_common_js":false,"optimise_librairies_loading_15500":false,"optimise_load_slick_15520":false,"optimise_load_libs_15541":false,"rw_extract_inbody_js_15624":false,"ajouter_preload_au_scripts_16079":false},"is_preprod":0,"sync_ads_refresh_mobile":"1","lang":"fr","msg_accepte_cookies":"En naviguant sur ce site, vous acceptez la politique d'utilisation des cookies. <a href=\"\" target=\"_blank\"> En savoir plus <\/a><div>Si vous ne souhaitez pas que vos cookies soient utilis\u00e9s par nos partenaires vous pouvez <a href=\"http:\/\/optout.networkadvertising.org\/?c=1#!\" target=\"_blank\">Cliquer ici<\/a><\/div>"} </script> <link rel="alternate" type="application/rss+xml" title="Science et vie &raquo; Ecrans versus papier : pourquoi la lecture sur livre renforce l&rsquo;apprentissage Flux des commentaires" href="https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html/feed" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.science-et-vie.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='slick_carousel_css-css' href='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/stylesheets/slick.css?ver=6.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='reworldmedia-style-css' href='https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/stylesheets/global.css?refresh=2116&#038;ver=2116' type='text/css' media='all' />
+<link rel='stylesheet' id='reworldmedia-print-css' href='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/stylesheets/print.css?ver=2116' type='text/css' media='print' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.science-et-vie.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='page_css-css' href='https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/stylesheets/single.css?ver=2116' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/libs_loader.js?ver=2116' id='reworldmedia-main-libs-loader-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/ismobile.min.js?ver=2116' id='jquery-ismobile-js'></script>
+<meta property="article:tag" content="premium" /><link rel="https://api.w.org/" href="https://www.science-et-vie.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.science-et-vie.com/wp-json/wp/v2/posts/11500" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.science-et-vie.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.science-et-vie.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.0.1" />
+<link rel='shortlink' href='https://www.science-et-vie.com/?p=11500' />
+<link rel="alternate" type="application/json+oembed" href="https://www.science-et-vie.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.science-et-vie.com%2Fparoles-d-experts%2Fecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.science-et-vie.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.science-et-vie.com%2Fparoles-d-experts%2Fecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html&#038;format=xml" />
+<meta name="news_keywords" content="Cerveau / Intelligence, Paroles d'experts, rsgreen" />
+<meta name="original-source" content="https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html" /><meta name="syndication-source" content="https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html" /> <script type="text/javascript" src="https://www.qiota.com/assets/getQiota.js"></script>
+<script type="text/javascript"> 
+			  if (typeof getCookie == 'undefined'){
+				function getCookie(cname) {
+					var name = cname + "=";
+					try{
+						var decodedCookie = decodeURIComponent(document.cookie);
+						}catch( e){
+							var decodedCookie = document.cookie;
+						}
+						var ca = decodedCookie.split(';');
+						for(var i = 0; i <ca.length; i++) {
+							var c = ca[i];
+							while (c.charAt(0) == ' ') {
+								c = c.substring(1);
+							}
+							if (c.indexOf(name) == 0) {
+								return c.substring(name.length, c.length);
+							}
+						}
+						return "";
+					}	
+				}
+				var q_token = "5oCqXcLlK0";
+			    var q_urlcallback="https://www.science-et-vie.com/qiota/callback/";
+			    var q_logged = (getCookie('__qiota_scope') == 'logged' )? true : false;
+			    var q_subscribed = (getCookie('__qiota_scope') == 'subscribed' )? true : false;
+			    var q_ressource_uri = "https%3A%2F%2Fwww.science-et-vie.com%2Fparoles-d-experts%2Fecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html";
+				setupQiota( function ( response ){
+					if ( response ){
+						renderQiotaAuth(q_token, q_urlcallback);
+						return ; 
+					}
+				});
+
+				if(site_config_js.add_qiota_onboarding){
+					if(typeof renderQiotaOnboard != "undefined"){
+						renderQiotaOnboard(q_token);
+					} else {
+						console.warn('typeof renderQiotaOnboard == "undefined"');
+					}
+				}
+			</script><link rel="amphtml" href="https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html/amp"> <script type="text/javascript" data-rocketid="partner:permutive">
+			!function(e,o,n,i){if(!e){e=e||{},window.permutive=e,e.q=[];var t=function(){return([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g,function(e){return(e^(window.crypto||window.msCrypto).getRandomValues(new Uint8Array(1))[0]&15>>e/4).toString(16)})};e.config=i||{},e.config.apiKey=o,e.config.workspaceId=n,e.config.environment=e.config.environment||"production",(window.crypto||window.msCrypto)&&(e.config.viewId=t());for(var g=["addon","identify","track","trigger","query","segment","segments","ready","on","once","user","consent"],r=0;r<g.length;r++){var w=g[r];e[w]=function(o){return function(){var n=Array.prototype.slice.call(arguments,0);e.q.push({functionName:o,arguments:n})}}(w)}}}(window.permutive,"75e7d986-20d4-44a3-bb9e-3ef78baabe51","61ea8250-0730-4c8a-81c4-e18e1fc6e43f",{"consentRequired": true});
+			window.googletag=window.googletag||{},window.googletag.cmd=window.googletag.cmd||[],window.googletag.cmd.push(function(){if(0===window.googletag.pubads().getTargeting("permutive").length){var e=window.localStorage.getItem("_pdfps");window.googletag.pubads().setTargeting("permutive",e?JSON.parse(e):[]);var o=window.localStorage.getItem("permutive-id");o&&(window.googletag.pubads().setTargeting("puid",o),window.googletag.pubads().setTargeting("ptime",Date.now().toString())),window.permutive.config.viewId&&window.googletag.pubads().setTargeting("prmtvvid",window.permutive.config.viewId),window.permutive.config.workspaceId&&window.googletag.pubads().setTargeting("prmtvwid",window.permutive.config.workspaceId)}});
+			 permutive.addon('web', {"page":{"classifications_watson":{"categories":"$alchemy_taxonomy"},"website":{"category":"Sciences","type":"Freemium"},"categories":["Cerveau et Intelligence","Paroles d'experts"],"article":{"content":"post","creation_date":"2019-03-29T14:47:31.000000Z","modification_date":"2020-02-06T14:12:36.000000Z","title":"Ecrans versus papier : pourquoi la lecture sur livre renforce l'apprentissage","type":"Article"}}});/* partner:permutive */
+		</script>
+<script async src="https://61ea8250-0730-4c8a-81c4-e18e1fc6e43f.edge.permutive.app/61ea8250-0730-4c8a-81c4-e18e1fc6e43f-web.js" data-rocketid="partner:permutive"></script>
+<script type="text/javascript" data-rocketid="partner:permutive">
+	  window.permutive.readyWithTimeout=function(e,i,t){var u=!1,n=function(){u||(e(),u=!0)};(t=t||1/0)!==1/0&&window.setTimeout(n,t),permutive.ready(n,i)};
+	  window.permutive.readyWithTimeout(function () {
+	        if(typeof consent_didomi !== "undefined")
+	        {
+	            window.didomiOnReady = window.didomiOnReady || [];
+	            window.didomiOnReady.push(function(){
+	                consent_didomi('dmp_permutive',function() {
+	                    var token = Didomi.getUserConsentToken();
+	                    permutive.consent({ "opt_in": true, "token": token.user_id });
+	                    console.log("dmp permutive sent");
+	                });
+	            });
+	           
+	            
+	        }
+	    }, "realtime", 1500);/* partner:permutive */
+		
+	</script>
+<script type='text/javascript'>
+			var reworldId = (localStorage.getItem('rwid') !== null) ? localStorage.getItem('rwid') : '' ;
+			if ((typeof reworldId === 'string' || reworldId instanceof String) && reworldId.length === 64) {
+				console.log('rwid : ' + reworldId);
+				permutive.identify([
+					{
+						'id'       :  reworldId,
+						'tag'      :  'reworld_id',
+						'priority' :  2
+					},
+					{
+						'id'       :  reworldId.toLowerCase(),
+						'tag'      :  'email_sha256',
+						'priority' :  3
+					}
+				])
+			}
+		</script>
+<script>
+				window.didomiOnReady = window.didomiOnReady || [];
+					window.didomiOnReady.push(function (Didomi) {
+					  Didomi.getObservableOnUserConsentStatusForVendor('c:poool')
+					      .filter(function (status) { return status === true })
+					      .subscribe(function (consentStatus) {
+					        !function(w,d,s,u,p,t,o){
+					            w[p]=w[p]||function(){(w[p]._q=w[p]._q||[]).push(arguments)},
+					            t=d.createElement(s),o=d.getElementsByTagName(s)[0],
+					            t.async=1,t.src=u,o.parentNode.insertBefore(t,o)
+					        }(window, document, "script", "https://assets.poool.fr/poool.min.js", "poool");
+					        
+					        poool("init", "Z282A-4UVSR-XL8K0-TUR4E");
+					        poool("config", "cookies_enabled", true);
+					        poool('config', 'user_is_premium', userPremium);
+					        poool("send", "page-view", "premium");
+					  });
+				}); 
+			</script><script type="text/javascript">
+			if(self.RecaptchaOptions){
+				RecaptchaOptions.lang= 'fr' ;
+			}
+			</script><meta name="robots" content="max-snippet:160"><meta name="robots" content="max-image-preview:large"><meta name="robots" content="max-video-preview:-1">
+
+<!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]--><script async src='https://boot.pbstck.com/v1/tag/2b08ea32-e181-4a2f-b63f-1ee0ed16c0db' data-rocketid="partner:pubstack"></script>
+<!--[if lt IE 9]>
+<script src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/html5.js" type="text/javascript"></script>
+<script src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/modernizr.custom.86039.js" type="text/javascript"></script>
+<![endif]-->
 </head>
+<body class="post-template-default single single-post postid-11500 single-format-standard page-name-ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage seo_propriete_itemprop_manquant_101198852 Passage_du_player_sur_videojs mobile-personnalisation-de-la-colonne-de-droite-98646976 sync_ads_refresh_mobile seo_projet_integration_videos new_locking_refactoring creation_page_home_test_109619530 refresh_teads correction_conflit_player_videosjs_meme_page_110878748 network_seo_maillage_inter_site_101380136 seo_correction_micro_donnees_articles_111394476 microdonnees_fil_d_ariane set_posts_per_page_archive instagram_post_in_gallery_112502917 video_a_ne_pas_manquer_112137459 creation_call_to_action_dans_diapos_113904831 opt_sas_target_115018561 evenement_article_diapo auto_play_dailymotion_113908239 nouveau_template_article_oriente_ctr_113552127 generer_une_miniature_du_post_instagram_113730507 retrait_du_fond_gris_114205875 taille_sticker_video_114466013 menu_class_css_112130325 seo_metadonnees_opengraph_103090224 seo_all_sitemapxml_video_103090224 chnagement_texte_optin_partenaire_115765861 decompte_question_jeu_concours_115765861 vpf_in_image_kiosked adaptation_cache_plugin_avec_cache_serveur_116048647 tags_options_partner ajout_attribut_shortcode_fpvideo_ignorer_remontee_bloc_tv_116201485 form_ninja_quizz_115785889 autoplay_article_diaporama_116516201 disable_carousel_116598303 mfa_flux_rss_slideshow_pour_msn_114295885 adaption_shortcode_galerie_116895557 multiple_gallery_backend_116710063 flux_rss_articles_pour_msn_114296247 crm_cms_newsletters_templates_mf_109034048 deploiement_cms_newsletter_network_116026439 network_changement_bandeau_cookies_117553065 exclude_interstitiel_from_poste_cats_117896931 mobile_tablette_square_sous_1e_image_117793115 checked_google_news_117994347 pub_par_categorie_page network_mobile_theme_color_119533077 ajouter_une_case_tous_les_tags_119708761 network_cms_newsletter_admincrm_119709055 network_gestion_tags_adminops_119708921 interface_verrouillage_121198909 integration_lien_ninja_form_120842311 fix_folder_sidebars_122101685 acces_jeu_concours_crm_admin_122476131 network_bug_compteur_partage_128927283 article_video_playlist_video_128046677 fix_sidebar_dedoublee_131082313 fix_bug_jeu_concours_bouton_jejoue_130919773 network_mobile_sticker_video_131559695 integration_ga_reworld_132229903 click_to_play_videojs_153745207 video_afficher_la_croix_133926691 cache_nav_footer_134446899 newsletter_crop_auto_134798525 activer_synch_generate_new_size pouvoir_diffuser_vast_vpaid_135592715 integration_tetiere_137246063 tetiere_bas_article_137686799 creation_module_quiz_sur_am_123470571 hide_black_postervideojs_138694819 mfa_template_one_page_ne_pas_afficher_la_sidebar_142299479 network_article_taboola_tetiere_non_conformes_144509629 article_mobile_diaporama_lineaire_151554665 fix_onscroll_article_video_151889968 evolution_param_exclude_152101483 changement_wording_cookies_157030185 autoplay_ko_sur_le_player_dm_158247682 integration_script_criteo_header_157916532 ajustements_css_rgpd_158942863 crm_cheetah_reformat_new_specs_159243544 fix_cheetah_optin_edito_159243544 audience_format_optimise_pinterest_jcrop_158687688 lazy_loading_3610 separation_articles_diapo_et_video_shoppable_0383 creation_rubrique_video_shoppable_0386 DFP_affichage_pave_pub_3secs_diapo_rub_Green_am_5942 deplacer_dfp_pos_23_Automoto_7124 bug_player_podcast_annuler_autoplay_ios_7114 change_edisound_shortcode_17530 send_email_hash_to_permutive_21272 activate_api_permutive_rmf_monet_0084 update_meta_data_image_legend_diapos_audience_0446 ctc_somaire_0126_par_js recommandation_taboola_2022_rmf_monet_0357 MAJ_Page_Auteur_0619 show_dmp_products_info_0381 affichage_bloc_auteur_1172 modification_de_la_galerie_cote_b_o_1219 TR_1271_désactiver_AMP_sans_redirection_301 adaptation_habillage_1000px_155809078">
 
-<body>
-<div class="kx_head ">
-<div class=kx_logo><A href="http://www.scienceaq.com/"><IMG border=0 src="http://www.scienceaq.com/img_kx/logo_kx.png" width=430 height=90></A> </div>
-<div class=kx_ss>
-<FORM id=search method=post name=search action=search.asp>
-<div class=gba-ssl>
-  <Input id=Keyword class=kx-ssl maxLength=50 size=25 name=Keyword></div>
-<div class=gba-ssr>
-  <Input id=Submit class=kx-ssr value=Search type=submit name=Submit> 
-  <Input id=Field value=Title type=hidden name=Field></div></FORM></div></div>
-<!-- lanmu -->
-<div class=kx_lm>
-<div class=kx_lanmu>
-<li  class=lm><a href="http://fr.scienceaq.com/">Home</a></li>
-<li  class=lm><a href="http://fr.scienceaq.com/Chemistry/">Chimie</a></li>
-
-<li  class=lm><a href="http://fr.scienceaq.com/Astronomy/">Astronomie</a></li>
-
-<li  class=lm><a href="http://fr.scienceaq.com/Energy/">Énergie</a></li>
-
-<li  class=lm><a href="http://fr.scienceaq.com/Nature/">La nature</a></li>
-
-<li  class=lm><a href="http://fr.scienceaq.com/Biology/">Biologie</a></li>
-
-<li  class=lm><a href="http://fr.scienceaq.com/Physics/">Physique</a></li>
-
-<li  class=lm><a href="http://fr.scienceaq.com/Electronics/">Électronique </a></li>
-
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWNRGR8"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ <div class="sidebar-after-body row">
+<div class="textwidget">
+</div>
+</div>
+<div class="sidebar-header-pub row">
+<div id="text-22" class="widget-odd widget-last widget-first widget-1 col-xs-12 col-sm-6 col-md-12 col-lg-12 ms-item pull-left widget widget_text">
+<div class="textwidget"></div>
+</div> </div>
+<div id="page" class="hfeed site"> 
+<div class="hmutinboard"></div><header class="header">
+<div class="container">
+<div class="header-container navbar-site">
+<div class="top-header">
+<div class="burger-menu">
+<button type="button" class="default-toggle" data-toggle="modal" data-target="#Menu">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="toggle_txt">menu</span>
+</button>
+</div>
+<a class="header_brand" href="https://www.science-et-vie.com/">
+<img src="https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/LOGOSV_Black.png" class="main-logo img-responsive" alt="Science-et-vie.com" />
+</a>
+<a class="subscribe-link" href="javascript:void(0)" data-href="https://clk.tradedoubler.com/click?p=304305&a=3137728&g=24730834&url=https://www.kiosquemag.com/bons-plans/sv-premium-test?utm_source=site-groupe-sv&utm_medium=header&utm_campaign=sv-premium&utm_content=header-bouton-abonnez-vous" target="_blank">Abonnez-vous</a>
+</div>
+<div class="header_menu visible-lg visible-md">
+<div class="row">
+<nav class="col-md-9 col-nav">
+<div id="principal-menu" class=" clearfix">
+<ul class="nav navbar-nav nav-menu" id="menu-menu_header"> <li class="menu-item- menu-item menu-item-type-taxonomy lp-tv  menu-item-object-category   menu-item-930" id="menu-item-930">
+<a style="" href="https://www.science-et-vie.com/tv">TV</a>
+</li>
+<li class="menu-item-corps-et-sante menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-93666" id="menu-item-93666">
+<a style="" href="https://www.science-et-vie.com/corps-et-sante">Corps et Santé</a>
+</li>
+<li class="menu-item-questions-reponses menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86865" id="menu-item-86865">
+<a style="" href="https://www.science-et-vie.com/questions-reponses">Questions/Réponses</a>
+</li>
+<li class="menu-item-ciel-et-espace menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86866" id="menu-item-86866">
+<a style="" href="https://www.science-et-vie.com/ciel-et-espace">Espace</a>
+</li>
+<li class="menu-item-nature-et-enviro menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-71521" id="menu-item-71521">
+<a style="" href="https://www.science-et-vie.com/nature-et-enviro">Environnement</a>
+</li>
+<li class="menu-item-technos-et-futur menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86867" id="menu-item-86867">
+<a style="" href="https://www.science-et-vie.com/technos-et-futur">Innovation</a>
+</li>
+<li class="menu-item-cerveau-et-intelligence menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86082" id="menu-item-86082">
+<a style="" href="https://www.science-et-vie.com/cerveau-et-intelligence">Cerveau</a>
+</li>
+<li class="menu-item-societes menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-71522" id="menu-item-71522">
+<a style="" href="https://www.science-et-vie.com/societes">Sociétés</a>
+</li>
+<li class="menu-item-science-et-culture menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86868" id="menu-item-86868">
+<a style="" href="https://www.science-et-vie.com/science-et-culture">Archéologie</a>
+</li>
+<li class="menu-item-culture-2 menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-87511" id="menu-item-87511">
+<a style="" href="https://www.science-et-vie.com/culture-2">Culture</a>
+</li>
+<li class="menu-item- menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-87556" id="menu-item-87556">
+<a style="" href="https://www.science-et-vie.com/archives-par-numero">Magazines</a>
+</li>
+<li class="menu-item-videos-podcasts menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86871" id="menu-item-86871">
+<a style="" href="https://www.science-et-vie.com/videos-podcasts">Vidéos</a>
+</li>
+<li class="menu-item- menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-92419" id="menu-item-92419">
+<a style="" href="https://podcasts.science-et-vie.com/" target="_blank">Podcasts</a>
+</li>
+<li class="menu-item- menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-92408" id="menu-item-92408">
+<a style="" href="https://nft.science-et-vie.com/?utm_source=site-sv&utm_medium=link&utm_campaign=autopromo">NFT</a>
+</li>
+<li class="menu_toggler" data-target="#menu-menu_header" id="menu_toggler"></li> </ul>
+</div> </nav>
+<div class="col-md-3">
+<div class="right-items d-flex header_flex">
+<button type="button" class="toggle_search" data-toggle="modal" data-target="#searchmodal"><span>search</span></button>
+<span class="btn-nl_button"><a href="/inscription-newsletter" class="nl_button"></a></span>
+<a href="https://connect.science-et-vie.com/?redirect_uri=https://www.science-et-vie.com/qiota/callback-mahalo&error_uri=https://connect.science-et-vie.com/&referer=5oCqXcLlK0&uri_referer=https://www.science-et-vie.com" class="se_connecter ">Se connecter</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="modal fade searchform_modal" id="searchmodal" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-body">
+<form class="blockSearch form-inline" action="https://www.science-et-vie.com/" id="searchform" method="get" role="search">
+<input type="text" class="form-control" placeholder="Recherche" name="s" value="" />
+<button type="submit" class="btn pull-right">OK</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="Menu" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close close-burger" data-dismiss="modal" aria-label="Close"></button>
+<nav class="nav_desc">
+<div id="principal-menu" class=" clearfix">
+<ul class="nav navbar-nav nav-menu" id="menu-menu_header"> <li class="menu-item- menu-item menu-item-type-taxonomy lp-tv  menu-item-object-category   menu-item-930" id="menu-item-930">
+<a style="" href="https://www.science-et-vie.com/tv">TV</a>
+</li>
+<li class="menu-item-corps-et-sante menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-93666" id="menu-item-93666">
+<a style="" href="https://www.science-et-vie.com/corps-et-sante">Corps et Santé</a>
+</li>
+<li class="menu-item-questions-reponses menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86865" id="menu-item-86865">
+<a style="" href="https://www.science-et-vie.com/questions-reponses">Questions/Réponses</a>
+</li>
+<li class="menu-item-ciel-et-espace menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86866" id="menu-item-86866">
+<a style="" href="https://www.science-et-vie.com/ciel-et-espace">Espace</a>
+</li>
+<li class="menu-item-nature-et-enviro menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-71521" id="menu-item-71521">
+<a style="" href="https://www.science-et-vie.com/nature-et-enviro">Environnement</a>
+</li>
+<li class="menu-item-technos-et-futur menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86867" id="menu-item-86867">
+<a style="" href="https://www.science-et-vie.com/technos-et-futur">Innovation</a>
+</li>
+<li class="menu-item-cerveau-et-intelligence menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86082" id="menu-item-86082">
+<a style="" href="https://www.science-et-vie.com/cerveau-et-intelligence">Cerveau</a>
+</li>
+<li class="menu-item-societes menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-71522" id="menu-item-71522">
+<a style="" href="https://www.science-et-vie.com/societes">Sociétés</a>
+</li>
+<li class="menu-item-science-et-culture menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86868" id="menu-item-86868">
+<a style="" href="https://www.science-et-vie.com/science-et-culture">Archéologie</a>
+</li>
+<li class="menu-item-culture-2 menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-87511" id="menu-item-87511">
+<a style="" href="https://www.science-et-vie.com/culture-2">Culture</a>
+</li>
+<li class="menu-item- menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-87556" id="menu-item-87556">
+<a style="" href="https://www.science-et-vie.com/archives-par-numero">Magazines</a>
+</li>
+<li class="menu-item-videos-podcasts menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-86871" id="menu-item-86871">
+<a style="" href="https://www.science-et-vie.com/videos-podcasts">Vidéos</a>
+</li>
+<li class="menu-item- menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-92419" id="menu-item-92419">
+<a style="" href="https://podcasts.science-et-vie.com/" target="_blank">Podcasts</a>
+</li>
+<li class="menu-item- menu-item menu-item-type-taxonomy   menu-item-object-category   menu-item-92408" id="menu-item-92408">
+<a style="" href="https://nft.science-et-vie.com/?utm_source=site-sv&utm_medium=link&utm_campaign=autopromo">NFT</a>
+</li>
+<li class="menu_toggler" data-target="#menu-menu_header" id="menu_toggler"></li> </ul>
+</div> </nav>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div id="megabanner_top">
+<aside id="text-23" class="widget-odd widget-first widget-1 col-xs-12 col-md-12 col-lg-12 ms-item widget widget_text">
+<div class="textwidget"></div>
+</aside><aside id="text-28" class="widget-even widget-last widget-2 col-xs-12 col-md-12 col-lg-12 ms-item widget widget_text">
+<div class="textwidget"></div>
+</aside> </div>
+<div id="container"> 
+<div class="container">
+<div class="row ">
+<div id="content" role="main" class="site-content col-xs-12 col-md-8 col-lg-8 pull-left cat-parent-paroles-d-experts"> 
+<div id="results" class="post">
+<div class="tag_aboone"><span>Abonné</span></div><div class="post">
+<div class=""><ol class="breadcrumb"><li> <a class="home" href="https://www.science-et-vie.com">Accueil</a> </li><li class="parent"><a href="https://www.science-et-vie.com/paroles-d-experts">Paroles d'experts</a></li></ol></div><script type="application/ld+json"> {
+				"@context": "http://schema.org",
+				"@type": "BreadcrumbList",
+				"itemListElement": [ {
+		   	"@type": "ListItem",
+		   	"position": 1,
+		   	"item": {
+		    	"@id": "https://www.science-et-vie.com",
+		   		"url": "https://www.science-et-vie.com",
+		    	"name": "Science et vie"
+		    	}
+	  		}, { 
+			    "@type": "ListItem",
+			    "position": 2,
+			    "item": {
+			       "@id": "https://www.science-et-vie.com/paroles-d-experts",
+			       "url": "https://www.science-et-vie.com/paroles-d-experts",
+			       "name": "Paroles d'experts"
+			       } 
+		    	}, { 
+				"@type": "ListItem",
+				"position": 3,
+				"item": {
+					"@id": "https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html",
+					"url": "https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html",
+					"name": "Ecrans versus papier : pourquoi la lecture sur livre renforce l&rsquo;apprentissage"
+					} 
+				}
+				] 
+			} 
+			</script>
+<article id="post-11500" class="item">
+<div itemscope itemtype="http://schema.org/Article">
+<div id='top_intro_article'>
+<h1 class="title" itemprop="headline ">
+Ecrans versus papier : pourquoi la lecture sur livre renforce l&rsquo;apprentissage </h1>
+<meta itemprop="articleSection" content="Paroles d'experts" />
+<div class="author_date">
+<span class="date">Publié le 29 Mar 2019 à 14H47 </span>
+<span class="edited_date"> Modifié le 6 février 2020 </span>
+<span class="author">Par Fiorenza Gracci</span>
+</div>
+</div>
+<meta itemprop="name" content="Ecrans versus papier : pourquoi la lecture sur livre renforce l&rsquo;apprentissage" /><meta itemprop="interactionCount" content="UserTweets:0" /><meta itemprop="interactionCount" content="UserComments:0" /><meta itemprop="interactionCount" content="UserLikes:0" /><meta itemprop="interactionCount" content="UserPlusOnes:0" /><meta itemprop="keywords" content="Cerveau / Intelligence, Paroles d'experts, rsgreen" /><meta itemprop="contentLocation" content="" /><meta itemprop="discussionUrl" content="https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html#comments" /><meta itemprop="thumbnailUrl" content="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2019/03/ecrans-versus-papier-voici-pourquoi-lecture-sur-livre-renforce-apprentissage-200x200.jpg" /> <div class="image_top_single">
+<div class="image_a_lune">
+<span class="top_img" data-href="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2019/03/ecrans-versus-papier-voici-pourquoi-lecture-sur-livre-renforce-apprentissage.jpg" title="Ecrans versus papier : pourquoi la lecture sur livre renforce l&rsquo;apprentissage">
+<img width="750" height="410" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2019/03/ecrans-versus-papier-voici-pourquoi-lecture-sur-livre-renforce-apprentissage-750x410.jpg" class="img-responsive alignnone size-full pinit-here zoom-it" alt="" loading="lazy" /> </span>
+<div class="copyright_text">© Juraj Varga/Pixabay /CC0</div> </div>
+</div>
+<div id='share_1' class='share-buttons'><div class="social blockShare_horizontal "> <ul><li class="social-network rw_btn_share facebook" data-network="facebook"></li><li class="social-network rw_btn_share twitter" data-network="twitter" data-text="Ecrans versus papier : pourquoi la lecture sur livre renforce l'apprentissage" data-url="https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html" data-hashtags="" data-via=""></li><li class="social-network email" data-network="email"></li><li class="copy_link" data-clipboard-text="https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html" aria-label="Copié"></li> </ul></div></div><script type='text/javascript'> 
+		jQuery(document).ready( function(){ 
+			show_default_sharer( '#share_1' ,
+			 "https:\/\/www.science-et-vie.com\/paroles-d-experts\/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html","Ecrans versus papier : pourquoi la lecture sur livre renforce l'apprentissage","\n\nApr\u00e8s de nombreuses \u00e9tudes, on conna\u00eet maintenant le comportement du cerveau dans les deux modes de lecture, sur papier et sur \u00e9cran. <a href='https:\/\/theconversation.com\/profiles\/frederic-bernard-697581' target='_blank'>Fr\u00e9d\u00e9ric Bernard<\/a>, neuropsychologue \u00e0 l'universit\u00e9 de Strasbourg, explique en quoi les sensations dues au papier renforcent l'apprentissage du texte.","https:\/\/www.science-et-vie.com\/wp-content\/uploads\/scienceetvie\/2019\/03\/ecrans-versus-papier-voici-pourquoi-lecture-sur-livre-renforce-apprentissage.jpg") ; 
+		});</script> 
+<div class="post-excerpt">
+Après de nombreuses études, on connaît maintenant le comportement du cerveau dans les deux modes de lecture, sur papier et sur écran. <a href='https://theconversation.com/profiles/frederic-bernard-697581' target='_blank'>Frédéric Bernard</a>, neuropsychologue à l'université de Strasbourg, explique en quoi les sensations dues au papier renforcent l'apprentissage du texte. </div>
+<div class="article-content thecontent" itemprop="articleBody">
+<div class="article_body_content qiota_reserve" data-poool="80" data-poool-mode="hide"><p>Les écrans de téléphones mobiles, de tablettes et d&rsquo;ordinateurs envahissent notre quotidien, et voilà dictionnaires, fiches de cours ou même classiques de la littérature à portée de clic. Faut-il inciter les élèves à profiter à 100% de ces facilités d&rsquo;accès inédites au savoir, et renvoyer le papier au passé ? Rien n&rsquo;est moins sûr si l&rsquo;on se penche sur les derniers résultats de la recherche.</p> <p>Depuis le début de ce siècle, plusieurs dizaines d&rsquo;études ont été menées pour évaluer les effets du support de lecture sur les performances de compréhension de textes qui pouvaient être soit documentaires &#8211; manuels scolaires, ouvrages universitaires &#8211; soit narratifs &#8211; fictions, romans&#8230; </p> <p>Les résultats de ces études ont été repris dans deux méta-analyses publiées en 2018 ; <a href="https://doi.org/10.1016/j.compedu.2018.05.005">celle de Kong, Seo et Zhai</a>, portant sur 17 études, publiée dans le journal <em>Computers &amp; Education</em>, et <a href="https://doi.org/10.1016/j.edurev.2018.09.003">celle de Delgado</a> et de ses collègues, portant sur 54 études effectuées auprès d&rsquo;un total d&rsquo;environ 170 000 lecteurs, et publiée dans <em>Educational Research Review</em>. Il en ressort que la compréhension de textes est significativement meilleure lorsque la lecture s&rsquo;effectue sur papier que sur écran. </p> <p><strong>• A lire aussi : <a href="https://www.science-et-vie.com/cerveau-et-intelligence/quand-nous-lisons-sur-un-ecran-nous-pensons-autrement-6740">Quand nous lisons sur un écran, nous pensons autrement !</a></p> <p></strong></p> <h2>Habitudes de lecture</h2> <p>Si Kong, Seo et Zhai (2018) n&rsquo;ont pas pris en compte la nature des textes (documentaires ou narratifs) comme critère, Delgado et ses collègues ont en revanche constaté que la différence entre papier et écran se manifestait dans le cas des textes documentaires, des textes à la fois documentaires et narratifs, mais pas des textes uniquement narratifs. Les auteurs apportent deux éléments d&rsquo;interprétation à ce résultat : </p> <ul> <li> <p>les textes documentaires font appel à des traitements cognitifs plus complexes impliquant par exemple l&rsquo;utilisation d&rsquo;un vocabulaire académique très spécifique </p> </li> <li> <p>ils sont moins connectés aux connaissances que possèdent les lecteurs sur le monde réel, tout cela rendant la compréhension à la fois plus difficile pour ce type de textes et en même temps plus sensible à la nature du support de lecture. </p> </li> </ul> <p>Pour expliquer cette plus grande facilité de compréhension sur un support papier, le premier facteur que l&rsquo;on pourrait invoquer serait celui de l&rsquo;expérience. Les technologies numériques étant relativement nouvelles, les habitudes de lecture sur écran seraient moins ancrées que celles sur papier. Une façon de tester ce facteur serait de vérifier si, dans les publications les plus récentes, où les participants affichent donc une familiarité plus grande avec les écrans, les écarts de compréhension s&rsquo;atténuent entre les supports. </p> <p><strong>• A lire aussi : <a href="https://www.science-et-vie.com/archives/e-book-internet-smartphone-la-lecture-change-nos-cerveaux-aussi-41029">E-book, internet, smartphone&#8230; La lecture change, nos cerveaux aussi</a></p> <p></strong></p> <p>Or, comme <a href="https://doi.org/10.1016/j.edurev.2018.09.003">Delgado et ses collègues</a> l&rsquo;ont constaté, c&rsquo;est exactement l&rsquo;inverse qui se produit : la différence de performances de compréhension entre écran et papier s&rsquo;accroît dans les études les plus récentes par rapport aux plus anciennes. Le manque relatif d&rsquo;expérience par rapport à la technologie n&rsquo;explique donc pas les avantages du papier en matière de lecture.</p> <h2>Expérience sensorielle</h2> <p>La matérialité du livre imprimé serait-elle alors le facteur décisif ? En effet, la lecture d&rsquo;un livre implique non seulement l&rsquo;analyse et le traitement de ce qui y est écrit mais aussi l&rsquo;association entre un contenu et un objet riche d&rsquo;un point de vue sensoriel. Forme, couverture du livre, odeur, nombre et épaisseur des pages aident notre cerveau à intégrer les informations qui lui parviennent et à mieux les retenir dans la durée. </p> <p>En stockant des milliers d&rsquo;ouvrages, tablettes et liseuses permettent certes d&rsquo;alléger les cartables, mais, lus sur un même support, manuels scolaires et romans seront associés à une expérience sensorielle moins spécifique et seront par conséquent moins bien traités et mémorisés. Les résultats d&rsquo;une étude qui vient d&rsquo;être publiée par <a href="https://doi.org/10.3389/fpsyg.2019.00038">Mangen, Olivier et Velay</a> (2019) vont dans ce sens. </p> <p>Les auteurs ont demandé aux participants de l&rsquo;étude de lire un long texte narratif en utilisant soit un livre soit une liseuse. Si les performances générales de compréhension mesurées étaient globalement les mêmes, quel que soit le support, la lecture sur papier permettait de mieux se rappeler où les phrases sont apparues précisément et dans quel ordre les événements se sont déroulés. </p> <p><strong>• A lire aussi : <a href="https://www.science-et-vie.com/archives/on-retient-moins-bien-ce-qu-on-lit-sur-tablette-33126">On retient moins bien ce qu&rsquo;on lit sur tablette</a></p> <p></strong></p> <p>Les auteurs considèrent ainsi que la manipulation d&rsquo;un vrai livre pendant la lecture apporte des informations sensorielles et motrices plus riches, ce qui permet de mieux traiter et de mieux mémoriser le texte et l&rsquo;organisation temporelle des événements décrits. Ainsi, les données scientifiques actuelles nous amènent à continuer de privilégier la lecture de livres imprimés si l&rsquo;on souhaite favoriser la compréhension et la mémorisation de ce qui est lu.<img itemprop="thumbnailUrl" src="https://counter.theconversation.com/content/112493/count.gif?distributor=republish-lightbox-basic" alt="The Conversation" width="1" height="1" style="border: none !important;margin: 0 !important;max-height: 1px !important;max-width: 1px !important;min-height: 1px !important;min-width: 1px !important;padding: 0 !important" /></p> <p><em>Cet article est republié à partir de <a href="https://theconversation.com">The Conversation</a> sous licence Creative Commons. Lire l&rsquo;<a href="https://theconversation.com/lire-sur-papier-lire-sur-ecran-en-quoi-est-ce-different-112493">article original</a></em>.</p> <div id="dfp_inread" class="DFPinread"></div>
+</div><div class="qiota" id="qiota_form"> </div><div id="poool-widget"></div> </div>
+<div itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2019/03/ecrans-versus-papier-voici-pourquoi-lecture-sur-livre-renforce-apprentissage-750x410.jpg"><meta itemprop="width" content="1920"><meta itemprop="height" content="1280"></div><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images-v2/main-logo.png"><meta itemprop="width" content=""><meta itemprop="height" content=""></div><meta itemprop="url" content="https://www.science-et-vie.com" /><meta itemprop="name" content="Science et vie"></div><meta itemprop="datePublished" content="2019-03-29T14:47:31+01:00" /><meta itemprop="dateModified" content="2020-02-06T14:12:36+01:00" /><meta itemprop="headline" content="Ecrans versus papier : pourquoi la lecture sur livre renforce l&rsquo;apprentissage" /><div itemprop="author" itemtype="https://schema.org/Person" itemscope><meta itemprop="name" content="Fiorenza Gracci"><meta itemprop="url" content="https://www.science-et-vie.com/auteur/fgracci"><meta itemprop="image" content="https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/auteur_default_avatar.png"><meta itemprop="description" content=""></div><meta itemscope itemprop="mainEntityOfPage" content="" itemType="https://schema.org/WebPage" itemid="https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html" /> </div>
+</article>
+<aside id="text-31" class="widget-odd widget-last widget-first widget-1 sidebar-before-comments ms-item  widget widget_text">
+<div class="textwidget"></div>
+</aside>
+<div class="block-ligatus"></div><div class="homeMoreArticles related-posts">
+<ul class="row connected_related_posts">
+<div class="col-xs-12">
+<h2 class="default-title">Sur le même sujet</h2> </div>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/paroles-d-experts/10-idees-recues-sur-le-tabac-qui-se-revelent-fausses-15234.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/02/dix-idees-recues-sur-tabac-qui-averent-fausses-365x200.jpg" class="lazy-load img-responsive zoom-it wp-post-image" alt="10-idees-recues-sur-le-tabac-qui-se-revelent-fausses" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/02/dix-idees-recues-sur-tabac-qui-averent-fausses-365x200.jpg" class="img-responsive zoom-it wp-post-image" alt="10-idees-recues-sur-le-tabac-qui-se-revelent-fausses" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/paroles-d-experts/10-idees-recues-sur-le-tabac-qui-se-revelent-fausses-15234.html" title="10 idées reçues sur le tabac qui se révèlent fausses" target="_self">10 idées reçues sur le tabac qui se révèlent fausses</a>
+</h3>
+</div>
+</article>
+</li>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/nature-et-enviro/pesticides-la-france-peut-elle-en-sortir-7645.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2020/01/pesticides-france-peut-elle-sortir-365x200.jpg" class="lazy-load img-responsive zoom-it wp-post-image" alt="pesticides-la-france-peut-elle-en-sortir" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2020/01/pesticides-france-peut-elle-sortir-365x200.jpg" class="img-responsive zoom-it wp-post-image" alt="pesticides-la-france-peut-elle-en-sortir" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/nature-et-enviro/pesticides-la-france-peut-elle-en-sortir-7645.html" title="Pesticides : la France peut-elle en sortir ?" target="_self">Pesticides : la France peut-elle en sortir ?</a>
+</h3>
+</div>
+</article>
+</li>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/paroles-d-experts/notre-dame-on-pourra-aussi-reconstruire-son-acoustique-10747.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2019/05/notre-dame-pourra-aussi-reconstruire-son-acoustique-365x200.png" class="lazy-load img-responsive zoom-it wp-post-image" alt="notre-dame-on-pourra-aussi-reconstruire-son-acoustique" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2019/05/notre-dame-pourra-aussi-reconstruire-son-acoustique-365x200.png" class="img-responsive zoom-it wp-post-image" alt="notre-dame-on-pourra-aussi-reconstruire-son-acoustique" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/paroles-d-experts/notre-dame-on-pourra-aussi-reconstruire-son-acoustique-10747.html" title="Notre-Dame : on pourra aussi reconstruire son acoustique" target="_self">Notre-Dame : on pourra aussi reconstruire son acoustique</a>
+</h3>
+</div>
+</article>
+</li>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/nature-et-enviro/les-mathematiques-sont-elles-le-langage-la-nature-5954.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2022/04/les-mathematiques-sont-merveilleusement-presentes-dans-nature-365x200.jpg" class="lazy-load img-responsive zoom-it wp-post-image" alt="les-mathematiques-sont-elles-le-langage-la-nature" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2022/04/les-mathematiques-sont-merveilleusement-presentes-dans-nature-365x200.jpg" class="img-responsive zoom-it wp-post-image" alt="les-mathematiques-sont-elles-le-langage-la-nature" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/nature-et-enviro/les-mathematiques-sont-elles-le-langage-la-nature-5954.html" title="Les mathématiques sont-elles le langage la nature ?" target="_self">Les mathématiques sont-elles le langage la nature ?</a>
+</h3>
+</div>
+</article>
+</li>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/ciel-et-espace/lune-son-influence-est-elle-reelle-ou-imaginaire-5645.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/10/lune-son-influence-est-elle-reelle-imaginaire-365x200.jpg" class="lazy-load img-responsive zoom-it wp-post-image" alt="lune-son-influence-est-elle-reelle-ou-imaginaire" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/10/lune-son-influence-est-elle-reelle-imaginaire-365x200.jpg" class="img-responsive zoom-it wp-post-image" alt="lune-son-influence-est-elle-reelle-ou-imaginaire" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/ciel-et-espace/lune-son-influence-est-elle-reelle-ou-imaginaire-5645.html" title="Lune : son influence est-elle réelle ou imaginaire ?" target="_self">Lune : son influence est-elle réelle ou imaginaire ?</a>
+</h3>
+</div>
+</article>
+</li>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/cerveau-et-intelligence/temps-et-cerveau-comment-notre-perception-nous-fait-voyager-dans-le-temps-7942.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/09/temps-cerveau-comment-notre-perception-nous-fait-voyager-dans-temps-365x200.jpg" class="lazy-load img-responsive zoom-it wp-post-image" alt="temps-et-cerveau-comment-notre-perception-nous-fait-voyager-dans-le-temps" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/09/temps-cerveau-comment-notre-perception-nous-fait-voyager-dans-temps-365x200.jpg" class="img-responsive zoom-it wp-post-image" alt="temps-et-cerveau-comment-notre-perception-nous-fait-voyager-dans-le-temps" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/cerveau-et-intelligence/temps-et-cerveau-comment-notre-perception-nous-fait-voyager-dans-le-temps-7942.html" title="Temps et cerveau : comment notre perception nous fait voyager dans le temps" target="_self">Temps et cerveau : comment notre perception nous fait voyager dans le temps</a>
+</h3>
+</div>
+</article>
+</li>
+</ul>
+</div> <div class="homeMoreArticles related-posts">
+<ul class="row connected_related_posts">
+<div class="col-xs-12">
+<h2 class="default-title">Les abonnés lisent aussi</h2> </div>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/cerveau-et-intelligence/le-jeu-dechecs-a-inspire-le-developpement-de-lintelligence-artificielle-2866.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/09/comment-jeu-echecs-inspire-pionnier-intelligence-artificielle-365x200.jpg" class="lazy-load img-responsive zoom-it wp-post-image" alt="le-jeu-dechecs-a-inspire-le-developpement-de-lintelligence-artificielle" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/09/comment-jeu-echecs-inspire-pionnier-intelligence-artificielle-365x200.jpg" class="img-responsive zoom-it wp-post-image" alt="le-jeu-dechecs-a-inspire-le-developpement-de-lintelligence-artificielle" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/cerveau-et-intelligence/le-jeu-dechecs-a-inspire-le-developpement-de-lintelligence-artificielle-2866.html" title="Le jeu d'échecs a inspiré le développement de l’intelligence artificielle" target="_self">Le jeu d&rsquo;échecs a inspiré le développement de l’intelligence artificielle</a>
+</h3>
+</div>
+</article>
+</li>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/corps-et-sante/le-the-vert-na-pas-deffet-contre-le-cancer-9681.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/05/le-the-vert-pas-effet-contre-cancer-365x200.jpg" class="lazy-load img-responsive zoom-it wp-post-image" alt="le-the-vert-na-pas-deffet-contre-le-cancer" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/05/le-the-vert-pas-effet-contre-cancer-365x200.jpg" class="img-responsive zoom-it wp-post-image" alt="le-the-vert-na-pas-deffet-contre-le-cancer" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/corps-et-sante/le-the-vert-na-pas-deffet-contre-le-cancer-9681.html" title="Le thé vert n'a pas d'effet contre le cancer" target="_self">Le thé vert n&rsquo;a pas d&rsquo;effet contre le cancer</a>
+</h3>
+</div>
+</article>
+</li>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/corps-et-sante/le-confinement-favorise-les-troubles-alimentaires-comment-sen-premunir-6071.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/05/le-confinement-favorise-les-troubles-alimentaires-comment-premunir-365x200.jpg" class="lazy-load img-responsive zoom-it wp-post-image" alt="le-confinement-favorise-les-troubles-alimentaires-comment-sen-premunir" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/05/le-confinement-favorise-les-troubles-alimentaires-comment-premunir-365x200.jpg" class="img-responsive zoom-it wp-post-image" alt="le-confinement-favorise-les-troubles-alimentaires-comment-sen-premunir" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/corps-et-sante/le-confinement-favorise-les-troubles-alimentaires-comment-sen-premunir-6071.html" title="Le confinement favorise les troubles alimentaires : comment s'en prémunir" target="_self">Le confinement favorise les troubles alimentaires : comment s&rsquo;en prémunir</a>
+</h3>
+</div>
+</article>
+</li>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/nature-et-enviro/comment-depasser-notre-aversion-pour-les-insectes-11129.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/04/comment-depasser-notre-aversion-pour-les-insectes-365x200.jpg" class="lazy-load img-responsive zoom-it wp-post-image" alt="comment-depasser-notre-aversion-pour-les-insectes" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/04/comment-depasser-notre-aversion-pour-les-insectes-365x200.jpg" class="img-responsive zoom-it wp-post-image" alt="comment-depasser-notre-aversion-pour-les-insectes" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/nature-et-enviro/comment-depasser-notre-aversion-pour-les-insectes-11129.html" title="Comment dépasser notre aversion pour les insectes" target="_self">Comment dépasser notre aversion pour les insectes</a>
+</h3>
+</div>
+</article>
+</li>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/paroles-d-experts/faut-il-choisir-le-trajet-le-plus-court-ou-le-plus-rapide-selon-les-maths-3944.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/03/faut-choisir-trajet-plus-court-plus-rapide-selon-les-maths-365x200.jpg" class="lazy-load img-responsive zoom-it wp-post-image" alt="faut-il-choisir-le-trajet-le-plus-court-ou-le-plus-rapide-voici-la-reponse-mathematiques" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/03/faut-choisir-trajet-plus-court-plus-rapide-selon-les-maths-365x200.jpg" class="img-responsive zoom-it wp-post-image" alt="faut-il-choisir-le-trajet-le-plus-court-ou-le-plus-rapide-voici-la-reponse-mathematiques" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/paroles-d-experts/faut-il-choisir-le-trajet-le-plus-court-ou-le-plus-rapide-selon-les-maths-3944.html" title="Faut-il choisir le trajet le plus court ou le plus rapide ? Voici la réponse mathématiques" target="_self">Faut-il choisir le trajet le plus court ou le plus rapide ? Voici la réponse mathématiques</a>
+</h3>
+</div>
+</article>
+</li>
+<li class="col-xs-12 col-sm-4 item-small">
+<article class="post-item">
+<div class="post-item-img thumbnail_push_small">
+<a href="javascript:void(0)" data-href="https://www.science-et-vie.com/nature-et-enviro/animaux-sauvages-pourquoi-leur-commerce-florissant-pose-probleme-5624.html" target="_self">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/03/animaux-sauvages-pourquoi-leur-commerce-florissant-pose-probleme-365x200.jpg" class="lazy-load img-responsive zoom-it wp-post-image" alt="animaux-sauvages-pourquoi-leur-commerce-florissant-pose-probleme" loading="lazy" /><noscript><img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2021/03/animaux-sauvages-pourquoi-leur-commerce-florissant-pose-probleme-365x200.jpg" class="img-responsive zoom-it wp-post-image" alt="animaux-sauvages-pourquoi-leur-commerce-florissant-pose-probleme" loading="lazy" /></noscript> </a>
+</div>
+<div class="post-item-txt">
+<h3 class="title_push">
+<a href="https://www.science-et-vie.com/nature-et-enviro/animaux-sauvages-pourquoi-leur-commerce-florissant-pose-probleme-5624.html" title="Animaux sauvages : pourquoi leur commerce florissant pose problème" target="_self">Animaux sauvages : pourquoi leur commerce florissant pose problème</a>
+</h3>
+</div>
+</article>
+</li>
+</ul>
+</div> 
+<div class='inboard'></div>
+</div>
+<div class="partager"><div class="partager-title">Partager</div><div id='share_2' class='share-buttons'><div class="social blockShare_horizontal "> <ul><li class="social-network rw_btn_share facebook" data-network="facebook"></li><li class="social-network rw_btn_share twitter" data-network="twitter" data-text="Ecrans versus papier : pourquoi la lecture sur livre renforce l'apprentissage" data-url="https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html" data-hashtags="" data-via=""></li><li class="social-network email" data-network="email"></li><li class="copy_link" data-clipboard-text="https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html" aria-label="Copié"></li> </ul></div></div><script type='text/javascript'> 
+		jQuery(document).ready( function(){ 
+			show_default_sharer( '#share_2' ,
+			 "https:\/\/www.science-et-vie.com\/paroles-d-experts\/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html","Ecrans versus papier : pourquoi la lecture sur livre renforce l'apprentissage","\n\nApr\u00e8s de nombreuses \u00e9tudes, on conna\u00eet maintenant le comportement du cerveau dans les deux modes de lecture, sur papier et sur \u00e9cran. <a href='https:\/\/theconversation.com\/profiles\/frederic-bernard-697581' target='_blank'>Fr\u00e9d\u00e9ric Bernard<\/a>, neuropsychologue \u00e0 l'universit\u00e9 de Strasbourg, explique en quoi les sensations dues au papier renforcent l'apprentissage du texte.","https:\/\/www.science-et-vie.com\/wp-content\/uploads\/scienceetvie\/2019\/03\/ecrans-versus-papier-voici-pourquoi-lecture-sur-livre-renforce-apprentissage.jpg") ; 
+		});</script></div><ul class="navigation-btn row"><li class="col-md-6 col-xs-12">
+<div class="navigation navigation-previous row">
+<div class="image col-md-4 col-xs-6">
+<a class="btn btn-previous btn-default" href="javascript:void(0);" data-href="https://www.science-et-vie.com/technos-et-futur/mini-cheetah-le-premier-robot-a-4-pattes-qui-reussit-le-salto-arriere-60700.html">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2019/03/mini-cheetah-premier-robot-pattes-qui-reussit-salto-arriere-365x200.gif" class="img-responsive zoom-it" alt="" loading="lazy" /> </a>
+</div>
+<div class="text col-md-8 col-xs-6">
+<a class="btn btn-previous btn-default" href="https://www.science-et-vie.com/technos-et-futur/mini-cheetah-le-premier-robot-a-4-pattes-qui-reussit-le-salto-arriere-60700.html">Article précédent</a>
+<h4>
+<a class="btn btn-previous btn-default" href="https://www.science-et-vie.com/technos-et-futur/mini-cheetah-le-premier-robot-a-4-pattes-qui-reussit-le-salto-arriere-60700.html">
+Mini Cheetah : le premier robot à 4 pattes qui réussit le salto arrière </a>
+</h4>
+</div>
+</div>
+</li><li class="col-md-6 col-xs-12">
+<div class="navigation navigation-next row">
+<div class="text col-md-8 col-xs-6">
+<a class="btn btn-next btn-default" href="https://www.science-et-vie.com/questions-reponses/la-pollution-de-leau-contamine-t-elle-les-fruits-des-arbres-11493.html">Article suivant</a>
+<h4>
+<a class="btn btn-next btn-default" href="https://www.science-et-vie.com/questions-reponses/la-pollution-de-leau-contamine-t-elle-les-fruits-des-arbres-11493.html">
+La pollution de l'eau contamine-t-elle les fruits des arbres ? </a>
+</h4>
+</div>
+<div class="image col-md-4 col-xs-6">
+<a class="btn btn-next btn-default" href="javascript:void(0);" data-href="https://www.science-et-vie.com/questions-reponses/la-pollution-de-leau-contamine-t-elle-les-fruits-des-arbres-11493.html">
+<img width="365" height="200" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2019/03/la-pollution-eau-contamine-elle-les-fruits-des-arbres-365x200.png" class="img-responsive zoom-it" alt="" loading="lazy" /> </a>
+</div>
+</div>
+</li></ul>
+</div>
+</div>
+<div id="blockRight" class="widget-area col-xs-12 col-sm-12 col-md-4 col-lg-4 pull-right" role="complementary">
+<div class="list-ms-item clearfix">
+<aside id="text-3" class="widget-odd widget-first widget-1 col-xs-12 col-sm-6 col-md-12 col-lg-12 ms-item pull-left widget widget_text">
+<div class="textwidget"><div id="fix_onscroll"></div></div>
+</aside><aside id="text-2" class="widget-even widget-2 col-xs-12 col-sm-6 col-md-12 col-lg-12 ms-item pull-left widget widget_text"><h2 class="widget-title">les plus lus</h2>
+<div class="textwidget"><ol class="items-small-list most_popular normal">
+<li class="thumbnail-item">
+<div class="media">
+<div class="media-left">
+<div class="media-left-position">
+<span>1</span>
+</div>
+</div>
+<div class="media-body">
+<a title="Des chercheurs découvrent une extinction de masse jusqu’alors inconnue de l’histoire de la Terre" href="https://www.science-et-vie.com/nature-et-enviro/chercheurs-decouvrent-extinction-de-masse-95186.html">
+Des chercheurs découvrent une extinction de masse... </a>
+</div>
+</div>
+</li>
+<li class="thumbnail-item">
+<div class="media">
+<div class="media-left">
+<div class="media-left-position">
+<span>2</span>
+</div>
+</div>
+<div class="media-body">
+<a title="Une équipe de recherche découvre un lien entre la migraine et des modifications cérébrales" href="https://www.science-et-vie.com/cerveau-et-intelligence/migraine-cerveau-espace-perivasculaire-94587.html">
+Une équipe de recherche découvre un lien entre la... </a>
+</div>
+</div>
+</li>
+<li class="thumbnail-item">
+<div class="media">
+<div class="media-left">
+<div class="media-left-position">
+<span>3</span>
+</div>
+</div>
+<div class="media-body">
+<a title="Une étude récente remet en question l’efficacité du cholestérol HDL ou bon cholestérol" href="https://www.science-et-vie.com/corps-et-sante/maladies-cardiovasculaires/etude-remet-en-question-efficacite-cholesterol-hdl-94532.html">
+Une étude récente remet en question l’efficacité... </a>
+</div>
+</div>
+</li>
+<li class="thumbnail-item">
+<div class="media">
+<div class="media-left">
+<div class="media-left-position">
+<span>4</span>
+</div>
+</div>
+<div class="media-body">
+<a title="NFT : qu’est-ce que c’est ? Décryptage" href="https://www.science-et-vie.com/technos-et-futur/nft-quest-ce-que-cest-decryptage-95200.html">
+NFT : qu’est-ce que c’est ? Décryptage </a>
+</div>
+</div>
+</li>
+<li class="thumbnail-item">
+<div class="media">
+<div class="media-left">
+<div class="media-left-position">
+<span>5</span>
+</div>
+</div>
+<div class="media-body">
+<a title="La méditation est-elle efficace contre l’anxiété ?" href="https://www.science-et-vie.com/corps-et-sante/anxiete-meditation-traitement-95235.html">
+La méditation est-elle efficace contre... </a>
+</div>
+</div>
+</li>
+</ol></div>
+</aside><aside id="text-30" class="widget-odd widget-last widget-3 col-xs-12 col-sm-6 col-md-12 col-lg-12 ms-item pull-left widget widget_text">
+<div class="textwidget"></div>
+</aside> </div>
+</div>
+</div>
+</div>
+</div>
+<div id="megabanner_bottom" class="container">
+<aside id="text-24" class="widget-odd widget-first widget-1 col-xs-12 col-sm-6 col-md-12 col-lg-12 ms-item pull-left widget widget_text">
+<div class="textwidget"></div>
+</aside><aside id="text-29" class="widget-even widget-last widget-2 col-xs-12 col-sm-6 col-md-12 col-lg-12 ms-item pull-left widget widget_text">
+<div class="textwidget">
+</div>
+</aside> </div>
+<footer class="clearfix">
+<div class="container">
+<div class="footer_logo">
+<a href="https://www.science-et-vie.com/">
+<img src="https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/logo_footer.png" class="img-responsive" alt="Science-et-vie.com" />
+</a>
+</div>
+<div class="row">
+<div id="text-4" class="widget-odd widget-first widget-1 col-xs-12 col-sm-6 col-md-4 col-lg-4 ms-item pull-left widget_text"><h2 class="widget-title">Le magazine</h2>
+<div class="textwidget"><div class="mag_right"><div class="items">
+<div class="col-xs-12"><img class="lazy-load img-responsive" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/images/blank.gif" data-src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2022/09/1261-e1664468112932.jpg" alt="EN KIOSQUE" /><noscript><img class="img-responsive" src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2022/09/1261-e1664468112932.jpg" alt="EN KIOSQUE"  /></noscript></div>
+<div class="col-xs-12">
+<p class="mag-description">Abonnez-vous papier ou numérique</p><div class="btn-group btn-group-justified"><div class="btn-group">
+<span data-action="jslink" data-href="https://www.science-et-vie.com/abonnement?utm_source=site-sv&utm_medium=footer&utm_campaign=sv-lp&utm_content=footer-bouton-abonnez-vous" class="btn btn-default" target="_BLANK">Je m’abonne</span>
+</div></div></div></div></div></div>
+</div><div id="text-5" class="widget-even widget-2 col-xs-12 col-sm-6 col-md-4 col-lg-4 ms-item pull-left widget_text">
+<div class="textwidget"><div class="applications_widget"><img src="/wp-content/themes/reworldmedia/assets/images/placeholder_global.webp" data-src="" alt="L’application" class="applications_widget_img img-responsive lazy-load" /><div class="title">L’application</div><div class="description">L’actualité de Science &amp; vie
+dans votre smartphone</div><span data-action="jslink" data-href="https://itunes.apple.com/fr/app/id/id1166889519" " target="itunes_store" class="btn btn-ghost apple">Appstore</span><span data-action="jslink" data-href="https://play.google.com/store/apps/details?id=com.mondadori.scienceetvie" class="btn btn-ghost playstore" target="_blank">Android store</span></div></div>
+</div><div id="text-6" class="widget-odd widget-3 col-xs-12 col-sm-6 col-md-4 col-lg-4 ms-item pull-left widget_text">
+<div class="textwidget"><div class="sociallink-container"><div class="title">Suivez-nous</div><ul class="list-inline navbar-sociallink"><li><a href="javascript:void(0);" data-href="//www.facebook.com/ScienceetVieMag" class="fb " target="_BLANK">fb</a></li><li><a href="javascript:void(0);" data-href="//twitter.com/science_et_vie" class="tw " target="_BLANK">tw</a></li><li><a href="javascript:void(0);" data-href="//www.instagram.com/scienceetvie" class="cam " target="_BLANK">cam</a></li><li><a href="javascript:void(0);" data-href="//www.pinterest.fr/scienceetvie" class="pint " target="_BLANK">pint</a></li></ul></div>
+<div class="nl-title">L’actualité de Science &amp; vie dans votre boite mail</div>
+<div class="newsletter-container"> <div id="ninja_forms_form_2_cont" class="ninja-forms-cont">
+<div id="ninja_forms_form_2_wrap" class="ninja-forms-form-wrap">
+<div id="ninja_forms_form_2_response_msg" style="" class="ninja-forms-response-msg "></div> <form id="ninja_forms_form_2" enctype="multipart/form-data" method="post" class="ninja-forms-form  form-horizontal">
+<input type="hidden" name="_ninja_forms_display_submit" value="1">
+<input type="hidden" name="_form_id" id="_form_id" value="2">
+<div id="ninja_forms_form_2_all_fields_wrap" class="ninja-forms-all-fields-wrap">
+<div class="field-wrap text-wrap label-inside newsletter_email-wrap form-group" id="ninja_forms_field_6_div_wrap" data-visible="1">
+<input type="hidden" id="ninja_forms_field_6_type" value="text">
+<div class="col-xs-12 col-sm-10  pull-left"> <input id="ninja_forms_field_6" data-mask="" data-input-limit="" data-input-limit-type="char" data-input-limit-msg="" name="ninja_forms_field_6" type="text" class="ninja-forms-field  newsletter_email form-control pull-left " value="Votre mail" data-rel="6" />
+<input type="hidden" id="ninja_forms_field_6_label_hidden" value="Votre mail">
+</div> <div id="ninja_forms_field_6_error" style="display:none;" class="ninja-forms-field-error">
+</div>
+</div>
+<div class="field-wrap submit-wrap label-left newsletter_submit-wrap form-group" id="ninja_forms_field_7_div_wrap" data-visible="1">
+<input type="hidden" id="ninja_forms_field_7_type" value="submit">
+<div class="col-sm-offset-2 col-sm-10 pull-right"> <input type="submit" name="_ninja_forms_field_7" class="ninja-forms-field  newsletter_submit btn btn-primary pull-right" id="ninja_forms_field_7" value="s'inscrire" data-rel="7">
+</div> <div id="ninja_forms_field_7_error" style="display:none;" class="ninja-forms-field-error">
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
 </div></div>
-<!-- lanmujs -->
-<!-- guanggao -->
-<div class=kx_main>
-<div class=kx_guanggao></div></div>
-
-
- <!-- main -->
- <div class="kx_main">
-<div class="kx_lm_main">
- <!-- left -->
-<div class="kx_lm_l">
-<div class="kx_lm_szwz">
-<div class="kx_lm_img"></div>
-<div class="kx_lm_wz">&nbsp;<a class='LinkPath' href='http://www.scienceaq.com'>science</a>&nbsp;>>&nbsp;<a class='LinkPath' href='http://fr.scienceaq.com/'>Science</a> > &nbsp;>>&nbsp;<a class='LinkPath' href='http://fr.scienceaq.com/Autres/'>Autres</a></div>
+</div><div id="nav_menu-3" class="widget-even widget-4 col-xs-12 col-sm-6 col-md-4 col-lg-4 ms-item pull-left widget_nav_menu"></div><div id="nav_menu-2" class="widget-odd widget-5 col-xs-12 col-sm-6 col-md-4 col-lg-4 ms-item pull-left widget_nav_menu"><div class="menu-footer_menu_bottom-container"><ul id="menu-footer_menu_bottom" class="menu"><li id="menu-item-77561" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77561"><a href="javascript:void(0);" data-href="https://abonnement.science-et-vie.com/landing-page/5oCqXcLlK0/2255">Je m&rsquo;abonne à Science et Vie</a></li>
+<li id="menu-item-77562" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77562"><a href="javascript:void(0);" data-href="https://abonnement.science-et-vie-junior.fr/landing-page/hgGpLlr92O/2288">Je m&rsquo;abonne à Science &#038; Vie Junior</a></li>
+<li id="menu-item-77563" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77563"><a href="javascript:void(0);" data-href="https://www.kiosquemag.com/?utm_source=science-et-vie&#038;utm_medium=edito-linking&#038;utm_campaign=footer-lien-km-boutique-officielle">KiosqueMag : la boutique officielle</a></li>
+<li id="menu-item-963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-963"><a href="javascript:void(0);" data-href="https://www.science-et-vie.com/enquetes-lecteurs">Enquêtes Lecteurs</a></li>
+<li id="menu-item-964" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-964"><a href="javascript:void(0);" data-href="https://www.science-et-vie.com/simulateur-climatique">Simulateur climatique</a></li>
+<li id="menu-item-966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-966"><a href="javascript:void(0);" data-href="https://www.science-et-vie.com/mentions-legales">Mentions légales</a></li>
+<li id="menu-item-76710" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76710"><a href="javascript:void(0);" data-href="#consent">Gestion des cookies</a></li>
+<li id="menu-item-92409" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-92409"><a href="javascript:void(0);" data-href="https://nft.science-et-vie.com/?utm_source=site-sv&#038;utm_medium=link&#038;utm_campaign=autopromo">NFT</a></li>
+</ul></div></div><div id="text-7" class="widget-even widget-last widget-6 col-xs-12 col-sm-6 col-md-4 col-lg-4 ms-item pull-left widget_text">
+<div class="textwidget">© <a href="https://www.science-et-vie.com" style="color:#000;text-decoration:none;">Science-et-vie.com</a> - Tous droits réservés</div>
+</div> </div>
 </div>
-<div class="kx_l_mian">
-<div class="kx_nr_m">
-<div class="kx_nrbt">Lisons-nous différemment sur papier que sur écran ?</div>
-<div class="kx_nr_zw">
-<div class="kx_nr_zgg"><script language='javascript' src='http://www.scienceaq.com/css/sad1.js'></script></div>
-<img src="http://www.scienceaq.com/article/uploadfiles/202110/2021102400572830.jpg" /> <figcaption class="image-descr"> <p>
- Crédit :Marina Shemesh/domaine public </p>
- </figcaption> </figure> <p>
- A l'échelle mondiale, nous lisons comme jamais auparavant et passons de plus en plus de temps scotchés à un écran. En réalité, nous lisons des médias numériques tous les jours, que ce soit sur Facebook ou dans les forums de discussion. Au total, plus de 180 chercheurs de 33 pays différents participent au réseau de recherche E-READ initié par COST, la lecture à l'ère de la transformation numérique. Ce réseau examine les effets et les conséquences des évolutions numériques en termes de lecture. Nous avons discuté avec Anne Mangen, Président de l'Action, travaillant au Reading Center de l'Université de Stavanger. <p>
- <b> Combien de temps passons-nous à lire à l'écran et que lisons-nous ? </b> </p>
- <p>
- La réponse à cette question dépend de la définition de la « lecture ». Les recherches et les statistiques dans ce domaine varient selon la définition du terme. Faisons-nous référence uniquement à la lecture de matériel textuel, ou incluons-nous également des images, médias sociaux et hypertexte contenant des liens ? Si cette dernière définition est utilisée, nous pouvons dire que nous lisons comme jamais auparavant et qu'Internet a provoqué une explosion de la lecture. De cette perspective, nous pouvons remarquer que nous lisons sur les écrans tous les jours, que ce soit par e-mail, " claquements, " nouvelles, des documents officiels ou des messages sur des forums de discussion. Il est intéressant de noter que si la musique et les films sont devenus une affaire presque entièrement numérique, la vente de livres numériques dans de nombreux pays est inférieure à dix pour cent. Cependant, après plusieurs années de croissance rapide, il s'est maintenant stabilisé. Même s'il est possible de lire à l'aide de solutions techniques comme un Kindle, même lorsqu'il n'est pas connecté à Internet, souvent les lecteurs ne le trouvent pas aussi inspirant que la lecture d'un livre papier. </p>
- <p>
- <b> Quand préférons-nous un support imprimé, comme un livre ? </b> </p>
- <p>
- Il y a plusieurs composants, facteurs et conditions qui peuvent entrer en jeu ici, comme le lecteur, le matériel, le but et la technologie. Non seulement la compétence du lecteur, le contexte et les attentes doivent être gardés à l'esprit, mais aussi le type de matériau auquel il est fait référence et le type d'écran utilisé. Il ne s'agit pas d'une "taille unique, " mais des modèles commencent à émerger des recherches empiriques sur le sujet. La longueur du texte semble être le facteur le plus critique. Si le texte est long, doit être lu attentivement et implique peut-être de prendre des notes, alors des études montrent que de nombreuses personnes, y compris les jeunes comme les étudiants, préfèrent encore souvent un livre imprimé, même s'il est disponible à la fois sous forme de livre électronique et sous forme électronique avec des options pour prendre des notes, permettant à l'utilisateur de rechercher et de surligner numériquement le texte. Ce n'est pas le cas lorsqu'il s'agit de textes plus courts. </p>
- <p>
- <b> Comment pouvez-vous expliquer cela? </b> </p>
- <p>
- Lors de la lecture longue, linéaire, des textes continus sur plusieurs pages qui demandent une certaine concentration, appelé « lecture approfondie », " le lecteur éprouve souvent une meilleure concentration et une meilleure vue d'ensemble lorsqu'il lit sur un support imprimé par rapport à un écran. Lorsque nous lisons sur un écran, une seule section est visible à la fois et la surface de lecture disponible est limitée. Si vous lisez un support imprimé tel qu'un livre, plusieurs zones de texte sont disponibles simultanément et il est plus facile de former une vue d'ensemble et de prendre des notes dans les marges. </p>
- <p>
- <b> Lisons-nous mieux ou moins bien sur les écrans par rapport aux supports imprimés ? </b> </p>
- <p>
- De nouveau, cela dépend entièrement de notre définition de « lecture » et du type de texte auquel on se réfère. Cependant, une découverte intéressante dans certaines des études empiriques est que nous avons tendance à surestimer notre propre compréhension en lecture lorsque nous lisons à l'écran par rapport à sur papier. Certaines études ont montré que nous pensons avoir mieux compris le texte, quand on lit sur un écran. Cependant, il a été constaté que nous avons tendance à lire plus rapidement à l'écran et par conséquent à moins comprendre par rapport à la lecture sur papier. Il s'agit d'un sujet de recherche très nouveau et certaines études n'ont trouvé aucune différence dans ce domaine. Par conséquent, beaucoup plus d'études sont nécessaires pour pouvoir tirer des conclusions avec n'importe quel niveau de certitude. Cependant, ces résultats mettent en évidence quelque chose de très important, à savoir que nous pouvons avoir une attitude mentale différente de ce que nous lisons sur un écran. Cela a des implications très importantes, y compris dans le cadre de l'éducation. </p>
- <p>
- <b> Qu'est-ce que les livres attirent notre attention ? </b> </p>
- <p>
- Un livre a également des attributs ou des caractéristiques plus physiques qui peuvent suggérer quelque chose sur le contenu et le texte, par rapport à un écran. Alors qu'un iPad aura toujours la même apparence, un livre a des caractéristiques physiques et typographiques différentes qui peuvent favoriser un certain mode de lecture et peuvent affecter la façon dont vous lisez, par exemple, un roman épais et compact ou un mince livre de poèmes. Un manuel de physique émet évidemment des signaux différents d'un livre de poche de Dan Brown. Cela a quelque chose à voir avec le fait de le voir et de ressentir physiquement que vous parcourez un livre. </p>
- <p>
- <b> Qu'est-ce que la recherche E-READ et comment la recherche est-elle menée ? </b> </p>
- <p>
- La « lecture » englobe un large éventail de facteurs, objectifs et composantes, qu'il s'agisse de lecture de loisir ou de lecture dans le cadre des études ou du travail. Par exemple, la lecture de littérature s'est avérée avoir un effet stimulant sur l'imagination et favoriser le développement de l'empathie. La lecture a un effet sur notre capacité de concentration et de pensée abstraite. Nous voulons découvrir si de tels processus sont influencés par le support de lecture. E-READ est un réseau de recherche qui rassemble des chercheurs en lecture à travers les paradigmes et les disciplines. Nous étudions une gamme d'aspects, y compris les processus cognitifs, entente, mémorisation et processus émotionnels tels que l'empathie et la sensibilité dans la lecture littéraire. Dans le groupe avec lequel je travaille, nous examinons les aspects neuropsychologiques et physiologiques de la lecture. Par exemple, nous étudions les mouvements oculaires du lecteur et pouvons voir si les mouvements oculaires diffèrent selon qu'un texte est riche en métaphores ou autres dispositifs stylistiques, par rapport aux descriptions plus axées sur l'action. Les lecteurs qui participent à l'étude répondent également à des questions lors d'entretiens et de questionnaires sur ce qu'ils ressentent et comprennent lorsqu'ils lisent et comment ils vivent ce qu'ils lisent. En outre, de nouvelles méthodes de mesure des processus émotionnels ont été adoptées par le réseau. Cela inclut tout, de la technologie de pointe qui enregistre l'activité musculaire sur le visage du lecteur aux électrodes fixées à la tête, qui peut montrer comment les lecteurs réagissent émotionnellement à ce qu'ils lisent. </p>
- <p>
- <b> Selon vous, qu'est-ce qui devrait faire l'objet d'une recherche plus approfondie dans le domaine de la recherche en lecture ? </b> </p>
- <p>
- J'aimerais voir plus empirique, recherche interdisciplinaire sur la façon dont les gens lisent différents types de idéalement des textes plus longs et dans quelle mesure ils sont conscients de leur propre lecture, en termes de lecture efficace du plus grand volume possible, à des fins différentes. Il y a un besoin de plus de recherche empirique sur la compréhension de la lecture en termes de lecture sur écran et aussi sur l'expérience de lecture subjective. Nous devons en savoir plus sur les composants, facteurs et conditions qui entrent en jeu lors de la lecture de différents types de textes sur différentes plateformes et cartographier les différences. Nous devons également en savoir beaucoup plus sur la façon dont les enfants lisent sur différents types d'écrans. </p>
- <p>
- <b> Que se passe-t-il actuellement au sein du réseau de recherche E-READ ? </b> </p>
- <p>
- Il y a beaucoup d'activité et de nombreuses expérimentations sont en cours dans les différents groupes de travail. L'année dernière, nous avons publié un article présentant le cadre théorique de COST E-READ. Cet article a également été présélectionné pour le prix UKLA Wiley-Blackwell en 2017. J'ai récemment assisté à la conférence ECEM (European Conference on Eye Movements), la plus grande conférence internationale pour les chercheurs utilisant la technologie du mouvement oculaire dans leurs recherches. Lors de la conférence annuelle, un colloque avec des textes littéraires a été organisé pour la première fois dans l'histoire de l'ECEM, démontrant comment les sonnets de Shakespeare ont été utilisés comme stimuli dans notre réseau de recherche. Souvent, les stimuli, c'est-à-dire le texte, consiste en des études des mouvements oculaires utilisant des textes courts souvent écrits par les chercheurs eux-mêmes afin de maximiser le contrôle de la facette mesurée. Ce sont souvent des phrases simples ou des combinaisons de lettres qui sont manipulées de différentes manières, par exemple en remplaçant un mot ou une lettre par un autre et en comparant la réponse. En utilisant des textes littéraires tels que des chapitres de romans d'auteurs professionnels, on peut obtenir un rendu plus nuancé, impression réaliste de la façon dont nous lisons. De tels textes sont écrits afin de faciliter des expériences de lecture souvent complexes, indépendamment de ce sur quoi une expérience individuelle peut se concentrer. La lecture de textes littéraires plus longs qui peuvent être à la fois stimulants sur le plan cognitif et émotionnel est, à mon avis, particulièrement intéressant et important à étudier. C'est ici que nous revenons à la « Lecture approfondie, " sur lequel je pense qu'il est particulièrement important de se concentrer à l'ère numérique. L'année prochaine, nous organiserons également une conférence de clôture pour E-READ à Stavanger, où l'un des chercheurs en lecture les plus connus au monde, Maryanne Loup, viendra parler de « lecture profonde ». <br> <br> <br> 
-
+</footer>
+<div class="qiota_onboard"></div>
 </div>
-<div class="kx_nr_gg">
-<div class="kx_nr_gg_l"> <script language='javascript' src='http://www.scienceaq.com/css/sad2.js'></script></div>
-<div class="kx_nr_gg_r"> </div>
-</div>
-<div class="kx_nr_sx"> 
-<div class="kx_nr_shang"> <div class="kx_nr_shangtb"> </div><a class='LinkPrevArticle' href='http://fr.scienceaq.com/Autres/1001101501.html' >Cinq façons dont l'Inde ancienne a changé le monde - avec les mathématiques</a>  </div>
-<div class="kx_nr_xia"> <div class="kx_nr_xiatb"> </div><a class='LinkNextArticle' href='http://fr.scienceaq.com/Autres/1001101503.html'  >Rien n'a d'importance :comment l'invention du zéro a contribué à créer les mathématiques modernes</a>  </div>
- </div>
-</div>
+<script type="text/javascript">
+		adblock = true;
+	</script>
 
-</div>
-<!-- nr foot-->
-<div class="kx_nr_dibum">
-<div class="kx_nr_dibul">
+<script type="text/javascript" src="https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/ados.js"></script>
+<script type="text/javascript">
 
-  <div class="kx_nr_dibu_xgwzbt">  Autres</div>
-<div class="kx_nr_dibu_xgwzli">
-
-
-
-<ul>
-<li><a  href="http://fr.scienceaq.com/Autres/1001110614.html" target="_blank" ><div class="kx_nr_dibu_xgwztb"> <img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102411135736_S.jpg'  width='100' height='57' border='0'> </div>   5, 000 cartes rares et uniques sont désormais disponibles en ligne</a></li>
-</ul>
-
-<ul>
-<li><a  href="http://fr.scienceaq.com/Autres/1001115062.html" target="_blank" ><div class="kx_nr_dibu_xgwztb"> <img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102414254100_S.jpg'  width='100' height='57' border='0'> </div>   Les tricheurs attirés par l'opportunité de tricher</a></li>
-</ul>
-
-<ul>
-<li><a  href="http://fr.scienceaq.com/Autres/1001105268.html" target="_blank" ><div class="kx_nr_dibu_xgwztb"> <img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102403263255_S.jpg'  width='100' height='57' border='0'> </div>   Les citations montrent que les chercheurs universitaires et non universitaires gagnent lorsqu'ils collaborent</a></li>
-</ul>
-</div>
-
-</div>
-<div class="kx_nr_dibur">
-  <div class="kx_nr_dibu_tjwzbt">Science</div>
-<div class="kx_nr_dibu_tjwzli">
-<ul>
-<li> <a  href="http://fr.scienceaq.com/Nature/1001037230.html" target="_blank" ><div class="kx_nr_dibu_tjwztb"><img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102002115747.png'  width='100' height='57' border='0'></div> Le climat pourrait rapidement pousser les coléoptères forestiers vers le nord, dit étude</a></li>
-</ul>
-
-<ul>
-<li> <a  href="http://fr.scienceaq.com/Electronics/1001070678.html" target="_blank" ><div class="kx_nr_dibu_tjwztb"><img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102300413357_S.jpg'  width='100' height='57' border='0'></div> Les armes à feu imprimées en 3D peuvent être plus dangereuses pour leurs utilisateurs que les cibles</a></li>
-</ul>
-
-<ul>
-<li> <a  href="http://fr.scienceaq.com/Nature/1001040616.html" target="_blank" ><div class="kx_nr_dibu_tjwztb"><img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102014044200_S.jpg'  width='100' height='57' border='0'></div> Les récifs qui subissent des changements de température fréquents sont les plus susceptibles de résister au blanchissement des coraux</a></li>
-</ul>
-</div>
- </div>
-</div>
-
-<!-- nr footjs-->
-</div>
-
- <!-- right -->
-<div class="kx_lm_r">
-<div class="kxlm">
-<div class="kxlm_zlmbt">Science</div>
-<div class="kxlm_zlm_list">
-<div class="kxlm_zlm_h"></div>
-<div class="kxlm_zlm"><li><a class='childclass' href='http://fr.scienceaq.com/Chemistry/' target="_blank">Chimie</a></li>
-<li><a class='childclass' href='http://fr.scienceaq.com/Astronomy/' target="_blank">Astronomie</a></li>
-<li><a class='childclass' href='http://fr.scienceaq.com/Energy/' target="_blank">Énergie</a></li>
-<li><a class='childclass' href='http://fr.scienceaq.com/Nature/' target="_blank">La nature</a></li>
-<li><a class='childclass' href='http://fr.scienceaq.com/Biology/' target="_blank">Biologie</a></li>
-<li><a class='childclass' href='http://fr.scienceaq.com/Physics/' target="_blank">Physique</a></li>
-<li><a class='childclass' href='http://fr.scienceaq.com/Electronics/' target="_blank">Électronique </a></li>
-<li><a class='childclass' href='http://fr.scienceaq.com/Geology/' target="_blank">Géologie </a></li>
-<li><a class='childclass' href='http://fr.scienceaq.com/SolarEclipse/' target="_blank">Éclipse solaireen</a></li>
-<li><a class='childclass' href='http://fr.scienceaq.com/Math/' target="_blank">Mathen</a></li>
-<li><a class='childclass' href='http://fr.scienceaq.com/Autres/' target="_blank">Autres</a></li>
-<li><a class='childclass' href='http://fr.scienceaq.com/nanotechnologie/' target="_blank">Nanotechnologie</a></li></div>
+	if(adblock){
+		jQuery( document ).ready( function(){
+			setTimeout(function(){ 
+				send_GA("Adblock", "pub", "1");
+			}, 3000);
+		});
+	}
+	 
+	</script>
+<div id="dialog_qiota" class="modal fade in">
+<div class="modal-dialog">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+<div class="qiota_auth modal-content-qiota"></div>
 </div>
 </div>
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "mainEntityOfPage":{
+                "@type":"WebPage",
+                "@id":"https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html"
+            },
+            "headline": "Ecrans versus papier : pourquoi la lecture sur livre renforce l&rsquo;apprentissage",
+            "image": "https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2019/03/ecrans-versus-papier-voici-pourquoi-lecture-sur-livre-renforce-apprentissage.jpg",
+            "datePublished": "2019-03-29T14:47:31+01:00",
+            "dateModified": "2020-02-06T14:12:36+01:00",
+            "author": {
+                "@type": "Person",
+                "name": "Fiorenza Gracci"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Science et vie",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/logo.png",
+                    "width": 144,
+                    "height": 42
+                }
+            },
+            "description": "
 
-<div class="kxlm_ybgg"></div>
+Après de nombreuses études, on connaît maintenant le comportement du cerveau dans les deux modes de lecture, sur papier et sur écran. <a href='https://theconversation.com/profiles/frederic-bernard-697581' target='_blank'>Frédéric Bernard</a>, neuropsychologue à l'université de Strasbourg, explique en quoi les sensations dues au papier renforcent l'apprentissage du texte.",
+            "isAccessibleForFree": "False",
+            "hasPart": {
+                "@type": "WebPageElement",
+                "isAccessibleForFree": "False",
+                "cssSelector" : ".paywall"
+            }
+        }
+        </script> <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": ["DefinedTermSet"],
+                "@id": "https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html",
+                "url": "https://www.science-et-vie.com/paroles-d-experts/ecrans-versus-papier-pourquoi-la-lecture-sur-livre-renforce-lapprentissage-11500.html",
+                "name": "Ecrans versus papier : pourquoi la lecture sur livre renforce l&rsquo;apprentissage"
+            }
+            </script> <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "WebSite",
+                "url": "https://www.science-et-vie.com",
+                "inLanguage": "fr-FR",
+                "name": "Ecrans versus papier : pourquoi la lecture sur livre renforce",
+                "image": "https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/logo.png",
+                "headline" : "Ecrans versus papier : pourquoi la lecture sur livre renforce",
+               "publisher": {
+                    "@type": "Organization",
+                    "name": "Science et vie",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "",
+                        "postalCode": "",
+                        "streetAddress": "",
+                        "addressCountry": "France"
+                      },
+                        "email": "",
+                        "telephone": "",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/logo.png"
+                        }
+                },
+                "keywords": "",
+                "sameAs": [
+                      "https://www.facebook.com/ScienceetVieMag",
+                      "https://twitter.com/science_et_vie",
+                      "https://www.pinterest.fr/scienceetvie",
+                      "https://www.instagram.com/scienceetvie"
+                ],
+                "potentialAction":[{
+                    "@type":"SearchAction",
+                    "target":"https://www.science-et-vie.com/?s={search_term_string}",
+                    "query-input":"required name=search_term_string"
+                }]
+            }
+            </script> <script type="text/javascript">
+        let batchVapidPublicKey = 'BL1RpQ8TFCum2ZlVHu/EiliWi3RukwMjoSK07rEVkLwYM9QpHCs514jTwVZKSC4sDQkkC4gqrd8IVww9DQxj1cY=';
+        (function(b,a,t,c,h,e,r){h='batchSDK';b[h]=b[h]||function() {
+        (b[h].q=b[h].q||[]).push(arguments)};e=a.createElement(t),r=a.getElementsByTagName(t)[0];
+        e.async=1;e.src=c;r.parentNode.insertBefore(e,r);})(window,document,'script','https://via.batch.com/v3/bootstrap.min.js');
 
-<div class="kxlm">
-<div class="kxlm_zxxxbt">Autres</div>
-<div class="kxlm_zxxx">  
-<ul>
-<li><a  href="http://fr.scienceaq.com/Autres/1001110572.html" target="_blank" ><div class="kx_zxxxtb"><img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102411121986_S.jpg'  width='200' height='114' border='0'></div>  COVID-19 :des attitudes changeantes vis-à-vis de la migration ?</a></li>
-</ul>
+        var batchSDKUIConfig = {native:{}};
 
-<ul>
-<li><a  href="http://fr.scienceaq.com/Autres/100117387.html" target="_blank" ><div class="kx_zxxxtb"><img class='pic1' src='http://www.scienceaq.com/img/7/5581227_s.jpg'  width='200' height='114' border='0'></div>  Quelle est la signification de illimité et délimité en mathématiques? </a></li>
-</ul>
+        /* Use a specific configuration for the Firefox web browser (custom prompt) */
+        if (navigator.userAgent.indexOf("Firefox") !== -1 || (navigator.userAgent.indexOf("Safari") !== -1 && navigator.userAgent.indexOf("Chrome") === -1)) {
+            batchSDKUIConfig = {
+                alert: {
+                    icon: "https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/favicons/favicon128.png", // 192x192 coloured logo, you can use the same image as the default icon
+                    text: "Ne ratez plus jamais une actualité scientifique !",
+                    positiveSubBtnLabel: "Je m'abonne", 
+                    negativeBtnLabel: "Non Merci",
+                    positiveBtnStyle: {
+                         backgroundColor: "#CF3424", //button colour
+                         hoverBackgroundColor: "#B71C0C", // button hover colour
+                         textColor:  "white" // button text colour
+                              }
+                }
+            }
+        } 
 
-<ul>
-<li><a  href="http://fr.scienceaq.com/Autres/1001112205.html" target="_blank" ><div class="kx_zxxxtb"><img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102412211962_S.jpg'  width='200' height='114' border='0'></div>  Un nouveau modèle examine comment les influences sociétales affectent les opinions politiques américaines</a></li>
-</ul>
+            batchSDK('setup', {
+           apiKey: '4613849A1D524EE18D5840BCB95D5768',
+            subdomain: 'science-et-vie0',
+            authKey: '2.vhhBqSrMUGest7sZ3JVe1+X02UxJ07UZa84kTWzSChI=',
+            dev: false, // remove this for prod
+            vapidPublicKey: 'BL1RpQ8TFCum2ZlVHu/EiliWi3RukwMjoSK07rEVkLwYM9QpHCs514jTwVZKSC4sDQkkC4gqrd8IVww9DQxj1cY=',
+            defaultIcon: 'https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/favicons/favicon128.png', // A modifier
+            smallIcon: 'https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/images/favicons/favicon128.png', // Should be a PNG with a monochrome logo and a transparent background
+            ui: batchSDKUIConfig
+        });
 
-<ul>
-<li><a  href="http://fr.scienceaq.com/Autres/1001106457.html" target="_blank" ><div class="kx_zxxxtb"><img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102404111727_S.jpg'  width='200' height='114' border='0'></div>  Minecraft peut augmenter la résolution de problèmes, collaboration et apprentissage—oui, à l'école</a></li>
-</ul>
+        function reregisterBatchPushIfNeeded(batchApplicationServerKey) {
+            navigator.serviceWorker.getRegistration()
+            .then(sw => sw.pushManager.getSubscription())
+            .then(sub => sub.options.applicationServerKey)
+            .then(key => btoa(String.fromCharCode(...new Uint8Array(key))))
+            .then(key => {
+                if (batchApplicationServerKey != key) {
+                    console.debug("Batch - Registered application server doesn't match Batch's, unregistering SW and asking Batch to reregister");
+                    navigator.serviceWorker.getRegistration()
+                        .then(reg => reg.unregister())
+                        .then(() => {
+                            batchSDK(api => {
+                                api.subscribe();
+                            });
+                        })
+                        .catch((e) => {
+                            console.debug("Batch - Could not fix application server key mismatch:", e);
+                        });
+                } else {
+                    console.debug("Batch - Registered application server key matches with Batch's, not doing anything");
+                }
+            })
+            .catch(() => {
+                console.debug("Batch - Could not get applicationServerKey. User might not be subscribed to notifications.");
+            })
+        }</script> <script data-rocketid="partner:acpm">
+				(function(){
+					var aS = document.createElement('script');
+					aS.type = 'text/javascript';
+					aS.async = true;
+					aS.src = 'https://tag.audience.acpm.fr/js/on-1.1.min.js';
+					var s = document.getElementsByTagName('script')[0];  
+					s.parentNode.insertBefore(aS, s);
+					if(aS.addEventListener) {
+						aS.addEventListener('load', function(){
+							aSloaded();
+						}, false)
+					} else {
+						aS.onreadystatechange = function () {
+							if (aS.readyState in {complete: 1, loaded: 1}) {
+								aSloaded();
+							}
+						};
+					}
+					aSloaded = function(){
+						var tag = new Acpm.Tag("284084217476");
+						tag.send();
+					};
+				})(); 
+			</script>
+<script type="text/javascript">
 
-<ul>
-<li><a  href="http://fr.scienceaq.com/Autres/1001103593.html" target="_blank" ><div class="kx_zxxxtb"><img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102402160575_S.jpg'  width='200' height='114' border='0'></div>  Des chercheurs développent un nouvel indice de bonheur</a></li>
-</ul>
+     // -------- BEGIN TAG ALLIANCE GRAVITY --------
 
-<ul>
-<li><a  href="http://fr.scienceaq.com/Autres/1001102029.html" target="_blank" ><div class="kx_zxxxtb"><img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102401173260_S.jpg'  width='200' height='114' border='0'></div>  La peste est probablement une arrivée de l'âge de pierre en Europe centrale</a></li>
-</ul>
-</div>
-</div>
+     var grvt_customProperties = {};
+     var grvt_siteToken = '';
+     var grvt_processingToken = 'high-arkansas';
+     var script = document.createElement('script');
+     script.src = "https://tag.agrvt.com/tag/v2/wrapper.js";
 
-<div class="kxlm">
-<div class="kxlm_hotbt">Science</div>
-<div class="kxlm_zxxx">
-<div class="hot_list"> 
-<ul>
-<li><a  href="http://fr.scienceaq.com/Nature/1001057373.html" target="_blank" ><div class="hottb"><img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102115513536_S.jpg'  width='200' height='114' border='0'></div>  L'upcycling promet de transformer les déchets alimentaires en votre prochain repas</a></li>
-</ul>
+     document.head.appendChild(script);
 
-<ul>
-<li><a  href="http://fr.scienceaq.com/Chemistry/1001079826.html" target="_blank" ><div class="hottb"><img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102310083663_S.jpg'  width='200' height='114' border='0'></div>  Utilisation d'un catalyseur au nickel avec des hydrocarbures pour fabriquer des acides gras</a></li>
-</ul>
+     // -------- END TAG ALLIANCE GRAVITY --------
 
-<ul>
-<li><a  href="http://fr.scienceaq.com/Nature/1001051885.html" target="_blank" ><div class="hottb"><img class='pic1' src='http://www.scienceaq.com/article/uploadfiles/202110/2021102111572622_S.jpg'  width='200' height='114' border='0'></div>  Des chercheurs découvrent que la pollution d'origine humaine altère l'environnement même sous terre</a></li>
-</ul>
-</div></div>
-</div>
+     </script>
+<script type="text/javascript">
+					var _wsq = _wsq || [];
+					const refreshAudience =  () => {
+						_wsq.push(["_setNom", "scienceetvie"]);
+						_wsq.push(["_wysistat"]);
+						var ws = document.createElement("script");
+						ws.type = "text/javascript";
+						ws.async = true;
+						ws.src = ("https:" == document.location.protocol ? "https://www" : "http://www") + ".wysistat.com/ws.jsa";
+						var s = document.getElementsByTagName("script")[0]||document.getElementsByTagName("body")[0];
+						s.parentNode.insertBefore(ws, s);
+					};
+					if(typeof(_wsq) != "undefined"){
+				        refreshAudience();
+				    }
+				</script>
+<script type="text/javascript" src="//adtrack.adleadevent.com/mailNotification.php?st=77a41a76-2b26-4da2-8448-5e3c589c8ea8&t=site" async data-rocketid="partner:notify"></script> ﻿
+<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','//connect.facebook.net/en_US/fbevents.js');
 
-</div>
-  <!-- right js-->
-</div>
-</div>
- <!-- foot -->
+		fbq('init', '1179757042395656');
+		
+		fbq('track', "PageView");
+	</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1179757042395656&ev=PageView&noscript=1" /></noscript>
+<link rel='stylesheet' id='zoomboxCSS-css' href='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/zoombox/zoombox.css?ver=6.0.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/slick.min.js?ver=1.5.9' id='slick_carousel-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/lazyload-v2.min.js?ver=2688' id='reworldmedia-lazy-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/jquery.masonry.js?ver=6.0.1' id='reworldmedia-masonry-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/jquery.shave.min.js?ver=6.0.1' id='reworldmedia-shave-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/jquery.browser.js?ver=6.0.1' id='reworldmedia-browser-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/zoombox/zoombox.js?ver=6.0.1' id='zoomboxJS-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-includes/js/comment-reply.min.js?ver=6.0.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/common-utils.js?ver=2116' id='reworldmedia-main-utils-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/common-utils-video-player-base.js?ver=2116' id='reworldmedia-main-utils-video-player-main-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/optimised-video-player/show_videojs.js?ver=2116' id='reworldmedia-main-utils-video-player-show-videojs-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/optimised-video-player/show_video.js?ver=2116' id='reworldmedia-main-utils-video-player-show-video-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/optimised-video-player/show_dai_video.js?ver=2116' id='reworldmedia-main-utils-video-player-show-dai-video-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/optimised-video-player/mobile_first_play.js?ver=2116' id='reworldmedia-main-utils-video-player-mobile-first-play-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/optimised-video-player/playlist.js?ver=2116' id='reworldmedia-main-utils-video-player-playlist-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/optimised-video-player/play_selected_video.js?ver=2116' id='reworldmedia-main-utils-video-player-play-selected-video-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/optimised-video-player/play_on_click.js?ver=2116' id='reworldmedia-main-utils-video-player-play-on-click-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/optimised-video-player/play_carousel_video.js?ver=2116' id='reworldmedia-main-utils-video-player-play-carousel-video-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/common-utils-video-player.js?ver=2116' id='reworldmedia-main-utils-video-player-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/common-utils-jw-player.js?ver=2116' id='reworldmedia-main-utils-jw-player-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/common-utils-jw6-player.js?ver=2116' id='reworldmedia-main-utils-jw6-player-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/adways_player.js?ver=2116' id='reworldmedia-adways-player-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/common-utils-brightcove.js?ver=2116' id='reworldmedia-main-utils-brightcove-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/common-utils-caroussel.js?ver=2116' id='reworldmedia-main-utils-caroussel-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/common-utils-playhomevideo.js?ver=2116' id='reworldmedia-main-utils-playhomevideo-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/common-utils-most-popular-video.js?ver=2116' id='reworldmedia-main-utils-most-popular-video-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/main.js?ver=2116' id='reworldmedia-main-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/share.min.js?ver=2116' id='reworldmedia-sharer-js'></script>
+<script type='text/javascript' src='https://api.dmcdn.net/all.js?ver=2116' id='reworldmedia-dai-video-api-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/cookies.js?ver=6.0.1' id='reworldmedia-cookies-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/fix_sidebar.js?ver=2116' id='fix_sidebar_onscroll-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/rw_datawall_nl.js?ver=2116' id='rw_datawall_nl-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/rw-desktop.js?ver=2116' id='rw_desktop-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/bootstrap/bootstrap.min.js?ver=2116' id='reworldmedia-bootstrap-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/bootstrap/base.js?ver=2116' id='reworldmedia-bootstrap-base-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/bootstrap/footer.js?ver=2116' id='reworldmedia-bootstrap-masonryfooter-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/manage-login.js?ver=2116' id='qiota_login_js-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/javascripts/tv.js?ver=2116' id='pagetv_js-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/scienceetvie/assets/javascripts/main.js?ver=2116' id='ap_main_js-js'></script>
+<script type='text/javascript' id='dmp_js-js-extra'>
+/* <![CDATA[ */
+var DMP_SCRIPT_PARAMS = {"base_url":"https:\/\/permutive.reworldmediafactory.com\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/include/dmp_permutive/javascripts/api_permutive.js?ver=2116' id='dmp_js-js'></script>
+<script type='text/javascript' id='rw-call-shar-social-js-extra'>
+/* <![CDATA[ */
+var RW_Terms = {"Partages":"Partages","Partage":"Partage"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/rw_share_social.js?ver=2116' id='rw-call-shar-social-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/plugins/ninja-forms/js/dev/word-and-character-counter.js?ver=6.0.1' id='jquery-char-input-limit-js'></script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-includes/js/jquery/jquery.form.min.js?ver=4.3.0' id='jquery-form-js'></script>
+<script type='text/javascript' id='ninja-forms-display-js-extra'>
+/* <![CDATA[ */
+var ninja_forms_settings = {"ajax_msg_format":"inline","password_mismatch":"Passwords do not match.","plugin_url":"https:\/\/www.science-et-vie.com\/wp-content\/plugins\/ninja-forms","date_format":"dd\/mm\/yy","currency_symbol":"\u20ac"};
+var thousandsSeparator = "\u00a0";
+var decimalPoint = ",";
+var ninja_forms_form_2_settings = {"ajax":"0","hide_complete":"1","clear_complete":"1"};
+var ninja_forms_form_2_calc_settings = {"calc_value":"","calc_fields":[]};
+var ninja_forms_password_strength = {"empty":"Strength indicator","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.science-et-vie.com/wp-content/themes/reworldmedia/assets/javascripts/ninja-forms-display.min.js?ver=2116' id='ninja-forms-display-js'></script>
+<script type='text/javascript'> 
+                        jQuery(document).ready(function (){
+                            var scroll_lazyload_ready = false ;
+                            $_window = window.$_window ||  jQuery(window) ;
+    
+    
+    
+                            function init_lazyload(){ 
+    
+                                if( ! scroll_lazyload_ready && typeof LazyLoad !== 'undefined' ){
+                                    scroll_lazyload_ready = true ;
+                                    var rw_lazyload = new LazyLoad({
+                                        elements_selector: ".lazy-load",
+                                        class_loaded:'lazy-loaded'
+                                
+                                    });
+                                }
+                            }
+    
+                            $_window.scroll(init_lazyload);
+                            setTimeout(init_lazyload, 2000) ;
+                        });
 
-
-<div class=kxfoot_main>
-<div class="kxfoot_h "></div>
-<div class=kxfoot_dibulm>
-<UL>
-
-<LI class=line>|</LI>
-<li class=dhbj>
-<a hreflang="fr" href="http://fr.scienceaq.com/Autres/1001101502.html"  />French</a>
-</li>
-
-<LI class=line>|</LI>
-<li class=dhbj>
-<a hreflang="it" href="http://it.scienceaq.com/Altro/1002101502.html"  />Italian</a>
-</li>
-
-<LI class=line>|</LI>
-<li class=dhbj>
-<a hreflang="es" href="http://es.scienceaq.com/Otro/1003101502.html"  />Spanish</a>
-</li>
-
-<LI class=line>|</LI>
-<li class=dhbj>
-<a hreflang="pt" href="http://pt.scienceaq.com/Outros/1004101502.html"  />Portuguese</a>
-</li>
-
-<LI class=line>|</LI>
-<li class=dhbj>
-<a hreflang="sv" href="http://sv.scienceaq.com/Andra/1005101502.html"  />Swedish</a>
-</li>
-
-
-<LI class=line>|</LI>
-<li  class=lm><a href="/Geology/">Géologie </a></li>
-<LI class=line>|</LI>
-<li class=dhbj><a href="/Math/">Mathen</a></li>
-<LI class=line>|</LI>
-<li class=dhbj2><a href="/SolarEclipse/">Éclipse solaireen</a></li>
-
-</UL></div>
-<div class=kxfoot_banquan>&copy; Science http://fr.scienceaq.com </div></div>
-</body>
+				    </script><script type='text/javascript'>
+		setTimeout(function(){
+			send_GA( 'top_popular', 'paroles-d-experts', '11500');
+		}, 15000);
+		</script></body>
 </html>

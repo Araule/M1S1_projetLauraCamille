@@ -1,483 +1,585 @@
-    #Page d'accueil Page d'accueil Page d'accueil Recherche
+    #Le Monde.fr : M Campus
 
-     * Aller directement à la navigation
-     * Aller directement au contenu
-     * Aller directement à la recherche
+   Consulter
+   le journal
+   (BUTTON) Navigation
+   Le Monde - retour à la une
+   Se connecter Se connecter S’abonner
 
-   (BUTTON) MENU
      *
-     *
-     *
-     *
-     *
-     *
-     *
+     * À la une nav_back_to_home
+     * En continu
+     * Actualités
+       En ce moment
+          + Guerre en Ukraine
+          + Crise énergétique
+          + Santé
+          + États-Unis
+          + Climat
+          + Coronavirus et pandémie de Covid-19
+          + Iran
+          + Royaume-Uni
+          + Inflation
+          + Union européenne
+          + Toute l’actualité en continu
+       Actualités
+          + International
+          + Politique
+          + Société
+          + Les Décodeurs
+          + Sport
+          + Planète
+          + Sciences
+          + M Campus
+          + Le Monde Afrique
+          + Pixels
+          + Santé
+          + Big Browser
+          + Disparitions
+          + Podcasts
+          + Le Monde & Vous
+     * Économie
+          + Économie
+          + Économie mondiale
+          + Économie française
+          + Médias
+          + Emploi
+          + Argent & placements
+          + Tribunes éco
+          + Cities
+          + Le Club de l’économie
+       Lignes à haute tension, dans l’ouest de la France, le
+       2 janvier 2023. Lignes à haute tension, dans l’ouest de la France,
+       le 2 janvier 2023. Analyse
+       Article réservé aux abonnés
+       Energie : recul inattendu des prix de l’électricité et du gaz
+       Devant le stand du sud-coréen Samsung, au CES de Las Vegas
+       (Nevada), le 5 janvier 2023. Devant le stand du sud-coréen Samsung,
+       au CES de Las Vegas (Nevada), le 5 janvier 2023.
+       Chronique
+       Article réservé aux abonnés
+       Samsung : « La chute la plus spectaculaire depuis huit ans »
+       Philippe Escande
+       La tour du géant du cloud computing Salesforce, à San Francisco
+       (Californie, Etats-Unis), le 6 février 2019. La tour du géant du
+       cloud computing Salesforce, à San Francisco (Californie,
+       Etats-Unis), le 6 février 2019. Chronique
+       Article réservé aux abonnés
+       Tech : « En 2022, plus de 80 000 suppressions de postes ont été
+       annoncées dans le secteur »
+       Philippe Escande
+       Tribune
+       Article réservé aux abonnés
+       « Le Parti communiste chinois est sur le point de transformer la
+       Chine d’aujourd’hui en Union soviétique d’hier »
+       Chenggang Xu
+       Economiste
+     * Vidéos
+          + Vidéos
+          + L’actualité
+          + Les explications
+          + Enquêtes vidéo
+          + Les mini-séries
+       Enquête
+       Comment des appareils de surveillance de Frontex sont utilisés par
+       les garde-côtes libyens pour intercepter des migrants
+       Société
+       Mort de Benoît XVI : les images de ses funérailles publiques
+       L’année 2022 a été marqué par de nombreux évènements : guerre en
+       Ukraine, élection présidentielle, Coupe du monde au Qatar...
+       L’année 2022 a été marqué par de nombreux évènements : guerre en
+       Ukraine, élection présidentielle, Coupe du monde au Qatar... Vidéos
+       Le résumé vidéo de 2022 en sept minutes
+       Économie
+       Pourquoi le champagne est-il cher ?
+     * Débats
+          + Débats
+          + Editoriaux
+          + Chroniques
+          + Enquêtes idées
+          + Notions
+          + Entretiens idées
+          + Analyses
+          + Tribunes
+       Un passager en provenance de Chine quitte une zone de test Covid
+       installée à l’aéroport Roissy-Charles-de-Gaulle, dimanche 1er
+       janvier 2023. Un passager en provenance de Chine quitte une zone de
+       test Covid installée à l’aéroport Roissy-Charles-de-Gaulle,
+       dimanche 1er janvier 2023.
+       Éditorial
+       Chine : face au Covid-19, la nécessité de la transparence
+       Joe Biden présente son programme d’infrastructure, à Pittsburgh
+       (Pennsylvanie), le 20 octobre 2022. Joe Biden présente son
+       programme d’infrastructure, à Pittsburgh (Pennsylvanie), le 20
+       octobre 2022.
+       Chronique
+       Article réservé aux abonnés
+       « Parrains du libre-échangisme d’après-guerre, les Etats-Unis
+       donnent l’exemple du renouveau protectionniste »
+       Alain Frachon
+       éditorialiste au « Monde »
+       Le garde des sceaux, Eric Dupond-Moretti, lors d’une conférence de
+       presse au ministère de la justice à Paris, le 5 janvier 2023. Le
+       garde des sceaux, Eric Dupond-Moretti, lors d’une conférence de
+       presse au ministère de la justice à Paris, le 5 janvier 2023.
+       Éditorial
+       Réforme de la justice : passer des bonnes intentions aux actes
+       Des femmes fuient la police anti-émeute iranienne à Téhéran, le 19
+       septembre 2022. Des femmes fuient la police anti-émeute iranienne à
+       Téhéran, le 19 septembre 2022.
+       Tribune
+       Article réservé aux abonnés
+       Iran : « Un régime qui tue ses enfants, qui massacre ses minorités,
+       n’a plus de base et plus aucune légitimité »
+       Sepideh Farsi
+       Cinéaste et blogueuse
+     * Culture
+          + Culture
+          + Cinéma
+          + Télévision
+          + Livres
+          + Musiques
+          + Arts
+          + Scènes
+       « Nazar » (1990), de Mani Kaul. « Nazar » (1990), de Mani Kaul.
+       Culture
+       Article réservé aux abonnés
+       D’« Uski Roti » à « Nazar » : Mani Kaul, l’inventeur de formes de
+       la nouvelle vague indienne
+       Le neurobiologiste et essayiste Jean-Pierre Changeux, en 2016. Le
+       neurobiologiste et essayiste Jean-Pierre Changeux, en 2016.
+       Chronique
+       Article réservé aux abonnés
+       « Le Beau et la splendeur du vrai », de Jean-Pierre Changeux : la
+       chronique « philosophie » de Roger-Pol Droit
+       Roger-Pol Droit
+       Pierre Lescure présentera « Beau geste », la nouvelle émission de
+       cinéma hebdomadaire de France 2, à partir du
+       dimanche 22 janvier 2023. Pierre Lescure présentera « Beau geste »,
+       la nouvelle émission de cinéma hebdomadaire de France 2, à partir
+       du dimanche 22 janvier 2023.
+       Analyse
+       En 2023, France Télévisions passe à l’offensive culturelle tous
+       azimuts
+       Tony Soprano (James Gandolfini) et Carmela Soprano (Edie Falco)
+       dans la série « Sopranos », de David Chase. Tony Soprano (James
+       Gandolfini) et Carmela Soprano (Edie Falco) dans la série
+       « Sopranos », de David Chase.
+       Chronique
+       Article réservé aux abonnés
+       Game of Thrones, The Wire, les Sopranos : les grandes séries HBO
+       ont disparu des écrans français
+       Thomas Sotinel
+     * Le Goût du monde
+          + Le Goût du monde
+          + Le Monde passe à table
+          + Voyage
+          + Design & déco
+          + Mode
+          + Beauté
+          + Horlogerie & Joaillerie
+          + M le mag
+          + L’époque
+       Le Goût du Monde
+       Article réservé aux abonnés
+       Janvier détox : un légume, une recette de chef (1/5)
+       Le Goût du Monde
+       Article réservé aux abonnés
+       Frangipane, glace ou amande : nos choix des quinze meilleures
+       galettes
+       Le Goût du Monde
+       Article réservé aux abonnés
+       Choux de Bruxelles grillés-mayonnaise, frites-maroilles... trois
+       recettes du Nord de Florent Ladeyn
+       Faire son annonce, c’est parfois simple comme un colorant bleu ou
+       rose inséré dans une pâtisserie. Faire son annonce, c’est parfois
+       simple comme un colorant bleu ou rose inséré dans une pâtisserie.
+       L'époque
+       Article réservé aux abonnés
+       Les « gender reveal parties », quand les parents dévoilent en
+       grande pompe le sexe de leur futur enfant
+     * Services
+       Services Le Monde
+          + Les ateliers du Monde
+          + Mémorable : améliorer sa culture générale
+          + Mots croisés / Sudokus
+          + Guides d’achat
+          + Boutique Le Monde
+          + Newsletters
+       Services partenaires
+          + Cours d’anglais
+          + Formation professionnelle
+          + Jardinage
+          + Dictionnaire de citations
+          + Paroles de chansons
+          + Cours d’italien
+       Service Codes Promo
+          + Codes Promo
+          + Black Friday
+          + Codes Promo Amazon
+          + Codes Promo BoohooMan
+          + Codes Promo Ebay
+          + Codes Promo Asos
+          + Codes Promo Pandora
+          + Codes Promo Cdiscount
+          + Codes Promo Uber Eats
+          + Codes Promo NordVPN
+       Suppléments partenaires
+          + La liberté de créer
+          + Dubaï, une ville aux multiples visages
+          + Nicolas Feuillatte : une nouvelle approche de la dégustation
+          + Découvrir Québec
+          + Une alarme pour que noël reste une fête
+          + Un whisky écossais, façonné par la mer
+          + Boutiques-hôtels MGallery
+          + Gestion des cookies
+     * Recherche
 
-   (BUTTON) voir plus
-   (BUTTON) FR
-     * FR
-     * EN
-     * DE
-     * ES
-     * AR
-     * ZH
+     * M Campus
 
-   Ministère de la culture
-     * (BUTTON) Actualités
-          + (BUTTON) fermer le menu
-            Actualités (BUTTON) Actualités
-               o Actualités
-               o À la Une
-               o (BUTTON) Dossiers
-                 Dossiers
-                    # Soutien Culture Ukraine: le ministère de la Culture
-                      se mobilise
-                    # France Relance : Redynamiser notre modèle culturel
-                    # Olympiade culturelle
-                    # 264 projets pour des Mondes nouveaux
-                    # Stratégie d’accélération des industries culturelles
-                      et créatives
-                    # États généraux des festivals : un modèle à
-                      réinventer
-               o Événements nationaux
-     * (BUTTON) Nous connaître
-          + (BUTTON) fermer le menu
-            Nous connaître (BUTTON) Nous connaître
-               o Nous connaître
-               o Rima Abdul Malak, ministre de la Culture
-               o Le cabinet de la Ministre
-               o (BUTTON) Découvrir le ministère
-                 Découvrir le ministère
-                    # Organisation du ministère
-                    # Histoire du ministère
-                    # Événements nationaux
-               o (BUTTON) Emploi et formation
-                 Emploi et formation
-                    # Emploi - Apprentissage
-                    # Concours et examens professionnels
-                    # Le répertoire des métiers
-                    # Les agents témoignent
-                    # Service civique
-                    # Formations professionnelles
-     * (BUTTON) Aides & démarches
-          + (BUTTON) fermer le menu
-            Aides & démarches (BUTTON) Aides & démarches
-               o Aides & démarches
-               o Aides, démarches et subventions
-               o (BUTTON) Appels à projet et à candidatures
-                 Appels à projet et à candidatures
-                    # Appels à projets du ministère de la Culture
-                    # Appels à projets des partenaires (opérateurs,
-                      organismes labellisés ou subventionnés)
-               o Marchés publics
-               o Protections, labels et appellations
-               o COVID-19 : questions-réponses du ministère de la culture
-     * (BUTTON) Documentation
-          + (BUTTON) fermer le menu
-            Documentation (BUTTON) Documentation
-               o Documentation
-               o Rechercher une publication
-               o Bases de données
-               o Sites internet et multimédias
-               o Répertoire des ressources documentaires
-     * (BUTTON) Régions
-          + (BUTTON) fermer le menu
-            (BUTTON) Régions
-               o Drac Auvergne - Rhône-Alpes
-               o Drac Bourgogne-Franche-Comté
-               o Drac Bretagne
-               o Drac Centre-Val de Loire
-               o Drac Corse
-               o Drac Grand Est
-               o Dac Guadeloupe
-               o DCJS Guyane
-               o Drac Hauts-de-France
-               o Drac Île-de-France
-               o DAC Martinique
-               o DAC Mayotte
-               o Drac Normandie
-               o DRAC Nouvelle-Aquitaine
-               o Mission aux affaires culturelles de Nouvelle-Calédonie
-               o Drac Occitanie
-               o Dac de La Réunion
-               o Drac Pays de la Loire
-               o Mission aux affaires culturelles de Polynésie Française
-               o Drac Provence-Alpes-Côte d'Azur
-               o Mission aux Affaires Culturelles de
-                 Saint-Pierre-et-Miquelon
-     * (BUTTON) Thématiques
-          + (BUTTON) fermer le menu
-            (BUTTON) Thématiques
-               o (BUTTON) Secteurs & métiers
-                    # Architecture
-                    # Archives
-                    # Archéologie
-                    # Arts plastiques
-                    # Audiovisuel
-                    # Cinéma
-                    # Danse
-                    # Design
-                    # Industries culturelles et créatives
-                    # Livre et lecture
-                    # Mode
-                    # Monuments & Sites
-                    # Musique
-                    # Musées
-                    # Métiers d'art
-                    # Photographie
-                    # Presse
-                    # Théâtre, spectacles
-               o (BUTTON) Politiques publiques
-                    # Circulation des biens culturels
-                    # Conservation-restauration
-                    # Culture et territoires
-                    # Développement culturel
-                    # Education artistique et culturelle
-                    # Education aux médias et à l'information
-                    # Egalité et diversité
-                    # Enseignement supérieur et Recherche
-                    # Ethnologie de la France
-                    # Etudes et statistiques
-                    # Europe et international
-                    # Innovation numérique
-                    # Langue française et langues de France
-                    # Mécénat
-                    # Patrimoine culturel immatériel
-                    # Sciences du patrimoine
-                    # Sécurité - Sûreté
-     *
-          + Facebook
-          + Twitter
-          + Instagram
-          + Youtube
-          + Soundcloud
-          + Linkedin
-          + Flux de dépêches
+« Les jeunes lisent toujours, mais pas des livres »
 
-     * (BUTTON) Régions
-          + (BUTTON) fermer le menu
-               o Drac Auvergne - Rhône-Alpes
-               o Drac Centre-Val de Loire
-               o Dac Guadeloupe
-               o Drac Île-de-France
-               o Drac Normandie
-               o Drac Occitanie
-               o Mission aux affaires culturelles de Polynésie Française
-               o Drac Bourgogne-Franche-Comté
-               o Drac Corse
-               o DCJS Guyane
-               o DAC Martinique
-               o DRAC Nouvelle-Aquitaine
-               o Dac de La Réunion
-               o Drac Provence-Alpes-Côte d'Azur
-               o Drac Bretagne
-               o Drac Grand Est
-               o Drac Hauts-de-France
-               o DAC Mayotte
-               o Mission aux affaires culturelles de Nouvelle-Calédonie
-               o Drac Pays de la Loire
-               o Mission aux Affaires Culturelles de
-                 Saint-Pierre-et-Miquelon
-     * (BUTTON) Thématiques
-          + (BUTTON) fermer le menu
-               o (BUTTON) Secteurs & métiers
-               o (BUTTON) Politiques publiques
-               o Architecture
-               o Archives
-               o Archéologie
-               o Arts plastiques
-               o Audiovisuel
-               o Cinéma
-               o Danse
-               o Design
-               o Industries culturelles et créatives
-               o Livre et lecture
-               o Mode
-               o Monuments & Sites
-               o Musique
-               o Musées
-               o Métiers d'art
-               o Photographie
-               o Presse
-               o Théâtre, spectacles
-            (BUTTON) Voir plus
-               o Circulation des biens culturels
-               o Conservation-restauration
-               o Culture et territoires
-               o Développement culturel
-               o Education artistique et culturelle
-               o Education aux médias et à l'information
-               o Egalité et diversité
-               o Enseignement supérieur et Recherche
-               o Ethnologie de la France
-               o Etudes et statistiques
-               o Europe et international
-               o Innovation numérique
-               o Langue française et langues de France
-               o Mécénat
-               o Patrimoine culturel immatériel
-               o Sciences du patrimoine
-               o Sécurité - Sûreté
-            (BUTTON) Voir plus
+   Entretien avec la sociologue Sylvie Octobre, qui publie « Deux pouces
+   et des neurones » sur les pratiques culturelles des jeunes de 15 à
+   29 ans.
 
-   Chargement
+   Propos recueillis par Laura Buratti
 
-   Retour
+   Publié le 24 septembre 2014 à 09h52, mis à jour le 24 septembre 2014 à
+   18h27
 
-   Actualités
+   Temps de Lecture 5 min.
+     * Ajouter à vos sélections
+       Ajouter à vos sélections
+       Pour ajouter l’article à vos sélections
+       identifiez-vous
+       Créer un compte
+       Vous possédez déjà un compte ?
+       Se connecter
+     * (BUTTON) Partage désactivé Partage désactivé
+     * (BUTTON) Partage désactivé Envoyer par e-mail
+     * (BUTTON) Partage désactivé Partage désactivé
+     * (BUTTON) Partage désactivé Partage désactivé
 
-   Retour
+   Sylvie Octobre est chargée de recherche au ministère de la culture.
+   Elle publie le 24 septembre un livre qui décrypte les pratiques
+   culturelles des 15-29 ans. Sylvie Octobre est chargée de recherche au
+   ministère de la culture. Elle publie le 24 septembre un livre qui
+   décrypte les pratiques culturelles des 15-29 ans. Sylvie Octobre est
+   chargée de recherche au ministère de la culture. Elle publie le
+   24 septembre un livre qui décrypte les pratiques culturelles des
+   15-29 ans. LE MONDE.FR
 
-   Actualités
-   LECTURE-NICOLAS-LIPONNE-HANS-LUCAS-VIA-AFP3.jpg
-   (BUTTON) c
-   © Nicolas Liponne / Hans Lucas via AFP
+   Si les pratiques culturelles des jeunes ont changé, ceux-ci nʼont pour
+   autant pas arrêté de se cultiver. Cʼest ce quʼexplique Sylvie Octobre,
+   chargée de recherche au ministère de la culture, dans son livre Deux
+   pouces et des neurones, qui paraît mercredi 24 septembre. Dans un
+   entretien avec Campus, lʼauteure décrypte, sans parti pris, les usages
+   des 15-29 ans en matière culturelle, très différents de ceux de leurs
+   parents au même âge.
 
-    1. Accueil Ministère
+   Les jeunes lisent moins de livres et, surtout, lisent moins pour le
+   plaisir. La lecture nʼest plus considérée comme la porte dʼaccès
+   privilégiée au savoir et nʼest plus synonyme de plaisir. Ce désamour
+   pour les livres vient, à mon avis, du glissement de notre société de ce
+   quʼon appelait les humanités vers le technico-commercial. Auparavant,
+   les filières les plus prestigieuses nécessitaient une pratique assidue
+   de la lecture. Or la lecture, en tant que loisir tout du moins, nʼest
+   plus vraiment obligatoire pour devenir ingénieur. Le français laisse
+   peu à peu la place aux mathématiques.
 
-     Actualités
+   Le numérique aussi a changé notre façon de lire : les séquences de
+   lecture des jeunes sont plus courtes, souvent liées à leurs échanges
+   écrits sur Internet, et donc sont très liées à la sociabilité. Les
+   choix de lecture se font en interaction avec les autres, de plus en
+   plus par des recommandations des pairs. Or lire un livre est, par
+   nature, une activité plutôt longue et solitaire. A lʼère du numérique,
+   la façon dont les jeunes construisent leur approche culturelle ne va
+   pas naturellement vers la lecture. Pourtant, certains jeunes,
+   statistiquement plutôt les filles, se tournent de nouveau vers la
+   lecture comme activité à contretemps et déconnectée, comme pour stopper
+   le flux dʼinformations continu qui leur parvient.
+   Les jeunes lisent moins, mais dévorent les ouvrages qui leur sont
+   destinés, parfois même en version originale. Les jeunes lisent moins,
+   mais dévorent les ouvrages qui leur sont destinés, parfois même en
+   version originale. Les jeunes lisent moins, mais dévorent les ouvrages
+   qui leur sont destinés, parfois même en version originale. AFP/JOE
+   RAEDLE
 
-     Les jeunes privilégient de nouveaux modes de lecture
+   Le Monde
 
-             Les jeunes privilégient de nouveaux modes de lecture
+   Offre spéciale étudiants et enseignants
 
-   (BUTTON) Partager
-     * Partager sur Facebook
-     * Partager sur Twitter
-     * Partager sur Linkedin
-     * Plus...
+   Accédez à tous nos contenus en illimité à partir de 8,49 euros par mois
+   au lieu de 9,99 euros
 
-   Écouter
+   S’abonner
 
-     * Actualité
-     * Études et statistiques
-     * Livre et lecture
-     * Bande dessinée
-     * Pratiques, consommations et usages culturels
-     * - France entière -
-     * Tous publics
-     * Jeunesse
-     * (BUTTON)
+   Il faut distinguer la littérature « classique » et les livres portés
+   par les médias. Harry Potter, Twilight ou, plus récemment, Nos étoiles
+   contraires se sont très bien vendus et sont très lus par les jeunes,
+   parfois même en version originale. En fait, ils lisent toujours, mais
+   moins de titres de la littérature classique.
 
-   Publié le 25.03.2022
+   Les 15-29 ans lisent des textos, Wikipédia, des blogs… Il y a bien des
+   façons de lire. En réalité, on nʼa jamais tant lu : des textes, des
+   publicités, des articles, etc. Mais le goût pour la lecture de
+   littérature baisse. Ces deux types de lectures sont différents. La
+   lecture HTML est « additive », les liens et les articles se superposent
+   les uns aux autres. Pour ne pas se perdre dans le flot dʼinformations,
+   il faut construire une séquence de lecture. Il faut faire le tri, ne
+   pas se perdre pour éviter la saturation informationnelle, le moment où
+   lʼon ne comprend plus rien à ce quʼon lit et où lʼon tourne en rond. Ce
+   sont des compétences très difficiles à acquérir.
 
-   Une enquête commandée par le Centre national du livre à l'Ipsos montre
-   que les jeunes plébiscitent de nouveaux modes de lecture, décomplexés
-   et immersifs.
+   Lʼécole a son rôle à jouer dans ces évolutions. Au collège, les élèves
+   se trimballent 15 kilogrammes de livres sur le dos toute la journée,
+   qui sont des manuels scolaires. Le poids physique devient aussi un
+   poids psychique, avec le temps. Les manuels donnent également du livre
+   une image utilitaire. On note que les enfants en primaire lisent
+   beaucoup, et ils aiment ça. Quand ils arrivent au collège, la lecture
+   devient une contrainte, cʼest lʼeffet pervers de la scolarisation de la
+   lecture. De plus, les réseaux sociaux et la sociabilité sont si
+   importants pour les adolescents pour se construire quʼil leur est
+   difficile de sʼen extraire et de construire des espaces de solitude
+   pour lire.
+   Une jeune fille lit un livre au Salon du livre de Paris, le 21 mars.
+   Une jeune fille lit un livre au Salon du livre de Paris, le 21 mars.
+   Une jeune fille lit un livre au Salon du livre de Paris, le 21 mars.
+   AFP/MARTIN BUREAU
 
-   ARNAUD-TINEL-HANS-LUCAS-VIA-AFP.jpg
-   (BUTTON) c
-   © Arnaud Tinel / Hans Lucas via AFP
+   Les jeunes continuent de sortir au cinéma, même sʼils consomment de
+   plus en plus de films à la maison. Ils recherchent la qualité dʼune
+   expérience de sortie : le grand écran, la qualité de lʼimage, bien
+   meilleure quʼun film téléchargé, la convivialité de la salle de cinéma
+   où lʼon peut aller avec ses amis ou son amoureux. Pour les jeunes qui
+   vivent encore chez leurs parents ou en cité universitaire, il est
+   difficile dʼinviter toute sa bande de copains, surtout pour se masser
+   autour dʼun petit écran dʼordinateur, avec une connexion parfois
+   insuffisante.
 
-   Quel rapport les jeunes entretiennent-ils avec la lecture ? Et quels
-   leviers et autres actions faudrait-il imaginer afin de lever les freins
-   qui éloignent, encore trop souvent, les enfants et les adolescents du
-   livre et de la lecture ?
+   Le smartphone est devenu le premier terminal culturel des adolescents
+   et jeunes adultes. Les jeunes regardent toujours la télévision, mais
+   sur leur ordinateur ou leur téléphone. Les blogs, forums et chaînes
+   musicales remplacent les radios, qui sʼécoutent en podcast. La presse
+   également est consommée essentiellement sur Internet. Seuls les
+   magazines spécialisés ou thématiques résistent à cette tendance, comme
+   ceux consacrés au sport ou à un chanteur. Aujourdʼhui, les premiers
+   pourvoyeurs dʼinfo sont les réseaux sociaux. Un adolescent que jʼai
+   rencontré lors dʼune enquête mʼa dit, très justement : « Sʼil y avait
+   la guerre, je lʼapprendrais sur Facebook. »
 
-   C’est tout l’enjeu de l’enquête sur la lecture des 7-25 ans commandée
-   par le Centre national du livre (CNL) à l’institut de sondages Ipsos
-   qui propose, dans le cadre de la campagne « lecture, grande cause
-   nationale », un éclairage tout en nuances d’une situation plus
-   contrastée qu’il n’y paraît et permet – en passant – de se débarrasser
-   de lieux communs voire de contre-vérités (« les jeunes ne lisent plus !
-   »).
+   Les pratiques de consommation mais également de création culturelle ont
+   évolué avec l'accessibilité des nouvelles technologies, comme la caméra
+   GoPro. Les pratiques de consommation mais également de création
+   culturelle ont évolué avec l'accessibilité des nouvelles technologies,
+   comme la caméra GoPro. Les pratiques de consommation mais également de
+   création culturelle ont évolué avec l'accessibilité des nouvelles
+   technologies, comme la caméra GoPro. EMMANUEL FOUDROT / REUTERS
 
-   Réalisée à partir d’un échantillon représentatif de 1 500 personnes,
-   cette  enquête fouillée, aborde – entre autres –  la question des
-   écrans (« comment, dans le quotidien des jeunes gens, le livre et
-   l’écran s’accordent-ils ? »), mesure la montée en puissance des mangas
-   et revient bien sûr sur les effets du confinement qui, à bien des
-   égards, a largement rebattu les cartes.
+   La recherche dʼémotion et lʼexpression amateur sont les deux autres
+   constantes qui émergent des pratiques culturelles des jeunes. Ils font
+   de la photo, de la vidéo, du dessin et changent souvent dʼactivité dans
+   ce milieu hyper ouvert quʼest Internet, immense champ de possibilités.
+   Ils font un an de danse, puis un an de football, du chant, de la
+   guitare, etc. Une sorte de zapping qui répond à leur curiosité et qui a
+   le mérite de les enrichir de plein de choses.
 
-Un état des lieux nuancé
+   Ces changements posent toutefois la question : quʼa-t-on en commun avec
+   les générations précédentes ? Notre société est aujourdʼhui issue dʼun
+   véritable brassage culturel, comme lʼa montré la campagne du Musée de
+   lʼhistoire de lʼimmigration de lʼannée dernière, et ses affiches qui
+   rappelaient quʼ« un Français sur quatre est issu de lʼimmigration ». Ce
+   qui nous rassemble, ce nʼest plus la religion. Ce nʼest plus lʼarmée
+   non plus, qui permettait autrefois de se forger une idée de la nation.
+   Ce nʼest presque plus lʼéducation, à la fois parce que les profils
+   étudiants sont diversifiés, mais aussi parce que les étudiants sont
+   moins mobiles quʼavant. Depuis la régionalisation des universités, ils
+   peuvent très bien faire le collège, le lycée et lʼuniversité dans la
+   même ville.
 
-   Hans Lucas via AFP.jpg
-   (BUTTON) c
-   ©AFP
+   Comment réduire la fracture numérique dʼun côté et la fracture
+   générationnelle de lʼautre ? Mettre dans les mains des plus jeunes les
+   textes anciens qui transitent à travers les générations, mais aussi,
+   dans lʼautre sens, former les personnes âgées aux nouvelles
+   technologies, cela permet de créer du commun, de créer du lien
+   intergénérationnel. Cʼest là tout lʼenjeu des nouvelles politiques
+   culturelles.
 
-   L’enquête le confirme : le décrochage de lecture à l’adolescence est,
-   comme l’avaient souligné les précédentes éditions de l’enquête en 2016
-   et en 2018, toujours bien présent et réel. La lecture « loisirs »
-   décline fortement quelle que soit la classe d'âge, après 12 ans et
-   l’entrée au collège. Les causes ? Elles sont multiples, mais le temps
-   passé sur les écrans polarise à juste titre toutes les attentions (voir
-   encadré).
+   A lire : Sylvie Octobre, Deux pouces et des neurones, Ministère de la
+   culture, « Question de culture », 288 pages, 12 euros
 
-   Pour autant – et c’est l’une des bonnes nouvelles de l’enquête – 84%
-   des jeunes gens disent « aimer » la lecture. Et pour plus de 40%
-   d’entre eux, ils « l’adorent ». Derrière ce paradoxe apparent, on peut
-   voir une adaptation aux nouveaux usages et pratiques de la lecture
-   (livre numérique, podcast…). De fait, aujourd’hui, les jeunes gens
-   lisent « comme ils veulent et quand ils veulent »
+   Laura Buratti
 
-Vers de nouveaux modes de lecture
+   L’espace des contributions est réservé aux abonnés.
 
-   Invité par le CNL à s’exprimer sur les résultats de cette étude, lors
-   du webinaire qui lui a été consacré le 23 mars 2022, Claude Poissenot
-   (sociologue, enseignant-chercheur à l'IUT "Métiers du livre" de Nancy,
-   membre du Centre de Recherche sur les Médiations à l'Université de
-   Lorraine, que ses travaux ont conduit à une réflexion originale sur la
-   fonction des bibliothèques) a donné une appréciation instructive de la
-   situation.
-   CNL_AFFICHES_40x60cm-sanslogo_HDvecto-lavomatique_0.jpg
-   (BUTTON) c
-   ©CNL
+   Abonnez-vous pour accéder à cet espace d’échange et contribuer à la
+   discussion.
 
-   « Les jeunes gens jouent avec nous, dit-il : on leur prescrit des
-   livres et ils lisent, certes, mais ils lisent des mangas, ces ouvrages
-   dont parents et professeurs ne savent pas très bien ce que c’est. Ils
-   s’approprient la lecture du point de vue de leur propre expérience, ils
-   la redéfinissent et redéfinissent ainsi la culture de l’écrit
-   elle-même. Pour comprendre, il faut se souvenir que la lecture est déjà
-   « préemptée » par les parents, les professeurs et les institutions.
-   Fatalement, les jeunes gens s’intéressent aux formes qu’ils trouvent
-   pour dire je et pour dire nous, des espaces de liberté. L’enjeu, c’est
-   de sortir de l’injonction, de la contourner et, là, trouver de quoi
-   lire ! »
+   S’abonner
 
-   « Le relationnel est alors une piste intéressante pour l’action
-   publique, poursuit-il. Le relationnel, c’est-à-dire la situation
-   signifiante où le livre peut prendre place, à savoir une relation
-   personnelle plutôt qu’institutionnelle. Le succès, à cet égard, des CDI
-   et des bibliothèques, quant à l’accueil des élèves et au soutien à la
-   lecture est très intéressant. Ce succès n’est pas dû au hasard : dans
-   ces lieux, la relation personnelle compte, une relation personnelle
-   dont l’importance est confirmée par l’étude (rôle des mères, succès
-   incontestable de la lecture à haute voix…). Dans cet esprit,
-   l’initiative d’une institution comme le Centre national du livre, qui
-   est présent sur les réseaux sociaux et lance sa campagne
-   #jeliscommejeveux, est, à mon sens, particulièrement pertinente car
-   c’est précisément de cela qu’il s’agit : je lis comme je veux, y
-   compris sur un support numérique, y compris en écoutant des podcasts. »
+   Voir les contributions
+     * Ajouter à vos sélections
+       Ajouter à vos sélections
+       Pour ajouter l’article à vos sélections
+       identifiez-vous
+       Créer un compte
+       Vous possédez déjà un compte ?
+       Se connecter
+     * (BUTTON) Partage désactivé Partage désactivé
+     * (BUTTON) Partage désactivé Envoyer par e-mail
+     * (BUTTON) Partage désactivé Partage désactivé
+     * (BUTTON) Partage désactivé Partage désactivé
 
-Lire au temps des écrans
+   Édition du jour
 
-   Globalement, 81% des 7-25 ans lisent pour leurs loisirs, par goût
-   personnel. Si l’on ôte les élèves du primaire, ce chiffre tombe à 77%.
-   Ils ont lu 5 livres au cours des 3 derniers mois (hors primaires, le
-   chiffre descend à 4). Les 7-19 ans lisent, plus qu’avant, des BD /
-   mangas / comics, quand les 20-25 ans privilégient encore les romans.
+   Daté du samedi 7 janvier
+   Lire le journal numérique
 
-   Mais le décrochage de lecture à l’adolescence est toujours bien présent
-   et réel. La lecture « loisirs » décline fortement chez tous, après 12
-   ans et l’entrée au collège.
+   Le Monde Mémorable
+   Apprenez, comprenez, mémorisez
+   [svg%3E]
+   Leçon du jour
+   Les règles, sacré tabou
+   Testez gratuitement
 
-   IFRAME: https://www.youtube.com/embed/96LjuRWTrck
+   Lecture du Monde en cours sur un autre appareil.
 
-   Mercredi 23 mars 2022, le Centre national du livre a rendu publics les
-   résultats de son baromètre bisannuel « Les jeunes Français et la
-   lecture », conduit par Ipsos
-   CNL
+   Vous pouvez lire Le Monde sur un seul appareil à la fois
 
-   Par ailleurs, chez les jeunes gens, le temps consacré à la lecture, en
-   une semaine, est inférieur à celui qu’ils passent sur les écrans… en un
-   jour seulement (3h14 de lecture/semaine contre 3h50 d’écran/jour) ! Les
-   écrans sont d’ailleurs omniprésents dans leur vie. Et par-dessus le
-   marché, 47% des jeunes font souvent autre chose sur écran en même temps
-   qu’ils lisent : envoyer des messages, aller sur les réseaux sociaux,
-   regarder des vidéos…
+   (BUTTON) Continuer à lire ici
 
-   Néanmoins, ils sont nombreux à aimer la lecture. Pour tous, la
-   préférence pour d’autres activités est le principal frein, et les
-   lecteurs loisirs déplorent aussi le manque de temps, mais 84% des
-   jeunes aiment la lecture (42% adorent), qui leur permet de se faire
-   plaisir (48% des lecteurs loisirs), se détendre et s’évader (43%), ou
-   de s’occuper (31%).
+   Ce message s’affichera sur l’autre appareil.
+   Découvrir les offres multicomptes
 
-   Et ils plébiscitent l’expérience de lecture à voix haute par leurs
-   parents, dont ils gardent un souvenir très positif.
+   (BUTTON) Pourquoi voyez-vous ce message ?
+     * Parce qu’une autre personne (ou vous) est en train de lire Le Monde
+       avec ce compte sur un autre appareil.
+       Vous ne pouvez lire Le Monde que sur un seul appareil à la fois
+       (ordinateur, téléphone ou tablette).
+     * Comment ne plus voir ce message ?
+       En cliquant sur «  (BUTTON) Continuer à lire ici » et en vous
+       assurant que vous êtes la seule personne à consulter Le Monde avec
+       ce compte.
+     * Que se passera-t-il si vous continuez à lire ici ?
+       Ce message s’affichera sur l’autre appareil. Ce dernier restera
+       connecté avec ce compte.
+     * Y a-t-il d’autres limites ?
+       Non. Vous pouvez vous connecter avec votre compte sur autant
+       d’appareils que vous le souhaitez, mais en les utilisant à des
+       moments différents.
+     * Vous ignorez qui est l’autre personne ?
+       Nous vous conseillons de modifier votre mot de passe.
 
-   A souligner: ils n’hésitent plus à se tourner vers de nouvelles
-   pratiques vis-à-vis de la lecture et des livres. 40% des 7-25 ans ont
-   déjà lu un livre numérique, 59% ont déjà écouté un livre audio ou un
-   podcast et, bien qu’encore minoritaire, Internet devient un critère
-   d’influence pour 29% des lecteurs loisirs. Youtube, Instagram et TikTok
-   seraient d’ailleurs, pour bon nombre d’entre eux, une manière de
-   s’informer sur les livres.
+   Lecture restreinte
 
+   Votre abonnement n’autorise pas la lecture de cet article
 
-     * FR
-     * EN
-     * DE
-     * ES
-     * AR
-     * ZH
+   Pour plus d’informations, merci de contacter notre service commercial.
 
-   Nous suivre
-     * Facebook
-     * Twitter
-     * Instagram
-     * Youtube
-     * Soundcloud
-     * Linkedin
-     * Flux de dépêches
+   [ ]
 
-   S'inscrire à nos Infolettres
+  Services Le Monde
 
-Contact
+     * Les ateliers du Monde
+     * Mémorable : travailler sa mémoire
+     * Mots croisés / Sudokus
+     * Résultats élections
+     * Education
+     * Gastronomie
 
-   Acceo, accessibilité téléphonique aux personnes sourdes et
-   malentendantes
-   Ministère de la Culture
+   [ ]
 
+  Guides d'achat Le Monde
 
-    182 rue Saint-Honoré 75001 Paris
+     * Appareil Photo instantané
+     * Les meilleures lunch box
+     * Les meilleures gourdes
 
-   T. 01 40 15 80 00
-   Acceo, accessibilité téléphonique aux personnes sourdes et
-   malentendantes
-     * Nous contacter
-     * Foire aux questions
-     * Presse
+   [ ]
 
-   Nous suivre
-     * Facebook
-     * Twitter
-     * Instagram
-     * Youtube
-     * Soundcloud
-     * Linkedin
-     * Flux de dépêches
+  Codes promo
 
-Actualités
+     * Codes promo
+     * Black Friday
+     * Soldes
 
-     * À la Une
-     * Dossiers
-     * Événements nationaux
+   [ ]
 
-Aides & démarches
+  Le Monde à l'international
 
-     * Aides, démarches et subventions
-     * Appels à projet et à candidatures
-     * Marchés publics
-     * Protections, labels et appellations
-     * COVID-19 : questions-réponses du ministère de la culture
+     * Le Monde in English
+     * Algérie
+     * Belgique
+     * Canada
+     * Côte d’Ivoire
+     * Mali
+     * Maroc
+     * Sénégal
+     * Suisse
+     * Tunisie
 
-Nous connaître
+   [ ]
 
-     * Rima Abdul Malak, ministre de la Culture
-     * Le cabinet de la Ministre
-     * Découvrir le ministère
-     * Emploi et formation
+  Services Partenaires
 
-Documentation
+     * Découvrir le jardinage
+     * Dictionnaire de citations
+     * Hits du moment
+     * Formation professionnelle
 
-     * Rechercher une publication
-     * Bases de données
-     * Sites internet et multimédias
-     * Répertoire des ressources documentaires
+   [ ]
 
-     * service-public.fr
-     * gouvernement.fr
-     * legifrance.gouv.fr
-     * plus.transformation.gouv.fr
-     * data.gouv.fr
-     * data.culture.gouv.fr
+  Sites du groupe
 
-   (BUTTON) Liens utiles
-     * Plan du site
+     * Le Monde Evènements
+     * Courrier International
+     * Télérama
+     * La Vie
+     * Le HuffPost
+     * L’Obs
+     * Le Monde diplomatique
+     * La société des lecteurs du Monde
+     * Talents
+     * Source Sûre
+     * Le Club de l’économie
+     * M Publicité
+     * Avis de décès dans Le Monde
+
+   Newsletters du monde
+   Recevoir les newsletters du Monde
+
+   Applications Mobiles
+
+     * Sur iPhone
+     * Sur Android
+
+   Abonnement
+   Archives du Monde S’abonner Se connecter Consulter le Journal du jour
+   Évenements abonnés Jeux-concours abonnés Contacter Le Monde
+
+   [ ]
+
+  Informations légales le Monde
+
      * Mentions légales
-     * Nous contacter
-     * Accessibilité : partiellement conforme
-     * Données personnelles et cookies
-     * © Ministère de la Culture
+     * Conditions générales
+     * Charte du Groupe
+     * Politique de confidentialité
+     * Aide (FAQ)
+
+     * Mentions légales
+     * Charte du Groupe
+     * Politique de confidentialité
+     * Gestion des cookies
+     * Conditions générales
+     * Aide (FAQ)
+
+   Suivez Le Monde
+
+     * Facebook
+     * Youtube
+     * Twitter
+     * Instagram
+     * Snapchat
+     * Fils RSS
