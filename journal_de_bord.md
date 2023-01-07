@@ -43,3 +43,9 @@ Il y a deux variations :
 - permet de prendre en compte toutes les terminaisons du verbes
 - exclu le radical suivit de 지 car cette terminaisons de la négation est coupé par un espace puis ce poursuit. Exclu le nom 'lecture' qui a la forme 읽기(를)
 - prise en compte de la négation dans l'expression suivante.
+
+
+## difficultés rencontrés
+- parfois plus de 5 mots à gauche de la concordance
+	- pourquoi ? parce qe s'il y a moins de 5 mots entre deux motifs, le premier se retrouve sur la même ligne que le deuxième
+	- problème non prioritaire

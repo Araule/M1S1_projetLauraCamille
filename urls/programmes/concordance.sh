@@ -24,14 +24,29 @@ then
 fi
 
 
-echo "<html>
+#=== on crée deux variables pour le code html qui suit
+if [[ $langue == "chinois" ]]
+then
+  langue2="francais"
+  langue3="coreen" 
+elif [[ $langue == "francais" ]]
+then
+  langue2="chinois"
+  langue3="coreen" 
+else
+  langue2="francais"
+  langue3="chinois" 
+fi
+
+
+echo "<html style=\"background-color:F2F2F2;\">
 <head>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css'>
 <link rel='stylesheet' href='assets/css/base.css'>
 <meta charset=\"UTF-8\">
 <title>Concordance</title>
 </head>
-<body style=\"background-color:F2F2F2;\">
+<body>
 <nav class=\"navbar role=\"navigation\" aria-label=\"main navigation\" style=\"background-color:DAF7A6;\"\">
 <div class=\"navbar-brand\">
 <div class=\"navbar-item has-dropdown is-hoverable\">
@@ -107,6 +122,13 @@ echo "<html>
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-48.html\">$langue-48</a>
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-49.html\">$langue-49</a>
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-50.html\">$langue-50</a>
+</div>
+</div>
+<div class=\"navbar-item has-dropdown is-hoverable\">
+<a class=\"navbar-link\">Autres langues</a>
+<div class=\"navbar-dropdown\">
+<a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue2-1.html\">$langue2</a>
+<a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue3-1.html\">$langue3</a>
 </div>
 </div>
 </div>
