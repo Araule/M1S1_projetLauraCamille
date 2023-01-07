@@ -57,14 +57,6 @@
    Gleeph ne remplace pas les libraires que les jeunes aiment tant, mais
 --
 
-   15 octobre 2019
-
-Alpiq lance en France une offre d’électricité 100% personnalisable
-
-   26 mai 2021
-
---
-
    IFRAME: jetpack_remote_comment
 
    Ce site utilise Akismet pour réduire les indésirables. En savoir plus
@@ -72,11 +64,3 @@ Alpiq lance en France une offre d’électricité 100% personnalisable
 
    Traduire dans une autre langue
    [cfc.gif]
---
-     * Coronavirus : des difficultés économiques d’une ampleur inédite
-       pour les entreprises de transport routier de voyageurs
-       4 mars 2020
-     * Ellisphere rachète Sparklane
-       19 avril 2021
-
-   Charger plus

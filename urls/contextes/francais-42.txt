@@ -2,9 +2,9 @@
           + Figaro Vox
           + Figaro Etudiant
                o Les établissements du Sup
+               o Parcoursup
                o Classements
                o Collège - Lycée
-               o Etudes Supérieures
 --
 
    [etudiant-desktop.png]

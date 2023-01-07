@@ -40,15 +40,15 @@ basename=$(basename -s .txt $fichier_urls) # -s : vrai si le fichier txt a bien 
 
 
 #=== print dans le fichier tableau le début du code html
-echo "<section class='section mx-6 mt-5 mb-6'>" > $fichier_tableau
-echo "<div class='block has-text-centered'>" >> $fichier_tableau
-echo "<p class='title is-2 has-is-centered'>Tableau $basename</p>	" >> $fichier_tableau
-echo "</div>" >> $fichier_tableau
-echo "<br/>" >> $fichier_tableau
-echo "<table class='table is-bordered is-striped is-fullwidth'>" >> $fichier_tableau
-echo "<thead>" >> $fichier_tableau
-echo "<tr><th>ligne</th><th>code</th><th>URL</th><th>encodage</th><th>aspirations</th><th>occurences</th><th>contextes</th><th>concordances</th></tr>" >> $fichier_tableau
-echo "</thead>" >> $fichier_tableau
+echo "			<div class='block has-text-centered'>" > $fichier_tableau
+echo "				<p class='title is-2 has-is-centered'>Tableau $basename</p>	" >> $fichier_tableau
+echo "			</div>" >> $fichier_tableau
+echo "		<br/>" >> $fichier_tableau
+echo "			<table class='table is-bordered is-hoverable is-fullwidth'>" >> $fichier_tableau
+echo "				<thead>" >> $fichier_tableau
+echo "					<tr><th class=\"has-text-centered\">ligne</th><th class=\"has-text-centered\">code</th><th class=\"has-text-centered\">URL</th><th class=\"has-text-centered\">encodage</th><th class=\"has-text-centered\">aspirations</th><th class=\"has-text-centered\">occurences</th><th class=\"has-text-centered\">contextes</th><th class=\"has-text-centered\">concordances</th></tr>" >> $fichier_tableau
+echo "				</thead>" >> $fichier_tableau
+echo "				<tbody>" >> $fichier_tableau
 
 
 #=== le compteur de ligne de la boucle while
@@ -153,11 +153,11 @@ while read -r URL; do # -r : true if file exists and is readable
 	
 
 	#=== on récupère les concordances de notre mot avec un fichier bash externe
-	bash programmes/concordance.sh ./dumps-text/$basename-$lineno.txt $regexp $langue > ./concordances/$basename-$lineno.html
+	bash programmes/concordance.sh ./dumps-text/$basename-$lineno.txt $regexp $langue $lineno > ./concordances/$basename-$lineno.html
 
 	
 	#=== on print tout ce que l'on a trouvé en code html dans le fichier tableau, avec les liens vers les fichiers textes et html
-	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td><a href="./urls/aspirations/$basename-$lineno.html">$basename-$lineno</a></td><td>$occurences</td><td><a href="./urls/contextes/$basename-$lineno.txt">$basename-$lineno</a></td><td><a href="./urls/concordances/$basename-$lineno.html">$basename-$lineno</a></tr>" >> $fichier_tableau
+	echo "					<tr><td class=\"has-text-centered\">$lineno</td><td class=\"has-text-centered\">$code</td><td class=\"has-text-centered\"><a href=\"$URL\">$basename-$lineno</a></td><td class=\"has-text-centered\">$charset</td><td class=\"has-text-centered\"><a href="./urls/aspirations/$basename-$lineno.html">$basename-$lineno</a></td><td class=\"has-text-centered\">$occurences</td><td class=\"has-text-centered\"><a href="./urls/contextes/$basename-$lineno.txt">$basename-$lineno</a></td><td class=\"has-text-centered\"><a href="./urls/concordances/$basename-$lineno.html">$basename-$lineno</a></tr>" >> $fichier_tableau
 	echo -e "\t--------------------------------"
 	
 
@@ -169,5 +169,5 @@ done < $fichier_urls # la boucle s'arrête ici
 
 
 #=== print dans le fichier tableau la fin du code html
-echo "</table>" >> $fichier_tableau
-echo "</section>" >> $fichier_tableau
+echo "				</tbody>" >> $fichier_tableau
+echo "			</table>" >> $fichier_tableau

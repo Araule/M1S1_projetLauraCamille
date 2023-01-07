@@ -193,16 +193,6 @@ Sujets associés
    (BUTTON) Fermer
 
    LES ÉVÉNEMENTS
-   Trophée
-
-   TROPHÉES CATEGORY MANAGEMENT & MERCHANDISING 2023
-
-   9 Mars 2023 Paris
-
-   1ère Edition
-
-   Métiers grande conso
-   Programme et inscription
    Conférence
 
    CONFÉRENCE CATEGORY MANAGEMENT & MERCHANDISING
@@ -211,6 +201,16 @@ Sujets associés
 
    Définir les opportunités catégorielles et adapter sa stratégie
    merchandising
+
+   Métiers grande conso
+   Programme et inscription
+   Trophée
+
+   TROPHÉES CATEGORY MANAGEMENT & MERCHANDISING 2023
+
+   9 Mars 2023 Paris
+
+   1ère Edition
 
    Métiers grande conso
    Programme et inscription
@@ -243,7 +243,7 @@ Sujets associés
 
    Category Management
 
-   14-15 Mars 2023 Paris
+   14-15 Mars 2023 Classe virtuelle
 
    Les clés pour impulser une nouvelle dynamique à vos approches
    catégorielles
@@ -264,7 +264,7 @@ Sujets associés
 
    Masterclass - Experience client
 
-   29 Mai 2023 Paris
+   29 Mai 2023 Classe virtuelle
 
    Renforcer votre expertise digitale dans le retail
 
@@ -274,7 +274,7 @@ Sujets associés
 
    Le nouveau consommateur omnicanal
 
-   1-2 Juin 2023 Paris
+   1-2 Juin 2023 Classe virtuelle
 
    Du ROPO² au ZMOT : les clefs pour comprendre les nouveaux parcours
    clients
@@ -346,10 +346,11 @@ Sujets associés
    Proposé par LSA
 
    Détectez vos opportunités d'affaires
-   63 - CLERMONT FERRAND
+   19 - USSEL
 
-   Marché alimentaire composé de cinq lots.
-   DATE DE REPONSE 01/02/2023
+   Fourniture de denrées alimentaires - Relance des lots 5 : Volailles et
+   11 : Fruits et légumes après déclaration sans suite.
+   DATE DE REPONSE 07/02/2023
 
    + de 10.000 avis par jour
    Tout voir
@@ -383,9 +384,10 @@ ARTICLES LES PLUS LUS
        liquidation judiciaire
      * Patrick Puy au chevet de Go Sport
      * Lidl : Michel Biero reprend ses fonctions en France
-     * Pour Carrefour, "la livraison à domicile n’est plus un marché de
-       niche"
-     * Quatre nominations chez Suntory Beverage & Food France
+     * Michel-Edouard Leclerc dénonce (encore) les hausses de prix des
+       fournisseurs…et deux propositions de loi
+     * Pourquoi le groupe Casino rassemble ses activités sous un seul
+       holding
 
    Suivez LSA
    Twitter Facebook Linked In Rss
