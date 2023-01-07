@@ -2,21 +2,25 @@
 # coding: utf-8
 
 
-# on récupère d'abord le corpus
-fichier = input("\nQuel est le nom du fichier tokenisé ? (ex. ./contextes-chinois-tokenized.txt) : ")
+#=== ce fichier sert à enlever les mots vides de n'importe quel corpus français, chinois ou coréen
+
+
+#=== on récupère d'abord tous les mots du corpus dans liste_mots
+fichier = input("\nQuel est le nom du fichier à nettoyer ? (ex. ./contextes-chinois-tokenized.txt) : ")
 with open(fichier, 'r') as f :
     texte = f.read()
     liste_mots = texte.split()
 
 
-# on demande la langue du texte pour avoir la liste des mots vides
-langue = input("\nQuel est la langue du texte que vous voulez nettoyer ? ")
+#=== on demande la langue du texte pour avoir la liste des mots vides
+langue = input("\nQuel est la langue du texte à nettoyer ? (chinois, coréen ou français) : ")
+
 
 # fichier texte stopwords_chinois.txt trouvé sur : https://github.com/goto456/stopwords + quelques ajouts personnels
-# la liste de mots vides avec nltk n'était pas suffisante
 # fichier texte stopwords_coreen.txt trouvé sur : https://gist.github.com/spikeekips/40eea22ef4a89f629abd87eed535ac6a + ajouts personnels
 # fichier texte stopword_francais.txt trouvé sur : https://github.com/stopwords-iso/stopwords-fr/blob/master/stopwords-fr.txt
-#ajouter car résultat itrameur pas satisfaisant
+
+#=== on récupère dans la liste mots_vides tous les mots se trouvant dans l'un des fichiers textes
 if langue == "chinois" :
     with open("./stopwords_chinois.txt", 'r') as f :
         texte_motsvides = f.read()
@@ -37,7 +41,7 @@ else :
         mots_vides.append(mot)
 
 
-# on récupère une liste sans les mots vides du corpus, puis on concatène les mots dans la variable texte_propre
+#=== on récupère une liste des mots du corpus sans les mots vides, puis on concatène les mots dans la variable str texte_propre
 liste_mots_pleins = []
 for word in liste_mots :
     if langue == "french" : # si le texte est en français, il faut que tous les mots soient en minuscule
@@ -47,7 +51,7 @@ for word in liste_mots :
 texte_propre = " ".join(liste_mots_pleins)
 
 
-# enfin, on écrit le texte dans un fichier
-fichier_propre = input("\nQuel est le nom du fichier propre (ex. ./contextes-chinois-final.txt) : ")
+#=== enfin, on écrit le texte dans un fichier propre
+fichier_propre = input("\nQuel est le nom du fichier propre ? (ex. ./contextes-chinois-final.txt) : ")
 with open(fichier_propre, 'w') as f :
     f.write(texte_propre)

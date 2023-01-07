@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-# attention : ce script doit être lancé depuis la racine du projet.
-# Cela lui permet de récupérer les fichiers dans les bons dossiers.
-# 
-# Se lancera donc comme ça :
-# $ ./programmes/itrameur.sh
+
+#=== fichier bash récupéré sur le dossier PPE
+
 
 if [[ $# -ne 2 ]]
 then
@@ -13,7 +11,7 @@ then
 fi
 
 folder=$1 # dumps-text OU contextes
-basename=$2 # en, fr, ru, pl, it, jp, etc...
+basename=$2 # chinois, francais ou coreen
 
 echo "<lang=\"$basename\">" > "./itrameur/$folder-$basename.txt"
 

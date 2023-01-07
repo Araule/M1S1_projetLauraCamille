@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+
+# fichier python récupéré dans le dossier PPE
+
+
 import thulac
 import errno
 import fileinput
 
-# autre possibilité, lancer la commande:
-# python -m thulac chinois.txt chinois_seg_output.txt -seg_only
-# Mais ne permet pas les redirections d'entrées/sorties
 
 seg = thulac.thulac(seg_only=True)
 try:

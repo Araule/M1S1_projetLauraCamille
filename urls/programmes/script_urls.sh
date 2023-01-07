@@ -1,24 +1,26 @@
 #!/usr/bin/env bash
 
 #==============================================================================
-# fichier_urls -- txt : le fichier contenant les 50 urls, le fichier bash sera
-# sera 3 fois pour chacun des fichiers.
+# fichier_urls -- txt : le fichier contenant les 50 urls
 # fichier_tableau -- html : le fichier contenant la mise en page du tableau
-# 1. on vérifie que les deux fichiers sont bien là et que les arguments marchent
-# 2. on vérifie si les urls marchent avec la commande cURL. 
-#===============================================================================
+# langue -- str : variable qui permet d'utiliser le fichier pour les 3 langues
+#==============================================================================
+
 
 fichier_urls=$1 # le fichier d'URL en entrée
 fichier_tableau=$2 # le fichier HTML en sortie
-langue=$3 # chinois, coreen ou français
+langue=$3 # la langue avec laquelle le fichier va travailler, ici : chinois, coreen ou francais
 
-# on vérifie si nos deux fichiers sont bien là
-if [[ $# -ne 3 ]] # si $# est différent de 2
+
+#=== on vérifie si les trois arguments sont bien là
+if [[ $# -ne 3 ]] 
 then
 	echo "Ce programme demande exactement trois arguments."
 	exit # le programme se termine
 fi
 
+
+#=== setup de l'expression régulière
 if [[ $langue == "chinois" ]]
 then
     regexp="看书|读书|阅读"
@@ -29,97 +31,106 @@ else
    regexp="lir\w+|lis\w+?|lis"
 fi
 
-# notre expression régulière du verbe  "lire" en chinois, coréen et français
-# explication du motif en coréen :
-# permet de prendre en compte toutes les terminaisons du verbes
-# exclu le radical suivit de 지 car cette terminaisons de la négation est coupé par un espace puis ce poursuit. Exclu le nom 'lecture' qui a la forme 읽기(를)
-# prise en compte de la négation dans l'expression suivante.
 
 echo $fichier_urls;
 
+
+#=== basename command permet d'extraire le nom du fichier
 basename=$(basename -s .txt $fichier_urls) # -s : vrai si le fichier txt a bien un nom 
-# "basename" command in Linux prints the final component in a file path. 
-#             ==> when you want to extract the file name from the long file path.
 
-echo "<html><body>" > $fichier_tableau
-echo "<h2>Tableau $basename :</h2>" >> $fichier_tableau
+
+#=== print dans le fichier tableau le début du code html
+echo "<section class='section mx-6 mt-5 mb-6'>" > $fichier_tableau
+echo "<div class='block has-text-centered'>" >> $fichier_tableau
+echo "<p class='title is-2 has-is-centered'>Tableau $basename</p>	" >> $fichier_tableau
+echo "</div>" >> $fichier_tableau
 echo "<br/>" >> $fichier_tableau
-echo "<table>" >> $fichier_tableau
+echo "<table class='table is-bordered is-striped is-fullwidth'>" >> $fichier_tableau
+echo "<thead>" >> $fichier_tableau
 echo "<tr><th>ligne</th><th>code</th><th>URL</th><th>encodage</th><th>aspirations</th><th>occurences</th><th>contextes</th><th>concordances</th></tr>" >> $fichier_tableau
+echo "</thead>" >> $fichier_tableau
 
-#maintenant on s'occupe des urls
+
+#=== le compteur de ligne de la boucle while
 lineno=1;
+
+
+#=== on travaille maintenant avec les url
 while read -r URL; do # -r : true if file exists and is readable
 
-	echo -e "\tLigne : $lineno";
+	echo -e "\tLigne : $lineno"; # print le numéro de ligne dans le terminal 
+	echo -e "\tURL : $URL"; # print l'url dans le terminal
 
-	echo -e "\tURL : $URL"; #on découpe chacun des appels / on récupère d'abord le code
-	# la façon attendue, sans l'option -w de cURL
-	code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1) # on récupère code HTTP
-	# egrep = grep -e ; recherche la ligne qui commence par "^HTTP/" et qui contient le code de retour
-	#grep -Eo = grep étendu (-E) et on récupère uniquement la ligne voulue (-o)
-	#si tail -n 1 : on prend  que la dernière ligne de l'url quand elle est redirigée.
-	
-	charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2 | tail -n 1) # on récupère encodage
-	#(\w|-)+ = on recherche des lettres ou des chiffres ou des tirets. On veut une séquence
-	# cut -d= -f2 : on veut la deuxième colonne
-	#-f = on veut récupérer un colonne (le chiffre qui suit = colonne qu'on souhaite)
-	#-d = délimiteur, le signe qui est après -d désigne le délimiteur
 
-	# autre façon, avec l'option -w de cURL
-	# code=$(curl -Ls -o /dev/null -w "%{http_code}" $URL)
-	# charset=$(curl -ILs -o /dev/null -w "%{content_type}" $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2)
+	#=== on récupère le code HTTP de l'url
+	code=$(curl -ILs $URL | grep -e "^HTTP/" | grep -Eo "[0-9]{3}" | tail -n 1)
+	# grep -e : recherche la ligne qui commence par "^HTTP/" et qui contient le code de retour
+	# grep -E -o = - grep étendu - récupère uniquement la ligne voulue
+	# tail -n 1 : prend  seulement le dernier code
 
-	echo -e "\tcode : $code";
 
+	#=== on récupère l'encode de l'url
+	charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2 | tail -n 1)
+	# (\w|-)+ = on recherche des lettres ou des chiffres ou des tirets. On veut une séquence
+	# cut -d= -f2 : - permet de délimiter, le signe qui est après -d désigne le délimiteur - récupère la colonne 2
+
+
+	echo -e "\tcode : $code"; # print le code HTTP dans le terminal
+
+
+	#=== si on ne récupère pas l'encode de l'url, on assigne par défaut l'encode UTF-8
 	if [[ ! $charset ]]
 	then
-		echo -e "\tencodage non détecté, on prendra UTF-8 par défaut.";
+		echo -e "\tencodage non détecté, on prendra UTF-8 par défaut."; # on print l'encodage dans le terminal
 		charset="UTF-8";
-		#s'il n'existe pas, on lui donne la valeur UTF-8
 	else
-		echo -e "\tencodage : $charset";
+		echo -e "\tencodage : $charset"; # on print l'encodage dans le terminal
 	fi
-	
 
+	
+	#=== si le code HTTP = 200
 	if [[ $code -eq 200 ]]
 	then
-		
-		dump=$(lynx -dump -nolist -assume_charset=$charset -display_charset=$charset $URL)
-		# -dump  : récupère le texte privé de l'url (sans les balises html)
-		# -nolist : pour ne pas avoir une liste des urls
-		# -assume_charset = on veut récupérer que des pages en utf-8
-		# -display_charset = si pas utf-8 alors on remplace
 
+		#=== on récupère le texte de l'url (sans les balises html) avec la commande lynx (rare mais cela arrive)
+		dump=$(lynx -dump -nolist -assume_charset=$charset -display_charset=$charset $URL)
+		# -nolist : pour ne pas avoir une liste des urls
+
+
+		#=== dans le cas des urls chinoises, il arrive que lynx récupère quelques caractères non utf-8
+		#    on enlève ces caractères non utf-8 avec la commande iconv et l'option -c et on dump le texte dans le dossier ./dumps-text/
 		if [[ $langue == "chinois" ]]
 		then
 			echo "$dump" > ./fichier.txt
 			iconv -f utf-8 -t utf-8 -c ./fichier.txt > ./dumps-text/$basename-$lineno.txt
 			dump=$(cat ./dumps-text/$basename-$lineno.txt)
 			rm fichier.txt
-		# il arrive que lynx récupère quelques caractères non utf-8 (rare mais cela arrive)
-		# on enlève ces quelques caractères non utf-8 avec la commande iconv et l'option -c
 		else
-			echo "$dump" > ./dumps-text/$basename-$lineno.txt; # l'ajout de guillemet à résolu le problème du dump/contexte
+			echo "$dump" > ./dumps-text/$basename-$lineno.txt; # sinon on dump directement le texte dans le dossier ./dumps-text/
 		fi
 		
-
+		#=== on aspire le contenu html de l'url et on dump le code dans le dossier ./aspirations/
 		curl -Ls $URL > ./aspirations/$basename-$lineno.html;
 
 		
+		#=== si l'encodage du texte n'est pas UTF-8 et que le dump n'est pas vide, on le convertit en UTF-8
 		if [[ $charset -ne "UTF-8" && -n "$dump" ]]
-		# -ne = not equal si $charset est différent de UTF-8 et
-		# -n "dump" = le dump n'est pas vide / pas forcément utile car existe forcément car on a utilisé lynx juste avant
 		then
-			dump=$(echo "$dump" | iconv -f $charset -t UTF-8//IGNORE) #texte dump converti d'encodage d'origine à UTF-8
+			dump=$(echo "$dump" | iconv -f $charset -t UTF-8//IGNORE)
 		fi
 
+
+		#=== on récupère les occurences du mot que l'on a choisi grâce à notre expression régulière
 		occurences=$(echo "$dump" | grep -Eo $regexp | wc -l)
-		echo -e "\toccurences : $occurences";
+
+
+		echo -e "\toccurences : $occurences"; # on print le nombre d'occurences dans le terminal
 		
+
+		#=== dans le cas des urls chinoises, il arrive que certains sites soient encodés en gbk,
+		#    lynx ne prend pas en compte cette encodage, alors on utilise la commande w3m
+		#    et on récupère le nouveau dump et les occurences
 		if [[ ! occurences -ne 0 && $langue == "chinois" ]]
-		# dans le cas des urls chinoises, il arrive que certains sites soient encodés en gbk, 
-		# et lynx ne prend pas en compte cette encodage, alors on utilise w3m
 		then
 			dump=$(w3m $URL)
 			echo "$dump" > ./dumps-text/$basename-$lineno.txt;
@@ -127,26 +138,36 @@ while read -r URL; do # -r : true if file exists and is readable
 			echo -e "\tnouvelles occurences : $occurences";
 		fi
 
+
+	#=== si le code HTTP n'est pas 200, on prend des variables vides pour éviter des résultats inattendus
 	else
 		echo -e "\tcode différent de 200 utilisation d'un dump vide";
 		dump=""
 		charset=""
-		#variables vides pour éviter des résultats inattendus
+
 	fi
 
 
+	#=== on récupère trois lignes avant et après le mot choisi pour obtenir le contextes et on dump tout cela dans le dossier ./contextes/
 	egrep -E -B3 -A3 $regexp ./dumps-text/$basename-$lineno.txt > ./contextes/$basename-$lineno.txt
 	
-	bash programmes/concordance.sh ./dumps-text/$basename-$lineno.txt $regexp $langue> ./concordances/$basename-$lineno.html
-	# construction des concordances avec une commande externe
+
+	#=== on récupère les concordances de notre mot avec un fichier bash externe
+	bash programmes/concordance.sh ./dumps-text/$basename-$lineno.txt $regexp $langue > ./concordances/$basename-$lineno.html
 
 	
+	#=== on print tout ce que l'on a trouvé en code html dans le fichier tableau, avec les liens vers les fichiers textes et html
 	echo "<tr><td>$lineno</td><td>$code</td><td><a href=\"$URL\">$URL</a></td><td>$charset</td><td><a href="./urls/aspirations/$basename-$lineno.html">$basename-$lineno</a></td><td>$occurences</td><td><a href="./urls/contextes/$basename-$lineno.txt">$basename-$lineno</a></td><td><a href="./urls/concordances/$basename-$lineno.html">$basename-$lineno</a></tr>" >> $fichier_tableau
 	echo -e "\t--------------------------------"
 	
+
+	#=== on rajoute 1 au compteur pour passer à l'url suivante
 	lineno=$((lineno+1));
 
-done < $fichier_urls
 
+done < $fichier_urls # la boucle s'arrête ici
+
+
+#=== print dans le fichier tableau la fin du code html
 echo "</table>" >> $fichier_tableau
-echo "</body></html>" >> $fichier_tableau
+echo "</section>" >> $fichier_tableau
