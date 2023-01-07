@@ -1,6 +1,5 @@
 ### partie 3 itrameur
 - faire les analyses itrameur
-Laura : analyser les données chinois
 
 ### partie 4 nuages de mot
 - liste de site :
@@ -11,9 +10,11 @@ Laura : analyser les données chinois
 
 ### partie 5 site html
 - accueil : difficulté rencontré pendant le semestre
-- itrameur : analyse pour chaque langue
+- itrameur : analyse des données pour chaque langue + photos
 	- chinois
 	- français
 	- coréen
 - nuage : photo nuage de mots + analyse globale des mots qui reviennent
+
+
 - présentation de nous
