@@ -50,7 +50,7 @@ echo "<html style=\"background-color:F2F2F2;\">
 <nav class=\"navbar role=\"navigation\" aria-label=\"main navigation\" style=\"background-color:DAF7A6;\"\">
 <div class=\"navbar-brand\">
 <div class=\"navbar-item has-dropdown is-hoverable\">
-<a class=\"navbar-link\">Autres contextes 1 - 10</a>
+<a class=\"navbar-link\">Concordances 1 - 10</a>
 <div class=\"navbar-dropdown\">
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-1.html\">$langue-1</a>
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-2.html\">$langue-2</a>
@@ -65,7 +65,7 @@ echo "<html style=\"background-color:F2F2F2;\">
 </div>
 </div>
 <div class=\"navbar-item has-dropdown is-hoverable\">
-<a class=\"navbar-link\">Autres contextes 11 - 20</a>
+<a class=\"navbar-link\">Concordances 11 - 20</a>
 <div class=\"navbar-dropdown\">
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-11.html\">$langue-11</a>
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-12.html\">$langue-12</a>
@@ -80,7 +80,7 @@ echo "<html style=\"background-color:F2F2F2;\">
 </div>
 </div>
 <div class=\"navbar-item has-dropdown is-hoverable\">
-<a class=\"navbar-link\">Autres contextes 21 - 30</a>
+<a class=\"navbar-link\">Concordances 21 - 30</a>
 <div class=\"navbar-dropdown\">
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-21.html\">$langue-21</a>
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-22.html\">$langue-22</a>
@@ -95,7 +95,7 @@ echo "<html style=\"background-color:F2F2F2;\">
 </div>
 </div>
 <div class=\"navbar-item has-dropdown is-hoverable\">
-<a class=\"navbar-link\">Autres contextes 31 - 40</a>
+<a class=\"navbar-link\">Concordances 31 - 40</a>
 <div class=\"navbar-dropdown\">
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-31.html\">$langue-31</a>
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-32.html\">$langue-32</a>
@@ -110,7 +110,7 @@ echo "<html style=\"background-color:F2F2F2;\">
 </div>
 </div>
 <div class=\"navbar-item has-dropdown is-hoverable\">
-<a class=\"navbar-link\">Autres contextes 41 - 50</a>
+<a class=\"navbar-link\">Concordances 41 - 50</a>
 <div class=\"navbar-dropdown\">
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-41.html\">$langue-41</a>
 <a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue-42.html\">$langue-42</a>
@@ -125,10 +125,11 @@ echo "<html style=\"background-color:F2F2F2;\">
 </div>
 </div>
 <div class=\"navbar-item has-dropdown is-hoverable\">
-<a class=\"navbar-link\">Autres langues</a>
+<a class=\"navbar-link\">Menu</a>
 <div class=\"navbar-dropdown\">
-<a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue2-1.html\">$langue2</a>
-<a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue3-1.html\">$langue3</a>
+<a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue2-1.html\">Concordance : $langue2</a>
+<a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/urls/concordances/$langue3-1.html\">Concordance : $langue3</a>
+<a class=\"navbar-item\" href=\"https://araule.github.io/projetlauracamilleS1/tableaux.html\">Tableaux</a>
 </div>
 </div>
 </div>
@@ -136,7 +137,7 @@ echo "<html style=\"background-color:F2F2F2;\">
 <section class=\"hero\" style=\"background-color:DAF7A6;\">
 <div class=\"hero-body\">
 <div class='block has-text-centered'>
-<p class='title is-2 has-is-centered'>Contexte : $langue-$ligne</p>
+<p class='title is-2 has-is-centered'>Concordances : $langue-$ligne</p>
 <p class='title is-3 has-is-centered'>expression régulière : $regexp</p>
 </div>
 </div>

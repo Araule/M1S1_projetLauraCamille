@@ -52,8 +52,8 @@
    아니다.","source":"https://blog.naver.com/bramth/120031235513","blogName":
    "형아는
    최..","blogId":"bramth","domainIdOrBlogId":"bramth","logNo":120031235513
-   ,"smartEditorVersion":1,"meDisplay":true,"lineDisplay":true,"outsideDis
-   play":false,"cafeDisplay":true,"blogDisplay":true}
+   ,"smartEditorVersion":1,"blogDisplay":true,"outsideDisplay":false,"meDi
+   splay":true,"lineDisplay":true,"cafeDisplay":true}
    맨 위로
    PC버전으로 보기
    닫기

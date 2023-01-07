@@ -55,7 +55,7 @@
    (BUTTON)
    Suivre
    Etudiant Etudiant Etudiant
-     * Parcoursup
+     * Nos salons
      * Orientation
      * Ecoles du sup
      * Études sup
@@ -81,7 +81,6 @@
           + Figaro Vox
           + Figaro Etudiant
                o Les établissements du Sup
-               o Parcoursup
                o Classements
                o Collège - Lycée
                o Etudes Supérieures
