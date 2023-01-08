@@ -1,0 +1,12 @@
+﻿Analyses itrameurs pour le coréen concernant les verbes 읽다 et 독서하다.
+
+En regardant le dictionnaire pour les dumps text et les contextes, on remarque que le mot le plus fréquent est le mot livre 책 suivit de son marqueur de complément d’objet direct 을. Les mots les plus pertinent qui apparaissent ensuite sont lecture (독서), littérature(문학), livre électronique/ebook(전자책).
+
+독서하다
+
+Là où dans les dumps-text ce sont les mots loisir (취미), apprentissage(학습) et nouveau(새러운) qui ressortent, dans les contextes ce sont plus les mots habitudes(습관), club(동아리), littérature(문학), changement(변화), , apparition(발생) ou vie quotidienne (생활) qui ressortent. Le plus important à notifier, est qu'il n’y a aucune occurrence du verbe dans le dictionnaire. Il est beaucoup plus utilisé en tant que nom. Cela s’explique par le fait qu’en coréen les verbes terminant par 하다(litt. faire quelque chose) sont souvent issu de l’addition nom + 하다 et que l’autre verbe pour lire est largement plus utilisé.
+
+읽다 
+
+La forme infinitive du verbe étant très peu utilisée, j’ai choisi la forme conjuguée la plus fréquente pour mon analyse, qui est 읽는 Là où pour les dumps-text ce sont les mots livre(책), personnes(사람), adulte(어른) et la négation ‘ou pas’(건지), dans les contextes il y a avec beaucoup plus d'occurrence le mot livre(책), souvent(자주), ‘ou pas’ et aucun(없음).
+On remarque donc bien la différence entre les deux verbes, là où le premier va se concentrer plus sur le livre, et le second à la personne qui le lit.
