@@ -1,0 +1,11 @@
+﻿Analyses itrameur pour le français.
+
+En comparant les dictionnaires pour les dumps-text et les contextes, les mots les plus fréquents sont, lire, lecture, livres, lisent, jeunes, numérique. Pour le français, j’ai choisi pour mon analyse le verbe à l’infinitif et la forme du verbe conjugué la plus fréquente, qui est ‘lisent’. 
+
+Lire
+
+Que ce soit pour les dumps-text ou les contextes, le mot qui lui est le plus associé est ‘envie’. On remarque que ce sont les mêmes termes qui apparaissent, seule la fréquence diffère. La notion d’apprentissage est plus présente dans les contextes, là où la notion de temps est plus présente dans les dumps-texts.
+
+Lisent
+
+Il n’y a aucune différence que ce soit pour les contextes où les dumps-texts. Le terme le plus associé ici est le mot ‘jeunes’ avec une fréquence et cooccurrence beaucoup plus marqué puis viennent ensuite ‘français’, ‘ils’ et ‘livres’. De prime abord, ce résultat vient contredire notre hypothèse qui était que les jeunes lisent moins.
