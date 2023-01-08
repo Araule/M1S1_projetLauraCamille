@@ -97,6 +97,19 @@
 					<li>la lecture et l'apprentissage chez les jeunes : nous avons décidé de garder ses urls parce qu'il est tout à fait normal de lire pour apprendre des choses; ce genre d'articles est d'ailleurs plus présent en coréen qu'en chinois car les étudiants (mineurs) chinois n'ont pas vraiment le temps de lire pendant leur temps "libre"</li>
 				</dl>
 			</div>
+			<div class="block has-text-centered">
+				<p class="title is-3 has-is-centered">Difficultés rencontrées</p>	
+			</div>
+			<div class="block" style="text-align:justify;">
+				<p><strong>Les expressions régulières</strong></p>
+				<dl>
+					<p>Nous nous sommes aperçues de la difficulté à faire une bonne expression régulière notamment lors de la concordance, où l'expression régulière coréenne, une fois associé à celle chinoise, créait un blocage au niveau du tableau de concordance chinois. Nous avons pu résoudre le problème créant une condition pour chaque langue et son expression régulière.</p>
+			</div>
+			<div class="block" style="text-align:justify;">
+				<p><strong>Les stopwords</strong></p>
+				<dl>
+					<p>Nous avons crée un script python pour les stopwords qui a posé quelques problèmes notamment pour le français et le coréen(le chinois étant traité différemment). Nous nous en sommes rendu compte lors des analyses itrameur qui nous ressortait des mots qui devaient être exclu. Pour résoudre ce problème au lieu d'utiliser nltk et ses listes de stopwords, nous avons créé des fichiers stopwords pour chaque langue.</p>
+			</div>
 		</section>
 
 	</body>
