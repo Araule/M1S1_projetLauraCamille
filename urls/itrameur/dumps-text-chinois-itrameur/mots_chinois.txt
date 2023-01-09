@@ -17,7 +17,7 @@ mots se trouvant dans les concordances sur itrameur, les plus comprehensibles et
 重要性 - importance
 大学生 - étudiant (à l'université)
 亲子 - parents et enfants
-儿童 - enfants (assez jeunes)
+幼儿 - enfants (assez jeunes)
 小时 - heure
 静 - calme, silence
 有用 - utile
