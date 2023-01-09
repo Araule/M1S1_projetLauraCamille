@@ -55,7 +55,7 @@ echo "				<tbody>" >> $fichier_tableau
 lineno=1;
 
 
-#=== on travaille maintenant avec les url
+#=== on travaille maintenant avec les urls
 while read -r URL; do # -r : true if file exists and is readable
 
 	echo -e "\tLigne : $lineno"; # print le numéro de ligne dans le terminal 
@@ -71,14 +71,14 @@ while read -r URL; do # -r : true if file exists and is readable
 
 	#=== on récupère l'encode de l'url
 	charset=$(curl -ILs $URL | grep -Eo "charset=(\w|-)+" | cut -d= -f2 | tail -n 1)
-	# (\w|-)+ = on recherche des lettres ou des chiffres ou des tirets. On veut une séquence
+	# (\w|-)+ = on recherche des lettres ou des chiffres ou des tirets. On veut une séquence.
 	# cut -d= -f2 : - permet de délimiter, le signe qui est après -d désigne le délimiteur - récupère la colonne 2
 
 
 	echo -e "\tcode : $code"; # print le code HTTP dans le terminal
 
 
-	#=== si on ne récupère pas l'encode de l'url, on assigne par défaut l'encode UTF-8
+	#=== si on ne récupère pas l'encodage de l'url, on assigne par défaut l'encode UTF-8
 	if [[ ! $charset ]]
 	then
 		echo -e "\tencodage non détecté, on prendra UTF-8 par défaut."; # on print l'encodage dans le terminal
@@ -98,7 +98,7 @@ while read -r URL; do # -r : true if file exists and is readable
 
 
 		#=== dans le cas des urls chinoises, il arrive que lynx récupère quelques caractères non utf-8
-		#    on enlève ces caractères non utf-8 avec la commande iconv et l'option -c et on dump le texte dans le dossier ./dumps-text/
+		#=== on enlève ces caractères non utf-8 avec la commande iconv et l'option -c et on dump le texte dans le dossier ./dumps-text/
 		if [[ $langue == "chinois" ]]
 		then
 			echo "$dump" > ./fichier.txt
@@ -120,22 +120,22 @@ while read -r URL; do # -r : true if file exists and is readable
 		fi
 
 
-		#=== on récupère les occurences du mot que l'on a choisi grâce à notre expression régulière
+		#=== on récupère les occurrences du mot que l'on a choisi grâce à notre expression régulière
 		occurences=$(echo "$dump" | grep -Eo $regexp | wc -l)
 
 
-		echo -e "\toccurences : $occurences"; # on print le nombre d'occurences dans le terminal
+		echo -e "\toccurrences : $occurences"; # on print le nombre d'occurrences dans le terminal
 		
 
 		#=== dans le cas des urls chinoises, il arrive que certains sites soient encodés en gbk,
 		#    lynx ne prend pas en compte cette encodage, alors on utilise la commande w3m
-		#    et on récupère le nouveau dump et les occurences
+		#    et on récupère le nouveau dump et les occurrences
 		if [[ ! occurences -ne 0 && $langue == "chinois" ]]
 		then
 			dump=$(w3m $URL)
 			echo "$dump" > ./dumps-text/$basename-$lineno.txt;
 			occurences=$(echo "$dump" | grep -Eo $regexp | wc -l)
-			echo -e "\tnouvelles occurences : $occurences";
+			echo -e "\tnouvelles occurrences : $occurences";
 		fi
 
 
