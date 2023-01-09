@@ -51,12 +51,12 @@
 				<p class="title is-3 has-is-centered">Pourquoi choisir le mot <em>Lire</em></p>	
 			</div>
 			<div class="block" style="text-align:justify;">
-				<p>Lire est un concept universel présent (quasiment) partout dans le monde. Mais la lecture est entouré de problématiques, parfois spécifiques à un pays, parfois non. Nous avions déjà discuté à l'occasion des différences dans les habitudes de lecture en Chine et en Corée et nous souhaitons aller plus loin à travers ce projet.</p>
+				<p>Lire est un concept universel présent (quasiment) partout dans le monde. Mais la lecture est entourée de problématiques, parfois spécifiques à un pays, parfois non. Nous avions déjà discuté à l'occasion des différences dans les habitudes de lecture en Chine et en Corée et nous souhaitons aller plus loin à travers ce projet.</p>
 				<p>En France, on lit de moins en moins, du moins en avons-nous l'impression en lisant la presse ou discutant avec des personnes, généralement, plus âgés. Il y a cette idée que ce sont les jeunes qui ne lisent plus, ou du moins pas "les classiques" de la littérature. L'entrée dans la vie active semble être aussi un obstacle pour les adultes qui ne disent plus avoir le temps de lire.</p>
-				<p>En Chine, peu importe la génération, les personnes âgés comme les plus jeunes sont beaucoup sur leur téléphone. Les chinois travaillent aussi très longtemps et disent ne pas avoir le temps d'aller prendre un livre en librairie ou à la bibliothèque, les deux fermant avant qu'ils sortent du travail. Les enfants lisent également très peu à cause des devoirs et des activités extra-scolaires qui prennent énormement de leur temps.</p>
-				<p>En Corée, le manque de temps à cause du travail se fait également ressentir. Les jeunes lisent beaucoup plus sur leur téléhpone, mais les personnes plus âgées ont tendance à rester sur le papier. Le milieu de l'édition papier est toujours très important en Corée.</p>
+				<p>En Chine, peu importe la génération, les personnes âgées comme les plus jeunes sont beaucoup sur leur téléphone. Les Chinois travaillent aussi très longtemps et disent ne pas avoir le temps d'aller prendre un livre en librairie ou à la bibliothèque, les deux fermant avant qu'ils ne sortent du travail. Les enfants lisent également très peu à cause des devoirs et des activités extra-scolaires qui prennent énormément de leur temps.</p>
+				<p>En Corée, le manque de temps à cause du travail se fait également ressentir. Les jeunes lisent beaucoup plus sur leur téléphone, mais les personnes plus âgées ont tendance à rester sur le papier. Le milieu de l'édition papier est toujours très important en Corée.</p>
 				<p><strong>Hypothèse sur le nuage de mots</strong></p>
-				<p>On pourrait retrouver, peu importe la langue, les mots (manque de) temps, jeune, ebook (ou variation selon la langue), téléphone, travail, problème...</p>
+				<p>On pourrait retrouver, peu importe la langue, les mots (manque de) temps, jeune, e-book (ou variation selon la langue), téléphone, travail, problème...</p>
 				<p>La question est quels mots trouverons nous plutôt dans une langue que dans l'autre ?</p>
 			</div>
 			<br />
@@ -83,7 +83,7 @@
 				<p>Il y a de nombreuses variations, les plus utilisées et les moins spécifiques sont : </p>
 				<dl>
 					<li>看书 (litt. lire un livre)</li>
-					<li>读书 (lire un livre ... ou étudier! Il faut faire attention à bien vérifier sa signification dans chaque url)</li>
+					<li>读书 (lire un livre ... ou étudier ! Il faut faire attention à bien vérifier sa signification dans chaque url)</li>
 					<li>阅读 (lire plus généralement)</li>
 				</dl>
 			</div>
@@ -92,9 +92,9 @@
 			</div>
 			<div class="block" style="text-align:justify;">
 				<dl>
-					<li>ne pas juste prendre l'angle des sentiments autour de la lecture (impression de rêver, voyager)</li>
-					<li>la nocivité des ebooks, les ebooks et la santé,... : bien que les articles soient intéressants, nous avons décidé de ne pas choisir ces urls parce que le sujet deviendrait trop large</li>
-					<li>la lecture et l'apprentissage chez les jeunes : nous avons décidé de garder ses urls parce qu'il est tout à fait normal de lire pour apprendre des choses; ce genre d'articles est d'ailleurs plus présent en coréen qu'en chinois car les étudiants (mineurs) chinois n'ont pas vraiment le temps de lire pendant leur temps "libre"</li>
+					<li>Ne pas juste prendre l'angle des sentiments autour de la lecture (impression de rêver, voyager).</li>
+					<li>La nocivité des e-books, les e-books et la santé... : bien que les articles soient intéressants, nous avons décidé de ne pas choisir ces urls parce que le sujet deviendrait trop large.</li>
+					<li>La lecture et l'apprentissage chez les jeunes : nous avons décidé de garder ses urls parce qu'il est tout à fait normal de lire pour apprendre des choses; ce genre d'articles est d'ailleurs plus présent en coréen qu'en chinois, car les étudiants (mineurs) Chinois n'ont pas vraiment le temps de lire pendant leur temps "libre".</li>
 				</dl>
 			</div>
 			<div class="block has-text-centered">
@@ -103,12 +103,12 @@
 			<div class="block" style="text-align:justify;">
 				<p><strong>Les expressions régulières</strong></p>
 				<dl>
-					<p>Nous nous sommes aperçues de la difficulté à faire une bonne expression régulière notamment lors de la concordance, où l'expression régulière coréenne, une fois associé à celle chinoise, créait un blocage au niveau du tableau de concordance chinois. Nous avons pu résoudre le problème créant une condition pour chaque langue et son expression régulière.</p>
+					<p>Nous nous sommes aperçu de la difficulté à faire une bonne expression régulière notamment lors de la concordance, où l'expression régulière coréenne, une fois associée à celle chinoise, créait un blocage au niveau du tableau de concordance chinois. Nous avons pu résoudre le problème en créant une condition pour chaque langue et son expression régulière.</p>
 			</div>
 			<div class="block" style="text-align:justify;">
 				<p><strong>Les stopwords</strong></p>
 				<dl>
-					<p>Nous avons crée un script python pour les stopwords qui a posé quelques problèmes notamment pour le français et le coréen(le chinois étant traité différemment). Nous nous en sommes rendu compte lors des analyses itrameur qui nous ressortait des mots qui devaient être exclu. Pour résoudre ce problème au lieu d'utiliser nltk et ses listes de stopwords, nous avons créé des fichiers stopwords pour chaque langue.</p>
+					<p>Nous avons créé un script python pour les stopwords qui a posé quelques problèmes notamment pour le français et le coréen (le chinois étant traité différemment). Nous nous en sommes rendu compte lors des analyses itrameur qui nous ressortait des mots qui devaient être exclu. Pour résoudre ce problème au lieu d'utiliser nltk et ses listes de stopwords, nous avons créé des fichiers stopwords pour chaque langue.</p>
 			</div>
 		</section>
 
