@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 
-#=== fichier bash récupéré sur le dossier PPE
+#=== fichier bash récupéré sur le dossier PPE des professeurs
+#    le fichier est doit être appelé dans le dossier projet
 
 
 if [[ $# -ne 2 ]]

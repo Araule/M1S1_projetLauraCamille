@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 #==============================================================================
+# le fichier est doit être appelé dans le dossier projet
 # fichier_urls -- txt : le fichier contenant les 50 urls
 # fichier_tableau -- html : le fichier contenant la mise en page du tableau
 # langue -- str : variable qui permet d'utiliser le fichier pour les 3 langues

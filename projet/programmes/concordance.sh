@@ -2,6 +2,7 @@
 
 
 #================================================================================
+# le fichier est doit être appelé dans le dossier projet
 # fichier_texte -- path : # chemin vers le fichier du dossier ./dumps-text.txt
 # fichier_texte -- str : dans le cas des urls chinoises, la variable contient 
 # à la fin le texte du fichier
