@@ -10,4 +10,4 @@ Ceci est le dépôt du projet encadré du premier semestre du master Traitement 
 - Laura Darenne (Inalco, spécialisation chinois)
 - Camille Clavier (Inalco, spécialisation coréen)
 
-**rapport final au format d'un site codé en html** : https://araule.github.io/M1S1_projetLauraCamille/pages/index.html
+**rapport final au format d'un site codé en html** : https://araule.github.io/M1S1_projetLauraCamille/index.html
