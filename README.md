@@ -1,9 +1,13 @@
-# projet encadré S1
+# Projet : la vie des mots sur le web
 
-mot choisi : Lire
+Ceci est le dépôt du projet encadré du premier semestre du master Traitement Automatique des Langues (NLP). Le but du projet est d'analyser le contexte "web" d'un mot dans plusieurs langues.
 
-membre du groupe :
-- Laura Darenne (Inalco)
-- Camille Clavier (Inalco)
+**mot choisi** : Lire
 
-site html : https://araule.github.io/projetlauracamilleS1/index.html
+**Langues choisies** : français, coréen, chinois
+
+**membres du groupe** :
+- Laura Darenne (Inalco, spécialisation chinois)
+- Camille Clavier (Inalco, spécialisation coréen)
+
+**rapport final au format d'un site codé en html** : https://araule.github.io/M1S1_projetLauraCamille/index.html
